@@ -23,6 +23,7 @@ My research interest includes 3D computer vision, human-centric understanding.
 
 
 # 🔥 News
+- *2024.07*: &nbsp;🎉🎉 1 paper accepted to ECCV 2024!
 - *2024.04*: &nbsp;🎉🎉 1 paper accepted to IJCAI 2024!
 - *2024.02*: &nbsp;🎉🎉 1 paper accepted to CVPR 2024!
 - *2023.07*: &nbsp;🎉🎉 1 paper accepted to ICCV 2023!
