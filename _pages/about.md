@@ -23,12 +23,30 @@ My research interest includes 3D computer vision, human-centric understanding.
 
 
 # 🔥 News
+- *2024.07*: &nbsp;🎉🎉 1 paper accepted to ACM Multimedia 2024!
 - *2024.07*: &nbsp;🎉🎉 1 paper accepted to ECCV 2024!
 - *2024.04*: &nbsp;🎉🎉 1 paper accepted to IJCAI 2024!
 - *2024.02*: &nbsp;🎉🎉 1 paper accepted to CVPR 2024!
 - *2023.07*: &nbsp;🎉🎉 1 paper accepted to ICCV 2023!
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM Multimedia 2024</div><img src='images/MotionPrediction.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Practical Human Motion Prediction with LiDAR Point Clouds](https://openreview.net/pdf?id=mfiL5WJKb4)
+
+Xiao Han, Yiming Ren, **Yichen Yao**, Yujing Sun, Yuexin Ma
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2024</div><img src='images/LiveHPS++.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LiveHPS++: Robust and Coherent Motion Capture in Dynamic Free Environment](https://arxiv.org/abs/2407.09833)
+
+Yiming Ren, Xiao Han, **Yichen Yao**, Xiaoxiao Long, Yujing Sun, Yuexin Ma
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2024</div><img src='images/RealDex.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
