@@ -23,6 +23,7 @@ My research interest includes 3D computer vision, human-centric understanding.
 
 
 # 🔥 News
+- *2024.12*: &nbsp;🎉🎉 1 paper accepted to AAAI 2025!
 - *2024.07*: &nbsp;🎉🎉 1 paper accepted to ACM Multimedia 2024!
 - *2024.07*: &nbsp;🎉🎉 1 paper accepted to ECCV 2024!
 - *2024.04*: &nbsp;🎉🎉 1 paper accepted to IJCAI 2024!
@@ -30,10 +31,19 @@ My research interest includes 3D computer vision, human-centric understanding.
 - *2023.07*: &nbsp;🎉🎉 1 paper accepted to ICCV 2023!
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/IDKB.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Practical Human Motion Prediction with LiDAR Point Clouds](https://arxiv.org/abs/2409.02914)
+
+Yuhang Lu, **Yichen Yao**, Jiadong Tu, Jiangnan Shao, Yuexin Ma, Xinge Zhu
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM Multimedia 2024</div><img src='images/MotionPrediction.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Towards Practical Human Motion Prediction with LiDAR Point Clouds](https://openreview.net/pdf?id=mfiL5WJKb4)
+[Towards Practical Human Motion Prediction with LiDAR Point Clouds](https://dl.acm.org/doi/abs/10.1145/3664647.3680720)
 
 Xiao Han, Yiming Ren, **Yichen Yao**, Yujing Sun, Yuexin Ma
 </div>
