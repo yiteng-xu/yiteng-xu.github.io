@@ -22,7 +22,7 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: The 6th Innovation & Entrepreneurship Summit techIES2023
+  - title: The 6th Innovation & Entrepreneurship Summit techIES2023_test
     company: Third Prize
     company_url: 'https://mp.weixin.qq.com/s/hVnvGFJB_kYyfxMbnxM5bw'
     company_logo: org-x
