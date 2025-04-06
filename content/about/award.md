@@ -30,7 +30,7 @@ experience:
   #   date_start: '2024-12-01'
   #   date_end: '2024-12-01'
   #   description: 国家奖学金
-  - title: The 6th Innovation & Entrepreneurship Summit techIES2023
+  - title: The 6th Innovation & Entrepreneurship Summit techIES2023_test
     company: Third Prize
     company_url: 'https://mp.weixin.qq.com/s/hVnvGFJB_kYyfxMbnxM5bw'
     company_logo: org-x
