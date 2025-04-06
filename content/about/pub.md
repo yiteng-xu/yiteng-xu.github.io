@@ -24,7 +24,7 @@ date_format: Jan 2006
 experience:
   - title: A Unified Framework for Human-centric Point Cloud Video Understanding
     company: Accepted by CVPR2024
-    company_url: 'https://arxiv.org/abs/2403.20031'
+    company_url: 'https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_A_Unified_Framework_for_Human-centric_Point_Cloud_Video_Understanding_CVPR_2024_paper.pdf'
     company_logo: org-gc
     location: Seattle WA, USA
     date_start: '2024-06-17'
