@@ -22,14 +22,14 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: National Scholarship
-    company: 国家奖学金
-    company_url: ''
-    company_logo: org-x
-    location: Shanghai, China
-    date_start: '2024-12-01'
-    date_end: '2024-12-01'
-    description: 国家奖学金
+  # - title: National Scholarship
+  #   company: 国家奖学金
+  #   company_url: ''
+  #   company_logo: org-x
+  #   location: Shanghai, China
+  #   date_start: '2024-12-01'
+  #   date_end: '2024-12-01'
+  #   description: 国家奖学金
   - title: The 6th Innovation & Entrepreneurship Summit techIES2023
     company: Third Prize
     company_url: 'https://mp.weixin.qq.com/s/hVnvGFJB_kYyfxMbnxM5bw'
