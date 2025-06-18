@@ -99,8 +99,8 @@ Yiteng Xu, Peishan Cong, **Yichen Yao**, Runnan Chen, Yuenan Hou, Xinge Zhu, Xum
 -   **National Scholarship for Graduate Students** (Top 1%), 2024
 -   **Shanghai Outstanding Graduate**, 2023
 -   **National Second Prize**, The 19th ROBOMASTER Robotics Competition, 2020
--   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition
--   **Merit Student & Outstanding Student Cadre**, ShanghaiTech University 
+-   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024
+-   **Merit Student & Outstanding Student Cadre**, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
 
 # 📖 Educations
 
