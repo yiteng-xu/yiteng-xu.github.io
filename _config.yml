@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yichen Yao"
+title                    : "Yiteng Xu"
 description              : ""
-repository               : "Yichen-Yao/yichen-yao.github.io"
+repository               : "yiteng-xu/yiteng-xu.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
