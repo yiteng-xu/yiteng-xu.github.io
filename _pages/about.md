@@ -96,8 +96,18 @@ Yiteng Xu, Peishan Cong, **Yichen Yao**, Runnan Chen, Yuenan Hou, Xinge Zhu, Xum
 
 
 # 🎖 Honors and Awards
-- *2022* The 19th National College Student Robotics Competition ROBOMASTER 2020 Mecha Master Battle (Online) Second Prize, Engineering Robot Second Prize  
+-   **National Scholarship for Graduate Students** (Top 1%), 2024
+-   **Shanghai Outstanding Graduate**, 2023
+-   **National Second Prize**, The 19th ROBOMASTER Robotics Competition, 2020
+-   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition
+-   **Merit Student & Outstanding Student Cadre**, ShanghaiTech University 
 
 # 📖 Educations
-- *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
-- *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China.
+
+-   **Ph.D. in Computer Science and Technology** (2023 - Present)
+    -   *ShanghaiTech University, Shanghai, China*
+-   **B.S. in Computer Science and Technology** (2019 - 2023)
+    -   *ShanghaiTech University, Shanghai, China*
+
+<!-- - *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
+- *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China. -->
