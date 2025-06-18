@@ -28,7 +28,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 - Feb 2025: &nbsp;🎉🎉 
   One paper on human-robot interaction simulation submitted to <strong>SIGGRAPH 2025</strong>.
 - Oct 2024: &nbsp;🎉🎉 
-  Honored to receive the <strong>National Scholarship</strong> for Graduate Students (Top 1%).
+  Honored to receive the <strong>National Scholarship</strong> (Top 1%).
 - Feb 2024: &nbsp;🎉🎉 
   Our work on unified human-centric point cloud understanding, UniHPC, was accepted by <strong>CVPR 2024</strong>.
 - Jul 2023: &nbsp;🎉🎉 
