@@ -23,12 +23,24 @@ My research interest includes 3D computer vision, human-centric understanding.
 
 
 # 🔥 News
-- *2024.12*: &nbsp;🎉🎉 1 paper accepted to AAAI 2025!
+- date: Feb 2025
+  description: One paper on human-robot interaction simulation submitted to <strong>SIGGRAPH 2025</strong>.
+- date: Oct 2024
+  description: Honored to receive the <strong>National Scholarship</strong> for Graduate Students (Top 1%).
+- date: Feb 2024
+  description: Our work on unified human-centric point cloud understanding, UniHPC, was accepted by <strong>CVPR 2024</strong>. I am the sole first author.
+- date: Jul 2023
+  description: Our work on human-centric scene understanding and the HuCenLife dataset was accepted by <strong>ICCV 2023</strong>.
+- date: Dec 2022
+  description: Our work on weakly supervised 3D multi-person pose estimation was accepted as an <strong>Oral</strong> presentation at <strong>AAAI 2023</strong>.
+- date: Sep 2023
+  description: Started my Ph.D. journey at ShanghaiTech University.
+<!-- - *2024.12*: &nbsp;🎉🎉 1 paper accepted to AAAI 2025!
 - *2024.07*: &nbsp;🎉🎉 1 paper accepted to ACM Multimedia 2024!
 - *2024.07*: &nbsp;🎉🎉 1 paper accepted to ECCV 2024!
 - *2024.04*: &nbsp;🎉🎉 1 paper accepted to IJCAI 2024!
 - *2024.02*: &nbsp;🎉🎉 1 paper accepted to CVPR 2024!
-- *2023.07*: &nbsp;🎉🎉 1 paper accepted to ICCV 2023!
+- *2023.07*: &nbsp;🎉🎉 1 paper accepted to ICCV 2023! -->
 
 # 📝 Publications 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/IDKB.png' alt="sym" width="100%"></div></div>
