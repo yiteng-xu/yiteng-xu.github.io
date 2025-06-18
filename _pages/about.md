@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a second-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. [Yuexin Ma](https://mayuexin.github.io/). I am also a member of the [4D & Vision Lab (4DV Lab)](https://vis.shanghaitech.edu.cn/). Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
+I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. [Yuexin Ma](https://mayuexin.github.io/). I am also a member of the [4DV Lab](https://vis.shanghaitech.edu.cn/). Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
 
 My research lies at the intersection of **3D Computer Vision**, **Robotics**, and **Embodied AI**. My primary goal is to enable intelligent agents (like humanoid robots) to perceive, understand, and interact with the complex, dynamic 3D world in a human-like manner. I am particularly interested in **multi-modal sensor fusion (LiDAR-Camera)**, **3D human pose and motion understanding**, and building **human-in-the-loop systems** for bidirectional learning in human-robot interaction.
 
