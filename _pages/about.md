@@ -30,7 +30,7 @@ I am actively seeking research internship opportunities for the summer of 2025 t
 - Oct 2024: &nbsp;🎉🎉 
   Honored to receive the <strong>National Scholarship</strong> for Graduate Students (Top 1%).
 - Feb 2024: &nbsp;🎉🎉 
-  Our work on unified human-centric point cloud understanding, UniHPC, was accepted by <strong>CVPR 2024</strong>. I am the sole first author.
+  Our work on unified human-centric point cloud understanding, UniHPC, was accepted by <strong>CVPR 2024</strong>.
 - Jul 2023: &nbsp;🎉🎉 
   Our work on human-centric scene understanding and the HuCenLife dataset was accepted by <strong>ICCV 2023</strong>.
 - Dec 2022: &nbsp;🎉🎉 
