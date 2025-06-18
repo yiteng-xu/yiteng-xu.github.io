@@ -91,7 +91,7 @@ Yumeng Liu, Yaxun Yang, Youzhuo Wang, Xiaofei Wu, Jiamin Wang, **Yichen Yao**, S
 
 **Yiteng Xu**, Kecheng Ye, Xiao Han, Yiming Ren, Xinge ZHU, Yuexin Ma
 
-The IEEE / CVF Computer Vision and Pattern Recognition Conference(**CVPR**), 2024
+The IEEE / CVF Computer Vision and Pattern Recognition Conference (**CVPR**), 2024
 </div>
 </div>
 
@@ -101,6 +101,8 @@ The IEEE / CVF Computer Vision and Pattern Recognition Conference(**CVPR**), 202
 [Human-centric Scene Understanding for 3D Large-scale Scenarios](https://arxiv.org/abs/2307.14392)
 
 **Yiteng Xu\***, Peishan Cong\*, Yichen Yao\*, Runnan Chen, Yuenan Hou, Xinge Zhu, Xuming He, Jingyi Yu, Yuexin Ma
+
+In IEEE/CVF International Conference on Computer Vision (**ICCV**), 2023
 </div>
 </div>
 
@@ -111,7 +113,7 @@ The IEEE / CVF Computer Vision and Pattern Recognition Conference(**CVPR**), 202
 
 Peishan Cong\*, **Yiteng Xu\***, Yiming Ren, Juze Zhang, Lan Xu, Jingya Wang, Jingyi Yu, Yuexin Ma
 
-Thirty-Seventh AAAI Conference on Artificial Intelligence(**AAAI**), Oral, 2023
+Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 </div>
 </div>
 
