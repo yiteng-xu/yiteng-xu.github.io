@@ -133,7 +133,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     *   **System & DevOps (Expert):** Linux, Git/GitHub, Slurm, and Docker for efficient development, large-scale cluster scheduling, and reproducible research.
     *   **Human-Centered AI Methods (Proficient):** Designing and executing complex user studies (e.g., Wizard of Oz, Human-in-the-Loop) to collect high-quality, ecologically-valid interaction data.
     *   **Documentation & Communication (Expert):** LaTeX, Draw.io for creating high-quality technical documentation and clear system architecture diagrams.
----
+
 
 
 # 🎖 Honors and Awards
