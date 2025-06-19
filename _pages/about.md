@@ -121,17 +121,19 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 *   **Programming & Frameworks**
     *   **Python & PyTorch (Expert):** For core algorithm design, model implementation, and large-scale data analysis.
-
+    *   **Bash Shell (Proficient):** For automation scripts and server management.
+    *   **Data Science Stack (Proficient):** Pandas, Matplotlib, NumPy, SciPy, Scikit-learn for processing, cleaning, and analyzing large-scale time-series and multi-modal data.
 
 *   **Domain Expertise & Toolchain**
-    *   **Research Interests:** **3D Vision**, **Multi-Modal Fusion**, **Humanoid Robotics**, **Embodied AI**.
-    *   **Parametric Human Modeling (Expert):** Deep understanding of SMPL/SMPL-X for 3D reconstruction, motion synthesis, and physics-based simulation.
+    *   **Research Interests:** **3D Computer Vision**, **Multi-Modal Fusion (LiDAR & Camera)**, **Humanoid Robotics**, **Embodied AI**.
+    *   **Parametric Human Modeling (Expert):** Proficient with **SMPL/SMPL-X**, capable of leveraging them for 3D reconstruction, motion synthesis, interaction modeling, and integration with physics-based simulation.
+    *   **Multi-Agent Interaction Modeling:** Capable of designing **Multi-Human to Multi-Robot** interaction algorithms from the ground up.
     *   **3D Toolchain (Proficient):** Open3D, PCL, MeshLab for point cloud processing, 3D reconstruction, and real-time visualization.
-    <!-- *   **Physics Simulation:** NVIDIA Isaac Gym/Orbit for robot reinforcement learning and interactive simulation. -->
+    <!-- *   **Physics Simulation (Proficient):** **NVIDIA Isaac Gym/Orbit** for robot reinforcement learning and real-time interactive simulation. -->
     
 *   **System Engineering & Research Methodologies**
-    *   **System & DevOps (Expert):** Linux, Git/GitHub, Slurm, and Docker for efficient development, large-scale cluster scheduling, and reproducible research.
-    *   **Human-Centered AI Methods (Proficient):** Designing and executing complex user studies (e.g., Wizard of Oz, Human-in-the-Loop) to collect high-quality, ecologically-valid interaction data.
+    *   **System & DevOps (Expert):** Linux, Git/GitHub, Slurm, and Docker for efficient development environment management and large-scale cluster scheduling.
+    *   **Human-Centered AI Methods (Proficient):** Designing and executing complex user studies (e.g., **"Wizard of Oz"**, **"Human-in-the-Loop"**) to collect high-quality, ecologically-valid interaction data.
     *   **Documentation & Communication (Expert):** LaTeX, Draw.io for creating high-quality technical documentation and clear system architecture diagrams.
 
 
