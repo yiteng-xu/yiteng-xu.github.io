@@ -117,7 +117,24 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 </div>
 </div>
 
+# 🛠️ Technical Skills & Expertise
 
+*   **Programming & Frameworks**
+    *   **Python & PyTorch (Expert):** For core algorithm design, model implementation, and large-scale data analysis.
+    *   **C++ (Proficient):** For high-performance modules and low-latency system development.
+    *   **CUDA C++ (Familiar):** For writing custom kernels to accelerate performance-critical algorithms.
+
+*   **Domain Expertise & Toolchain**
+    *   **Research Interests:** **3D Vision**, **Multi-Modal Fusion**, **Humanoid Robotics**, **Embodied AI**.
+    *   **Parametric Human Modeling (Expert):** Deep understanding of SMPL/SMPL-X for 3D reconstruction, motion synthesis, and physics-based simulation.
+    *   **3D Toolchain (Proficient):** Open3D, PCL, MeshLab for point cloud processing, 3D reconstruction, and real-time visualization.
+    *   **Physics Simulation:** NVIDIA Isaac Gym/Orbit for robot reinforcement learning and interactive simulation.
+    
+*   **System Engineering & Research Methodologies**
+    *   **System & DevOps (Expert):** Linux, Git/GitHub, Slurm, and Docker for efficient development, large-scale cluster scheduling, and reproducible research.
+    *   **Human-Centered AI Methods (Proficient):** Designing and executing complex user studies (e.g., Wizard of Oz, Human-in-the-Loop) to collect high-quality, ecologically-valid interaction data.
+    *   **Documentation & Communication (Expert):** LaTeX, Draw.io for creating high-quality technical documentation and clear system architecture diagrams.
+---
 
 
 # 🎖 Honors and Awards
