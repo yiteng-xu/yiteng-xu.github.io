@@ -138,7 +138,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 
 # 🎖 Honors and Awards
--   **National Scholarship** (Top 1%), 2024
+-   **National Scholarship for Graduate Students** (Top 1%), 2024
 -   **Shanghai Outstanding Graduate**, 2023
 -   **National Second Prize**, The 19th ROBOMASTER Robotics Competition, 2020
 -   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024
