@@ -22,6 +22,7 @@ I am a third-year Ph.D. student at the School of Information Science and Technol
 My research lies at the intersection of **3D Computer Vision**, **Robotics**, and **Embodied AI**. My primary goal is to enable intelligent agents (like humanoid robots) to perceive, understand, and interact with the complex, dynamic 3D world in a human-like manner. I am particularly interested in **multi-modal sensor fusion (LiDAR-Camera)**, **3D human pose and motion understanding**, and building **human-in-the-loop systems** for bidirectional learning in human-robot interaction.
 
 <!-- I am actively seeking research internship opportunities for the summer of 2025 that will allow me to apply my research to real-world challenges. -->
+[**View My CV** (PDF)](assets/files/CV_Yiteng_Xu.pdf){:target="_blank"}
 
 
 # 🔥 News
