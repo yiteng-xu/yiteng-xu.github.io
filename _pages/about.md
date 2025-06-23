@@ -147,7 +147,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 -   **Shanghai Outstanding Graduate**, 2023
 -   **National Second Prize**, The National Robotics Competition, 2020
 -   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024
--   **Merit Student & Outstanding Student Cadre**, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
+-   **Merit Student & Outstanding Student Leader**, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
 
 # 📖 Educations
 
