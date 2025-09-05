@@ -664,7 +664,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 .skills-title { margin: .15rem 0 0; font-size: clamp(1.1rem, 1.2rem + .5vw, 1.5rem); background: linear-gradient(135deg, #10b981, #22d3ee); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .skills-modes { display: inline-flex; gap: .4rem; }
 .skills-mode { appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .35rem .8rem; border-radius: 999px; cursor: pointer; transition: all .25s ease; }
-.skills-mode:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
+.skills-mode:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(20,184,166,.18); transform: translateY(-1px); }
 .skills-mode.active { background: linear-gradient(135deg, rgba(16,185,129,.2), rgba(6,182,212,.2)); border-color: transparent; }
 
 .skills-grid { display: grid; gap: 1.2rem; }
@@ -694,7 +694,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 .skill-card { position: relative; background: var(--sk-card); border: 1px solid var(--sk-border); border-radius: 16px; overflow: hidden; box-shadow: var(--sk-shadow); transform-style: preserve-3d; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
 .skill-card:hover { transform: translateY(-2px) scale(1.01); border-color: transparent; box-shadow: 0 18px 60px rgba(16,24,40,.28); }
-.card-accent { position: absolute; inset: -20% -30% auto -30%; height: 120px; background: radial-gradient(700px 200px at 30% 50%, rgba(168,85,247,.35), transparent 60%), radial-gradient(700px 200px at 70% 50%, rgba(6,182,212,.35), transparent 60%); filter: blur(24px) saturate(130%); pointer-events: none; }
+.card-accent { position: absolute; inset: -20% -30% auto -30%; height: 120px; background: radial-gradient(700px 200px at 30% 50%, rgba(16,185,129,.35), transparent 60%), radial-gradient(700px 200px at 70% 50%, rgba(6,182,212,.35), transparent 60%); filter: blur(24px) saturate(130%); pointer-events: none; }
 .card-head { display: flex; align-items: center; gap: .6rem; padding: .9rem .95rem .2rem; }
 .card-icon { color: color-mix(in oklab, #10b981 60%, #06b6d4 40%); }
 .card-title { margin: 0; font-size: 1.05rem; background: linear-gradient(135deg, #10b981, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -706,7 +706,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 .mini-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--sk-text); }
 .mini-list li { margin: .25rem 0; }
 .card-toggle { width: max-content; margin: 0 .95rem .9rem; appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .3rem .7rem; border-radius: 10px; cursor: pointer; transition: all .25s ease; }
-.card-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.15); transform: translateY(-1px); }
+.card-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(20,184,166,.18); transform: translateY(-1px); }
 
 .skills-constellation { position: relative; min-height: 280px; display: grid; place-items: center; }
 .float-chips { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; padding: .6rem; }
