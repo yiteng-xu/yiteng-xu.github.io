@@ -104,7 +104,7 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
+    background-color: $info-color;
     font-size: .8em;
 }
 
@@ -198,9 +198,9 @@ h1:before, .anchor:before {
   gap: .35rem;
   padding: .15rem .5rem;
   border-radius: 999px;
-  background: #f2f6ff;
-  color: #1f4b8c;
-  border: 1px solid #e6eeff;
+  background: mix(#fff, $info-color, 92%);
+  color: mix(#000, $info-color, 28%);
+  border: 1px solid mix(#fff, $info-color, 78%);
 }
 
 .news-date {
