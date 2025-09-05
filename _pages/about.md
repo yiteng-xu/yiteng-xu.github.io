@@ -42,17 +42,24 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 
 # 🗞️ News
 
-<div class="news-grid">
-{% for item in site.data.news %}
-  <a class="news-card" href="{{ item.link }}" target="_blank" rel="noopener">
-    <div class="news-meta">
-      <span class="news-source"><i class="fas fa-newspaper"></i> {{ item.source }}</span>
-      {% if item.date %}<span class="news-date">{{ item.date }}</span>{% endif %}
-    </div>
-    <h3 class="news-title">{{ item.title }}</h3>
-    {% if item.excerpt %}<p class="news-excerpt">{{ item.excerpt }}</p>{% endif %}
-  </a>
-{% endfor %}
+<div class="news-section">
+  <p class="news-subtitle">互联网上与我相关的最新动态与报道</p>
+  <div class="news-grid">
+  {% for item in site.data.news %}
+    <a class="news-card" href="{{ item.link }}" target="_blank" rel="noopener">
+      <div class="news-accent"></div>
+      {% if item.image %}
+      <div class="news-thumb" style="background-image:url('{{ item.image }}')"></div>
+      {% endif %}
+      <div class="news-meta">
+        <span class="news-chip news-source"><i class="{{ item.icon | default: 'fas fa-newspaper' }}"></i> {{ item.source }}</span>
+        {% if item.date %}<span class="news-chip news-date">{{ item.date }}</span>{% endif %}
+      </div>
+      <h3 class="news-title">{{ item.title }} <i class="fas fa-external-link-alt news-ext"></i></h3>
+      {% if item.excerpt %}<p class="news-excerpt">{{ item.excerpt }}</p>{% endif %}
+    </a>
+  {% endfor %}
+  </div>
 </div>
 
 
