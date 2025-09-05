@@ -25,7 +25,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 [**查看简历** (中文)](assets/files/CV_Yiteng_Xu.pdf){:target="_blank"}        [**View My CV** (English)](assets/files/CV_Yiteng_Xu_English.pdf){:target="_blank"}
 
 
-# 🔥 News
+# 🔥 Milestones
 <!-- - Feb 2025: &nbsp;🎉🎉 
   One paper on human-robot interaction simulation submitted to <strong>SIGGRAPH 2025</strong>. -->
 - Oct 2024: &nbsp;🎉🎉 
