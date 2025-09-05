@@ -450,23 +450,358 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 # 🛠️ Technical Skills & Expertise
 
-*   **Programming & Frameworks**
-    *   **Python & PyTorch (Expert):** For core algorithm design, model implementation, and large-scale data analysis.
-    *   **Bash Shell (Proficient):** For automation scripts and server management.
-    *   **Data Science Stack (Proficient):** Pandas, Matplotlib, NumPy, SciPy, Scikit-learn for processing, cleaning, and analyzing large-scale time-series and multi-modal data.
+<div id="skills" class="skills-section" aria-label="Technical Skills & Expertise">
+  <div class="skills-aurora" aria-hidden="true"></div>
 
-*   **Domain Expertise & Toolchain**
-    *   **Research Interests:** **3D Computer Vision**, **Multi-Modal Fusion (LiDAR & Camera)**, **Humanoid Robotics**, **Embodied AI**.
-    *   **Parametric Human Modeling (Expert):** Proficient with **SMPL/SMPL-X**, capable of leveraging them for 3D reconstruction, motion synthesis, interaction modeling, and integration with physics-based simulation.
-    *   **Multi-Agent Interaction Modeling:** Capable of designing **Multi-Human to Multi-Robot** interaction algorithms from the ground up.
-    *   **3D Toolchain (Proficient):** Open3D, PCL, MeshLab for point cloud processing, 3D reconstruction, and real-time visualization.
-    <!-- *   **Physics Simulation (Proficient):** **NVIDIA Isaac Gym/Orbit** for robot reinforcement learning and real-time interactive simulation. -->
-    
-*   **System Engineering & Research Methodologies**
-    *   **System & DevOps (Expert):** Linux, Git/GitHub, Slurm, and Docker for efficient development environment management and large-scale cluster scheduling.
-    *   **Human-Centered AI Methods (Proficient):** Designing and executing complex user studies (e.g., **"Wizard of Oz"**, **"Human-in-the-Loop"**) to collect high-quality, ecologically-valid interaction data.
-    *   **Documentation & Communication (Expert):** LaTeX, Draw.io for creating high-quality technical documentation and clear system architecture diagrams.
+  <div class="skills-header">
+    <div class="skills-title-wrap">
+      <span class="skills-kicker">Designed for curiosity</span>
+      <h3 class="skills-title">Interactive Skills Studio</h3>
+    </div>
+    <div class="skills-modes" role="tablist" aria-label="Skills view selector">
+      <button class="skills-mode active" role="tab" aria-selected="true" data-mode="gallery">Gallery</button>
+      <button class="skills-mode" role="tab" aria-selected="false" data-mode="constellation">Constellation</button>
+    </div>
+  </div>
 
+  <div class="skills-grid" data-view="gallery">
+    <section class="skills-rings" aria-label="Core proficiencies" role="list">
+      <div class="ring" role="listitem" aria-label="Python — Expert" data-percent="95" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">Python</span>
+          <span class="ring-note">Expert</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="PyTorch — Expert" data-percent="92" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">PyTorch</span>
+          <span class="ring-note">Expert</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="3D Computer Vision — Expert" data-percent="93" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">3D CV</span>
+          <span class="ring-note">Expert</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="LiDAR–Camera Fusion — Advanced" data-percent="88" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">LiDAR × Cam</span>
+          <span class="ring-note">Advanced</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="Linux & DevOps — Advanced" data-percent="90" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">Linux · DevOps</span>
+          <span class="ring-note">Advanced</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="Parametric Human Modeling — Advanced" data-percent="85" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">SMPL/SMPL-X</span>
+          <span class="ring-note">Advanced</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-cards" aria-label="Skill categories">
+      <article class="skill-card" tabindex="0">
+        <div class="card-accent"></div>
+        <header class="card-head">
+          <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h8v6H3zM13 5h8v4h-8zM3 13h8v6H3zM13 11h8v8h-8z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h4 class="card-title">Programming & Frameworks</h4>
+        </header>
+        <div class="card-body">
+          <div class="chip-row">
+            <span class="skill-chip chip-hot">Python</span>
+            <span class="skill-chip chip-hot">PyTorch</span>
+            <span class="skill-chip">Bash</span>
+            <span class="skill-chip">NumPy</span>
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">SciPy</span>
+            <span class="skill-chip">Scikit-learn</span>
+            <span class="skill-chip">Matplotlib</span>
+          </div>
+          <div class="card-more" hidden>
+            <ul class="mini-list">
+              <li>Algorithm design & model implementation</li>
+              <li>Large-scale data processing & analysis</li>
+              <li>Reproducible training pipelines</li>
+            </ul>
+          </div>
+        </div>
+        <button class="card-toggle" aria-expanded="false" aria-controls="pf-more">More</button>
+      </article>
+
+      <article class="skill-card" tabindex="0">
+        <div class="card-accent"></div>
+        <header class="card-head">
+          <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l3 6 6 .9-4.5 4.2 1.2 6.9L12 17l-5.7 4 1.2-6.9L3 9.9 9 9z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h4 class="card-title">Domain & Toolchain</h4>
+        </header>
+        <div class="card-body">
+          <div class="chip-row">
+            <span class="skill-chip chip-hot">3D Computer Vision</span>
+            <span class="skill-chip">SMPL/SMPL-X</span>
+            <span class="skill-chip">Open3D</span>
+            <span class="skill-chip">PCL</span>
+            <span class="skill-chip">MeshLab</span>
+            <span class="skill-chip">LiDAR–Camera Fusion</span>
+            <span class="skill-chip">Human Motion</span>
+          </div>
+          <div class="card-more" hidden>
+            <ul class="mini-list">
+              <li>Human-centric scene understanding</li>
+              <li>Motion capture, mesh recovery & interaction</li>
+              <li>Multi-human↔Multi-robot interaction modeling</li>
+            </ul>
+          </div>
+        </div>
+        <button class="card-toggle" aria-expanded="false" aria-controls="dt-more">More</button>
+      </article>
+
+      <article class="skill-card" tabindex="0">
+        <div class="card-accent"></div>
+        <header class="card-head">
+          <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h4 class="card-title">Systems & Methods</h4>
+        </header>
+        <div class="card-body">
+          <div class="chip-row">
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">Git / GitHub</span>
+            <span class="skill-chip">Slurm</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">LaTeX</span>
+            <span class="skill-chip">Draw.io</span>
+            <span class="skill-chip">Human-in-the-Loop</span>
+            <span class="skill-chip">Wizard of Oz</span>
+          </div>
+          <div class="card-more" hidden>
+            <ul class="mini-list">
+              <li>Cluster scheduling & experiment orchestration</li>
+              <li>High-quality documentation & diagrams</li>
+              <li>Rigorous user study design</li>
+            </ul>
+          </div>
+        </div>
+        <button class="card-toggle" aria-expanded="false" aria-controls="sm-more">More</button>
+      </article>
+    </section>
+  </div>
+
+  <div class="skills-constellation" hidden aria-live="polite">
+    <div class="float-chips">
+      <span class="float-chip fc-1">3D Computer Vision</span>
+      <span class="float-chip fc-2">Robotics</span>
+      <span class="float-chip fc-3">Embodied AI</span>
+      <span class="float-chip fc-4">Human–Robot Interaction</span>
+      <span class="float-chip fc-5">LiDAR · Camera</span>
+      <span class="float-chip fc-6">SMPL / SMPL-X</span>
+      <span class="float-chip fc-7">Open3D</span>
+      <span class="float-chip fc-8">PCL</span>
+      <span class="float-chip fc-9">Docker</span>
+      <span class="float-chip fc-10">Linux</span>
+      <span class="float-chip fc-11">PyTorch</span>
+      <span class="float-chip fc-12">Motion Capture</span>
+      <span class="float-chip fc-13">Generative Models</span>
+      <span class="float-chip fc-14">Point Clouds</span>
+      <span class="float-chip fc-15">Pose Estimation</span>
+      <span class="float-chip fc-16">Human-in-the-Loop</span>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ============== Skills Studio (scoped) ============== */
+.skills-section {
+  --sk-bg: var(--global-bg, #0b0c10);
+  --sk-card: rgba(255,255,255,0.06);
+  --sk-border: rgba(255,255,255,0.12);
+  --sk-text: var(--global-text, #e5e7eb);
+  --sk-muted: #a3a3a3;
+  --sk-accent-1: #a855f7; /* purple */
+  --sk-accent-2: #06b6d4; /* cyan */
+  --sk-accent-3: #f472b6; /* pink */
+  --sk-accent-4: #f59e0b; /* amber */
+  --sk-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  padding: 1rem 0 0 0;
+  color: var(--sk-text);
+  isolation: isolate;
+}
+@media (prefers-color-scheme: light) {
+  .skills-section {
+    --sk-bg: #f7f7fb;
+    --sk-card: rgba(255,255,255,0.9);
+    --sk-border: rgba(10,10,10,0.08);
+    --sk-text: #0f172a;
+    --sk-muted: #6b7280;
+  }
+}
+.skills-aurora {
+  position: absolute; inset: -10% -5% -15% -5%; pointer-events: none; z-index: -1;
+  background:
+    radial-gradient(1200px 800px at 10% 20%, rgba(168,85,247,.28), transparent 45%),
+    radial-gradient(1000px 700px at 90% 10%, rgba(6,182,212,.28), transparent 45%),
+    radial-gradient(900px 700px at 80% 80%, rgba(244,114,182,.25), transparent 50%),
+    radial-gradient(900px 700px at 20% 85%, rgba(245,158,11,.22), transparent 50%);
+  filter: blur(40px) saturate(120%);
+  transform: translateZ(0);
+  animation: auroraShift 16s ease-in-out infinite alternate;
+}
+@keyframes auroraShift { from { transform: scale(1) translateY(0); } to { transform: scale(1.05) translateY(-2%); } }
+
+.skills-header { display: flex; justify-content: space-between; align-items: center; gap: .75rem; margin-bottom: .5rem; flex-wrap: wrap; }
+.skills-kicker { font-size: .8rem; color: var(--sk-muted); letter-spacing: .12em; text-transform: uppercase; }
+.skills-title { margin: .15rem 0 0; font-size: clamp(1.1rem, 1.2rem + .5vw, 1.5rem); background: linear-gradient(135deg, var(--sk-accent-1), var(--sk-accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.skills-modes { display: inline-flex; gap: .4rem; }
+.skills-mode { appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .35rem .8rem; border-radius: 999px; cursor: pointer; transition: all .25s ease; }
+.skills-mode:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
+.skills-mode.active { background: linear-gradient(135deg, rgba(168,85,247,.2), rgba(6,182,212,.2)); border-color: transparent; }
+
+.skills-grid { display: grid; gap: 1.2rem; }
+.skills-rings { display: grid; grid-template-columns: repeat(6, minmax(90px, 1fr)); gap: 1rem; align-items: center; }
+@media (max-width: 1100px) { .skills-rings { grid-template-columns: repeat(3, minmax(100px, 1fr)); } }
+@media (max-width: 600px) { .skills-rings { grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
+
+.ring { --size: 132px; --thickness: 14px; position: relative; display: grid; place-items: center; aspect-ratio: 1/1; width: 100%; min-width: 110px; filter: drop-shadow(0 10px 22px rgba(16, 24, 40, .35)); }
+.ring-arc {
+  width: var(--size); height: var(--size); border-radius: 50%;
+  background:
+    conic-gradient(from -90deg,
+      color-mix(in oklab, var(--sk-accent-1) 70%, var(--sk-accent-3) 30%) calc(var(--p) * 1%),
+      rgba(255,255,255,0.08) 0);
+  -webkit-mask: radial-gradient(circle at center, transparent calc(50% - var(--thickness)), #000 calc(50% - var(--thickness) + 1px));
+  mask: radial-gradient(circle at center, transparent calc(50% - var(--thickness)), #000 calc(50% - var(--thickness) + 1px));
+  transition: background .8s ease;
+}
+.ring::after { content: ""; position: absolute; inset: 8%; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.2), rgba(255,255,255,0)); pointer-events: none; }
+.ring-core { position: absolute; display: grid; place-items: center; text-align: center; gap: .15rem; }
+.ring-label { font-weight: 700; letter-spacing: .02em; font-size: .95rem; }
+.ring-note { font-size: .75rem; color: var(--sk-muted); }
+
+.skills-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 1100px) { .skills-cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .skills-cards { grid-template-columns: 1fr; } }
+
+.skill-card { position: relative; background: var(--sk-card); border: 1px solid var(--sk-border); border-radius: 16px; overflow: hidden; box-shadow: var(--sk-shadow); transform-style: preserve-3d; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.skill-card:hover { transform: translateY(-2px) scale(1.01); border-color: transparent; box-shadow: 0 18px 60px rgba(16,24,40,.28); }
+.card-accent { position: absolute; inset: -20% -30% auto -30%; height: 120px; background: radial-gradient(700px 200px at 30% 50%, rgba(168,85,247,.35), transparent 60%), radial-gradient(700px 200px at 70% 50%, rgba(6,182,212,.35), transparent 60%); filter: blur(24px) saturate(130%); pointer-events: none; }
+.card-head { display: flex; align-items: center; gap: .6rem; padding: .9rem .95rem .2rem; }
+.card-icon { color: color-mix(in oklab, var(--sk-accent-1) 60%, var(--sk-accent-2) 40%); }
+.card-title { margin: 0; font-size: 1.05rem; background: linear-gradient(135deg, var(--sk-accent-1), var(--sk-accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.card-body { padding: .25rem .95rem .8rem; }
+.chip-row { display: flex; flex-wrap: wrap; gap: .45rem; }
+.skill-chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .78rem; padding: .28rem .6rem; border-radius: 999px; border: 1px solid var(--sk-border); color: var(--sk-text); background: rgba(255,255,255,.06); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+.skill-chip:hover { transform: translateY(-2px); border-color: transparent; background: linear-gradient(135deg, rgba(168,85,247,.25), rgba(6,182,212,.25)); }
+.chip-hot { border-color: rgba(124,58,237,.45); }
+.mini-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--sk-text); }
+.mini-list li { margin: .25rem 0; }
+.card-toggle { width: max-content; margin: 0 .95rem .9rem; appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .3rem .7rem; border-radius: 10px; cursor: pointer; transition: all .25s ease; }
+.card-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.15); transform: translateY(-1px); }
+
+.skills-constellation { position: relative; min-height: 280px; display: grid; place-items: center; }
+.float-chips { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; padding: .6rem; }
+.float-chip { font-size: .85rem; padding: .35rem .7rem; border-radius: 999px; border: 1px solid var(--sk-border); background: linear-gradient(135deg, rgba(168,85,247,.22), rgba(6,182,212,.22)); color: var(--sk-text); box-shadow: 0 8px 24px rgba(16,24,40,.18); animation: float 5.5s ease-in-out infinite; }
+.float-chip:hover { transform: translateY(-3px) scale(1.02); }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.fc-1 { animation-duration: 5.2s } .fc-2 { animation-duration: 6.1s } .fc-3 { animation-duration: 5.8s } .fc-4 { animation-duration: 6.4s }
+.fc-5 { animation-duration: 5.6s } .fc-6 { animation-duration: 6.0s } .fc-7 { animation-duration: 5.4s } .fc-8 { animation-duration: 6.2s }
+.fc-9 { animation-duration: 5.7s } .fc-10 { animation-duration: 6.3s } .fc-11 { animation-duration: 5.3s } .fc-12 { animation-duration: 6.6s }
+.fc-13 { animation-duration: 5.5s } .fc-14 { animation-duration: 6.5s } .fc-15 { animation-duration: 5.9s } .fc-16 { animation-duration: 6.7s }
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('skills');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // View toggle: Gallery <-> Constellation
+  const modes = root.querySelectorAll('.skills-mode');
+  const grid = root.querySelector('.skills-grid');
+  const constellation = root.querySelector('.skills-constellation');
+  modes.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modes.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected', 'true');
+      const mode = btn.getAttribute('data-mode');
+      if (mode === 'constellation') {
+        grid.style.display = 'none';
+        constellation.hidden = false;
+      } else {
+        grid.style.display = 'grid';
+        constellation.hidden = true;
+      }
+    });
+  });
+
+  // Animate rings on enter
+  const rings = Array.from(root.querySelectorAll('.ring'));
+  const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+  function animateRing(el) {
+    const target = Number(el.dataset.percent || 0);
+    if (reduced) { el.style.setProperty('--p', target); return; }
+    const startVal = Number(getComputedStyle(el).getPropertyValue('--p')) || 0;
+    const duration = 900 + target * 6;
+    let startTime = 0;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      const k = Math.min((ts - startTime) / duration, 1);
+      const val = startVal + (target - startVal) * easeOutCubic(k);
+      el.style.setProperty('--p', val.toFixed(1));
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { animateRing(entry.target); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.35 });
+    rings.forEach(r => io.observe(r));
+  } else { rings.forEach(r => animateRing(r)); }
+
+  // Card: tilt and expand
+  const cards = Array.from(root.querySelectorAll('.skill-card'));
+  const maxTiltX = 7, maxTiltY = 10;
+  cards.forEach(card => {
+    // expand
+    const toggle = card.querySelector('.card-toggle');
+    const more = card.querySelector('.card-more');
+    if (toggle && more) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        more.hidden = expanded;
+      });
+    }
+    if (reduced) return;
+    // tilt
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width; // 0..1
+      const py = (e.clientY - r.top) / r.height; // 0..1
+      const rx = (py - 0.5) * -2 * maxTiltX; // invert for natural feel
+      const ry = (px - 0.5) * 2 * maxTiltY;
+      card.style.transform = `rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg) translateZ(0)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+})();
+</script>
 
 
 <!-- # 🎖 Honors and Awards -->
