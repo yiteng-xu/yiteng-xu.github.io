@@ -27,15 +27,23 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 
 # 🔥 Milestones
 <div class="milestones-section" id="milestones">
-  <div class="milestones-controls" role="tablist" aria-label="Milestones view">
-    <button class="view-toggle active" role="tab" aria-selected="true" data-view="timeline">Timeline</button>
-    <button class="view-toggle" role="tab" aria-selected="false" data-view="list">List</button>
+  <div class="milestones-controls" aria-label="Milestones controls">
+    <div class="milestones-toggles" role="tablist" aria-label="Milestones view">
+      <button class="view-toggle active" role="tab" aria-selected="true" data-view="timeline">Timeline</button>
+      <button class="view-toggle" role="tab" aria-selected="false" data-view="list">List</button>
+    </div>
+    <div class="milestones-filters" aria-label="Category filters">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="paper">Publications</button>
+      <button class="filter-chip" data-filter="award">Awards</button>
+      <button class="filter-chip" data-filter="life">Life</button>
+    </div>
   </div>
 
   <div class="milestones-timeline" role="list">
     <div class="timeline-line" aria-hidden="true"></div>
 
-    <div class="milestone" role="listitem">
+    <div class="milestone" role="listitem" data-type="award">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Oct 2024</div>
@@ -47,7 +55,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
       </div>
     </div>
 
-    <div class="milestone" role="listitem">
+    <div class="milestone" role="listitem" data-type="paper">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Feb 2024</div>
@@ -60,7 +68,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
       </div>
     </div>
 
-    <div class="milestone" role="listitem">
+    <div class="milestone" role="listitem" data-type="life">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Sep 2023</div>
@@ -72,7 +80,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
       </div>
     </div>
 
-    <div class="milestone" role="listitem">
+    <div class="milestone" role="listitem" data-type="paper">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Jul 2023</div>
@@ -85,7 +93,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
       </div>
     </div>
 
-    <div class="milestone" role="listitem">
+    <div class="milestone" role="listitem" data-type="paper">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Dec 2022</div>
@@ -101,11 +109,11 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   </div>
 
   <ul class="milestones-list" hidden>
-    <li>Oct 2024 — National Scholarship (Top 1%)</li>
-    <li>Feb 2024 — CVPR 2024: UniPVU-Human accepted</li>
-    <li>Sep 2023 — Started Ph.D. at ShanghaiTech</li>
-    <li>Jul 2023 — ICCV 2023: HuCenLife accepted</li>
-    <li>Dec 2022 — AAAI 2023 Oral: Weakly supervised 3D multi-person pose estimation</li>
+    <li data-type="award">Oct 2024 — National Scholarship (Top 1%)</li>
+    <li data-type="paper">Feb 2024 — CVPR 2024: UniPVU-Human accepted</li>
+    <li data-type="life">Sep 2023 — Started Ph.D. at ShanghaiTech</li>
+    <li data-type="paper">Jul 2023 — ICCV 2023: HuCenLife accepted</li>
+    <li data-type="paper">Dec 2022 — AAAI 2023 Oral: Weakly supervised 3D multi-person pose estimation</li>
   </ul>
 </div>
 
@@ -114,28 +122,66 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   --ms-bg: var(--global-bg, #0b0c10);
   --ms-card: rgba(255, 255, 255, 0.08);
   --ms-border: rgba(255, 255, 255, 0.18);
-  --ms-text: var(--global-text, #222);
-  --ms-muted: #7b8a97;
+  --ms-text: var(--global-text, #e5e7eb);
+  --ms-muted: #9aa6b2;
   --ms-accent: #7c3aed; /* purple */
   --ms-accent-2: #06b6d4; /* cyan */
-  --ms-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  --ms-accent-3: #22d3ee; /* sky */
+  --ms-accent-4: #f0abfc; /* pink */
+  --ms-shadow: 0 10px 30px rgba(0,0,0,0.30);
   position: relative;
   margin: 1.2rem 0 2.4rem;
+  border-radius: 18px;
+  overflow: hidden;
+  isolation: isolate;
+}
+.milestones-section::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(600px circle at 20% 20%, rgba(255, 0, 128, 0.14), transparent 55%),
+    radial-gradient(500px circle at 85% 15%, rgba(0, 200, 255, 0.14), transparent 55%),
+    radial-gradient(650px circle at 30% 85%, rgba(0, 255, 170, 0.12), transparent 60%),
+    radial-gradient(700px circle at 80% 75%, rgba(255, 196, 0, 0.10), transparent 60%);
+  filter: blur(30px) saturate(120%);
+  transform: translateZ(0);
+  animation: aurora-shift 18s ease-in-out infinite alternate;
+  z-index: -2;
+}
+.milestones-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px 600px at var(--spot-x, 50%) var(--spot-y, 0%), rgba(255,255,255,0.10), transparent 55%);
+  pointer-events: none;
+  mix-blend-mode: screen;
+  transition: background-position .15s ease;
+  z-index: -1;
+}
+@keyframes aurora-shift {
+  0% { transform: translate3d(0, -1%, 0) scale(1.02); }
+  50% { transform: translate3d(1%, 1%, 0) scale(1.03); }
+  100% { transform: translate3d(-1%, 0%, 0) scale(1.02); }
 }
 @media (prefers-color-scheme: light) {
   .milestones-section {
     --ms-bg: #f7f7fb;
-    --ms-card: rgba(255, 255, 255, 0.9);
+    --ms-card: rgba(255, 255, 255, 0.92);
     --ms-border: rgba(10, 10, 10, 0.08);
     --ms-text: #0f172a;
-    --ms-muted: #6b7280;
+    --ms-muted: #48566a;
   }
 }
 .milestones-controls {
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem 1rem;
   margin: 0.5rem 0 1rem;
+  flex-wrap: wrap;
 }
+.milestones-toggles { display: flex; gap: 0.5rem; }
 .milestones-controls .view-toggle {
   appearance: none;
   border: 1px solid var(--ms-border);
@@ -156,6 +202,21 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   background: linear-gradient(135deg, rgba(124,58,237,.18), rgba(6,182,212,.18));
   border-color: transparent;
 }
+.milestones-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.filter-chip {
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: linear-gradient(135deg, rgba(124,58,237,.25), rgba(6,182,212,.25));
+  color: white;
+  font: inherit;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  box-shadow: 0 6px 16px rgba(16,24,40,.18);
+}
+.filter-chip:hover { transform: translateY(-1px); filter: saturate(1.2); }
+.filter-chip.active { box-shadow: 0 8px 22px rgba(124,58,237,.35); }
 .milestones-timeline {
   position: relative;
   display: grid;
@@ -169,11 +230,14 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   left: 50%;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: linear-gradient(180deg, rgba(124,58,237,.4), rgba(6,182,212,.4));
+  width: 4px;
+  background: linear-gradient(180deg, rgba(124,58,237,.6), rgba(6,182,212,.6), rgba(34,211,238,.6), rgba(240,171,252,.6));
   transform: translateX(-50%);
-  filter: blur(.3px);
+  filter: blur(.2px) saturate(120%);
+  background-size: 100% 300%;
+  animation: ms-flow 8s linear infinite;
 }
+@keyframes ms-flow { 0% { background-position: 0% 0%; } 100% { background-position: 0% 100%; } }
 .milestone {
   position: relative;
 }
@@ -193,6 +257,43 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   padding: 1rem 1.1rem 1rem 1.1rem;
   box-shadow: var(--ms-shadow);
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, opacity .6s ease;
+}
+.milestone .milestone-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(from 180deg at 50% 50%, #7c3aed, #06b6d4, #22d3ee, #f0abfc, #7c3aed);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+  opacity: .85;
+}
+.milestone .milestone-card::after {
+  content: "";
+  position: absolute;
+  inset: -20% -60% -20% -60%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.0) 30%, rgba(255,255,255,0.28) 50%, rgba(255,255,255,0.0) 70%);
+  transform: translateX(-60%) rotate(8deg);
+  transition: transform .9s cubic-bezier(.2,.5,.2,1);
+  pointer-events: none;
+}
+.milestone .milestone-card:hover::after { transform: translateX(60%) rotate(8deg); }
+.milestone .milestone-year {
+  position: absolute;
+  right: .75rem;
+  top: .15rem;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 14vw, 7.5rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.22);
+  text-shadow: 0 0 22px rgba(124,58,237,.25);
+  opacity: .08;
+  pointer-events: none;
+  user-select: none;
 }
 .js-enabled .milestone-card {
   opacity: 0;
@@ -223,7 +324,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   margin: 0 0 .35rem 0;
   font-size: 1.1rem;
   line-height: 1.2;
-  background: linear-gradient(135deg, var(--ms-accent), var(--ms-accent-2));
+  background: linear-gradient(135deg, var(--ms-accent), var(--ms-accent-2), var(--ms-accent-3), var(--ms-accent-4));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -244,25 +345,21 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   font-size: .75rem;
   padding: .2rem .55rem;
   border-radius: 999px;
-  border: 1px solid var(--ms-border);
-  background: rgba(255,255,255,.06);
-  color: var(--ms-text);
-  transition: border-color .25s ease, transform .25s ease;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: linear-gradient(135deg, rgba(255,255,255,.10), rgba(255,255,255,.02));
+  color: #f8fafc;
+  transition: border-color .25s ease, transform .25s ease, filter .25s ease;
 }
-.chip-award { border-color: rgba(234,179,8,.45) }
-.chip-paper { border-color: rgba(59,130,246,.45) }
-.chip-oral { border-color: rgba(244,63,94,.45) }
-.chip-life { border-color: rgba(34,197,94,.45) }
+.chip-award { border-color: rgba(234,179,8,.55); }
+.chip-paper { border-color: rgba(59,130,246,.55); }
+.chip-oral { border-color: rgba(244,63,94,.55); }
+.chip-life { border-color: rgba(34,197,94,.55); }
 .chip-link {
   text-decoration: none;
   border-color: rgba(124,58,237,.45);
 }
-.chip-link:hover { transform: translateY(-1px) }
-.milestone:hover .milestone-card {
-  transform: translateY(-2px);
-  border-color: transparent;
-  box-shadow: 0 14px 40px rgba(16, 24, 40, 0.25);
-}
+.chip-link:hover { transform: translateY(-1px); filter: saturate(1.2); }
+.milestone:hover .milestone-card { border-color: transparent; box-shadow: 0 20px 50px rgba(16, 24, 40, 0.35); }
 .milestone:hover .milestone-title {
   filter: saturate(1.15);
 }
@@ -293,6 +390,12 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
     transform: none;
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  .milestones-section::before,
+  .milestones-section::after,
+  .milestones-timeline .timeline-line,
+  .milestone .milestone-card::after { animation: none; transition: none; }
+}
 .milestones-list {
   margin: 0.5rem 0 0 0;
   padding-left: 1.1rem;
@@ -308,6 +411,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   root.classList.add('js-enabled');
   const timeline = root.querySelector('.milestones-timeline');
   const list = root.querySelector('.milestones-list');
+  const filterChips = root.querySelectorAll('.filter-chip');
   const buttons = root.querySelectorAll('.view-toggle');
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -325,6 +429,64 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
         timeline.style.display = 'grid';
         list.hidden = true;
       }
+    });
+  });
+
+  // Spotlight follows pointer over the section
+  root.addEventListener('mousemove', (e) => {
+    const rect = root.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    root.style.setProperty('--spot-x', x + '%');
+    root.style.setProperty('--spot-y', y + '%');
+  });
+
+  // Add year watermark to each card
+  root.querySelectorAll('.milestone-card').forEach(card => {
+    const dateEl = card.querySelector('.milestone-date');
+    const match = dateEl ? dateEl.textContent.match(/(19|20)\d{2}/) : null;
+    if (match) {
+      const yearEl = document.createElement('div');
+      yearEl.className = 'milestone-year';
+      yearEl.textContent = match[0];
+      card.appendChild(yearEl);
+    }
+  });
+
+  // 3D tilt and shine reactive to pointer
+  const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced) {
+    root.querySelectorAll('.milestone-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        const rx = (-py * 10).toFixed(2);
+        const ry = (px * 14).toFixed(2);
+        card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // Filtering by category
+  function applyFilter(kind) {
+    root.querySelectorAll('.milestones-timeline .milestone').forEach(ms => {
+      const type = ms.getAttribute('data-type');
+      ms.style.display = (kind === 'all' || type === kind) ? '' : 'none';
+    });
+    root.querySelectorAll('.milestones-list li').forEach(li => {
+      const type = li.getAttribute('data-type');
+      li.style.display = (kind === 'all' || type === kind) ? '' : 'none';
+    });
+  }
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      applyFilter(chip.dataset.filter);
     });
   });
 
