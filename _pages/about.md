@@ -111,24 +111,24 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 
 <style>
 .milestones-section {
-  --ms-bg: var(--global-bg, #0b0c10);
+  --ms-bg: var(--global-bg, #071e1b);
   --ms-card: rgba(255, 255, 255, 0.08);
-  --ms-border: rgba(255, 255, 255, 0.18);
-  --ms-text: var(--global-text, #222);
-  --ms-muted: #7b8a97;
-  --ms-accent: #7c3aed; /* purple */
-  --ms-accent-2: #06b6d4; /* cyan */
-  --ms-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  --ms-border: rgba(255, 255, 255, 0.16);
+  --ms-text: var(--global-text, #0f172a);
+  --ms-muted: #5b7f78;
+  --ms-accent: #0ea5a4; /* teal */
+  --ms-accent-2: #22d3ee; /* cyan */
+  --ms-shadow: 0 10px 30px rgba(0,0,0,0.22);
   position: relative;
   margin: 1.2rem 0 2.4rem;
 }
 @media (prefers-color-scheme: light) {
   .milestones-section {
-    --ms-bg: #f7f7fb;
+    --ms-bg: #f6fffd;
     --ms-card: rgba(255, 255, 255, 0.9);
     --ms-border: rgba(10, 10, 10, 0.08);
-    --ms-text: #0f172a;
-    --ms-muted: #6b7280;
+    --ms-text: #0b3a35;
+    --ms-muted: #5b7f78;
   }
 }
 .milestones-controls {
@@ -139,7 +139,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 .milestones-controls .view-toggle {
   appearance: none;
   border: 1px solid var(--ms-border);
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+  background: linear-gradient(180deg, rgba(20,184,166,0.08), rgba(255,255,255,0));
   color: var(--ms-text);
   font: inherit;
   padding: 0.4rem 0.85rem;
@@ -149,11 +149,11 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 }
 .milestones-controls .view-toggle:hover {
   border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.20);
   transform: translateY(-1px);
 }
 .milestones-controls .view-toggle.active {
-  background: linear-gradient(135deg, rgba(124,58,237,.18), rgba(6,182,212,.18));
+  background: linear-gradient(135deg, rgba(20,184,166,.22), rgba(34,211,238,.18));
   border-color: transparent;
 }
 .milestones-timeline {
@@ -170,7 +170,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, rgba(124,58,237,.4), rgba(6,182,212,.4));
+  background: linear-gradient(180deg, rgba(20,184,166,.45), rgba(6,182,212,.35));
   transform: translateX(-50%);
   filter: blur(.3px);
 }
@@ -210,7 +210,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   height: 14px;
   background: radial-gradient(circle at 35% 35%, #fff 0%, #fff 20%, var(--ms-accent) 60%, var(--ms-accent-2) 100%);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(124,58,237,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8);
+  box-shadow: 0 0 0 3px rgba(20,184,166,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8);
   transform: translateX(-50%);
 }
 .milestone .milestone-date {
@@ -270,9 +270,9 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   animation: ms-pulse 1.8s infinite;
 }
 @keyframes ms-pulse {
-  0% { box-shadow: 0 0 0 3px rgba(124,58,237,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8); }
-  70% { box-shadow: 0 0 0 8px rgba(124,58,237,0.12), 0 0 28px rgba(6,182,212,0.7), inset 0 0 6px rgba(255,255,255,0.8); }
-  100% { box-shadow: 0 0 0 3px rgba(124,58,237,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8); }
+  0% { box-shadow: 0 0 0 3px rgba(20,184,166,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8); }
+  70% { box-shadow: 0 0 0 8px rgba(20,184,166,0.12), 0 0 28px rgba(6,182,212,0.7), inset 0 0 6px rgba(255,255,255,0.8); }
+  100% { box-shadow: 0 0 0 3px rgba(20,184,166,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8); }
 }
 @media (max-width: 900px) {
   .milestones-timeline {
@@ -621,14 +621,14 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 <style>
 /* ============== Skills Studio (scoped) ============== */
 .skills-section {
-  --sk-bg: var(--global-bg, #0b0c10);
+  --sk-bg: var(--global-bg, #061c19);
   --sk-card: rgba(255,255,255,0.06);
   --sk-border: rgba(255,255,255,0.12);
   --sk-text: var(--global-text, #e5e7eb);
-  --sk-muted: #a3a3a3;
-  --sk-accent-1: #a855f7; /* purple */
+  --sk-muted: #8fb6ad;
+  --sk-accent-1: #10b981; /* emerald */
   --sk-accent-2: #06b6d4; /* cyan */
-  --sk-accent-3: #f472b6; /* pink */
+  --sk-accent-3: #22d3ee; /* sky/cyan mix */
   --sk-accent-4: #f59e0b; /* amber */
   --sk-shadow: 0 18px 50px rgba(0,0,0,0.35);
   position: relative;
@@ -649,9 +649,9 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 .skills-aurora {
   position: absolute; inset: -10% -5% -15% -5%; pointer-events: none; z-index: -1;
   background:
-    radial-gradient(1200px 800px at 10% 20%, rgba(168,85,247,.28), transparent 45%),
+    radial-gradient(1200px 800px at 10% 20%, rgba(16,185,129,.30), transparent 45%),
     radial-gradient(1000px 700px at 90% 10%, rgba(6,182,212,.28), transparent 45%),
-    radial-gradient(900px 700px at 80% 80%, rgba(244,114,182,.25), transparent 50%),
+    radial-gradient(900px 700px at 80% 80%, rgba(34,211,238,.25), transparent 50%),
     radial-gradient(900px 700px at 20% 85%, rgba(245,158,11,.22), transparent 50%);
   filter: blur(40px) saturate(120%);
   transform: translateZ(0);
@@ -661,11 +661,11 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 .skills-header { display: flex; justify-content: space-between; align-items: center; gap: .75rem; margin-bottom: .5rem; flex-wrap: wrap; }
 .skills-kicker { font-size: .8rem; color: var(--sk-muted); letter-spacing: .12em; text-transform: uppercase; }
-.skills-title { margin: .15rem 0 0; font-size: clamp(1.1rem, 1.2rem + .5vw, 1.5rem); background: linear-gradient(135deg, var(--sk-accent-1), var(--sk-accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.skills-title { margin: .15rem 0 0; font-size: clamp(1.1rem, 1.2rem + .5vw, 1.5rem); background: linear-gradient(135deg, #10b981, #22d3ee); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .skills-modes { display: inline-flex; gap: .4rem; }
 .skills-mode { appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .35rem .8rem; border-radius: 999px; cursor: pointer; transition: all .25s ease; }
 .skills-mode:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
-.skills-mode.active { background: linear-gradient(135deg, rgba(168,85,247,.2), rgba(6,182,212,.2)); border-color: transparent; }
+.skills-mode.active { background: linear-gradient(135deg, rgba(16,185,129,.2), rgba(6,182,212,.2)); border-color: transparent; }
 
 .skills-grid { display: grid; gap: 1.2rem; }
 .skills-rings { display: grid; grid-template-columns: repeat(6, minmax(90px, 1fr)); gap: 1rem; align-items: center; }
@@ -677,7 +677,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   width: var(--size); height: var(--size); border-radius: 50%;
   background:
     conic-gradient(from -90deg,
-      color-mix(in oklab, var(--sk-accent-1) 70%, var(--sk-accent-3) 30%) calc(var(--p) * 1%),
+      color-mix(in oklab, #10b981 70%, #22d3ee 30%) calc(var(--p) * 1%),
       rgba(255,255,255,0.08) 0);
   -webkit-mask: radial-gradient(circle at center, transparent calc(50% - var(--thickness)), #000 calc(50% - var(--thickness) + 1px));
   mask: radial-gradient(circle at center, transparent calc(50% - var(--thickness)), #000 calc(50% - var(--thickness) + 1px));
@@ -696,13 +696,13 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 .skill-card:hover { transform: translateY(-2px) scale(1.01); border-color: transparent; box-shadow: 0 18px 60px rgba(16,24,40,.28); }
 .card-accent { position: absolute; inset: -20% -30% auto -30%; height: 120px; background: radial-gradient(700px 200px at 30% 50%, rgba(168,85,247,.35), transparent 60%), radial-gradient(700px 200px at 70% 50%, rgba(6,182,212,.35), transparent 60%); filter: blur(24px) saturate(130%); pointer-events: none; }
 .card-head { display: flex; align-items: center; gap: .6rem; padding: .9rem .95rem .2rem; }
-.card-icon { color: color-mix(in oklab, var(--sk-accent-1) 60%, var(--sk-accent-2) 40%); }
-.card-title { margin: 0; font-size: 1.05rem; background: linear-gradient(135deg, var(--sk-accent-1), var(--sk-accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.card-icon { color: color-mix(in oklab, #10b981 60%, #06b6d4 40%); }
+.card-title { margin: 0; font-size: 1.05rem; background: linear-gradient(135deg, #10b981, #06b6d4); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .card-body { padding: .25rem .95rem .8rem; }
 .chip-row { display: flex; flex-wrap: wrap; gap: .45rem; }
 .skill-chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .78rem; padding: .28rem .6rem; border-radius: 999px; border: 1px solid var(--sk-border); color: var(--sk-text); background: rgba(255,255,255,.06); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
-.skill-chip:hover { transform: translateY(-2px); border-color: transparent; background: linear-gradient(135deg, rgba(168,85,247,.25), rgba(6,182,212,.25)); }
-.chip-hot { border-color: rgba(124,58,237,.45); }
+.skill-chip:hover { transform: translateY(-2px); border-color: transparent; background: linear-gradient(135deg, rgba(16,185,129,.25), rgba(6,182,212,.25)); }
+.chip-hot { border-color: rgba(20,184,166,.45); }
 .mini-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--sk-text); }
 .mini-list li { margin: .25rem 0; }
 .card-toggle { width: max-content; margin: 0 .95rem .9rem; appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .3rem .7rem; border-radius: 10px; cursor: pointer; transition: all .25s ease; }
@@ -710,7 +710,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 .skills-constellation { position: relative; min-height: 280px; display: grid; place-items: center; }
 .float-chips { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; padding: .6rem; }
-.float-chip { font-size: .85rem; padding: .35rem .7rem; border-radius: 999px; border: 1px solid var(--sk-border); background: linear-gradient(135deg, rgba(168,85,247,.22), rgba(6,182,212,.22)); color: var(--sk-text); box-shadow: 0 8px 24px rgba(16,24,40,.18); animation: float 5.5s ease-in-out infinite; }
+.float-chip { font-size: .85rem; padding: .35rem .7rem; border-radius: 999px; border: 1px solid var(--sk-border); background: linear-gradient(135deg, rgba(16,185,129,.22), rgba(6,182,212,.22)); color: var(--sk-text); box-shadow: 0 8px 24px rgba(16,24,40,.18); animation: float 5.5s ease-in-out infinite; }
 .float-chip:hover { transform: translateY(-3px) scale(1.02); }
 @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
 .fc-1 { animation-duration: 5.2s } .fc-2 { animation-duration: 6.1s } .fc-3 { animation-duration: 5.8s } .fc-4 { animation-duration: 6.4s }
