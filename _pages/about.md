@@ -40,6 +40,22 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   Started my Ph.D. journey at ShanghaiTech University.
 
 
+# 🗞️ News
+
+<div class="news-grid">
+{% for item in site.data.news %}
+  <a class="news-card" href="{{ item.link }}" target="_blank" rel="noopener">
+    <div class="news-meta">
+      <span class="news-source"><i class="fas fa-newspaper"></i> {{ item.source }}</span>
+      {% if item.date %}<span class="news-date">{{ item.date }}</span>{% endif %}
+    </div>
+    <h3 class="news-title">{{ item.title }}</h3>
+    {% if item.excerpt %}<p class="news-excerpt">{{ item.excerpt }}</p>{% endif %}
+  </a>
+{% endfor %}
+</div>
+
+
 # 📝 Publications 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/IDKB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
