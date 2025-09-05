@@ -349,7 +349,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 
 # 🗞️ News
 
-<div class="news-section">
+<div id="news" class="news-section">
   <p class="news-subtitle">互联网上与我相关的最新动态与报道</p>
   <div class="news-grid">
   {% for item in site.data.news %}
@@ -368,6 +368,171 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   {% endfor %}
   </div>
 </div>
+
+<style>
+/* ============== News (scoped) ============== */
+.news-section {
+  --nw-bg: var(--global-bg, #0b0c10);
+  --nw-card: rgba(255, 255, 255, 0.06);
+  --nw-border: rgba(255, 255, 255, 0.12);
+  --nw-text: var(--global-text, #e5e7eb);
+  --nw-muted: #a3a3a3;
+  --nw-ac1: #8b5cf6; /* purple */
+  --nw-ac2: #06b6d4; /* cyan */
+  --nw-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  color: var(--nw-text);
+}
+@media (prefers-color-scheme: light) {
+  .news-section {
+    --nw-bg: #f7f7fb;
+    --nw-card: rgba(255, 255, 255, 0.92);
+    --nw-border: rgba(10, 10, 10, 0.08);
+    --nw-text: #0f172a;
+    --nw-muted: #6b7280;
+  }
+}
+.news-subtitle {
+  margin: 0.25rem 0 0.8rem;
+  font-size: 0.95rem;
+  color: var(--nw-muted);
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 1100px) { .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .news-grid { grid-template-columns: 1fr; } }
+
+.news-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--nw-text);
+  background: var(--nw-card);
+  border: 1px solid var(--nw-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--nw-shadow);
+  transform-style: preserve-3d;
+  will-change: transform, box-shadow, opacity;
+  outline: none;
+}
+.news-card, .news-card * { transition: color .25s ease, background .25s ease, border-color .25s ease; }
+.js-enabled .news-card {
+  opacity: 0;
+  transform: translateY(14px) scale(.985);
+  transition: transform .26s ease, box-shadow .26s ease, border-color .26s ease, opacity .65s ease;
+  transition-delay: calc(var(--d, 0) * 60ms);
+}
+.js-enabled .news-card.in-view { opacity: 1; transform: none; }
+.news-card:hover, .news-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow: 0 18px 60px rgba(16,24,40,.28);
+}
+
+.news-accent {
+  position: absolute; inset: -40% -30% -60% -30%; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(600px 220px at var(--mx, 50%) var(--my, 50%), rgba(139,92,246,.28), transparent 60%),
+    radial-gradient(600px 220px at calc(var(--mx, 50%) + 140px) calc(var(--my, 50%) + 40px), rgba(6,182,212,.24), transparent 65%);
+  filter: blur(22px) saturate(130%);
+  opacity: 0; transition: opacity .28s ease;
+}
+.news-card:hover .news-accent, .news-card:focus-visible .news-accent { opacity: 1; }
+
+.news-thumb {
+  position: relative; z-index: 1;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(calc((var(--px, .5) - .5) * 10px), calc((var(--py, .5) - .5) * 10px), 0) scale(1.06);
+  transition: transform .25s ease;
+}
+.news-meta { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: .45rem; padding: .65rem .9rem 0; }
+.news-chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .75rem; padding: .2rem .55rem; border-radius: 999px;
+  border: 1px solid var(--nw-border); background: rgba(255,255,255,.06); color: var(--nw-text);
+}
+.news-source { border-color: rgba(124,58,237,.45); }
+.news-date { border-color: rgba(59,130,246,.45); }
+.news-title {
+  position: relative; z-index: 1; margin: .4rem .9rem; display: flex; align-items: center; gap: .35rem;
+  font-size: 1.02rem; line-height: 1.25;
+  background: linear-gradient(135deg, var(--nw-ac1), var(--nw-ac2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.news-ext { font-size: .85em; opacity: .8; }
+.news-excerpt {
+  position: relative; z-index: 1; margin: 0 .9rem .95rem; color: var(--nw-text);
+  line-height: 1.45; max-height: 0; opacity: 0; overflow: hidden; transform: translateY(-4px);
+  transition: max-height .35s ease, opacity .35s ease, transform .35s ease;
+}
+.news-card:hover .news-excerpt, .news-card:focus-within .news-excerpt { max-height: 220px; opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-enabled .news-card { opacity: 1; transform: none; transition: none; }
+  .news-card, .news-card * { transition: none !important; }
+  .news-excerpt { max-height: none; opacity: 1; transform: none; }
+}
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('news');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Stagger and reveal on enter
+  const cards = Array.from(root.querySelectorAll('.news-card'));
+  cards.forEach((card, idx) => card.style.setProperty('--d', String(idx)));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    cards.forEach(c => io.observe(c));
+  } else {
+    cards.forEach(c => c.classList.add('in-view'));
+  }
+
+  // Cursor-reactive aurora + subtle tilt/parallax
+  if (!reduced) {
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
+        const px = x / r.width;
+        const py = y / r.height;
+        card.style.setProperty('--mx', x + 'px');
+        card.style.setProperty('--my', y + 'px');
+        card.style.setProperty('--px', px.toFixed(4));
+        card.style.setProperty('--py', py.toFixed(4));
+        const rx = (py - 0.5) * -8;  // natural feel: invert X rotation
+        const ry = (px - 0.5) * 10;
+        card.style.transform = `perspective(900px) rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.removeProperty('--mx');
+        card.style.removeProperty('--my');
+        card.style.removeProperty('--px');
+        card.style.removeProperty('--py');
+      });
+    });
+  }
+})();
+</script>
 
 
 # 📝 Publications 
