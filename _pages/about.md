@@ -988,7 +988,365 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 # Skill Points
 
+<div id="skills-bubbles" class="bubbles-section" aria-label="Interactive Skill Points">
+  <div class="bubbles-aurora" aria-hidden="true"></div>
+  <canvas id="bubbles-canvas" role="img" aria-label="Floating skill bubbles visualization"></canvas>
+
+  <!-- Progressive enhancement: screen-reader/static fallback -->
+  <noscript>
+    <p class="bubbles-noscript">JavaScript is disabled. Showing a simple list of skills:</p>
+    <p class="bubbles-fallback">
+      3D Computer Vision, Robotics, Embodied AI, Human-Robot Interaction (HRI), 3D Perception, Human-centric Scene Understanding, Parametric Human Modeling (SMPL/SMPL-X), 3D Motion Generation and Prediction, Humanoid Robotics, Multi-Agent Interaction, Physics-based Simulation and Modeling, Sensor Fusion (LiDAR & Camera), Human-in-the-Loop (HITL) Simulation, Augmented Reality (AR) in Robotics, Real-time Motion Capture, Weakly Supervised Learning, Self-Supervised Learning for Robotics, Geometric Deep Learning, 3D Human Pose Estimation, Point Cloud Video Understanding, Assistive Robotics, Python, PyTorchm, NumPy, Pandas, SciPy, Scikit-learn, Matplotlib, Open3D, PCL, PyTorch3D, Trimesh, MeshLab, LaTeX, Bash Scripting, Algorithms and Data Structures, Docker, Slurm, Git / GitHub, PyTorch Lightning, OpenCV, Jupyter Notebook, Linux, Deep Learning, Generative Models, Diffusion Models, Autoregressive Models, Transformers, 3D Point Cloud Processing, LiDAR Data Processing, Point Cloud Segmentation (Semantic/Instance), Point Cloud Denoising, 3D Action Recognition, 3D Scene Flow Estimation, 3D Human Mesh Recovery, 3D Data Annotation, Inverse Kinematics (IK), Forward Kinematics, Geometric Constraints Modeling, Spatio-temporal Representation Learning, Chamfer Distance, Point-based models (PointNet, PointNet++), 3D Visualization, Robot Perception Systems, Robot Learning, Motion Planning and Control, Behavior Generation, Human-Robot Collaboration, Real-time Interactive Systems, Robot Simulation Environments, Sim-to-Real Transfer, Augmented Reality Interfaces for Robotics, Multi-robot Systems, Data Science, Multimodal Temporal Data Processing, Data Analysis, Data Visualization, Large-scale Dataset Management, High-Quality Interactive Dataset Collection, Closed-loop System Integration, Real-time Data Streaming, Scientific Writing, Project Planning and Management, Problem Definition and Formulation, User-Centered Experiment Design, Human-in-the-Loop Studies, "Wizard of Oz" Prototyping, Quantitative and Qualitative Research, Technical Documentation (LaTeX, Draw.io).
+    </p>
+  </noscript>
+
+  <!-- Data source: original comma-separated list (kept, but hidden) -->
+  <div id="skills-raw" hidden>
 3D Computer Vision, Robotics, Embodied AI, Human-Robot Interaction (HRI), 3D Perception, Human-centric Scene Understanding, Parametric Human Modeling (SMPL/SMPL-X), 3D Motion Generation and Prediction, Humanoid Robotics, Multi-Agent Interaction, Physics-based Simulation and Modeling, Sensor Fusion (LiDAR & Camera), Human-in-the-Loop (HITL) Simulation, Augmented Reality (AR) in Robotics, Real-time Motion Capture, Weakly Supervised Learning, Self-Supervised Learning for Robotics, Geometric Deep Learning, 3D Human Pose Estimation, Point Cloud Video Understanding, Assistive Robotics, Python, PyTorchm, NumPy, Pandas, SciPy, Scikit-learn, Matplotlib, Open3D, PCL, PyTorch3D, Trimesh, MeshLab, LaTeX, Bash Scripting, Algorithms and Data Structures, Docker, Slurm, Git / GitHub, PyTorch Lightning, OpenCV, Jupyter Notebook, Linux, Deep Learning, Generative Models, Diffusion Models, Autoregressive Models, Transformers, 3D Point Cloud Processing, LiDAR Data Processing, Point Cloud Segmentation (Semantic/Instance), Point Cloud Denoising, 3D Action Recognition, 3D Scene Flow Estimation, 3D Human Mesh Recovery, 3D Data Annotation, Inverse Kinematics (IK), Forward Kinematics, Geometric Constraints Modeling, Spatio-temporal Representation Learning, Chamfer Distance, Point-based models (PointNet, PointNet++), 3D Visualization, Robot Perception Systems, Robot Learning, Motion Planning and Control, Behavior Generation, Human-Robot Collaboration, Real-time Interactive Systems, Robot Simulation Environments, Sim-to-Real Transfer, Augmented Reality Interfaces for Robotics, Multi-robot Systems, Data Science, Multimodal Temporal Data Processing, Data Analysis, Data Visualization, Large-scale Dataset Management, High-Quality Interactive Dataset Collection, Closed-loop System Integration, Real-time Data Streaming, Scientific Writing, Project Planning and Management, Problem Definition and Formulation, User-Centered Experiment Design, Human-in-the-Loop Studies, "Wizard of Oz" Prototyping, Quantitative and Qualitative Research, Technical Documentation (LaTeX, Draw.io).
+  </div>
+</div>
+
+<style>
+/* ============== Skill Bubbles (scoped) ============== */
+.bubbles-section {
+  --bb-bg: var(--global-bg, #0b0c10);
+  --bb-text: var(--global-text, #e5e7eb);
+  --bb-muted: #9aa4af;
+  --bb-glow: rgba(139,92,246,.35); /* purple glow */
+  --bb-glow-2: rgba(6,182,212,.35); /* cyan glow */
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  min-height: clamp(340px, 40vw, 620px);
+  border-radius: 18px;
+  overflow: hidden;
+  isolation: isolate;
+  background: radial-gradient(1200px 800px at 10% 20%, rgba(168,85,247,.10), transparent 50%),
+              radial-gradient(1000px 700px at 90% 10%, rgba(6,182,212,.10), transparent 55%),
+              linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 22px 60px rgba(0,0,0,.35);
+}
+@media (prefers-color-scheme: light) {
+  .bubbles-section {
+    --bb-bg: #f7f7fb;
+    --bb-text: #0f172a;
+    --bb-muted: #6b7280;
+    border-color: rgba(10,10,10,.08);
+    box-shadow: 0 22px 60px rgba(0,0,0,.18);
+  }
+}
+.bubbles-aurora {
+  position: absolute; inset: -25% -10% -35% -10%; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(1400px 800px at 20% 20%, rgba(168,85,247,.28), transparent 55%),
+    radial-gradient(1200px 700px at 80% 15%, rgba(6,182,212,.26), transparent 60%),
+    radial-gradient(1100px 800px at 75% 85%, rgba(244,114,182,.22), transparent 58%),
+    radial-gradient(1200px 800px at 25% 90%, rgba(245,158,11,.20), transparent 60%);
+  filter: blur(42px) saturate(118%);
+  animation: auroraSway 18s ease-in-out infinite alternate;
+}
+@keyframes auroraSway { from { transform: scale(1) translateY(0); } to { transform: scale(1.06) translateY(-2.5%); } }
+
+#bubbles-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.bubbles-noscript { margin: .8rem; color: var(--bb-muted); }
+.bubbles-fallback { margin: .6rem .8rem 1rem; padding-left: 1.1rem; color: var(--bb-text); }
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .bubbles-aurora { animation: none; }
+}
+</style>
+
+<script>
+(function() {
+  const section = document.getElementById('skills-bubbles');
+  if (!section) return;
+  const canvas = document.getElementById('bubbles-canvas');
+  const ctx = canvas.getContext('2d');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Parse skills from hidden raw text
+  const rawEl = document.getElementById('skills-raw');
+  const rawText = rawEl ? rawEl.textContent : '';
+  const skills = Array.from(new Set(
+    rawText.split(',')
+      .map(s => s.replace(/\n/g, ' ').trim())
+      .map(s => s.replace(/^"|"$/g, ''))
+      .filter(Boolean)
+      .map(s => s.replace(/\bPyTorchm\b/i, 'PyTorch')) // small fix
+  ));
+
+  // Fallback list for <noscript> is populated by Jekyll server-side only when JS disabled.
+  // Here we also keep an accessible list in DOM for SEO if needed.
+
+  // Early exit for reduced motion: render static tagged cloud using DOM chips
+  if (reduced) {
+    // Build a simple static cloud of chips
+    const ul = document.createElement('ul');
+    ul.style.margin = '0.8rem';
+    ul.style.padding = '0';
+    ul.style.listStyle = 'none';
+    ul.style.display = 'flex';
+    ul.style.flexWrap = 'wrap';
+    ul.style.gap = '.45rem';
+    section.appendChild(ul);
+    skills.forEach(label => {
+      const li = document.createElement('li');
+      li.textContent = label;
+      li.style.border = '1px solid rgba(255,255,255,.12)';
+      li.style.padding = '.28rem .6rem';
+      li.style.borderRadius = '999px';
+      li.style.background = 'linear-gradient(135deg, rgba(168,85,247,.18), rgba(6,182,212,.18))';
+      li.style.color = 'var(--bb-text)';
+      ul.appendChild(li);
+    });
+    return;
+  }
+
+  // Canvas sizing with DPR
+  const dpr = Math.max(1, Math.min(2.5, window.devicePixelRatio || 1));
+  function resize() {
+    const r = section.getBoundingClientRect();
+    canvas.width = Math.max(1, Math.floor(r.width * dpr));
+    canvas.height = Math.max(1, Math.floor(r.height * dpr));
+    canvas.style.width = r.width + 'px';
+    canvas.style.height = r.height + 'px';
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Utilities
+  function hashString(str) {
+    let h = 2166136261 >>> 0;
+    for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+  function rand01(seed) { // deterministic 0..1
+    const x = Math.sin(seed) * 10000;
+    return x - Math.floor(x);
+  }
+  function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+  // Bubble model
+  const bounds = () => ({ w: canvas.width, h: canvas.height });
+  const B = bounds();
+  const num = skills.length;
+  const minR = Math.max(16, Math.min(28, Math.round(Math.min(B.w, B.h) / 36)));
+  const maxR = Math.max(minR + 10, Math.round(minR * 1.9));
+  const bubbles = [];
+
+  // Pre-render each bubble to its own offscreen canvas for performance
+  function makeBubble(label, idx) {
+    const seed = hashString(label) ^ (idx * 2654435761 >>> 0);
+    const rNorm = 0.55 + 0.45 * rand01(seed + 1);
+    const radius = Math.round(minR + (maxR - minR) * rNorm);
+    const hue = Math.floor(360 * rand01(seed + 2));
+    const hue2 = (hue + Math.floor(40 + 80 * rand01(seed + 3))) % 360;
+    const sat = 60 + 30 * rand01(seed + 4);
+    const light = 55 + 10 * rand01(seed + 5);
+
+    const off = document.createElement('canvas');
+    const d = Math.ceil((radius * 2 + 10) * dpr); // padding for shadow/halo
+    off.width = d; off.height = d;
+    const octx = off.getContext('2d');
+    octx.scale(dpr, dpr);
+    octx.translate(d / dpr / 2, d / dpr / 2);
+
+    // Glow shadow
+    octx.save();
+    octx.shadowColor = `hsla(${hue}, 75%, 60%, .45)`;
+    octx.shadowBlur = Math.min(26, radius * 0.9);
+    octx.beginPath();
+    octx.arc(0, 0, radius, 0, Math.PI * 2);
+    octx.fillStyle = 'rgba(0,0,0,0)';
+    octx.fill();
+    octx.restore();
+
+    // Bubble body with radial gradient
+    const grad = octx.createRadialGradient(-radius * 0.3, -radius * 0.35, radius * 0.2, 0, 0, radius);
+    grad.addColorStop(0, `hsla(${hue}, ${sat}%, ${Math.min(98, light + 25)}%, .95)`);
+    grad.addColorStop(0.35, `hsla(${hue2}, ${sat}%, ${Math.min(96, light + 18)}%, .85)`);
+    grad.addColorStop(1, `hsla(${hue}, ${sat}%, ${Math.max(28, light - 28)}%, .82)`);
+    octx.beginPath();
+    octx.arc(0, 0, radius, 0, Math.PI * 2);
+    octx.fillStyle = grad;
+    octx.fill();
+
+    // Inner highlight ring
+    octx.beginPath();
+    octx.arc(-radius * 0.25, -radius * 0.28, radius * 0.72, 0, Math.PI * 2);
+    octx.strokeStyle = 'rgba(255,255,255,.35)';
+    octx.lineWidth = Math.max(1, radius * 0.08);
+    octx.stroke();
+
+    // Text fitting
+    const maxTextWidth = radius * 1.72; // interior width
+    let fontSize = clamp(radius * 0.62, 10, 22);
+    octx.fillStyle = 'rgba(255,255,255,.92)';
+    octx.font = `${fontSize}px ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif`;
+    let text = label;
+    if (text.length > 24) text = text.replace(/\s*\([^)]*\)/g, '').trim(); // simplify long terms
+    while (octx.measureText(text).width > maxTextWidth && fontSize > 9) {
+      fontSize -= 1;
+      octx.font = `${fontSize}px ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif`;
+    }
+    octx.textAlign = 'center';
+    octx.textBaseline = 'middle';
+    octx.fillText(text, 0, 0);
+
+    // Physics init
+    const angle = 2 * Math.PI * rand01(seed + 7);
+    const speed = 0.08 + 0.18 * rand01(seed + 8); // px/ms at DPR=1
+    const wander = 0.0005 + 0.0015 * rand01(seed + 9);
+    const vx = Math.cos(angle) * speed;
+    const vy = Math.sin(angle) * speed;
+    return {
+      label, radius, off, dCSS: d / dpr,
+      x: Math.random() * (B.w / dpr),
+      y: Math.random() * (B.h / dpr),
+      vx, vy,
+      wanderAngle: angle,
+      wander,
+      hue,
+      highlight: 0
+    };
+  }
+
+  skills.forEach((s, i) => bubbles.push(makeBubble(s, i)));
+
+  // Spatial hash for light collision avoidance
+  const gridSize = Math.max(40, Math.round((minR + maxR) * 0.9));
+  function buildHash() {
+    const map = new Map();
+    for (let i = 0; i < bubbles.length; i++) {
+      const b = bubbles[i];
+      const gx = Math.floor(b.x / gridSize);
+      const gy = Math.floor(b.y / gridSize);
+      const key = gx + ',' + gy;
+      if (!map.has(key)) map.set(key, []);
+      map.get(key).push(i);
+    }
+    return map;
+  }
+
+  // Pointer tracking
+  const pointer = { x: 0, y: 0, inside: false };
+  section.addEventListener('pointermove', (e) => {
+    const r = section.getBoundingClientRect();
+    pointer.x = (e.clientX - r.left);
+    pointer.y = (e.clientY - r.top);
+    pointer.inside = pointer.x >= 0 && pointer.y >= 0 && pointer.x <= r.width && pointer.y <= r.height;
+  });
+  section.addEventListener('pointerleave', () => { pointer.inside = false; });
+
+  let last = performance.now();
+  function step(now) {
+    const dt = clamp(now - last, 6, 32); // ms
+    last = now;
+    const W = canvas.width / dpr, H = canvas.height / dpr;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.save();
+    ctx.scale(dpr, dpr);
+
+    // Build grid
+    const hash = buildHash();
+
+    // Update physics
+    const maxSpeed = 0.45; // px/ms
+    const friction = 0.992;
+    const attractRadius = Math.min(260, Math.max(160, Math.min(W, H) * 0.45));
+    const G = 0.08; // attraction strength
+
+    for (let i = 0; i < bubbles.length; i++) {
+      const b = bubbles[i];
+      // Wander force (slowly changing heading)
+      b.wanderAngle += b.wander * dt;
+      b.vx += Math.cos(b.wanderAngle) * 0.0006 * dt;
+      b.vy += Math.sin(b.wanderAngle) * 0.0006 * dt;
+
+      // Mouse attraction
+      if (pointer.inside) {
+        const dx = pointer.x - b.x;
+        const dy = pointer.y - b.y;
+        const d2 = dx*dx + dy*dy;
+        const d = Math.sqrt(d2) + 0.001;
+        if (d < attractRadius) {
+          const strength = (G * (1 - d / attractRadius));
+          b.vx += (dx / d) * strength * dt * 0.06;
+          b.vy += (dy / d) * strength * dt * 0.06;
+          b.highlight = Math.min(1, b.highlight + 0.08);
+        } else {
+          b.highlight = Math.max(0, b.highlight - 0.04);
+        }
+      } else {
+        b.highlight = Math.max(0, b.highlight - 0.04);
+      }
+
+      // Speed clamp and friction
+      const sp = Math.hypot(b.vx, b.vy);
+      if (sp > maxSpeed) { b.vx = (b.vx / sp) * maxSpeed; b.vy = (b.vy / sp) * maxSpeed; }
+      b.vx *= friction; b.vy *= friction;
+
+      // Integrate
+      b.x += b.vx * dt;
+      b.y += b.vy * dt;
+
+      // Soft collisions (check neighboring cells only)
+      const gx = Math.floor(b.x / gridSize);
+      const gy = Math.floor(b.y / gridSize);
+      for (let oy = -1; oy <= 1; oy++) {
+        for (let ox = -1; ox <= 1; ox++) {
+          const key = (gx + ox) + ',' + (gy + oy);
+          const arr = hash.get(key);
+          if (!arr) continue;
+          for (let k = 0; k < arr.length; k++) {
+            const j = arr[k];
+            if (j <= i) continue; // avoid double
+            const a = b, c = bubbles[j];
+            const dx2 = c.x - a.x; const dy2 = c.y - a.y;
+            const dist = Math.hypot(dx2, dy2) || 0.001;
+            const minDist = a.radius + c.radius - 4; // allow a tiny overlap for organic look
+            if (dist < minDist) {
+              const overlap = (minDist - dist) * 0.5;
+              const ux = dx2 / dist, uy = dy2 / dist;
+              a.x -= ux * overlap; a.y -= uy * overlap;
+              c.x += ux * overlap; c.y += uy * overlap;
+              const push = 0.002 * dt;
+              a.vx -= ux * push; a.vy -= uy * push; c.vx += ux * push; c.vy += uy * push;
+            }
+          }
+        }
+      }
+
+      // Boundaries bounce
+      if (b.x - b.radius < 0) { b.x = b.radius; b.vx = Math.abs(b.vx) * 0.8; }
+      if (b.x + b.radius > W) { b.x = W - b.radius; b.vx = -Math.abs(b.vx) * 0.8; }
+      if (b.y - b.radius < 0) { b.y = b.radius; b.vy = Math.abs(b.vy) * 0.8; }
+      if (b.y + b.radius > H) { b.y = H - b.radius; b.vy = -Math.abs(b.vy) * 0.8; }
+    }
+
+    // Draw
+    for (let i = 0; i < bubbles.length; i++) {
+      const b = bubbles[i];
+      const x = b.x - b.dCSS / 2; const y = b.y - b.dCSS / 2;
+      ctx.save();
+      if (b.highlight > 0) {
+        ctx.globalAlpha = 1;
+        ctx.shadowColor = `hsla(${b.hue}, 80%, 65%, ${0.35 * b.highlight})`;
+        ctx.shadowBlur = 24 * b.highlight;
+      }
+      ctx.drawImage(b.off, x, y, b.dCSS, b.dCSS);
+      ctx.restore();
+    }
+
+    ctx.restore();
+    requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+</script>
+
+<!-- End Skill Bubbles -->
 
 <!-- - *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
 - *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China. -->
