@@ -1014,9 +1014,11 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   --bb-muted: #9aa4af;
   --bb-glow: rgba(139,92,246,.35); /* purple glow */
   --bb-glow-2: rgba(6,182,212,.35); /* cyan glow */
+  --bb-bubble-fill: rgba(255,255,255,.10);
+  --bb-bubble-stroke: rgba(255,255,255,.42);
   position: relative;
   margin: 1.2rem 0 2.4rem;
-  min-height: clamp(640px, 75vh, 1200px);
+  min-height: clamp(720px, 90vh, 1500px);
   border-radius: 18px;
   overflow: hidden;
   isolation: isolate;
@@ -1025,12 +1027,15 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
               linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));
   border: 1px solid rgba(255,255,255,.08);
   box-shadow: 0 22px 60px rgba(0,0,0,.35);
+  color: var(--bb-text);
 }
 @media (prefers-color-scheme: light) {
   .bubbles-section {
     --bb-bg: #f7f7fb;
     --bb-text: #0f172a;
     --bb-muted: #6b7280;
+    --bb-bubble-fill: rgba(15,23,42,.06);
+    --bb-bubble-stroke: rgba(15,23,42,.30);
     border-color: rgba(10,10,10,.08);
     box-shadow: 0 22px 60px rgba(0,0,0,.18);
   }
@@ -1064,10 +1069,8 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   const canvas = document.getElementById('bubbles-canvas');
   const ctx = canvas.getContext('2d');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // Unified bubble color theme (indigo)
-  const BASE_HUE = 268;  // elegant indigo
-  const BASE_SAT = 70;
-  const BASE_LIGHT = 50;
+  // Minimal 2D style: subtle monochrome bubbles
+  const BASE_HUE = null; // no hue — use neutral fills/strokes
 
   // Parse skills from hidden raw text
   const rawEl = document.getElementById('skills-raw');
@@ -1135,9 +1138,9 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   const bounds = () => ({ w: canvas.width, h: canvas.height });
   const B = bounds();
   const num = skills.length;
-  // Smaller bubbles overall
-  const minR = Math.max(12, Math.min(20, Math.round(Math.min(B.w, B.h) / 50)));
-  const maxR = minR + 8;
+  // Larger, readable bubbles overall
+  const minR = Math.max(20, Math.min(34, Math.round(Math.min(B.w, B.h) / 28)));
+  const maxR = minR + 10;
   const bubbles = [];
 
   // Pre-render each bubble to its own offscreen canvas for performance
@@ -1145,10 +1148,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     const seed = hashString(label) ^ (idx * 2654435761 >>> 0);
     const rNorm = 0.55 + 0.45 * rand01(seed + 1);
     const radius = Math.round(minR + (maxR - minR) * rNorm);
-    const hue = BASE_HUE;
-    const hue2 = BASE_HUE;
-    const sat = BASE_SAT;
-    const light = BASE_LIGHT;
+    // Neutral palette — use CSS vars for fill/stroke
 
     const off = document.createElement('canvas');
     const d = Math.ceil((radius * 2 + 10) * dpr); // padding for shadow/halo
@@ -1157,35 +1157,17 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     octx.scale(dpr, dpr);
     octx.translate(d / dpr / 2, d / dpr / 2);
 
-    // Glow shadow
-    octx.save();
-    octx.shadowColor = `hsla(${hue}, 70%, 55%, .35)`;
-    octx.shadowBlur = Math.min(20, radius * 0.7);
+    // 2D flat bubble: semi-transparent fill + clear border
     octx.beginPath();
     octx.arc(0, 0, radius, 0, Math.PI * 2);
-    octx.fillStyle = 'rgba(0,0,0,0)';
+    octx.fillStyle = getComputedStyle(section).getPropertyValue('--bb-bubble-fill').trim() || 'rgba(255,255,255,.10)';
+    octx.strokeStyle = getComputedStyle(section).getPropertyValue('--bb-bubble-stroke').trim() || 'rgba(255,255,255,.42)';
+    octx.lineWidth = Math.max(1, radius * 0.12);
     octx.fill();
-    octx.restore();
-
-    // Bubble body with radial gradient
-    const grad = octx.createRadialGradient(-radius * 0.25, -radius * 0.3, radius * 0.15, 0, 0, radius);
-    grad.addColorStop(0, `hsla(${hue}, ${sat}%, ${Math.max(35, light - 8)}%, .92)`);
-    grad.addColorStop(0.4, `hsla(${hue2}, ${sat}%, ${Math.min(70, light + 8)}%, .88)`);
-    grad.addColorStop(1, `hsla(${hue}, ${sat}%, ${Math.max(22, light - 24)}%, .9)`);
-    octx.beginPath();
-    octx.arc(0, 0, radius, 0, Math.PI * 2);
-    octx.fillStyle = grad;
-    octx.fill();
-
-    // Inner highlight ring
-    octx.beginPath();
-    octx.arc(-radius * 0.25, -radius * 0.28, radius * 0.72, 0, Math.PI * 2);
-    octx.strokeStyle = 'rgba(255,255,255,.22)';
-    octx.lineWidth = Math.max(1, radius * 0.06);
     octx.stroke();
 
     // Text fitting with wrapping (up to 3 lines)
-    const maxTextWidth = radius * 1.66;
+    const maxTextWidth = radius * 1.75; // allow slightly wider for large bubbles
     const maxLines = 3;
     const fontFace = 'ui-sans-serif, -apple-system, Segoe UI, Roboto, system-ui, sans-serif';
 
@@ -1220,7 +1202,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     }
 
     let text = label.replace(/\s*\([^)]*\)/g, '').trim();
-    let fontSize = clamp(radius * 0.7, 11, 24);
+    let fontSize = clamp(radius * 0.62, 12, 26);
     let lines = wrapLines(octx, text, fontSize, maxTextWidth, maxLines);
     // downscale font while lines overflow
     while ((lines.length > maxLines || Math.max(...lines.map(l => octx.measureText(l).width)) > maxTextWidth) && fontSize > 10) {
@@ -1241,9 +1223,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     let y0 = - (totalH - lh) / 2;
     octx.textAlign = 'center';
     octx.textBaseline = 'middle';
-    octx.fillStyle = 'rgba(255,255,255,0.96)';
+    octx.fillStyle = 'currentColor';
+    // Keep thin outline for contrast in dark backgrounds
     octx.strokeStyle = 'rgba(0,0,0,0.35)';
-    octx.lineWidth = Math.max(1, Math.round(fontSize * 0.18));
+    octx.lineWidth = Math.max(0.5, Math.round(fontSize * 0.14));
     octx.font = `700 ${fontSize}px ${fontFace}`;
     for (let i = 0; i < lines.length; i++) {
       const yy = y0 + i * lh;
@@ -1253,7 +1236,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
     // Physics init
     const angle = 2 * Math.PI * rand01(seed + 7);
-    const speed = 0.06 + 0.12 * rand01(seed + 8); // px/ms at DPR=1 (slower)
+    const speed = 0.02 + 0.06 * rand01(seed + 8); // much slower
     const wander = 0.0005 + 0.0015 * rand01(seed + 9);
     const vx = Math.cos(angle) * speed;
     const vy = Math.sin(angle) * speed;
@@ -1272,7 +1255,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   skills.forEach((s, i) => bubbles.push(makeBubble(s, i)));
 
   // Spatial hash for light collision avoidance
-  const gridSize = Math.max(36, Math.round((minR + maxR) * 0.95));
+  const gridSize = Math.max(40, Math.round((minR + maxR) * 0.9));
   function buildHash() {
     const map = new Map();
     for (let i = 0; i < bubbles.length; i++) {
@@ -1309,10 +1292,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     const hash = buildHash();
 
     // Update physics
-    const maxSpeed = 0.36; // px/ms, slightly slower for calmer motion
-    const friction = 0.994;
-    const attractRadius = Math.min(280, Math.max(180, Math.min(W, H) * 0.42));
-    const G = 0.06; // gentler attraction
+    const maxSpeed = 0.22; // px/ms, very slow drift
+    const friction = 0.996;
+    const attractRadius = Math.min(300, Math.max(200, Math.min(W, H) * 0.44));
+    const G = 0.045; // gentle, not overwhelming
 
     for (let i = 0; i < bubbles.length; i++) {
       const b = bubbles[i];
