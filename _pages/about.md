@@ -989,10 +989,97 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 # Skill Points
 
 <div id="skill-points" class="skill-points">
-  <span class="sp-source">
-3D Computer Vision, Robotics, Embodied AI, Human-Robot Interaction (HRI), 3D Perception, Human-centric Scene Understanding, Parametric Human Modeling (SMPL/SMPL-X), 3D Motion Generation and Prediction, Humanoid Robotics, Multi-Agent Interaction, Physics-based Simulation and Modeling, Sensor Fusion (LiDAR & Camera), Human-in-the-Loop (HITL) Simulation, Augmented Reality (AR) in Robotics, Real-time Motion Capture, Weakly Supervised Learning, Self-Supervised Learning for Robotics, Geometric Deep Learning, 3D Human Pose Estimation, Point Cloud Video Understanding, Assistive Robotics, Python, PyTorch, NumPy, Pandas, SciPy, Scikit-learn, Matplotlib, Open3D, PCL, PyTorch3D, Trimesh, MeshLab, LaTeX, Bash Scripting, Algorithms and Data Structures, Docker, Slurm, Git / GitHub, PyTorch Lightning, OpenCV, Jupyter Notebook, Linux, Deep Learning, Generative Models, Diffusion Models, Autoregressive Models, Transformers, 3D Point Cloud Processing, LiDAR Data Processing, Point Cloud Segmentation (Semantic/Instance), Point Cloud Denoising, 3D Action Recognition, 3D Scene Flow Estimation, 3D Human Mesh Recovery, 3D Data Annotation, Inverse Kinematics (IK), Forward Kinematics, Geometric Constraints Modeling, Spatio-temporal Representation Learning, Chamfer Distance, Point-based models (PointNet, PointNet++), 3D Visualization, Robot Perception Systems, Robot Learning, Motion Planning and Control, Behavior Generation, Human-Robot Collaboration, Real-time Interactive Systems, Robot Simulation Environments, Sim-to-Real Transfer, Augmented Reality Interfaces for Robotics, Multi-robot Systems, Data Science, Multimodal Temporal Data Processing, Data Analysis, Data Visualization, Large-scale Dataset Management, High-Quality Interactive Dataset Collection, Closed-loop System Integration, Real-time Data Streaming, Scientific Writing, Project Planning and Management, Problem Definition and Formulation, User-Centered Experiment Design, Human-in-the-Loop Studies, "Wizard of Oz" Prototyping, Quantitative and Qualitative Research, Technical Documentation (LaTeX, Draw.io).
-  </span>
-  <div class="sp-chips" role="list" aria-label="Skill Points"></div>
+  <div class="sp-chips" role="list" aria-label="Skill Points">
+    <span class="sp-chip" role="listitem">3D Computer Vision</span>
+    <span class="sp-chip" role="listitem">Robotics</span>
+    <span class="sp-chip" role="listitem">Embodied AI</span>
+    <span class="sp-chip" role="listitem">Human-Robot Interaction (HRI)</span>
+    <span class="sp-chip" role="listitem">3D Perception</span>
+    <span class="sp-chip" role="listitem">Human-centric Scene Understanding</span>
+    <span class="sp-chip" role="listitem">Parametric Human Modeling (SMPL/SMPL-X)</span>
+    <span class="sp-chip" role="listitem">3D Motion Generation and Prediction</span>
+    <span class="sp-chip" role="listitem">Humanoid Robotics</span>
+    <span class="sp-chip" role="listitem">Multi-Agent Interaction</span>
+    <span class="sp-chip" role="listitem">Physics-based Simulation and Modeling</span>
+    <span class="sp-chip" role="listitem">Sensor Fusion (LiDAR & Camera)</span>
+    <span class="sp-chip" role="listitem">Human-in-the-Loop (HITL) Simulation</span>
+    <span class="sp-chip" role="listitem">Augmented Reality (AR) in Robotics</span>
+    <span class="sp-chip" role="listitem">Real-time Motion Capture</span>
+    <span class="sp-chip" role="listitem">Weakly Supervised Learning</span>
+    <span class="sp-chip" role="listitem">Self-Supervised Learning for Robotics</span>
+    <span class="sp-chip" role="listitem">Geometric Deep Learning</span>
+    <span class="sp-chip" role="listitem">3D Human Pose Estimation</span>
+    <span class="sp-chip" role="listitem">Point Cloud Video Understanding</span>
+    <span class="sp-chip" role="listitem">Assistive Robotics</span>
+    <span class="sp-chip" role="listitem">Python</span>
+    <span class="sp-chip" role="listitem">PyTorch</span>
+    <span class="sp-chip" role="listitem">NumPy</span>
+    <span class="sp-chip" role="listitem">Pandas</span>
+    <span class="sp-chip" role="listitem">SciPy</span>
+    <span class="sp-chip" role="listitem">Scikit-learn</span>
+    <span class="sp-chip" role="listitem">Matplotlib</span>
+    <span class="sp-chip" role="listitem">Open3D</span>
+    <span class="sp-chip" role="listitem">PCL</span>
+    <span class="sp-chip" role="listitem">PyTorch3D</span>
+    <span class="sp-chip" role="listitem">Trimesh</span>
+    <span class="sp-chip" role="listitem">MeshLab</span>
+    <span class="sp-chip" role="listitem">LaTeX</span>
+    <span class="sp-chip" role="listitem">Bash Scripting</span>
+    <span class="sp-chip" role="listitem">Algorithms and Data Structures</span>
+    <span class="sp-chip" role="listitem">Docker</span>
+    <span class="sp-chip" role="listitem">Slurm</span>
+    <span class="sp-chip" role="listitem">Git / GitHub</span>
+    <span class="sp-chip" role="listitem">PyTorch Lightning</span>
+    <span class="sp-chip" role="listitem">OpenCV</span>
+    <span class="sp-chip" role="listitem">Jupyter Notebook</span>
+    <span class="sp-chip" role="listitem">Linux</span>
+    <span class="sp-chip" role="listitem">Deep Learning</span>
+    <span class="sp-chip" role="listitem">Generative Models</span>
+    <span class="sp-chip" role="listitem">Diffusion Models</span>
+    <span class="sp-chip" role="listitem">Autoregressive Models</span>
+    <span class="sp-chip" role="listitem">Transformers</span>
+    <span class="sp-chip" role="listitem">3D Point Cloud Processing</span>
+    <span class="sp-chip" role="listitem">LiDAR Data Processing</span>
+    <span class="sp-chip" role="listitem">Point Cloud Segmentation (Semantic/Instance)</span>
+    <span class="sp-chip" role="listitem">Point Cloud Denoising</span>
+    <span class="sp-chip" role="listitem">3D Action Recognition</span>
+    <span class="sp-chip" role="listitem">3D Scene Flow Estimation</span>
+    <span class="sp-chip" role="listitem">3D Human Mesh Recovery</span>
+    <span class="sp-chip" role="listitem">3D Data Annotation</span>
+    <span class="sp-chip" role="listitem">Inverse Kinematics (IK)</span>
+    <span class="sp-chip" role="listitem">Forward Kinematics</span>
+    <span class="sp-chip" role="listitem">Geometric Constraints Modeling</span>
+    <span class="sp-chip" role="listitem">Spatio-temporal Representation Learning</span>
+    <span class="sp-chip" role="listitem">Chamfer Distance</span>
+    <span class="sp-chip" role="listitem">Point-based models (PointNet, PointNet++)</span>
+    <span class="sp-chip" role="listitem">3D Visualization</span>
+    <span class="sp-chip" role="listitem">Robot Perception Systems</span>
+    <span class="sp-chip" role="listitem">Robot Learning</span>
+    <span class="sp-chip" role="listitem">Motion Planning and Control</span>
+    <span class="sp-chip" role="listitem">Behavior Generation</span>
+    <span class="sp-chip" role="listitem">Human-Robot Collaboration</span>
+    <span class="sp-chip" role="listitem">Real-time Interactive Systems</span>
+    <span class="sp-chip" role="listitem">Robot Simulation Environments</span>
+    <span class="sp-chip" role="listitem">Sim-to-Real Transfer</span>
+    <span class="sp-chip" role="listitem">Augmented Reality Interfaces for Robotics</span>
+    <span class="sp-chip" role="listitem">Multi-robot Systems</span>
+    <span class="sp-chip" role="listitem">Data Science</span>
+    <span class="sp-chip" role="listitem">Multimodal Temporal Data Processing</span>
+    <span class="sp-chip" role="listitem">Data Analysis</span>
+    <span class="sp-chip" role="listitem">Data Visualization</span>
+    <span class="sp-chip" role="listitem">Large-scale Dataset Management</span>
+    <span class="sp-chip" role="listitem">High-Quality Interactive Dataset Collection</span>
+    <span class="sp-chip" role="listitem">Closed-loop System Integration</span>
+    <span class="sp-chip" role="listitem">Real-time Data Streaming</span>
+    <span class="sp-chip" role="listitem">Scientific Writing</span>
+    <span class="sp-chip" role="listitem">Project Planning and Management</span>
+    <span class="sp-chip" role="listitem">Problem Definition and Formulation</span>
+    <span class="sp-chip" role="listitem">User-Centered Experiment Design</span>
+    <span class="sp-chip" role="listitem">Human-in-the-Loop Studies</span>
+    <span class="sp-chip" role="listitem">"Wizard of Oz" Prototyping</span>
+    <span class="sp-chip" role="listitem">Quantitative and Qualitative Research</span>
+    <span class="sp-chip" role="listitem">Technical Documentation (LaTeX, Draw.io)</span>
+  </div>
 </div>
 
 <style>
@@ -1023,7 +1110,6 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   gap: .5rem .55rem;
   align-items: center;
 }
-.sp-source { display: block; margin: .35rem 0 .2rem; color: var(--sp-muted); }
 .sp-chip {
   position: relative;
   display: inline-flex;
@@ -1068,65 +1154,6 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   .sp-chip::before { transition: none; }
 }
 </style>
-
-<script>
-(function() {
-  const root = document.getElementById('skill-points');
-  if (!root) return;
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const src = root.querySelector('.sp-source');
-  const dst = root.querySelector('.sp-chips');
-  if (!src || !dst) return;
-
-  // Split by commas but keep commas inside parentheses intact
-  const text = (src.textContent || '').trim();
-  const items = [];
-  let buff = '';
-  let depth = 0;
-  for (let i = 0; i < text.length; i++) {
-    const ch = text[i];
-    if (ch === '(') depth++;
-    if (ch === ')') depth = Math.max(0, depth - 1);
-    if (ch === ',' && depth === 0) {
-      if (buff.trim()) items.push(buff.trim());
-      buff = '';
-    } else {
-      buff += ch;
-    }
-  }
-  if (buff.trim()) items.push(buff.trim());
-
-  items.forEach(label => {
-    const chip = document.createElement('span');
-    chip.className = 'sp-chip';
-    chip.setAttribute('role', 'listitem');
-    chip.textContent = label.replace(/^\s+|\s+$/g, '');
-    dst.appendChild(chip);
-    if (!reduced) {
-      chip.addEventListener('mousemove', (e) => {
-        const r = chip.getBoundingClientRect();
-        const x = e.clientX - r.left;
-        const y = e.clientY - r.top;
-        const px = x / r.width;
-        const py = y / r.height;
-        chip.style.setProperty('--mx', x + 'px');
-        chip.style.setProperty('--my', y + 'px');
-        const rx = (py - 0.5) * -6; // subtle, premium feel
-        const ry = (px - 0.5) * 8;
-        chip.style.transform = `translateY(-2px) rotateX(${rx.toFixed(1)}deg) rotateY(${ry.toFixed(1)}deg)`;
-      });
-      chip.addEventListener('mouseleave', () => {
-        chip.style.removeProperty('--mx');
-        chip.style.removeProperty('--my');
-        chip.style.transform = '';
-      });
-    }
-  });
-  if (items.length > 0) {
-    src.hidden = true; // hide fallback text once chips are ready
-  }
-})();
-</script>
 
 <!-- - *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
 - *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China. -->
