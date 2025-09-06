@@ -988,7 +988,141 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 # Skill Points
 
+<div id="skill-points" class="skill-points">
+  <span class="sp-source" hidden>
 3D Computer Vision, Robotics, Embodied AI, Human-Robot Interaction (HRI), 3D Perception, Human-centric Scene Understanding, Parametric Human Modeling (SMPL/SMPL-X), 3D Motion Generation and Prediction, Humanoid Robotics, Multi-Agent Interaction, Physics-based Simulation and Modeling, Sensor Fusion (LiDAR & Camera), Human-in-the-Loop (HITL) Simulation, Augmented Reality (AR) in Robotics, Real-time Motion Capture, Weakly Supervised Learning, Self-Supervised Learning for Robotics, Geometric Deep Learning, 3D Human Pose Estimation, Point Cloud Video Understanding, Assistive Robotics, Python, PyTorchm, NumPy, Pandas, SciPy, Scikit-learn, Matplotlib, Open3D, PCL, PyTorch3D, Trimesh, MeshLab, LaTeX, Bash Scripting, Algorithms and Data Structures, Docker, Slurm, Git / GitHub, PyTorch Lightning, OpenCV, Jupyter Notebook, Linux, Deep Learning, Generative Models, Diffusion Models, Autoregressive Models, Transformers, 3D Point Cloud Processing, LiDAR Data Processing, Point Cloud Segmentation (Semantic/Instance), Point Cloud Denoising, 3D Action Recognition, 3D Scene Flow Estimation, 3D Human Mesh Recovery, 3D Data Annotation, Inverse Kinematics (IK), Forward Kinematics, Geometric Constraints Modeling, Spatio-temporal Representation Learning, Chamfer Distance, Point-based models (PointNet, PointNet++), 3D Visualization, Robot Perception Systems, Robot Learning, Motion Planning and Control, Behavior Generation, Human-Robot Collaboration, Real-time Interactive Systems, Robot Simulation Environments, Sim-to-Real Transfer, Augmented Reality Interfaces for Robotics, Multi-robot Systems, Data Science, Multimodal Temporal Data Processing, Data Analysis, Data Visualization, Large-scale Dataset Management, High-Quality Interactive Dataset Collection, Closed-loop System Integration, Real-time Data Streaming, Scientific Writing, Project Planning and Management, Problem Definition and Formulation, User-Centered Experiment Design, Human-in-the-Loop Studies, "Wizard of Oz" Prototyping, Quantitative and Qualitative Research, Technical Documentation (LaTeX, Draw.io).
+  </span>
+  <div class="sp-chips" role="list" aria-label="Skill Points"></div>
+</div>
+
+<style>
+/* ============== Skill Points bubbles (scoped) ============== */
+.skill-points {
+  --sp-text: var(--global-text, #e5e7eb);
+  --sp-muted: #a3a3a3;
+  --sp-bg: rgba(255,255,255,0.04);
+  --sp-border: rgba(255,255,255,0.12);
+  --sp-ac1: #8b5cf6; /* purple */
+  --sp-ac2: #06b6d4; /* cyan */
+  --sp-shadow: 0 12px 36px rgba(0,0,0,0.28);
+  margin: .6rem 0 1.2rem;
+  color: var(--sp-text);
+}
+@media (prefers-color-scheme: light) {
+  .skill-points {
+    --sp-text: #0f172a;
+    --sp-muted: #6b7280;
+    --sp-bg: rgba(255,255,255,0.9);
+    --sp-border: rgba(10,10,10,0.08);
+    --sp-shadow: 0 12px 30px rgba(16,24,40,0.12);
+  }
+}
+.sp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .55rem;
+  align-items: center;
+}
+.sp-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .36rem .72rem;
+  font-size: .86rem;
+  line-height: 1;
+  color: var(--sp-text);
+  background: linear-gradient(180deg, var(--sp-bg), transparent);
+  border: 1px solid var(--sp-border);
+  border-radius: 999px;
+  box-shadow: var(--sp-shadow);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  transform-style: preserve-3d;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease, color .22s ease;
+  cursor: default;
+  will-change: transform;
+}
+.sp-chip::before {
+  content: "";
+  position: absolute;
+  inset: -60% -40% -60% -40%;
+  background:
+    radial-gradient(280px 140px at var(--mx, 50%) var(--my, 50%), color-mix(in oklab, var(--sp-ac1) 55%, var(--sp-ac2) 45%), transparent 62%);
+  filter: blur(18px) saturate(130%);
+  opacity: 0;
+  transition: opacity .28s ease;
+  pointer-events: none;
+}
+.sp-chip:hover, .sp-chip:focus-visible {
+  transform: translateY(-2px) scale(1.02);
+  border-color: transparent;
+  box-shadow: 0 16px 46px rgba(16,24,40,.25);
+}
+.sp-chip:hover::before, .sp-chip:focus-visible::before { opacity: .9; }
+.sp-chip:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(139,92,246,.18), 0 16px 46px rgba(16,24,40,.25); }
+
+@media (prefers-reduced-motion: reduce) {
+  .sp-chip { transition: none; }
+  .sp-chip::before { transition: none; }
+}
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('skill-points');
+  if (!root) return;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const src = root.querySelector('.sp-source');
+  const dst = root.querySelector('.sp-chips');
+  if (!src || !dst) return;
+
+  // Split by commas but keep commas inside parentheses intact
+  const text = (src.textContent || '').trim();
+  const items = [];
+  let buff = '';
+  let depth = 0;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch === '(') depth++;
+    if (ch === ')') depth = Math.max(0, depth - 1);
+    if (ch === ',' && depth === 0) {
+      if (buff.trim()) items.push(buff.trim());
+      buff = '';
+    } else {
+      buff += ch;
+    }
+  }
+  if (buff.trim()) items.push(buff.trim());
+
+  items.forEach(label => {
+    const chip = document.createElement('span');
+    chip.className = 'sp-chip';
+    chip.setAttribute('role', 'listitem');
+    chip.textContent = label.replace(/^\s+|\s+$/g, '');
+    dst.appendChild(chip);
+    if (!reduced) {
+      chip.addEventListener('mousemove', (e) => {
+        const r = chip.getBoundingClientRect();
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
+        const px = x / r.width;
+        const py = y / r.height;
+        chip.style.setProperty('--mx', x + 'px');
+        chip.style.setProperty('--my', y + 'px');
+        const rx = (py - 0.5) * -6; // subtle, premium feel
+        const ry = (px - 0.5) * 8;
+        chip.style.transform = `translateY(-2px) rotateX(${rx.toFixed(1)}deg) rotateY(${ry.toFixed(1)}deg)`;
+      });
+      chip.addEventListener('mouseleave', () => {
+        chip.style.removeProperty('--mx');
+        chip.style.removeProperty('--my');
+        chip.style.transform = '';
+      });
+    }
+  });
+})();
+</script>
 
 <!-- - *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
 - *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China. -->
