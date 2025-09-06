@@ -1091,6 +1091,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   --sp-border: rgba(255,255,255,0.12);
   --sp-ac1: #8b5cf6; /* purple */
   --sp-ac2: #06b6d4; /* cyan */
+  --sp-hov-text: #ffffff; /* text color when highlighted */
   --sp-shadow: 0 12px 36px rgba(0,0,0,0.28);
   margin: .6rem 0 1.2rem;
   color: var(--sp-text);
@@ -1101,6 +1102,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     --sp-muted: #6b7280;
     --sp-bg: rgba(255,255,255,0.9);
     --sp-border: rgba(10,10,10,0.08);
+    --sp-hov-text: #0b0c10;
     --sp-shadow: 0 12px 30px rgba(16,24,40,0.12);
   }
 }
@@ -1142,11 +1144,16 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   pointer-events: none;
 }
 .sp-chip:hover, .sp-chip:focus-visible {
-  transform: translateY(-2px) scale(1.02);
+  transform: translateY(-1px);
   border-color: transparent;
-  box-shadow: 0 16px 46px rgba(16,24,40,.25);
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--sp-ac1) 55%, transparent),
+    color-mix(in oklab, var(--sp-ac2) 55%, transparent)
+  );
+  color: var(--sp-hov-text);
+  box-shadow: 0 16px 46px rgba(16,24,40,.22);
 }
-.sp-chip:hover::before, .sp-chip:focus-visible::before { opacity: .9; }
+.sp-chip:hover::before, .sp-chip:focus-visible::before { opacity: 0; }
 .sp-chip:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(139,92,246,.18), 0 16px 46px rgba(16,24,40,.25); }
 
 @media (prefers-reduced-motion: reduce) {
