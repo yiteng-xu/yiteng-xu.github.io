@@ -1016,7 +1016,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   --bb-glow-2: rgba(6,182,212,.35); /* cyan glow */
   position: relative;
   margin: 1.2rem 0 2.4rem;
-  min-height: clamp(340px, 40vw, 620px);
+  min-height: clamp(640px, 75vh, 1200px);
   border-radius: 18px;
   overflow: hidden;
   isolation: isolate;
@@ -1064,6 +1064,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   const canvas = document.getElementById('bubbles-canvas');
   const ctx = canvas.getContext('2d');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Unified bubble color theme (indigo)
+  const BASE_HUE = 268;  // elegant indigo
+  const BASE_SAT = 70;
+  const BASE_LIGHT = 50;
 
   // Parse skills from hidden raw text
   const rawEl = document.getElementById('skills-raw');
@@ -1131,8 +1135,9 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   const bounds = () => ({ w: canvas.width, h: canvas.height });
   const B = bounds();
   const num = skills.length;
-  const minR = Math.max(16, Math.min(28, Math.round(Math.min(B.w, B.h) / 36)));
-  const maxR = Math.max(minR + 10, Math.round(minR * 1.9));
+  // Smaller bubbles overall
+  const minR = Math.max(12, Math.min(20, Math.round(Math.min(B.w, B.h) / 50)));
+  const maxR = minR + 8;
   const bubbles = [];
 
   // Pre-render each bubble to its own offscreen canvas for performance
@@ -1140,10 +1145,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     const seed = hashString(label) ^ (idx * 2654435761 >>> 0);
     const rNorm = 0.55 + 0.45 * rand01(seed + 1);
     const radius = Math.round(minR + (maxR - minR) * rNorm);
-    const hue = Math.floor(360 * rand01(seed + 2));
-    const hue2 = (hue + Math.floor(40 + 80 * rand01(seed + 3))) % 360;
-    const sat = 60 + 30 * rand01(seed + 4);
-    const light = 55 + 10 * rand01(seed + 5);
+    const hue = BASE_HUE;
+    const hue2 = BASE_HUE;
+    const sat = BASE_SAT;
+    const light = BASE_LIGHT;
 
     const off = document.createElement('canvas');
     const d = Math.ceil((radius * 2 + 10) * dpr); // padding for shadow/halo
@@ -1154,8 +1159,8 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
     // Glow shadow
     octx.save();
-    octx.shadowColor = `hsla(${hue}, 75%, 60%, .45)`;
-    octx.shadowBlur = Math.min(26, radius * 0.9);
+    octx.shadowColor = `hsla(${hue}, 70%, 55%, .35)`;
+    octx.shadowBlur = Math.min(20, radius * 0.7);
     octx.beginPath();
     octx.arc(0, 0, radius, 0, Math.PI * 2);
     octx.fillStyle = 'rgba(0,0,0,0)';
@@ -1163,10 +1168,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     octx.restore();
 
     // Bubble body with radial gradient
-    const grad = octx.createRadialGradient(-radius * 0.3, -radius * 0.35, radius * 0.2, 0, 0, radius);
-    grad.addColorStop(0, `hsla(${hue}, ${sat}%, ${Math.min(98, light + 25)}%, .95)`);
-    grad.addColorStop(0.35, `hsla(${hue2}, ${sat}%, ${Math.min(96, light + 18)}%, .85)`);
-    grad.addColorStop(1, `hsla(${hue}, ${sat}%, ${Math.max(28, light - 28)}%, .82)`);
+    const grad = octx.createRadialGradient(-radius * 0.25, -radius * 0.3, radius * 0.15, 0, 0, radius);
+    grad.addColorStop(0, `hsla(${hue}, ${sat}%, ${Math.max(35, light - 8)}%, .92)`);
+    grad.addColorStop(0.4, `hsla(${hue2}, ${sat}%, ${Math.min(70, light + 8)}%, .88)`);
+    grad.addColorStop(1, `hsla(${hue}, ${sat}%, ${Math.max(22, light - 24)}%, .9)`);
     octx.beginPath();
     octx.arc(0, 0, radius, 0, Math.PI * 2);
     octx.fillStyle = grad;
@@ -1175,28 +1180,80 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     // Inner highlight ring
     octx.beginPath();
     octx.arc(-radius * 0.25, -radius * 0.28, radius * 0.72, 0, Math.PI * 2);
-    octx.strokeStyle = 'rgba(255,255,255,.35)';
-    octx.lineWidth = Math.max(1, radius * 0.08);
+    octx.strokeStyle = 'rgba(255,255,255,.22)';
+    octx.lineWidth = Math.max(1, radius * 0.06);
     octx.stroke();
 
-    // Text fitting
-    const maxTextWidth = radius * 1.72; // interior width
-    let fontSize = clamp(radius * 0.62, 10, 22);
-    octx.fillStyle = 'rgba(255,255,255,.92)';
-    octx.font = `${fontSize}px ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif`;
-    let text = label;
-    if (text.length > 24) text = text.replace(/\s*\([^)]*\)/g, '').trim(); // simplify long terms
-    while (octx.measureText(text).width > maxTextWidth && fontSize > 9) {
-      fontSize -= 1;
-      octx.font = `${fontSize}px ui-sans-serif, -apple-system, Segoe UI, Roboto, sans-serif`;
+    // Text fitting with wrapping (up to 3 lines)
+    const maxTextWidth = radius * 1.66;
+    const maxLines = 3;
+    const fontFace = 'ui-sans-serif, -apple-system, Segoe UI, Roboto, system-ui, sans-serif';
+
+    function wrapLines(ctx2, raw, fontPx, maxW, maxL) {
+      ctx2.font = `700 ${fontPx}px ${fontFace}`;
+      const words = raw.split(/\s+/);
+      const lines = [];
+      let line = '';
+      for (let i = 0; i < words.length; i++) {
+        const test = line ? line + ' ' + words[i] : words[i];
+        if (ctx2.measureText(test).width <= maxW) {
+          line = test;
+        } else {
+          if (line) lines.push(line);
+          else {
+            // extremely long single token: hard-wrap
+            let token = words[i];
+            let chunk = '';
+            for (let c = 0; c < token.length; c++) {
+              const tryChunk = chunk + token[c];
+              if (ctx2.measureText(tryChunk).width <= maxW) chunk = tryChunk;
+              else { lines.push(chunk); chunk = token[c]; }
+            }
+            line = chunk;
+          }
+          line = words[i].length && ctx2.measureText(words[i]).width <= maxW ? words[i] : line;
+        }
+        if (lines.length === maxL) break;
+      }
+      if (lines.length < maxL && line) lines.push(line);
+      return lines;
     }
+
+    let text = label.replace(/\s*\([^)]*\)/g, '').trim();
+    let fontSize = clamp(radius * 0.7, 11, 24);
+    let lines = wrapLines(octx, text, fontSize, maxTextWidth, maxLines);
+    // downscale font while lines overflow
+    while ((lines.length > maxLines || Math.max(...lines.map(l => octx.measureText(l).width)) > maxTextWidth) && fontSize > 10) {
+      fontSize -= 1;
+      lines = wrapLines(octx, text, fontSize, maxTextWidth, maxLines);
+    }
+    if (lines.length > maxLines) {
+      lines = lines.slice(0, maxLines);
+      const last = lines[maxLines - 1];
+      let ell = last + '…';
+      while (octx.measureText(ell).width > maxTextWidth && ell.length > 1) {
+        ell = ell.slice(0, -2) + '…';
+      }
+      lines[maxLines - 1] = ell;
+    }
+    const lh = Math.round(fontSize * 1.12);
+    const totalH = lh * lines.length;
+    let y0 = - (totalH - lh) / 2;
     octx.textAlign = 'center';
     octx.textBaseline = 'middle';
-    octx.fillText(text, 0, 0);
+    octx.fillStyle = 'rgba(255,255,255,0.96)';
+    octx.strokeStyle = 'rgba(0,0,0,0.35)';
+    octx.lineWidth = Math.max(1, Math.round(fontSize * 0.18));
+    octx.font = `700 ${fontSize}px ${fontFace}`;
+    for (let i = 0; i < lines.length; i++) {
+      const yy = y0 + i * lh;
+      octx.strokeText(lines[i], 0, yy);
+      octx.fillText(lines[i], 0, yy);
+    }
 
     // Physics init
     const angle = 2 * Math.PI * rand01(seed + 7);
-    const speed = 0.08 + 0.18 * rand01(seed + 8); // px/ms at DPR=1
+    const speed = 0.06 + 0.12 * rand01(seed + 8); // px/ms at DPR=1 (slower)
     const wander = 0.0005 + 0.0015 * rand01(seed + 9);
     const vx = Math.cos(angle) * speed;
     const vy = Math.sin(angle) * speed;
@@ -1215,7 +1272,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   skills.forEach((s, i) => bubbles.push(makeBubble(s, i)));
 
   // Spatial hash for light collision avoidance
-  const gridSize = Math.max(40, Math.round((minR + maxR) * 0.9));
+  const gridSize = Math.max(36, Math.round((minR + maxR) * 0.95));
   function buildHash() {
     const map = new Map();
     for (let i = 0; i < bubbles.length; i++) {
@@ -1252,10 +1309,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     const hash = buildHash();
 
     // Update physics
-    const maxSpeed = 0.45; // px/ms
-    const friction = 0.992;
-    const attractRadius = Math.min(260, Math.max(160, Math.min(W, H) * 0.45));
-    const G = 0.08; // attraction strength
+    const maxSpeed = 0.36; // px/ms, slightly slower for calmer motion
+    const friction = 0.994;
+    const attractRadius = Math.min(280, Math.max(180, Math.min(W, H) * 0.42));
+    const G = 0.06; // gentler attraction
 
     for (let i = 0; i < bubbles.length; i++) {
       const b = bubbles[i];
@@ -1305,7 +1362,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
             const a = b, c = bubbles[j];
             const dx2 = c.x - a.x; const dy2 = c.y - a.y;
             const dist = Math.hypot(dx2, dy2) || 0.001;
-            const minDist = a.radius + c.radius - 4; // allow a tiny overlap for organic look
+            const minDist = a.radius + c.radius + 2; // maintain a small spacing to reduce clutter
             if (dist < minDist) {
               const overlap = (minDist - dist) * 0.5;
               const ux = dx2 / dist, uy = dy2 / dist;
