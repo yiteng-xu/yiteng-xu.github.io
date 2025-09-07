@@ -115,8 +115,8 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   --ms-bg: var(--global-bg, #f7f7fb);
   --ms-card: rgba(255, 255, 255, 0.9);
   --ms-border: rgba(10, 10, 10, 0.08);
-  --ms-text: var(--global-text, #0f172a);
-  --ms-muted: #6b7280;
+  --ms-text: var(--global-text, #000000);
+  --ms-muted: #000000;
   --ms-accent: #7c3aed; /* purple */
   --ms-accent-2: #06b6d4; /* cyan */
   --ms-shadow: 0 10px 30px rgba(0,0,0,0.25);
@@ -377,8 +377,8 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   --nw-bg: var(--global-bg, #f7f7fb);
   --nw-card: rgba(255, 255, 255, 0.92);
   --nw-border: rgba(10, 10, 10, 0.08);
-  --nw-text: var(--global-text, #0f172a);
-  --nw-muted: #6b7280;
+  --nw-text: var(--global-text, #000000);
+  --nw-muted: #000000;
   --nw-ac1: #8b5cf6; /* purple */
   --nw-ac2: #06b6d4; /* cyan */
   --nw-shadow: 0 18px 50px rgba(0,0,0,0.35);
@@ -792,8 +792,8 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   --sk-bg: var(--global-bg, #f7f7fb);
   --sk-card: rgba(255,255,255,0.9);
   --sk-border: rgba(10,10,10,0.08);
-  --sk-text: var(--global-text, #0f172a);
-  --sk-muted: #6b7280;
+  --sk-text: var(--global-text, #000000);
+  --sk-muted: #000000;
   --sk-accent-1: #a855f7; /* purple */
   --sk-accent-2: #06b6d4; /* cyan */
   --sk-accent-3: #f472b6; /* pink */
@@ -1089,13 +1089,13 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 /* ============== Skill Points bubbles (scoped) ============== */
 .skill-points {
   /* Default to light theme-friendly values for better contrast */
-  --sp-text: var(--global-text, #0f172a);
-  --sp-muted: #6b7280;
+  --sp-text: var(--global-text, #000000);
+  --sp-muted: #000000;
   --sp-bg: rgba(255,255,255,0.9);
   --sp-border: rgba(10,10,10,0.08);
   --sp-ac1: #8b5cf6; /* purple */
   --sp-ac2: #06b6d4; /* cyan */
-  --sp-hov-text: #0b0c10; /* text color when highlighted */
+  --sp-hov-text: #000000; /* text color when highlighted */
   --sp-shadow: 0 12px 30px rgba(16,24,40,0.12);
   margin: .6rem 0 1.2rem;
   color: var(--sp-text);
