@@ -111,24 +111,25 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 
 <style>
 .milestones-section {
-  --ms-bg: var(--global-bg, #0b0c10);
-  --ms-card: rgba(255, 255, 255, 0.08);
-  --ms-border: rgba(255, 255, 255, 0.18);
-  --ms-text: var(--global-text, #222);
-  --ms-muted: #7b8a97;
+  /* Default to light theme-friendly values for better contrast */
+  --ms-bg: var(--global-bg, #f7f7fb);
+  --ms-card: rgba(255, 255, 255, 0.9);
+  --ms-border: rgba(10, 10, 10, 0.08);
+  --ms-text: var(--global-text, #0f172a);
+  --ms-muted: #6b7280;
   --ms-accent: #7c3aed; /* purple */
   --ms-accent-2: #06b6d4; /* cyan */
   --ms-shadow: 0 10px 30px rgba(0,0,0,0.25);
   position: relative;
   margin: 1.2rem 0 2.4rem;
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   .milestones-section {
-    --ms-bg: #f7f7fb;
-    --ms-card: rgba(255, 255, 255, 0.9);
-    --ms-border: rgba(10, 10, 10, 0.08);
-    --ms-text: #0f172a;
-    --ms-muted: #6b7280;
+    --ms-bg: #0b0c10;
+    --ms-card: rgba(255, 255, 255, 0.08);
+    --ms-border: rgba(255, 255, 255, 0.18);
+    --ms-text: #e5e7eb;
+    --ms-muted: #a3a3a3;
   }
 }
 .milestones-controls {
@@ -372,11 +373,12 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 <style>
 /* ============== News (scoped) ============== */
 .news-section {
-  --nw-bg: var(--global-bg, #0b0c10);
-  --nw-card: rgba(255, 255, 255, 0.06);
-  --nw-border: rgba(255, 255, 255, 0.12);
-  --nw-text: var(--global-text, #e5e7eb);
-  --nw-muted: #a3a3a3;
+  /* Default to light theme-friendly values for better contrast */
+  --nw-bg: var(--global-bg, #f7f7fb);
+  --nw-card: rgba(255, 255, 255, 0.92);
+  --nw-border: rgba(10, 10, 10, 0.08);
+  --nw-text: var(--global-text, #0f172a);
+  --nw-muted: #6b7280;
   --nw-ac1: #8b5cf6; /* purple */
   --nw-ac2: #06b6d4; /* cyan */
   --nw-shadow: 0 18px 50px rgba(0,0,0,0.35);
@@ -384,13 +386,13 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   margin: 1.2rem 0 2.4rem;
   color: var(--nw-text);
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   .news-section {
-    --nw-bg: #f7f7fb;
-    --nw-card: rgba(255, 255, 255, 0.92);
-    --nw-border: rgba(10, 10, 10, 0.08);
-    --nw-text: #0f172a;
-    --nw-muted: #6b7280;
+    --nw-bg: #0b0c10;
+    --nw-card: rgba(255, 255, 255, 0.06);
+    --nw-border: rgba(255, 255, 255, 0.12);
+    --nw-text: #e5e7eb;
+    --nw-muted: #a3a3a3;
   }
 }
 .news-subtitle {
@@ -786,11 +788,12 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 <style>
 /* ============== Skills Studio (scoped) ============== */
 .skills-section {
-  --sk-bg: var(--global-bg, #0b0c10);
-  --sk-card: rgba(255,255,255,0.06);
-  --sk-border: rgba(255,255,255,0.12);
-  --sk-text: var(--global-text, #e5e7eb);
-  --sk-muted: #a3a3a3;
+  /* Default to light theme-friendly values for better contrast */
+  --sk-bg: var(--global-bg, #f7f7fb);
+  --sk-card: rgba(255,255,255,0.9);
+  --sk-border: rgba(10,10,10,0.08);
+  --sk-text: var(--global-text, #0f172a);
+  --sk-muted: #6b7280;
   --sk-accent-1: #a855f7; /* purple */
   --sk-accent-2: #06b6d4; /* cyan */
   --sk-accent-3: #f472b6; /* pink */
@@ -802,13 +805,13 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   color: var(--sk-text);
   isolation: isolate;
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   .skills-section {
-    --sk-bg: #f7f7fb;
-    --sk-card: rgba(255,255,255,0.9);
-    --sk-border: rgba(10,10,10,0.08);
-    --sk-text: #0f172a;
-    --sk-muted: #6b7280;
+    --sk-bg: #0b0c10;
+    --sk-card: rgba(255,255,255,0.06);
+    --sk-border: rgba(255,255,255,0.12);
+    --sk-text: #e5e7eb;
+    --sk-muted: #a3a3a3;
   }
 }
 .skills-aurora {
@@ -1085,25 +1088,26 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 <style>
 /* ============== Skill Points bubbles (scoped) ============== */
 .skill-points {
-  --sp-text: var(--global-text, #e5e7eb);
-  --sp-muted: #a3a3a3;
-  --sp-bg: rgba(255,255,255,0.04);
-  --sp-border: rgba(255,255,255,0.12);
+  /* Default to light theme-friendly values for better contrast */
+  --sp-text: var(--global-text, #0f172a);
+  --sp-muted: #6b7280;
+  --sp-bg: rgba(255,255,255,0.9);
+  --sp-border: rgba(10,10,10,0.08);
   --sp-ac1: #8b5cf6; /* purple */
   --sp-ac2: #06b6d4; /* cyan */
-  --sp-hov-text: #ffffff; /* text color when highlighted */
-  --sp-shadow: 0 12px 36px rgba(0,0,0,0.28);
+  --sp-hov-text: #0b0c10; /* text color when highlighted */
+  --sp-shadow: 0 12px 30px rgba(16,24,40,0.12);
   margin: .6rem 0 1.2rem;
   color: var(--sp-text);
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   .skill-points {
-    --sp-text: #0f172a;
-    --sp-muted: #6b7280;
-    --sp-bg: rgba(255,255,255,0.9);
-    --sp-border: rgba(10,10,10,0.08);
-    --sp-hov-text: #0b0c10;
-    --sp-shadow: 0 12px 30px rgba(16,24,40,0.12);
+    --sp-text: #e5e7eb;
+    --sp-muted: #a3a3a3;
+    --sp-bg: rgba(255,255,255,0.04);
+    --sp-border: rgba(255,255,255,0.12);
+    --sp-hov-text: #ffffff;
+    --sp-shadow: 0 12px 36px rgba(0,0,0,0.28);
   }
 }
 .sp-chips {
