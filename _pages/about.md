@@ -995,51 +995,104 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     </h2>
     <div class="awards-views" role="tablist" aria-label="Awards view selector">
       <button class="awards-toggle active" role="tab" aria-selected="true" data-view="stairs">Stairs</button>
+      <button class="awards-toggle" role="tab" aria-selected="false" data-view="curve">Curve</button>
       <button class="awards-toggle" role="tab" aria-selected="false" data-view="list">List</button>
     </div>
   </div>
 
-  <!-- 可视化阶梯视图 -->
-  <div class="awards-stairs" role="list" aria-label="Awards as a visual staircase">
+  <!-- 柱形台阶视图（明显的 1-5 级台阶） -->
+  <div class="awards-stairs" role="list" aria-label="Awards as ascending bars">
     <!-- lvl=1 最低台阶 -->
-    <a class="stair" role="listitem" style="--lvl:1" tabindex="0">
-      <div class="stair-main">
-        <div class="stair-title">Third Prize</div>
-        <div class="stair-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
+    <a class="step" role="listitem" style="--lvl:1" tabindex="0" aria-label="Third Prize — 2024">
+      <div class="step-label">
+        <div class="step-title">Third Prize</div>
+        <div class="step-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
       </div>
     </a>
 
     <!-- lvl=2 -->
-    <a class="stair" role="listitem" style="--lvl:2" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener" tabindex="0">
-      <div class="stair-main">
-        <div class="stair-title">Merit Student & Outstanding Student Leader</div>
-        <div class="stair-sub">ShanghaiTech University · 2020–2024</div>
+    <a class="step" role="listitem" style="--lvl:2" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener" tabindex="0" aria-label="Merit Student & Outstanding Student Leader — 2020–2024">
+      <div class="step-label">
+        <div class="step-title">Merit Student & Outstanding Student Leader</div>
+        <div class="step-sub">ShanghaiTech University · 2020–2024</div>
       </div>
     </a>
 
     <!-- lvl=3 -->
-    <a class="stair" role="listitem" style="--lvl:3" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener" tabindex="0">
-      <div class="stair-main">
-        <div class="stair-title">Shanghai Outstanding Graduate</div>
-        <div class="stair-sub">2023</div>
+    <a class="step" role="listitem" style="--lvl:3" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener" tabindex="0" aria-label="Shanghai Outstanding Graduate — 2023">
+      <div class="step-label">
+        <div class="step-title">Shanghai Outstanding Graduate</div>
+        <div class="step-sub">2023</div>
       </div>
     </a>
 
     <!-- lvl=4 -->
-    <a class="stair" role="listitem" style="--lvl:4" tabindex="0">
-      <div class="stair-main">
-        <div class="stair-title">National Second Prize</div>
-        <div class="stair-sub">The National Robotics Competition · 2020</div>
+    <a class="step" role="listitem" style="--lvl:4" tabindex="0" aria-label="National Second Prize — 2020">
+      <div class="step-label">
+        <div class="step-title">National Second Prize</div>
+        <div class="step-sub">The National Robotics Competition · 2020</div>
       </div>
     </a>
 
     <!-- lvl=5 最高台阶 -->
-    <a class="stair top" role="listitem" style="--lvl:5" tabindex="0">
-      <div class="stair-main">
-        <div class="stair-title">National Scholarship</div>
-        <div class="stair-sub">Top 1% · 2024</div>
+    <a class="step top" role="listitem" style="--lvl:5" tabindex="0" aria-label="National Scholarship (Top 1%) — 2024">
+      <div class="step-label">
+        <div class="step-title">National Scholarship</div>
+        <div class="step-sub">Top 1% · 2024</div>
       </div>
     </a>
+  </div>
+
+  <!-- 上升曲线视图（代表逐步成长） -->
+  <div class="awards-curve" hidden aria-label="Awards as a rising curve">
+    <svg class="curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="awGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#8b5cf6"/>
+          <stop offset="100%" stop-color="#06b6d4"/>
+        </linearGradient>
+      </defs>
+      <path class="curve-path" d="M8,78 C16,74 20,68 28,62 S40,54 48,48 S60,38 68,30 S80,24 88,18" stroke="url(#awGrad)" stroke-width="2.6" fill="none"/>
+      <g class="curve-points" fill="#fff" stroke="url(#awGrad)" stroke-width="1.6">
+        <circle cx="8" cy="78" r="2.6"/>
+        <circle cx="28" cy="62" r="2.6"/>
+        <circle cx="48" cy="48" r="2.6"/>
+        <circle cx="68" cy="30" r="2.6"/>
+        <circle cx="88" cy="18" r="3.2"/>
+      </g>
+    </svg>
+    <div class="curve-nodes">
+      <a class="node" style="--x:8%; --y:78%" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">Third Prize</div>
+          <div class="node-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
+        </div>
+      </a>
+      <a class="node" style="--x:28%; --y:62%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">Merit Student & Outstanding Student Leader</div>
+          <div class="node-sub">ShanghaiTech University · 2020–2024</div>
+        </div>
+      </a>
+      <a class="node" style="--x:48%; --y:48%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">Shanghai Outstanding Graduate</div>
+          <div class="node-sub">2023</div>
+        </div>
+      </a>
+      <a class="node" style="--x:68%; --y:30%" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">National Second Prize</div>
+          <div class="node-sub">The National Robotics Competition · 2020</div>
+        </div>
+      </a>
+      <a class="node top" style="--x:88%; --y:18%" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">National Scholarship</div>
+          <div class="node-sub">Top 1% · 2024</div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <!-- 无障碍/降级列表视图（默认隐藏） -->
@@ -1053,7 +1106,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 </div>
 
 <style>
-/* ============== Awards Stairs (scoped) ============== */
+/* ============== Awards: Stairs + Curve (scoped) ============== */
 .awards-section {
   --aw-bg: var(--global-bg, #f7f7fb);
   --aw-card: rgba(255,255,255,0.9);
@@ -1062,13 +1115,8 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   --aw-muted: #000000;
   --aw-ac1: #8b5cf6; /* purple */
   --aw-ac2: #06b6d4; /* cyan */
-  --aw-ac3: #f59e0b; /* amber */
-  --aw-shadow: 0 22px 60px rgba(0,0,0,0.32);
-  --step-w: clamp(160px, 20vw, 240px);
-  --step-h: clamp(64px, 8vw, 86px);   /* 顶面高度（可视内容区） */
-  --rise: 22px;                       /* 立面厚度（前脸） */
-  --gap: 14px;                        /* 各阶垂直间距 */
-  --skew: 0.5deg;                     /* 细微透视倾斜 */
+  --aw-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  --unit: clamp(32px, 5.5vw, 56px); /* step height unit */
   position: relative;
   margin: 1.2rem 0 2.4rem;
   color: var(--aw-text);
@@ -1080,9 +1128,9 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     --aw-border: rgba(255,255,255,0.18);
     --aw-text: #e5e7eb;
     --aw-muted: #a3a3a3;
+    --aw-shadow: 0 18px 60px rgba(0,0,0,0.45);
   }
 }
-
 .awards-head { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
 .awards-title { display: flex; align-items: center; gap: .6rem; margin: .2rem 0 .6rem; font-size: 1.35rem; background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .awards-ico { filter: saturate(120%); }
@@ -1091,74 +1139,81 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 .awards-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
 .awards-toggle.active { background: linear-gradient(135deg, rgba(139,92,246,.22), rgba(6,182,212,.22)); border-color: transparent; }
 
-/* 舞台容器 */
+/* Stairs (bars) */
 .awards-stairs {
   position: relative;
-  height: clamp(320px, 40vw, 460px);
+  height: clamp(320px, 40vw, 420px);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  align-items: end;
+  padding: 1rem 1rem 1.2rem;
   background:
-    radial-gradient(900px 380px at 10% 90%, rgba(139,92,246,.09), transparent 60%),
+    radial-gradient(900px 380px at 10% 90%, rgba(139,92,246,.08), transparent 60%),
     radial-gradient(900px 380px at 80% 20%, rgba(6,182,212,.10), transparent 65%);
   border-radius: 16px;
   overflow: hidden;
   isolation: isolate;
 }
-
-/* 单个台阶（顶面） */
-.stair {
-  --tx: calc((var(--lvl,1) - 1) * (var(--step-w) * 0.22));             /* x 偏移：越高越靠右 */
-  --ty: calc((var(--lvl,1) - 1) * (var(--step-h) + var(--gap)) * -1);  /* y 偏移：越高越向上 */
-  position: absolute; left: 1.1rem; bottom: 1.2rem; z-index: calc(10 + var(--lvl,1));
-  display: grid; place-items: center; width: var(--step-w); height: var(--step-h);
-  padding: .6rem .8rem; text-decoration: none; color: var(--aw-text);
-  background: linear-gradient(180deg, color-mix(in oklab, var(--aw-card) 88%, transparent), rgba(255,255,255,0.06));
-  border: 1px solid var(--aw-border);
-  border-radius: 14px 14px 8px 8px;
-  box-shadow: var(--aw-shadow);
-  transform: translate(var(--tx), var(--ty)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(var(--sc,1));
-  transform-style: preserve-3d;
-  transition: transform .26s ease, box-shadow .26s ease, border-color .26s ease, background .26s ease, filter .26s ease;
-  outline: none;
-}
-
-/* 前脸（立面） */
-.stair::before {
+.awards-stairs::after {
   content: "";
-  position: absolute; inset: auto 0 calc(var(--rise) * -1) 0; height: var(--rise); border-radius: 0 0 8px 8px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.18));
-  border: 1px solid var(--aw-border); border-top: none;
+  position: absolute; left: 0; right: 0; bottom: .9rem; height: 2px;
+  background: linear-gradient(90deg, rgba(139,92,246,.25), rgba(6,182,212,.25));
 }
-/* 环形高光 */
-.stair::after {
-  content: ""; position: absolute; inset: -40% -35% -60% -35%; pointer-events: none;
+.step {
+  position: relative;
+  align-self: end;
+  height: calc(var(--lvl,1) * var(--unit));
+  border: 1px solid var(--aw-border);
+  border-radius: 10px;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--aw-card) 90%, transparent), rgba(255,255,255,0.05));
+  box-shadow: var(--aw-shadow);
+  text-decoration: none; color: var(--aw-text);
+  transform: translateY(10px) scaleY(.98);
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease, background .28s ease, opacity .6s ease;
+  opacity: 0;
+}
+.js-enabled .step.in-view { opacity: 1; transform: translateY(0) scaleY(1); }
+.step:hover, .step:focus-visible { border-color: transparent; box-shadow: 0 20px 60px rgba(16,24,40,.28); outline: none; }
+.step:hover { transform: translateY(-2px) scaleY(1.02); }
+.step::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: 10px;
   background:
-    radial-gradient(600px 260px at var(--mx,50%) var(--my,50%), rgba(139,92,246,.22), transparent 62%),
-    radial-gradient(600px 260px at calc(var(--mx,50%) + 120px) calc(var(--my,50%) + 40px), rgba(6,182,212,.22), transparent 66%);
-  filter: blur(22px) saturate(130%);
+    radial-gradient(500px 180px at 50% 0%, rgba(139,92,246,.22), transparent 60%),
+    radial-gradient(500px 180px at 60% 10%, rgba(6,182,212,.22), transparent 70%);
+  filter: blur(18px) saturate(120%);
   opacity: 0; transition: opacity .28s ease;
 }
+.step:hover::before, .step:focus-visible::before { opacity: 1; }
+.step-label { position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%); width: 95%; text-align: center; }
+.step-title { font-weight: 700; letter-spacing: .02em; font-size: clamp(.95rem, .9rem + .2vw, 1.05rem); background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.step-sub { font-size: .82rem; color: var(--aw-muted); }
 
-.stair .stair-main { width: 100%; display: grid; gap: .2rem; text-align: center; }
-.stair-title { font-weight: 700; letter-spacing: .02em; font-size: clamp(.98rem, .92rem + .2vw, 1.05rem); background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.stair-sub { font-size: .82rem; color: var(--aw-muted); }
-
-/* 悬停/聚焦交互 */
-.stair:hover, .stair:focus-visible { border-color: transparent; box-shadow: 0 24px 70px rgba(16,24,40,.30); }
-.stair:hover::after, .stair:focus-visible::after { opacity: 1; }
-.stair:hover { --sc: 1.02; }
-.stair.top { outline: none; }
-
-/* 进入视口时淡入 */
-.js-enabled .stair { opacity: 0; filter: blur(.6px) saturate(90%); transform: translate(var(--tx), var(--ty)) scale(.985); }
-.js-enabled .stair.in-view { opacity: 1; filter: none; transform: translate(var(--tx), var(--ty)) scale(1); transition-duration: .65s; transition-delay: calc(var(--lvl) * 40ms); }
-
-/* 窄屏：切换为纵向堆叠（仍保持阶梯厚度感） */
 @media (max-width: 720px) {
-  .awards-stairs { height: auto; padding: .6rem 0 0; background: none; }
-  .stair { position: relative; left: 0; bottom: 0; width: 100%; transform: none !important; margin: 0 0 .9rem; }
-  .stair::before { inset: auto 0 calc(var(--rise) * -1) 0; }
+  .awards-stairs { height: clamp(280px, 70vh, 420px); padding: .8rem .7rem 1.2rem; gap: 10px; }
+  .step-label { width: 120%; }
 }
 
-/* List 视图（降级/可切换） */
+/* Curve */
+.awards-curve { position: relative; height: clamp(320px, 40vw, 420px); border-radius: 16px; overflow: hidden; background:
+  radial-gradient(900px 380px at 10% 90%, rgba(139,92,246,.08), transparent 60%),
+  radial-gradient(900px 380px at 80% 20%, rgba(6,182,212,.10), transparent 65%);
+}
+.curve-svg { position: absolute; inset: 0; }
+.curve-path { stroke-linecap: round; stroke-linejoin: round; }
+.js-enabled .curve-path { stroke-dasharray: 400; stroke-dashoffset: 400; transition: stroke-dashoffset 1.2s ease .15s; }
+.js-enabled .curve-path.drawn { stroke-dashoffset: 0; }
+.curve-nodes { position: absolute; inset: 0; }
+.node { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); width: 28px; height: 28px; border-radius: 50%; outline: none; }
+.node::before { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px rgba(139,92,246,.5); }
+.node.top::before { box-shadow: 0 0 0 2px rgba(6,182,212,.6); }
+.node:hover::before, .node:focus-visible::before { box-shadow: 0 0 0 3px rgba(139,92,246,.6), 0 8px 24px rgba(16,24,40,.3); }
+.node-card { position: absolute; left: 50%; bottom: 40px; transform: translate(-50%, 6px) scale(.98); background: var(--aw-card); color: var(--aw-text); border: 1px solid var(--aw-border); border-radius: 12px; padding: .5rem .7rem; box-shadow: var(--aw-shadow); width: max-content; max-width: 260px; opacity: 0; pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+.node:hover .node-card, .node:focus-visible .node-card { opacity: 1; transform: translate(-50%, 0) scale(1); }
+.node-title { font-weight: 700; letter-spacing: .02em; font-size: .98rem; background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.node-sub { font-size: .82rem; color: var(--aw-muted); }
+
+/* List */
 .awards-list { margin: .6rem 0 0; padding-left: 1.1rem; color: var(--aw-text); }
 .awards-section .awards-list li { margin: .35rem 0; }
 </style>
@@ -1169,18 +1224,26 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   if (!root) return;
   root.classList.add('js-enabled');
   const stairs = root.querySelector('.awards-stairs');
-  const toggles = root.querySelectorAll('.awards-toggle');
+  const curve = root.querySelector('.awards-curve');
   const list = root.querySelector('.awards-list');
+  const toggles = root.querySelectorAll('.awards-toggle');
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // 视图切换：Stairs <-> List
+  // 视图切换：Stairs <-> Curve <-> List
+  function setView(view) {
+    if (view === 'list') {
+      list.hidden = false; stairs.style.display = 'none'; if (curve) curve.style.display = 'none';
+    } else if (view === 'curve') {
+      list.hidden = true; stairs.style.display = 'none'; if (curve) { curve.style.display = 'block'; drawCurve(); }
+    } else { // stairs
+      list.hidden = true; stairs.style.display = 'grid'; if (curve) curve.style.display = 'none';
+    }
+  }
   toggles.forEach(btn => {
     btn.addEventListener('click', () => {
       toggles.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
       btn.classList.add('active'); btn.setAttribute('aria-selected','true');
-      const view = btn.getAttribute('data-view');
-      if (view === 'list') { list.hidden = false; stairs.style.display = 'none'; }
-      else { stairs.style.display = 'block'; list.hidden = true; }
+      setView(btn.getAttribute('data-view'));
     });
   });
 
@@ -1188,40 +1251,23 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); } });
-    }, { threshold: 0.15 });
-    root.querySelectorAll('.stair').forEach(el => io.observe(el));
+    }, { threshold: 0.2 });
+    root.querySelectorAll('.step').forEach(el => io.observe(el));
   } else {
-    root.querySelectorAll('.stair').forEach(el => el.classList.add('in-view'));
+    root.querySelectorAll('.step').forEach(el => el.classList.add('in-view'));
   }
 
-  // 鼠标跟随倾斜/光效（移动端忽略）
-  if (!reduced && matchMedia('(hover: hover)').matches) {
-    root.querySelectorAll('.stair').forEach(step => {
-      step.addEventListener('mousemove', (e) => {
-        const r = step.getBoundingClientRect();
-        const x = e.clientX - r.left, y = e.clientY - r.top;
-        const px = x / r.width, py = y / r.height;
-        // 轻微 3D 倾斜
-        const rx = (py - 0.5) * -6; // invert X for natural feel
-        const ry = (px - 0.5) * 8;
-        step.style.setProperty('--rx', rx.toFixed(2) + 'deg');
-        step.style.setProperty('--ry', ry.toFixed(2) + 'deg');
-        step.style.setProperty('--mx', x + 'px');
-        step.style.setProperty('--my', y + 'px');
-      });
-      step.addEventListener('mouseleave', () => {
-        step.style.removeProperty('--rx');
-        step.style.removeProperty('--ry');
-        step.style.removeProperty('--mx');
-        step.style.removeProperty('--my');
-      });
-    });
-  } else {
-    // 移动端/降级：点击/触摸时轻微高亮
-    root.querySelectorAll('.stair').forEach(step => {
-      step.addEventListener('touchstart', () => step.classList.add('in-view'), { passive: true });
-      step.addEventListener('touchend', () => step.classList.remove('in-view'));
-    });
+  // 曲线绘制动画
+  function drawCurve() {
+    if (!curve) return;
+    const path = curve.querySelector('.curve-path');
+    if (!path) return;
+    if (path.classList.contains('drawn')) return; // once
+    if (reduced) { path.classList.add('drawn'); return; }
+    const len = path.getTotalLength();
+    path.style.strokeDasharray = String(len);
+    path.style.strokeDashoffset = String(len);
+    requestAnimationFrame(() => { path.classList.add('drawn'); path.style.strokeDashoffset = '0'; });
   }
 })();
 </script>
