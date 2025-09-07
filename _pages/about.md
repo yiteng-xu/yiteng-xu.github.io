@@ -979,12 +979,244 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 <!-- # 🎖 Honors and Awards -->
 
 
-# <img src='images/trophy.svg' alt='trophy' width="35" style="vertical-align: middle; margin-right: 10px;">Honors and Awards
--   **National Scholarship** (Top 1%), 2024
--   [**Shanghai Outstanding Graduate**](https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929), 2023
--   **National Second Prize**, The National Robotics Competition, 2020
--   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024
--   [**Merit Student & Outstanding Student Leader**](https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833), ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
+<div id="awards" class="awards-section" aria-label="Honors and Awards">
+  <div class="awards-head">
+    <h2 class="awards-title">
+      <img src="images/trophy.svg" alt="trophy" width="32" height="32" class="awards-ico" />
+      Honors and Awards
+    </h2>
+    <div class="awards-views" role="tablist" aria-label="Awards view selector">
+      <button class="awards-toggle active" role="tab" aria-selected="true" data-view="stairs">Stairs</button>
+      <button class="awards-toggle" role="tab" aria-selected="false" data-view="list">List</button>
+    </div>
+  </div>
+
+  <!-- 可视化阶梯视图 -->
+  <div class="awards-stairs" role="list" aria-label="Awards as a visual staircase">
+    <!-- lvl=1 最低台阶 -->
+    <a class="stair" role="listitem" style="--lvl:1" tabindex="0">
+      <div class="stair-main">
+        <div class="stair-title">Third Prize</div>
+        <div class="stair-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
+      </div>
+    </a>
+
+    <!-- lvl=2 -->
+    <a class="stair" role="listitem" style="--lvl:2" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener" tabindex="0">
+      <div class="stair-main">
+        <div class="stair-title">Merit Student & Outstanding Student Leader</div>
+        <div class="stair-sub">ShanghaiTech University · 2020–2024</div>
+      </div>
+    </a>
+
+    <!-- lvl=3 -->
+    <a class="stair" role="listitem" style="--lvl:3" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener" tabindex="0">
+      <div class="stair-main">
+        <div class="stair-title">Shanghai Outstanding Graduate</div>
+        <div class="stair-sub">2023</div>
+      </div>
+    </a>
+
+    <!-- lvl=4 -->
+    <a class="stair" role="listitem" style="--lvl:4" tabindex="0">
+      <div class="stair-main">
+        <div class="stair-title">National Second Prize</div>
+        <div class="stair-sub">The National Robotics Competition · 2020</div>
+      </div>
+    </a>
+
+    <!-- lvl=5 最高台阶 -->
+    <a class="stair top" role="listitem" style="--lvl:5" tabindex="0">
+      <div class="stair-main">
+        <div class="stair-title">National Scholarship</div>
+        <div class="stair-sub">Top 1% · 2024</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- 无障碍/降级列表视图（默认隐藏） -->
+  <ul class="awards-list" hidden>
+    <li><strong>National Scholarship</strong> (Top 1%), 2024</li>
+    <li><strong>National Second Prize</strong>, The National Robotics Competition, 2020</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener"><strong>Shanghai Outstanding Graduate</strong></a>, 2023</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener"><strong>Merit Student & Outstanding Student Leader</strong></a>, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024</li>
+    <li><strong>Third Prize</strong>, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024</li>
+  </ul>
+</div>
+
+<style>
+/* ============== Awards Stairs (scoped) ============== */
+.awards-section {
+  --aw-bg: var(--global-bg, #f7f7fb);
+  --aw-card: rgba(255,255,255,0.9);
+  --aw-border: rgba(10,10,10,0.08);
+  --aw-text: var(--global-text, #000);
+  --aw-muted: #000000;
+  --aw-ac1: #8b5cf6; /* purple */
+  --aw-ac2: #06b6d4; /* cyan */
+  --aw-ac3: #f59e0b; /* amber */
+  --aw-shadow: 0 22px 60px rgba(0,0,0,0.32);
+  --step-w: clamp(160px, 20vw, 240px);
+  --step-h: clamp(64px, 8vw, 86px);   /* 顶面高度（可视内容区） */
+  --rise: 22px;                       /* 立面厚度（前脸） */
+  --gap: 14px;                        /* 各阶垂直间距 */
+  --skew: 0.5deg;                     /* 细微透视倾斜 */
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  color: var(--aw-text);
+}
+@media (prefers-color-scheme: dark) {
+  .awards-section {
+    --aw-bg: #0b0c10;
+    --aw-card: rgba(255,255,255,0.08);
+    --aw-border: rgba(255,255,255,0.18);
+    --aw-text: #e5e7eb;
+    --aw-muted: #a3a3a3;
+  }
+}
+
+.awards-head { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+.awards-title { display: flex; align-items: center; gap: .6rem; margin: .2rem 0 .6rem; font-size: 1.35rem; background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.awards-ico { filter: saturate(120%); }
+.awards-views { display: inline-flex; gap: .4rem; }
+.awards-toggle { appearance: none; border: 1px solid var(--aw-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--aw-text); font: inherit; padding: .35rem .8rem; border-radius: 999px; cursor: pointer; transition: all .25s ease; }
+.awards-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
+.awards-toggle.active { background: linear-gradient(135deg, rgba(139,92,246,.22), rgba(6,182,212,.22)); border-color: transparent; }
+
+/* 舞台容器 */
+.awards-stairs {
+  position: relative;
+  height: clamp(320px, 40vw, 460px);
+  background:
+    radial-gradient(900px 380px at 10% 90%, rgba(139,92,246,.09), transparent 60%),
+    radial-gradient(900px 380px at 80% 20%, rgba(6,182,212,.10), transparent 65%);
+  border-radius: 16px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* 单个台阶（顶面） */
+.stair {
+  --tx: calc((var(--lvl,1) - 1) * (var(--step-w) * 0.22));             /* x 偏移：越高越靠右 */
+  --ty: calc((var(--lvl,1) - 1) * (var(--step-h) + var(--gap)) * -1);  /* y 偏移：越高越向上 */
+  position: absolute; left: 1.1rem; bottom: 1.2rem; z-index: calc(10 + var(--lvl,1));
+  display: grid; place-items: center; width: var(--step-w); height: var(--step-h);
+  padding: .6rem .8rem; text-decoration: none; color: var(--aw-text);
+  background: linear-gradient(180deg, color-mix(in oklab, var(--aw-card) 88%, transparent), rgba(255,255,255,0.06));
+  border: 1px solid var(--aw-border);
+  border-radius: 14px 14px 8px 8px;
+  box-shadow: var(--aw-shadow);
+  transform: translate(var(--tx), var(--ty)) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) scale(var(--sc,1));
+  transform-style: preserve-3d;
+  transition: transform .26s ease, box-shadow .26s ease, border-color .26s ease, background .26s ease, filter .26s ease;
+  outline: none;
+}
+
+/* 前脸（立面） */
+.stair::before {
+  content: "";
+  position: absolute; inset: auto 0 calc(var(--rise) * -1) 0; height: var(--rise); border-radius: 0 0 8px 8px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.18));
+  border: 1px solid var(--aw-border); border-top: none;
+}
+/* 环形高光 */
+.stair::after {
+  content: ""; position: absolute; inset: -40% -35% -60% -35%; pointer-events: none;
+  background:
+    radial-gradient(600px 260px at var(--mx,50%) var(--my,50%), rgba(139,92,246,.22), transparent 62%),
+    radial-gradient(600px 260px at calc(var(--mx,50%) + 120px) calc(var(--my,50%) + 40px), rgba(6,182,212,.22), transparent 66%);
+  filter: blur(22px) saturate(130%);
+  opacity: 0; transition: opacity .28s ease;
+}
+
+.stair .stair-main { width: 100%; display: grid; gap: .2rem; text-align: center; }
+.stair-title { font-weight: 700; letter-spacing: .02em; font-size: clamp(.98rem, .92rem + .2vw, 1.05rem); background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.stair-sub { font-size: .82rem; color: var(--aw-muted); }
+
+/* 悬停/聚焦交互 */
+.stair:hover, .stair:focus-visible { border-color: transparent; box-shadow: 0 24px 70px rgba(16,24,40,.30); }
+.stair:hover::after, .stair:focus-visible::after { opacity: 1; }
+.stair:hover { --sc: 1.02; }
+.stair.top { outline: none; }
+
+/* 进入视口时淡入 */
+.js-enabled .stair { opacity: 0; filter: blur(.6px) saturate(90%); transform: translate(var(--tx), var(--ty)) scale(.985); }
+.js-enabled .stair.in-view { opacity: 1; filter: none; transform: translate(var(--tx), var(--ty)) scale(1); transition-duration: .65s; transition-delay: calc(var(--lvl) * 40ms); }
+
+/* 窄屏：切换为纵向堆叠（仍保持阶梯厚度感） */
+@media (max-width: 720px) {
+  .awards-stairs { height: auto; padding: .6rem 0 0; background: none; }
+  .stair { position: relative; left: 0; bottom: 0; width: 100%; transform: none !important; margin: 0 0 .9rem; }
+  .stair::before { inset: auto 0 calc(var(--rise) * -1) 0; }
+}
+
+/* List 视图（降级/可切换） */
+.awards-list { margin: .6rem 0 0; padding-left: 1.1rem; color: var(--aw-text); }
+.awards-section .awards-list li { margin: .35rem 0; }
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('awards');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const stairs = root.querySelector('.awards-stairs');
+  const toggles = root.querySelectorAll('.awards-toggle');
+  const list = root.querySelector('.awards-list');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // 视图切换：Stairs <-> List
+  toggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      toggles.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      const view = btn.getAttribute('data-view');
+      if (view === 'list') { list.hidden = false; stairs.style.display = 'none'; }
+      else { stairs.style.display = 'block'; list.hidden = true; }
+    });
+  });
+
+  // 进入视口动画
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); } });
+    }, { threshold: 0.15 });
+    root.querySelectorAll('.stair').forEach(el => io.observe(el));
+  } else {
+    root.querySelectorAll('.stair').forEach(el => el.classList.add('in-view'));
+  }
+
+  // 鼠标跟随倾斜/光效（移动端忽略）
+  if (!reduced && matchMedia('(hover: hover)').matches) {
+    root.querySelectorAll('.stair').forEach(step => {
+      step.addEventListener('mousemove', (e) => {
+        const r = step.getBoundingClientRect();
+        const x = e.clientX - r.left, y = e.clientY - r.top;
+        const px = x / r.width, py = y / r.height;
+        // 轻微 3D 倾斜
+        const rx = (py - 0.5) * -6; // invert X for natural feel
+        const ry = (px - 0.5) * 8;
+        step.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+        step.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+        step.style.setProperty('--mx', x + 'px');
+        step.style.setProperty('--my', y + 'px');
+      });
+      step.addEventListener('mouseleave', () => {
+        step.style.removeProperty('--rx');
+        step.style.removeProperty('--ry');
+        step.style.removeProperty('--mx');
+        step.style.removeProperty('--my');
+      });
+    });
+  } else {
+    // 移动端/降级：点击/触摸时轻微高亮
+    root.querySelectorAll('.stair').forEach(step => {
+      step.addEventListener('touchstart', () => step.classList.add('in-view'), { passive: true });
+      step.addEventListener('touchend', () => step.classList.remove('in-view'));
+    });
+  }
+})();
+</script>
 
 # 📖 Educations
 
