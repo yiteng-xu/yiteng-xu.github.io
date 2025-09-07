@@ -1279,7 +1279,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 -   **B.S. in Computer Science and Technology** (2019 - 2023)
     -   *ShanghaiTech University, Shanghai, China*
 
-# Skill Points
+# 🎯 Skill Points
 
 <div id="skill-points" class="skill-points">
   <div class="sp-chips" role="list" aria-label="Skill Points">
