@@ -250,6 +250,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   color: var(--ms-text);
   transition: border-color .25s ease, transform .25s ease;
 }
+.milestones-section .chip { color: #000 !important; }
 .chip-award { border-color: rgba(234,179,8,.45) }
 .chip-paper { border-color: rgba(59,130,246,.45) }
 .chip-oral { border-color: rgba(244,63,94,.45) }
@@ -460,6 +461,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   font-size: .75rem; padding: .2rem .55rem; border-radius: 999px;
   border: 1px solid var(--nw-border); background: rgba(255,255,255,.06); color: var(--nw-text);
 }
+.news-section .news-chip { color: #000 !important; }
 .news-source { border-color: rgba(124,58,237,.45); }
 .news-date { border-color: rgba(59,130,246,.45); }
 .news-title {
@@ -869,6 +871,8 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 .card-body { padding: .25rem .95rem .8rem; }
 .chip-row { display: flex; flex-wrap: wrap; gap: .45rem; }
 .skill-chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .78rem; padding: .28rem .6rem; border-radius: 999px; border: 1px solid var(--sk-border); color: var(--sk-text); background: rgba(255,255,255,.06); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+.skills-section .skill-chip { color: #000 !important; }
+.skills-section .float-chip { color: #000 !important; }
 .skill-chip:hover { transform: translateY(-2px); border-color: transparent; background: linear-gradient(135deg, rgba(168,85,247,.25), rgba(6,182,212,.25)); }
 .chip-hot { border-color: rgba(124,58,237,.45); }
 .mini-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--sk-text); }
@@ -1136,6 +1140,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   cursor: default;
   will-change: transform;
 }
+.skill-points .sp-chip { color: #000 !important; }
 .sp-chip::before {
   content: "";
   position: absolute;
