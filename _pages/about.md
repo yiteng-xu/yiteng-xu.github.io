@@ -981,10 +981,10 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 # <img src='images/trophy.svg' alt='trophy' width="35" style="vertical-align: middle; margin-right: 10px;">Honors and Awards
 -   **National Scholarship** (Top 1%), 2024
--   **Shanghai Outstanding Graduate**, 2023
+-   [**Shanghai Outstanding Graduate**](https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929), 2023
 -   **National Second Prize**, The National Robotics Competition, 2020
 -   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024
--   **Merit Student & Outstanding Student Leader**, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
+-   [**Merit Student & Outstanding Student Leader**](https://kms.shanghaitech.edu.cn/simpleSearch?field=TKA&text=Xu,%20Yiteng), ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
 
 # 📖 Educations
 
