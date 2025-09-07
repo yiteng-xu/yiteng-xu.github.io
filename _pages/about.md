@@ -1003,7 +1003,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   <!-- 柱形台阶视图（明显的 1-5 级台阶） -->
   <div class="awards-stairs" role="list" aria-label="Awards as ascending bars">
     <!-- lvl=1 最低台阶 -->
-    <a class="step" role="listitem" style="--lvl:1" tabindex="0" aria-label="Third Prize — 2024">
+    <a class="step" role="listitem" style="--lvl:1" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964643670370074625" target="_blank" rel="noopener" tabindex="0" aria-label="Third Prize — 2024">
       <div class="step-label">
         <div class="step-title">Third Prize</div>
         <div class="step-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
@@ -1027,7 +1027,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     </a>
 
     <!-- lvl=4 -->
-    <a class="step" role="listitem" style="--lvl:4" tabindex="0" aria-label="National Second Prize — 2020">
+    <a class="step" role="listitem" style="--lvl:4" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644453601820674" target="_blank" rel="noopener" tabindex="0" aria-label="National Second Prize — 2020">
       <div class="step-label">
         <div class="step-title">National Second Prize</div>
         <div class="step-sub">The National Robotics Competition · 2020</div>
@@ -1035,7 +1035,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     </a>
 
     <!-- lvl=5 最高台阶 -->
-    <a class="step top" role="listitem" style="--lvl:5" tabindex="0" aria-label="National Scholarship (Top 1%) — 2024">
+    <a class="step top" role="listitem" style="--lvl:5" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644089980829697" target="_blank" rel="noopener" tabindex="0" aria-label="National Scholarship (Top 1%) — 2024">
       <div class="step-label">
         <div class="step-title">National Scholarship</div>
         <div class="step-sub">Top 1% · 2024</div>
@@ -1062,7 +1062,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
       </g>
     </svg>
     <div class="curve-nodes">
-      <a class="node" style="--x:8%; --y:78%" tabindex="0">
+      <a class="node" style="--x:8%; --y:78%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964643670370074625" target="_blank" rel="noopener" tabindex="0">
         <div class="node-card">
           <div class="node-title">Third Prize</div>
           <div class="node-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
@@ -1080,13 +1080,13 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
           <div class="node-sub">2023</div>
         </div>
       </a>
-      <a class="node" style="--x:68%; --y:30%" tabindex="0">
+      <a class="node" style="--x:68%; --y:30%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644453601820674" target="_blank" rel="noopener" tabindex="0">
         <div class="node-card">
           <div class="node-title">National Second Prize</div>
           <div class="node-sub">The National Robotics Competition · 2020</div>
         </div>
       </a>
-      <a class="node top" style="--x:88%; --y:18%" tabindex="0">
+      <a class="node top" style="--x:88%; --y:18%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644089980829697" target="_blank" rel="noopener" tabindex="0">
         <div class="node-card">
           <div class="node-title">National Scholarship</div>
           <div class="node-sub">Top 1% · 2024</div>
@@ -1097,11 +1097,11 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
   <!-- 无障碍/降级列表视图（默认隐藏） -->
   <ul class="awards-list" hidden>
-    <li><strong>National Scholarship</strong> (Top 1%), 2024</li>
-    <li><strong>National Second Prize</strong>, The National Robotics Competition, 2020</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644089980829697" target="_blank" rel="noopener"><strong>National Scholarship</strong></a> (Top 1%), 2024</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644453601820674" target="_blank" rel="noopener"><strong>National Second Prize</strong></a>, The National Robotics Competition, 2020</li>
     <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener"><strong>Shanghai Outstanding Graduate</strong></a>, 2023</li>
     <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener"><strong>Merit Student & Outstanding Student Leader</strong></a>, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024</li>
-    <li><strong>Third Prize</strong>, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964643670370074625" target="_blank" rel="noopener"><strong>Third Prize</strong></a>, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024</li>
   </ul>
 </div>
 
