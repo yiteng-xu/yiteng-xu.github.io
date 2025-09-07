@@ -984,7 +984,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 -   [**Shanghai Outstanding Graduate**](https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929), 2023
 -   **National Second Prize**, The National Robotics Competition, 2020
 -   **Third Prize**, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024
--   [**Merit Student & Outstanding Student Leader**](https://kms.shanghaitech.edu.cn/simpleSearch?field=TKA&text=Xu,%20Yiteng), ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
+-   [**Merit Student & Outstanding Student Leader**](https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833), ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024
 
 # 📖 Educations
 
