@@ -109,6 +109,16 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   </ul>
 </div>
 
+<noscript>
+  <style>
+    /* No-JS fallback: show list, hide stairs */
+    #awards .awards-stairs { display: none !important; }
+    #awards .awards-list { display: block !important; }
+    #awards .awards-list[hidden] { display: block !important; }
+  </style>
+  
+</noscript>
+
 <style>
 .milestones-section {
   /* Default to light theme-friendly values for better contrast */
