@@ -114,6 +114,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   </div>
 
   <ul class="milestones-list" hidden>
+    <li>Sep 2025 — Siggraph Asia 2025: SymBridge</li>
     <li>Oct 2024 — National Scholarship 国家奖学金(Top 1%)</li>
     <li>Feb 2024 — CVPR 2024: UniPVU-Human accepted</li>
     <li>Sep 2023 — Started Ph.D. at ShanghaiTech</li>
