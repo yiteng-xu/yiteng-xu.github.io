@@ -38,6 +38,18 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
     <div class="milestone" role="listitem">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Sep 2025</div>
+        <h3 class="milestone-title">Siggraph Asia 2025</h3>
+        <p class="milestone-desc">SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-award">Award</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Oct 2024</div>
         <h3 class="milestone-title">National Scholarship 国家奖学金</h3>
         <p class="milestone-desc">Honored to receive the National Scholarship (Top 1%).</p>
