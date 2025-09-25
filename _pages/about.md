@@ -42,7 +42,8 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
         <h3 class="milestone-title">Siggraph Asia 2025</h3>
         <p class="milestone-desc">SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis.</p>
         <div class="milestone-tags">
-          <span class="chip chip-award">Award</span>
+          <span class="chip chip-paper">Publication</span>
+          <a class="chip chip-link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">Paper</a>
         </div>
       </div>
     </div>
