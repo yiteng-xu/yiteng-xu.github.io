@@ -607,14 +607,14 @@ Yumeng Liu, Yaxun Yang, Youzhuo Wang, Xiaofei Wu, Jiamin Wang, **Yichen Yao**, S
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/SymBridge.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><img src='images/SymBridge.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis](https://irc-vitahome.github.io/SymBridge/)
 
 Haoran Chen*, Yiteng Xu*, Yiming Ren, Yaoqin Ye, Xinran Li, Ning Ding, Yuxuan Wu, Yaoze Liu, Peishan Cong, Ziyi Wang, Bushi Liu, Yuhan Chen, Zhiyang Dou3, Xiaokun Leng4, Manyi Li†, Yuexin Ma†, Changhe Tu
 
-ACM SIGGRAPH Asia 2025, 2025
+ACM SIGGRAPH Asia, 2025
 </div>
 </div>
 
