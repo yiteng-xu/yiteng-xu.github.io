@@ -618,6 +618,24 @@ ACM SIGGRAPH Asia, 2025
 </div>
 </div>
 
+# 🎬 SymBridge 演示视频
+<div class="video-wrapper" style="position: relative; width: 100%; max-width: 960px; margin: 0.6rem auto 1.2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 36px rgba(16,24,40,.18); border: 1px solid rgba(10,10,10,0.08); background: rgba(255,255,255,0.85);">
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    poster="/images/SymBridge.png"
+    style="display: block; width: 100%; height: auto;"
+    aria-label="SymBridge demo video"
+  >
+    <source src="/videos/SymBridge.mp4" type="video/mp4" />
+    您的浏览器不支持视频标签。您可以在此处下载视频：
+    <a href="/videos/SymBridge.mp4">SymBridge.mp4</a>
+  </video>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/unified.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
