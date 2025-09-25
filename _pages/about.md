@@ -612,7 +612,7 @@ Yumeng Liu, Yaxun Yang, Youzhuo Wang, Xiaofei Wu, Jiamin Wang, **Yichen Yao**, S
 
 [SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis](https://irc-vitahome.github.io/SymBridge/)
 
-Haoran Chen*, **Yiteng Xu\***, Yiming Ren, Yaoqin Ye, Xinran Li, Ning Ding, Yuxuan Wu, Yaoze Liu, Peishan Cong, Ziyi Wang, Bushi Liu, Yuhan Chen, Zhiyang Dou, Xiaokun Leng4, Manyi Li†, Yuexin Ma†, Changhe Tu
+Haoran Chen*, **Yiteng Xu\***, Yiming Ren, Yaoqin Ye, Xinran Li, Ning Ding, Yuxuan Wu, Yaoze Liu, Peishan Cong, Ziyi Wang, Bushi Liu, Yuhan Chen, Zhiyang Dou, Xiaokun Leng, Manyi Li†, Yuexin Ma†, Changhe Tu
 
 ACM SIGGRAPH Asia, 2025
 </div>
