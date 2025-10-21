@@ -672,16 +672,73 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 
 # 📜 Patents
 
-- Title: General-purpose Dynamic Point Cloud Understanding Model and Multi-task Collaborative Optimization System
-- Type: Invention patent application
-- Publication No.: CN120412083A (2025-08-01)
-- Application No.: 2025104473784 (Filed: 2025-04-10)
-- Assignee: ShanghaiTech University
-- Inventors: Yiteng Xu; Yuexin Ma
-- IPC: G06V40/20; G06V20/64; G06V20/70; G06V10/26; G06V10/44; G06V10/52; G06V10/54; G06V10/80; G06V10/82; G06N3/0455
-- Abstract: This invention discloses a general-purpose dynamic point cloud understanding model with a multi-task collaborative optimization system featuring a human-knowledge branch and a local-detail branch. It advances multi-level feature fusion for 3D human point clouds, optimizes dynamic temporal sequence modeling, and improves cross-task generalization. Applicable to intelligent surveillance, VR/AR, human–robot interaction, autonomous driving, and sports analytics, providing core algorithms for real-time, precise understanding of human behavior and state.
+<div class='paper-box patent-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">Patent 2025</div>
+      <img src='/assets/files/Patents.jpg' alt='Patent front page' width='100%'>
+    </div>
+  </div>
+  <div class='paper-box-text'>
+    <h3 style="margin: 0 0 .4rem 0;">General-purpose Dynamic Point Cloud Understanding Model and Multi-task Collaborative Optimization System</h3>
+    <div class="patent-meta">
+      <div class="pm"><strong>Publication No.</strong><span>CN120412083A (2025-08-01)</span></div>
+      <div class="pm"><strong>Application No.</strong><span>2025104473784 (Filed: 2025-04-10)</span></div>
+      <div class="pm"><strong>Type</strong><span>Invention patent application</span></div>
+      <div class="pm"><strong>Assignee</strong><span>ShanghaiTech University</span></div>
+      <div class="pm"><strong>Inventors</strong><span>Yiteng Xu; Yuexin Ma</span></div>
+      <div class="pm"><strong>IPC</strong><span>G06V40/20; G06V20/64; G06V20/70; G06V10/26; G06V10/44; G06V10/52; G06V10/54; G06V10/80; G06V10/82; G06N3/0455</span></div>
+    </div>
+    <p class="patent-abstract">
+      This invention discloses a general-purpose dynamic point cloud understanding model with a multi-task collaborative optimization system featuring a human-knowledge branch and a local-detail branch. It advances multi-level feature fusion for 3D human point clouds, optimizes dynamic temporal sequence modeling, and improves cross-task generalization. Applicable to intelligent surveillance, VR/AR, human–robot interaction, autonomous driving, and sports analytics, providing core algorithms for real-time, precise understanding of human behavior and state.
+    </p>
+    <div class="patent-actions">
+      <a href="/assets/files/Patents.jpg" target="_blank" rel="noopener">Front page (JPG)</a>
+    </div>
+  </div>
+</div>
 
-[Front page (JPG)](/assets/files/Patents.jpg){:target="_blank"}
+<style>
+/* ============== Patents (scoped) ============== */
+.patent-box {
+  position: relative;
+  padding: 1rem 1rem;
+  border: 1px solid rgba(10,10,10,0.08);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.96));
+  box-shadow: 0 10px 30px rgba(16,24,40,.10);
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .patent-box {
+    border-color: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 16px 44px rgba(0,0,0,.45);
+  }
+}
+.patent-box::before {
+  content: "";
+  position: absolute; inset: -40% -20% auto -20%; height: 180px;
+  background:
+    radial-gradient(600px 220px at 20% 50%, rgba(124,58,237,.20), transparent 60%),
+    radial-gradient(600px 220px at 70% 50%, rgba(6,182,212,.18), transparent 65%);
+  filter: blur(22px) saturate(130%);
+  pointer-events: none;
+}
+.patent-box .paper-box-image img {
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(16,24,40,.12);
+}
+.patent-box .paper-box-text {
+  padding: .5rem 1rem;
+}
+.patent-meta { display: grid; grid-template-columns: 1fr; gap: .35rem; margin: .6rem 0 .2rem; font-size: .95rem; }
+.patent-meta .pm { display: grid; grid-template-columns: 140px 1fr; gap: .6rem; align-items: start; }
+.patent-abstract { margin-top: .5rem; line-height: 1.55; }
+.patent-actions { margin-top: .6rem; }
+.patent-actions a { display: inline-block; padding: .28rem .65rem; border-radius: 999px; border: 1px solid rgba(124,58,237,.35); text-decoration: none; color: inherit; background: rgba(255,255,255,.06); }
+.patent-actions a:hover { transform: translateY(-1px); border-color: transparent; box-shadow: 0 8px 26px rgba(124,58,237,.22); }
+</style>
 
 # 🛠️ Technical Skills & Expertise
 
