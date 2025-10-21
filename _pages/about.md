@@ -682,8 +682,8 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   <div class='paper-box-text'>
     <h3 style="margin: 0 0 .4rem 0;"><a href="http://epub.cnipa.gov.cn/patent/CN120412083A" target="_blank" rel="noopener">General-purpose Dynamic Point Cloud Understanding Model and Multi-task Collaborative Optimization System</a></h3>
     <div class="patent-meta">
-      <div class="pm"><strong>Publication No.</strong><span>CN120412083A (2025-08-01)</span></div>
-      <div class="pm"><strong>Application No.</strong><span>2025104473784 (Filed: 2025-04-10)</span></div>
+      <div class="pm"><strong>Publication No.</strong><span>CN120412083A</span></div>
+      <!-- <div class="pm"><strong>Application No.</strong><span>2025104473784</span></div> -->
       <!-- <div class="pm"><strong>Type</strong><span>Invention patent application</span></div> -->
       <!-- <div class="pm"><strong>Assignee</strong><span>ShanghaiTech University</span></div> -->
       <!-- <div class="pm"><strong>Inventors</strong><span>Yiteng Xu; Yuexin Ma</span></div> -->
@@ -706,6 +706,11 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
   background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.96));
   box-shadow: 0 10px 30px rgba(16,24,40,.10);
   overflow: hidden;
+  /* entrance animation */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: patent-fade-in .8s cubic-bezier(.2,.6,.2,1) .05s forwards;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
 }
 @media (prefers-color-scheme: dark) {
   .patent-box {
@@ -722,20 +727,48 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     radial-gradient(600px 220px at 70% 50%, rgba(6,182,212,.18), transparent 65%);
   filter: blur(22px) saturate(130%);
   pointer-events: none;
+  animation: aurora-drift 14s ease-in-out infinite alternate;
+}
+.patent-box:hover, .patent-box:focus-within {
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow: 0 18px 48px rgba(16,24,40,.18);
 }
 .patent-box .paper-box-image img {
   border-radius: 12px;
   box-shadow: 0 10px 28px rgba(16,24,40,.12);
+  transition: transform .28s ease, box-shadow .28s ease;
 }
 .patent-box .paper-box-text {
   padding: .5rem 1rem;
 }
+.patent-box .paper-box-image { opacity: 0; transform: translateX(-8px); animation: patent-fade-in .8s ease .12s forwards; }
+.patent-box .paper-box-text { opacity: 0; transform: translateX(8px); animation: patent-fade-in .8s ease .20s forwards; }
+.patent-box:hover .paper-box-image img { transform: scale(1.015); box-shadow: 0 14px 36px rgba(16,24,40,.18); }
 .patent-meta { display: grid; grid-template-columns: 1fr; gap: .35rem; margin: .6rem 0 .2rem; font-size: .95rem; }
 .patent-meta .pm { display: grid; grid-template-columns: 140px 1fr; gap: .6rem; align-items: start; }
 .patent-abstract { margin-top: .5rem; line-height: 1.55; }
 .patent-actions { margin-top: .6rem; }
 .patent-actions a { display: inline-block; padding: .28rem .65rem; border-radius: 999px; border: 1px solid rgba(124,58,237,.35); text-decoration: none; color: inherit; background: rgba(255,255,255,.06); }
 .patent-actions a:hover { transform: translateY(-1px); border-color: transparent; box-shadow: 0 8px 26px rgba(124,58,237,.22); }
+
+/* keyframes */
+@keyframes patent-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes aurora-drift {
+  from { transform: translateY(0); filter: blur(22px) saturate(130%); }
+  to { transform: translateY(-6px); filter: blur(24px) saturate(140%); }
+}
+
+/* accessibility & reduced motion */
+.patent-box:focus-within { outline: 2px solid rgba(124,58,237,.28); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .patent-box, .patent-box .paper-box-image, .patent-box .paper-box-text { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .patent-box::before { animation: none !important; }
+  .patent-box *, .patent-box { transition: none !important; }
+}
 </style>
 
 # 🛠️ Technical Skills & Expertise
