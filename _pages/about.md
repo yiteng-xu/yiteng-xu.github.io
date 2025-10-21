@@ -681,7 +681,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 - IPC: G06V40/20; G06V20/64; G06V20/70; G06V10/26; G06V10/44; G06V10/52; G06V10/54; G06V10/80; G06V10/82; G06N3/0455
 - Abstract: This invention discloses a general-purpose dynamic point cloud understanding model with a multi-task collaborative optimization system featuring a human-knowledge branch and a local-detail branch. It advances multi-level feature fusion for 3D human point clouds, optimizes dynamic temporal sequence modeling, and improves cross-task generalization. Applicable to intelligent surveillance, VR/AR, human–robot interaction, autonomous driving, and sports analytics, providing core algorithms for real-time, precise understanding of human behavior and state.
 
-[Front page (PNG)](/assets/files/Patents.jpg){:target="_blank"}
+[Front page (JPG)](/assets/files/Patents.jpg){:target="_blank"}
 
 # 🛠️ Technical Skills & Expertise
 
