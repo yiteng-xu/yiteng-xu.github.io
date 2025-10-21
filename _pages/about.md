@@ -680,21 +680,19 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
     </div>
   </div>
   <div class='paper-box-text'>
-    <h3 style="margin: 0 0 .4rem 0;">General-purpose Dynamic Point Cloud Understanding Model and Multi-task Collaborative Optimization System</h3>
+    <h3 style="margin: 0 0 .4rem 0;"><a href="http://epub.cnipa.gov.cn/patent/CN120412083A" target="_blank" rel="noopener">General-purpose Dynamic Point Cloud Understanding Model and Multi-task Collaborative Optimization System</a></h3>
     <div class="patent-meta">
       <div class="pm"><strong>Publication No.</strong><span>CN120412083A (2025-08-01)</span></div>
       <div class="pm"><strong>Application No.</strong><span>2025104473784 (Filed: 2025-04-10)</span></div>
-      <div class="pm"><strong>Type</strong><span>Invention patent application</span></div>
-      <div class="pm"><strong>Assignee</strong><span>ShanghaiTech University</span></div>
-      <div class="pm"><strong>Inventors</strong><span>Yiteng Xu; Yuexin Ma</span></div>
-      <div class="pm"><strong>IPC</strong><span>G06V40/20; G06V20/64; G06V20/70; G06V10/26; G06V10/44; G06V10/52; G06V10/54; G06V10/80; G06V10/82; G06N3/0455</span></div>
+      <!-- <div class="pm"><strong>Type</strong><span>Invention patent application</span></div> -->
+      <!-- <div class="pm"><strong>Assignee</strong><span>ShanghaiTech University</span></div> -->
+      <!-- <div class="pm"><strong>Inventors</strong><span>Yiteng Xu; Yuexin Ma</span></div> -->
+      <!-- <div class="pm"><strong>IPC</strong><span>G06V40/20; G06V20/64; G06V20/70; G06V10/26; G06V10/44; G06V10/52; G06V10/54; G06V10/80; G06V10/82; G06N3/0455</span></div> -->
     </div>
     <p class="patent-abstract">
       This invention discloses a general-purpose dynamic point cloud understanding model with a multi-task collaborative optimization system featuring a human-knowledge branch and a local-detail branch. It advances multi-level feature fusion for 3D human point clouds, optimizes dynamic temporal sequence modeling, and improves cross-task generalization. Applicable to intelligent surveillance, VR/AR, human–robot interaction, autonomous driving, and sports analytics, providing core algorithms for real-time, precise understanding of human behavior and state.
     </p>
-    <div class="patent-actions">
-      <a href="/assets/files/Patents.jpg" target="_blank" rel="noopener">Front page (JPG)</a>
-    </div>
+    
   </div>
 </div>
 
