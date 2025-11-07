@@ -561,6 +561,149 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 </script>
 
 
+# 🧭 日本旅游攻略
+
+<div class="travel-guide" id="travel-guide">
+  <div class="tg-text">
+    <h3>沉浸式探索日本之旅</h3>
+    <p>
+      我近期上线了一个专注于日本自由行的互动网站，涵盖城市亮点、行程规划、交通票券与本地美食推荐。
+      欢迎访问该页面，获取从东京到冲绳的精选攻略与实时工具，助你快速定制个性化旅程计划。
+    </p>
+    <a class="tg-button" href="/日本攻略(1).html" target="_blank" rel="noopener">
+      立即打开日本攻略网站
+      <span class="tg-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+  <div class="tg-highlights" aria-hidden="true">
+    <ul>
+      <li>▶ 城市分区：东京、大阪、北海道等多元线路</li>
+      <li>▶ 交通卡 & JR PASS 购买指南</li>
+      <li>▶ 四季节庆与必吃美食速览</li>
+      <li>▶ 清晰的预算估算与预订渠道</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+.travel-guide {
+  position: relative;
+  margin: 1.4rem 0 2.2rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: linear-gradient(135deg, rgba(139,92,246,0.12), rgba(6,182,212,0.1));
+  box-shadow: 0 18px 42px rgba(16,24,40,0.18);
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .travel-guide {
+    border-color: rgba(255,255,255,0.18);
+    background: linear-gradient(135deg, rgba(139,92,246,0.18), rgba(6,182,212,0.16));
+    box-shadow: 0 20px 46px rgba(0,0,0,0.38);
+  }
+}
+.travel-guide::before {
+  content: "";
+  position: absolute;
+  inset: -30% -40% auto -30%;
+  height: 200px;
+  background:
+    radial-gradient(600px 240px at 20% 60%, rgba(168,85,247,0.32), transparent 65%),
+    radial-gradient(640px 240px at 70% 30%, rgba(6,182,212,0.28), transparent 65%);
+  filter: blur(22px) saturate(120%);
+  pointer-events: none;
+}
+.tg-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: var(--global-text, #111827);
+}
+.tg-text h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 1rem + 0.8vw, 1.5rem);
+  background: linear-gradient(135deg, rgba(124,58,237,1), rgba(6,182,212,1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.tg-text p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: inherit;
+}
+.tg-button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.48rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(124,58,237,0.35);
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(6px);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+.tg-button:hover, .tg-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: transparent;
+  box-shadow: 0 14px 36px rgba(124,58,237,0.28);
+  outline: none;
+}
+.tg-arrow {
+  font-size: 1.1rem;
+  transform: translateX(2px);
+}
+.tg-highlights {
+  position: relative;
+  z-index: 1;
+  border-left: 1px solid rgba(255,255,255,0.24);
+  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.tg-highlights ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+  color: rgba(17,24,39,0.9);
+  font-weight: 600;
+}
+.tg-highlights li {
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+@media (prefers-color-scheme: dark) {
+  .tg-text { color: #f3f4f6; }
+  .tg-highlights { border-left-color: rgba(255,255,255,0.18); }
+  .tg-highlights ul { color: rgba(229,231,235,0.92); }
+  .tg-button { background: rgba(255,255,255,0.14); color: #f9fafb; }
+}
+@media (max-width: 880px) {
+  .travel-guide {
+    grid-template-columns: 1fr;
+  }
+  .tg-highlights {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.24);
+    padding: 1.1rem 0 0;
+  }
+}
+</style>
+
+
 # 📝 Publications 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/IDKB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
