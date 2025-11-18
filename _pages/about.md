@@ -704,7 +704,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 </style>
 
 
-# 📝 Publications 
+# 📝 Publications {#publications}
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='images/IDKB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -813,7 +813,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 </div>
 </div>
 
-# 📜 Patents
+# 📜 Patents {#patents}
 
 <div class='paper-box patent-box'>
   <div class='paper-box-image'>
@@ -1561,7 +1561,7 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 })();
 </script>
 
-# 📖 Educations
+# 📖 Educations {#educations}
 
 -   **Ph.D. in Computer Science and Technology** (2023 - Present)
     -   *ShanghaiTech University, Shanghai, China*
