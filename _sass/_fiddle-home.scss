@@ -11,6 +11,7 @@
   --fh-accent: #a855f7;
   --fh-accent-2: #38bdf8;
   --fh-accent-3: #f43f5e;
+  overflow-x: clip;
   background: radial-gradient(circle at 85% 10%, rgba(168, 85, 247, 0.16), transparent 36%), radial-gradient(circle at 8% 26%, rgba(56, 189, 248, 0.14), transparent 40%), var(--fh-bg);
   color: var(--fh-text);
 }
@@ -55,6 +56,7 @@
   font-family: "Inter", "Trebuchet MS", Helvetica, sans-serif;
   color: var(--fh-text);
   font-size: 1rem;
+  min-width: 0;
 }
 
 .home-fiddle .page__content p,
@@ -68,6 +70,35 @@
   max-width: 86ch;
   line-height: 1.82;
   letter-spacing: 0.01em;
+}
+
+.home-fiddle .page__content,
+.home-fiddle .page__content p,
+.home-fiddle .page__content li,
+.home-fiddle .page__content h1,
+.home-fiddle .page__content h2,
+.home-fiddle .page__content h3,
+.home-fiddle .page__content h4,
+.home-fiddle .fh-about__copy,
+.home-fiddle .fh-about__copy *,
+.home-fiddle .paper-box .paper-box-text,
+.home-fiddle .paper-box .paper-box-text *,
+.home-fiddle .patent-box .paper-box-text,
+.home-fiddle .patent-box .paper-box-text * {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.home-fiddle #main,
+.home-fiddle .page,
+.home-fiddle .page__inner-wrap {
+  min-width: 0;
+}
+
+.home-fiddle .page__content img,
+.home-fiddle .page__content video,
+.home-fiddle .page__content iframe {
+  max-width: 100%;
 }
 
 .home-fiddle .page__content a {
@@ -570,6 +601,7 @@
 @media (max-width: 920px) {
   .home-fiddle #main {
     max-width: 100%;
+    padding-inline: 0.6rem;
   }
 
   .home-fiddle .fh-cursor {
@@ -582,10 +614,37 @@
 
   .home-fiddle .fh-grid {
     padding: 1.2rem 1rem 1rem;
+    gap: 0.9rem;
+  }
+
+  .home-fiddle .fh-media {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.55rem;
+  }
+
+  .home-fiddle .fh-media .fh-main {
+    grid-column: 1 / -1;
+    min-height: clamp(180px, 52vw, 280px);
+  }
+
+  .home-fiddle .fh-media .fh-side {
+    min-height: clamp(96px, 30vw, 160px);
   }
 
   .home-fiddle .fh-filmstrip {
-    padding: 0 1rem 1rem;
+    grid-auto-columns: minmax(78vw, 1fr);
+    padding: 0 0.35rem 1rem;
+    margin: 0 0.35rem;
+    scroll-snap-type: x mandatory;
+  }
+
+  .home-fiddle .fh-filmstrip figure {
+    scroll-snap-align: start;
+  }
+
+  .home-fiddle .fh-filmstrip img {
+    height: clamp(120px, 42vw, 180px);
   }
 
   .home-fiddle .fh-about {
@@ -603,5 +662,111 @@
 
   .home-fiddle .paper-box {
     grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 0.75rem;
+  }
+
+  .home-fiddle .paper-box .paper-box-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+
+  .home-fiddle .video-wrapper {
+    margin: 0.4rem 0 0.95rem !important;
+    border-radius: 14px !important;
+  }
+
+  .home-fiddle .badge {
+    top: 0.45rem;
+    left: 0.45rem;
+    font-size: 0.68rem;
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+  }
+
+  .home-fiddle .travel-guide {
+    padding: 1rem 0.9rem !important;
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-fiddle #main {
+    padding-inline: 0.45rem;
+  }
+
+  .home-fiddle .fh-shell {
+    margin: 0.45rem 0 1.35rem;
+    border-radius: 14px;
+  }
+
+  .home-fiddle .fh-grid {
+    padding: 0.95rem 0.8rem 0.85rem;
+    gap: 0.75rem;
+  }
+
+  .home-fiddle .fh-title {
+    font-size: clamp(1.55rem, 11vw, 2.4rem);
+  }
+
+  .home-fiddle .fh-lead {
+    margin: 0.75rem 0 0.95rem;
+    font-size: 0.92rem;
+    line-height: 1.58;
+  }
+
+  .home-fiddle .fh-quick-links {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.45rem;
+  }
+
+  .home-fiddle .fh-quick-links a {
+    width: 100%;
+    padding: 0.38rem 0.6rem;
+    font-size: 0.76rem;
+  }
+
+  .home-fiddle .fh-filmstrip {
+    grid-auto-columns: minmax(86vw, 1fr);
+    padding: 0 0 0.85rem;
+    margin: 0;
+  }
+
+  .home-fiddle .fh-filmstrip img {
+    height: clamp(110px, 46vw, 170px);
+  }
+
+  .home-fiddle .fh-about {
+    border-radius: 14px;
+    padding: 0.9rem 0.8rem;
+    gap: 0.9rem;
+  }
+
+  .home-fiddle .fh-about__photo {
+    width: min(78vw, 280px);
+    max-width: 100%;
+  }
+
+  .home-fiddle .fh-about__photo img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .home-fiddle .page__content > h1 {
+    font-size: clamp(1.3rem, 8vw, 1.8rem);
+  }
+
+  .home-fiddle .paper-box {
+    border-radius: 14px;
+  }
+
+  .home-fiddle .paper-box .paper-box-image img {
+    aspect-ratio: 16 / 11;
+  }
+
+  .home-fiddle .video-wrapper {
+    border-radius: 12px !important;
   }
 }
