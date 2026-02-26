@@ -17,6 +17,41 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
+<section class="fh-shell" aria-label="Portfolio hero">
+  <div class="fh-grid">
+    <div class="fh-copy">
+      <p class="fh-kicker">YITENG XU · HUMAN-CENTRIC AI PORTFOLIO</p>
+      <h1 class="fh-title">Human-Centric<br>3D Intelligence</h1>
+      <p class="fh-lead">Researching the interface between 3D Computer Vision, Robotics, and Embodied AI. Building interactive systems where humans and intelligent machines learn together.</p>
+      <div class="fh-quick-links">
+        <a href="#publications">Publications</a>
+        <a href="#patents">Patents</a>
+        <a href="#educations">Education</a>
+        <a href="#skills">Skills</a>
+      </div>
+    </div>
+    <div class="fh-media" aria-hidden="true">
+      <figure class="fh-main">
+        <img src="/images/fiddle-style/symbridge-teaser.webp" alt="SymBridge research visual teaser">
+      </figure>
+      <figure class="fh-side">
+        <img src="/images/fiddle-style/symbridge-interact.webp" alt="">
+      </figure>
+      <figure class="fh-side">
+        <img src="/images/fiddle-style/symbridge-physicalrobot.webp" alt="">
+      </figure>
+    </div>
+  </div>
+
+  <div class="fh-filmstrip" aria-label="Selected research visuals">
+    <figure><img src="/images/fiddle-style/fusionpose-teaser.webp" alt="FusionPose dataset and pose estimation visual"></figure>
+    <figure><img src="/images/fiddle-style/fusionpose-suplight.webp" alt="Low-light motion sequence visual"></figure>
+    <figure><img src="/images/fiddle-style/hucenlife-teaser.webp" alt="HuCenLife scene understanding visual"></figure>
+    <figure><img src="/images/fiddle-style/symbridge-pipeline.webp" alt="SymBridge pipeline visual"></figure>
+    <figure><img src="/images/fiddle-style/fusionpose-teaser2.webp" alt="FusionPose sequence visual"></figure>
+  </div>
+</section>
+
 I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. Yuexin Ma. Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
 
 My research lies at the intersection of **3D Computer Vision**, **Robotics**, and **Embodied AI**. My primary goal is to enable intelligent agents (like humanoid robots) to perceive, understand, and interact with the complex, dynamic 3D world in a human-like manner. I am particularly interested in **multi-modal sensor fusion (LiDAR-Camera)**, **3D human pose and motion understanding**, and building **human-in-the-loop systems** for bidirectional learning in human-robot interaction.
