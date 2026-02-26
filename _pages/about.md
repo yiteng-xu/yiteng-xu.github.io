@@ -649,7 +649,7 @@ Yumeng Liu, Yaxun Yang, Youzhuo Wang, Xiaofei Wu, Jiamin Wang, **Yichen Yao**, S
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SIGGRAPH Asia 2025</div><img src='images/SymBridge.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener"><div class="badge">SIGGRAPH Asia 2025</div><img src='images/SymBridge.png' alt="sym" width="100%"></a></div>
 <div class='paper-box-text' markdown="1">
 
 [SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis](https://irc-vitahome.github.io/SymBridge/)
@@ -678,7 +678,7 @@ ACM SIGGRAPH Asia, 2025
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='images/unified.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://openaccess.thecvf.com/content/CVPR2024/html/Xu_A_Unified_Framework_for_Human-centric_Point_Cloud_Video_Understanding_CVPR_2024_paper.html" target="_blank" rel="noopener"><div class="badge">CVPR 2024</div><img src='images/unified.png' alt="sym" width="100%"></a></div>
 <div class='paper-box-text' markdown="1">
 
 [A Unified Framework for Human-centric Point Cloud Video Understanding](https://openaccess.thecvf.com/content/CVPR2024/html/Xu_A_Unified_Framework_for_Human-centric_Point_Cloud_Video_Understanding_CVPR_2024_paper.html)
@@ -689,7 +689,7 @@ The IEEE / CVF Computer Vision and Pattern Recognition Conference (**CVPR**), 20
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src='images/HuCenLife.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html" target="_blank" rel="noopener"><div class="badge">ICCV 2023</div><img src='images/HuCenLife.png' alt="sym" width="100%"></a></div>
 <div class='paper-box-text' markdown="1">
 
 [Human-centric Scene Understanding for 3D Large-scale Scenarios](https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html)
@@ -700,7 +700,7 @@ In IEEE/CVF International Conference on Computer Vision (**ICCV**), 2023
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2023</div><img src='images/fusionpose.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener"><div class="badge">AAAI 2023</div><img src='images/fusionpose.png' alt="sym" width="100%"></a></div>
 <div class='paper-box-text' markdown="1">
 
 [Weakly Supervised 3D Multi-person Pose Estimation for Large-scale Scenes based on Monocular Camera and Single LiDAR](https://ojs.aaai.org/index.php/AAAI/article/view/25120)

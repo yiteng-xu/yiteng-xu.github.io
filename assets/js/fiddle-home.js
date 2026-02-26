@@ -2,6 +2,103 @@
   if (!document.body.classList.contains('home-fiddle')) return;
 
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const content = document.querySelector('.page__content');
+
+  const stripDecorations = (value) =>
+    String(value || '')
+      .replace(/[\u{1F300}-\u{1FAFF}\u2600-\u27BF]/gu, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const slugify = (value) =>
+    stripDecorations(value)
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .trim()
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+
+  const ensureId = (el, fallback) => {
+    if (!el) return '';
+    if (el.id) return el.id;
+    el.id = fallback;
+    return el.id;
+  };
+
+  const buildLeftToc = () => {
+    if (!content) return;
+    const headings = Array.from(content.querySelectorAll(':scope > h1'));
+    if (!headings.length) return;
+
+    const items = [];
+    const aboutAnchor = document.getElementById('about-me');
+    const aboutTarget = content.querySelector('.fh-about') || content.querySelector('.fh-shell') || aboutAnchor;
+    if (aboutAnchor && aboutTarget) {
+      ensureId(aboutAnchor, 'about-me');
+      items.push({ id: 'about-me', label: 'About', target: aboutTarget });
+    }
+
+    headings.forEach((heading, index) => {
+      const label = stripDecorations(heading.textContent) || `Section ${index + 1}`;
+      const fallbackId = `section-${String(index + 1).padStart(2, '0')}-${slugify(label) || 'part'}`;
+      const id = ensureId(heading, fallbackId);
+      items.push({ id, label, target: heading });
+    });
+
+    if (!items.length) return;
+
+    const toc = document.createElement('nav');
+    toc.className = 'fh-toc';
+    toc.setAttribute('aria-label', 'On-page sections');
+    toc.innerHTML = [
+      '<div class="fh-toc__title">Contents</div>',
+      '<ul class="fh-toc__list">',
+      items
+        .map(
+          (item) =>
+            `<li><a href="#${item.id}" data-toc-id="${item.id}"><span class="dot" aria-hidden="true"></span><span class="txt">${item.label}</span></a></li>`
+        )
+        .join(''),
+      '</ul>',
+    ].join('');
+    document.body.appendChild(toc);
+
+    const links = Array.from(toc.querySelectorAll('a[data-toc-id]'));
+    if (!links.length) return;
+
+    const setActive = (id) => {
+      links.forEach((link) => link.classList.toggle('is-active', link.getAttribute('data-toc-id') === id));
+    };
+
+    links.forEach((link) => {
+      link.addEventListener('click', () => setActive(link.getAttribute('data-toc-id') || ''));
+    });
+
+    setActive(items[0].id);
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => (a.boundingClientRect.top || 0) - (b.boundingClientRect.top || 0));
+          if (!visible.length) return;
+          const activeId = visible[0].target.getAttribute('data-fh-toc-id');
+          if (activeId) setActive(activeId);
+        },
+        { threshold: [0.08, 0.2, 0.45], rootMargin: '-20% 0px -62% 0px' }
+      );
+
+      items.forEach((item) => {
+        if (!item.target) return;
+        item.target.setAttribute('data-fh-toc-id', item.id);
+        observer.observe(item.target);
+      });
+    }
+  };
+
+  buildLeftToc();
 
   const progress = document.createElement('div');
   progress.className = 'fh-scroll-progress';
