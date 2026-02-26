@@ -241,6 +241,10 @@
     '.fh-shell, .fh-intro, .fh-chapter, .milestones-section, .news-section, .travel-guide, .paper-box, .patent-box, .skills-section, .awards-section, #educations + ul, .skill-points'
   );
 
+  const forceReveal = () => {
+    targets.forEach((item) => item.classList.add('is-inview'));
+  };
+
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(
       (entries) => {
@@ -255,7 +259,20 @@
     );
     targets.forEach((item) => io.observe(item));
   } else {
-    targets.forEach((item) => item.classList.add('is-inview'));
+    forceReveal();
+  }
+
+  window.addEventListener('beforeprint', forceReveal);
+  if (window.matchMedia) {
+    const media = window.matchMedia('print');
+    const handler = (event) => {
+      if (event.matches) forceReveal();
+    };
+    try {
+      media.addEventListener('change', handler);
+    } catch (_) {
+      if (media.addListener) media.addListener(handler);
+    }
   }
 
   const reactive = document.querySelectorAll('.paper-box');
