@@ -1,6 +1,6 @@
-<script src="assets/js/main.min.js"></script>
+<script src="assets/js/main.min.js?v={{ site.github.build_revision | default: site.time | date: '%s' }}"></script>
 {% if page.permalink == "/" %}
-<script src="assets/js/fiddle-home.js" defer></script>
+<script src="assets/js/fiddle-home.js?v={{ site.github.build_revision | default: site.time | date: '%s' }}" defer></script>
 {% endif %}
 
 {% include analytics.html %}

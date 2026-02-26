@@ -32,23 +32,49 @@ redirect_from:
     </div>
     <div class="fh-media" aria-hidden="true">
       <figure class="fh-main">
-        <img src="/images/fiddle-style/symbridge-teaser.webp" alt="SymBridge research visual teaser">
+        <a class="fh-media__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+          <img src="/images/fiddle-style/symbridge-teaser.webp" alt="SymBridge research visual teaser">
+        </a>
       </figure>
       <figure class="fh-side">
-        <img src="/images/fiddle-style/symbridge-interact.webp" alt="">
+        <a class="fh-media__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+          <img src="/images/fiddle-style/symbridge-interact.webp" alt="">
+        </a>
       </figure>
       <figure class="fh-side">
-        <img src="/images/fiddle-style/symbridge-physicalrobot.webp" alt="">
+        <a class="fh-media__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+          <img src="/images/fiddle-style/symbridge-physicalrobot.webp" alt="">
+        </a>
       </figure>
     </div>
   </div>
 
   <div class="fh-filmstrip" aria-label="Selected research visuals">
-    <figure><img src="/images/fiddle-style/fusionpose-teaser.webp" alt="FusionPose dataset and pose estimation visual"></figure>
-    <figure><img src="/images/fiddle-style/fusionpose-suplight.webp" alt="Low-light motion sequence visual"></figure>
-    <figure><img src="/images/fiddle-style/hucenlife-teaser.webp" alt="HuCenLife scene understanding visual"></figure>
-    <figure><img src="/images/fiddle-style/symbridge-pipeline.webp" alt="SymBridge pipeline visual"></figure>
-    <figure><img src="/images/fiddle-style/fusionpose-teaser2.webp" alt="FusionPose sequence visual"></figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/fusionpose-teaser.webp" alt="FusionPose dataset and pose estimation visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/fusionpose-suplight.webp" alt="Low-light motion sequence visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/hucenlife-teaser.webp" alt="HuCenLife scene understanding visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/symbridge-pipeline.webp" alt="SymBridge pipeline visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/fusionpose-teaser2.webp" alt="FusionPose sequence visual">
+      </a>
+    </figure>
   </div>
 </section>
 

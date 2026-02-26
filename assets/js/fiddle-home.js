@@ -57,7 +57,7 @@
       items
         .map(
           (item) =>
-            `<li><a href="#${item.id}" data-toc-id="${item.id}"><span class="dot" aria-hidden="true"></span><span class="txt">${item.label}</span></a></li>`
+            `<li><a href="#${item.id}" data-toc-id="${item.id}" target="_self"><span class="dot" aria-hidden="true"></span><span class="txt">${item.label}</span></a></li>`
         )
         .join(''),
       '</ul>',
