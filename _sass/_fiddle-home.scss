@@ -239,6 +239,67 @@
   object-fit: cover;
 }
 
+.home-fiddle .fh-about {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.32fr);
+  gap: 1.4rem;
+  align-items: start;
+  margin: 0 0 1.7rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--fh-border);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(11, 14, 19, 0.9), rgba(8, 10, 14, 0.86));
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.46);
+  overflow: hidden;
+}
+
+.home-fiddle .fh-about::before {
+  content: "";
+  position: absolute;
+  inset: -30% -20% auto -20%;
+  height: 240px;
+  background: radial-gradient(820px 260px at 25% 55%, rgba(168, 85, 247, 0.22), transparent 65%),
+    radial-gradient(820px 260px at 80% 40%, rgba(56, 189, 248, 0.2), transparent 70%);
+  filter: blur(24px) saturate(125%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.home-fiddle .fh-about__copy {
+  position: relative;
+  z-index: 1;
+  max-width: 86ch;
+}
+
+.home-fiddle .fh-about__copy p {
+  margin: 0 0 0.9rem;
+  line-height: 1.82;
+  letter-spacing: 0.01em;
+}
+
+.home-fiddle .fh-about__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.home-fiddle .fh-about__photo {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  align-self: start;
+}
+
+.home-fiddle .fh-about__photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #090b0f;
+  object-fit: cover;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.45);
+  transform: rotate(-0.8deg);
+}
+
 .home-fiddle .page__content > h1 {
   margin: 2.7rem 0 1.1rem;
   padding: 0.35rem 0;
@@ -525,6 +586,15 @@
 
   .home-fiddle .fh-filmstrip {
     padding: 0 1rem 1rem;
+  }
+
+  .home-fiddle .fh-about {
+    grid-template-columns: 1fr;
+    padding: 1.1rem 1rem;
+  }
+
+  .home-fiddle .fh-about__photo {
+    max-width: 320px;
   }
 
   .home-fiddle .page__content > p {
