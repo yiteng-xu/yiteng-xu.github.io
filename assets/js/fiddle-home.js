@@ -183,15 +183,14 @@
 
     const slides = Array.from(strip.querySelectorAll(':scope > figure'));
     if (slides.length < 2) return;
-    if (strip.scrollWidth <= strip.clientWidth + 8) return;
 
     let inView = true;
     let paused = false;
     let timer = null;
     let currentIndex = 0;
     const intervalMs = 2000;
-    const idleMs = 5200;
-    let lastInteraction = Date.now() - idleMs;
+    const userIdleMs = 7000;
+    let resumeAfter = 0;
 
     const getPadLeft = () => {
       const value = window.getComputedStyle(strip).paddingLeft;
@@ -226,7 +225,8 @@
 
     const tick = () => {
       if (!inView || paused || document.hidden) return;
-      if (Date.now() - lastInteraction < idleMs) return;
+      if (strip.scrollWidth <= strip.clientWidth + 8) return;
+      if (Date.now() < resumeAfter) return;
       currentIndex = getClosestIndex();
       const nextIndex = (currentIndex + 1) % slides.length;
       scrollToIndex(nextIndex, 'smooth');
@@ -244,30 +244,21 @@
       timer = null;
     };
 
-    const poke = () => {
-      lastInteraction = Date.now();
+    const pokeUser = () => {
+      resumeAfter = Date.now() + userIdleMs;
     };
 
-    strip.addEventListener('pointerenter', () => {
-      paused = true;
-      poke();
-    });
-    strip.addEventListener('pointerleave', () => {
-      paused = false;
-      poke();
-    });
     strip.addEventListener('focusin', () => {
       paused = true;
-      poke();
+      pokeUser();
     });
     strip.addEventListener('focusout', () => {
       paused = false;
-      poke();
+      pokeUser();
     });
-    strip.addEventListener('pointerdown', poke, { passive: true });
-    strip.addEventListener('touchstart', poke, { passive: true });
-    strip.addEventListener('wheel', poke, { passive: true });
-    strip.addEventListener('scroll', poke, { passive: true });
+    strip.addEventListener('pointerdown', pokeUser, { passive: true });
+    strip.addEventListener('touchstart', pokeUser, { passive: true });
+    strip.addEventListener('wheel', pokeUser, { passive: true });
 
     const firstSlide = slides[0];
     if (firstSlide && 'ResizeObserver' in window) {
@@ -293,7 +284,7 @@
       io.observe(strip);
     }
 
-    start();
+    window.setTimeout(start, 450);
   };
 
   setupAutoFilmstrip();

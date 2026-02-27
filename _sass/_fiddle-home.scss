@@ -465,7 +465,7 @@
   z-index: 1;
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: clamp(420px, 58vw, 760px);
+  grid-auto-columns: clamp(560px, 68vw, 1400px);
   gap: 0.7rem;
   padding: 0 2rem 1.6rem;
   overflow-x: auto;
@@ -495,7 +495,7 @@
 
 .home-fiddle .fh-filmstrip img {
   width: 100%;
-  height: clamp(180px, 22vw, 280px);
+  height: clamp(200px, 20vw, 420px);
   object-fit: contain;
   object-position: center;
 }
