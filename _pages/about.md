@@ -49,6 +49,35 @@ redirect_from:
     </div>
   </div>
 
+  <div class="fh-marquee" aria-label="Research interests and venues">
+    <div class="fh-marquee__inner">
+      <div class="fh-marquee__group">
+        <span class="fh-marquee__item">3D Computer Vision</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Robotics</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Embodied AI</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">LiDAR-Camera Fusion</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Human Pose &amp; Motion</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Human-in-the-Loop</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Point Cloud Video</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">CVPR · ICCV · ECCV</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">SIGGRAPH Asia</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">AAAI · IJCAI</span>
+      </div>
+      <div class="fh-marquee__group" aria-hidden="true">
+        <span class="fh-marquee__item">3D Computer Vision</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Robotics</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Embodied AI</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">LiDAR-Camera Fusion</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Human Pose &amp; Motion</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Human-in-the-Loop</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Point Cloud Video</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">CVPR · ICCV · ECCV</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">SIGGRAPH Asia</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">AAAI · IJCAI</span>
+      </div>
+    </div>
+  </div>
+
   <div class="fh-filmstrip" aria-label="Selected research visuals">
     <figure>
       <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">

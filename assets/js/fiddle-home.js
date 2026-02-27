@@ -189,7 +189,7 @@
     let paused = false;
     let timer = null;
     let currentIndex = 0;
-    const intervalMs = 3200;
+    const intervalMs = 2000;
     const idleMs = 5200;
     let lastInteraction = Date.now() - idleMs;
 
@@ -320,7 +320,8 @@
   }
 
   const finePointer = window.matchMedia('(pointer:fine)').matches;
-  if (!finePointer || reduced) return;
+  const hoverCapable = window.matchMedia('(hover: hover)').matches;
+  if (!finePointer || !hoverCapable || reduced) return;
 
   const cursor = document.createElement('div');
   cursor.className = 'fh-cursor';
@@ -328,15 +329,84 @@
   cursor.appendChild(cursorDot);
   document.body.appendChild(cursor);
 
+  const preview = document.createElement('div');
+  preview.className = 'fh-cursor-preview';
+  preview.innerHTML = [
+    '<div class="fh-cursor-preview__frame">',
+    '<img alt="" loading="lazy" decoding="async">',
+    '</div>',
+    '<div class="fh-cursor-preview__label"></div>',
+  ].join('');
+  document.body.appendChild(preview);
+  const previewImg = preview.querySelector('img');
+  const previewLabel = preview.querySelector('.fh-cursor-preview__label');
+
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
   let renderX = mouseX;
   let renderY = mouseY;
 
+  let previewWidth = 320;
+  let previewHeight = 220;
+  let previewVisible = false;
+  let previewSrc = '';
+
+  const measurePreview = () => {
+    const rect = preview.getBoundingClientRect();
+    if (rect.width) previewWidth = rect.width;
+    if (rect.height) previewHeight = rect.height;
+  };
+
+  const hidePreview = () => {
+    previewVisible = false;
+    preview.classList.remove('is-visible');
+  };
+
+  const showPreview = (src, label) => {
+    if (!previewImg || !src) return;
+    if (src !== previewSrc) {
+      previewSrc = src;
+      previewImg.src = src;
+    }
+    if (previewLabel) previewLabel.textContent = stripDecorations(label || '');
+    previewVisible = true;
+    preview.classList.add('is-visible');
+    requestAnimationFrame(measurePreview);
+  };
+
+  window.addEventListener('blur', hidePreview);
+  window.addEventListener('scroll', hidePreview, { passive: true });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) hidePreview();
+  });
+
   const attractors = document.querySelectorAll('a, button, .paper-box, .news-card, .milestone-card, .skill-card');
   attractors.forEach((item) => {
     item.addEventListener('mouseenter', () => cursor.classList.add('is-active'));
     item.addEventListener('mouseleave', () => cursor.classList.remove('is-active'));
+  });
+
+  Array.from(document.querySelectorAll('.paper-box, .patent-box')).forEach((box) => {
+    const img = box.querySelector('.paper-box-image img');
+    const link = box.querySelector('.paper-box-text a[href]');
+    if (!img || !link) return;
+    const src = img.currentSrc || img.src || img.getAttribute('src');
+    if (!src) return;
+    const label = link.textContent || '';
+
+    link.addEventListener('mouseenter', () => showPreview(src, label));
+    link.addEventListener('mouseleave', hidePreview);
+  });
+
+  Array.from(document.querySelectorAll('.fh-filmstrip__link')).forEach((link) => {
+    const img = link.querySelector('img');
+    if (!img) return;
+    const src = img.currentSrc || img.src || img.getAttribute('src');
+    if (!src) return;
+    const label = img.getAttribute('alt') || link.textContent || '';
+
+    link.addEventListener('mouseenter', () => showPreview(src, label));
+    link.addEventListener('mouseleave', hidePreview);
   });
 
   window.addEventListener(
@@ -352,6 +422,13 @@
     renderX += (mouseX - renderX) * 0.18;
     renderY += (mouseY - renderY) * 0.18;
     cursor.style.transform = `translate3d(${renderX}px, ${renderY}px, 0)`;
+
+    const flipX = mouseX > window.innerWidth - previewWidth - 44;
+    const flipY = mouseY > window.innerHeight - previewHeight - 44;
+    const offsetX = flipX ? -previewWidth - 26 : 26;
+    const offsetY = flipY ? -previewHeight - 26 : 22;
+    preview.style.transform = `translate3d(${renderX + offsetX}px, ${renderY + offsetY}px, 0)`;
+
     requestAnimationFrame(render);
   };
   render();
