@@ -137,6 +137,46 @@
     targets.forEach((item) => item.classList.add('is-inview'));
   }
 
+  const mediaTargets = Array.from(document.querySelectorAll('.page__content img')).filter(
+    (img) => img && !img.closest('.fh-toc')
+  );
+
+  const markMediaLoaded = (img) => {
+    if (!img) return;
+    img.classList.add('is-loaded');
+  };
+
+  mediaTargets.forEach((img) => {
+    img.classList.add('fh-media-fade');
+    if (img.complete) {
+      markMediaLoaded(img);
+    } else {
+      img.addEventListener('load', () => markMediaLoaded(img), { once: true });
+      img.addEventListener('error', () => markMediaLoaded(img), { once: true });
+    }
+  });
+
+  const revealAllMedia = () => {
+    mediaTargets.forEach((img) => img.classList.add('is-inview'));
+  };
+
+  if (reduced || !('IntersectionObserver' in window)) {
+    revealAllMedia();
+  } else {
+    const mediaObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => entry.target.classList.toggle('is-inview', entry.isIntersecting));
+      },
+      { threshold: 0.15, rootMargin: '10% 0px -10% 0px' }
+    );
+    mediaTargets.forEach((img) => mediaObserver.observe(img));
+  }
+
+  window.addEventListener('beforeprint', () => {
+    targets.forEach((item) => item.classList.add('is-inview'));
+    revealAllMedia();
+  });
+
   const heroMedia = document.querySelector('.fh-media');
   if (heroMedia && !reduced) {
     const cards = heroMedia.querySelectorAll('figure');
