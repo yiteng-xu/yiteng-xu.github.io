@@ -177,6 +177,127 @@
     revealAllMedia();
   });
 
+  const setupAutoFilmstrip = () => {
+    const strip = document.querySelector('.fh-filmstrip');
+    if (!strip) return;
+
+    const slides = Array.from(strip.querySelectorAll(':scope > figure'));
+    if (slides.length < 2) return;
+    if (strip.scrollWidth <= strip.clientWidth + 8) return;
+
+    let inView = true;
+    let paused = false;
+    let timer = null;
+    let currentIndex = 0;
+    const intervalMs = 3200;
+    const idleMs = 5200;
+    let lastInteraction = Date.now() - idleMs;
+
+    const getPadLeft = () => {
+      const value = window.getComputedStyle(strip).paddingLeft;
+      const parsed = Number.parseFloat(value);
+      return Number.isFinite(parsed) ? parsed : 0;
+    };
+
+    const getClosestIndex = () => {
+      const reference = strip.scrollLeft + getPadLeft();
+      let best = 0;
+      let bestDist = Infinity;
+      slides.forEach((slide, idx) => {
+        const dist = Math.abs(slide.offsetLeft - reference);
+        if (dist < bestDist) {
+          bestDist = dist;
+          best = idx;
+        }
+      });
+      return best;
+    };
+
+    const scrollToIndex = (idx, behavior = 'smooth') => {
+      const slide = slides[idx];
+      if (!slide) return;
+      const left = Math.max(0, slide.offsetLeft - getPadLeft());
+      try {
+        strip.scrollTo({ left, behavior });
+      } catch {
+        strip.scrollLeft = left;
+      }
+    };
+
+    const tick = () => {
+      if (!inView || paused || document.hidden) return;
+      if (Date.now() - lastInteraction < idleMs) return;
+      currentIndex = getClosestIndex();
+      const nextIndex = (currentIndex + 1) % slides.length;
+      scrollToIndex(nextIndex, 'smooth');
+      currentIndex = nextIndex;
+    };
+
+    const start = () => {
+      if (timer != null) return;
+      timer = window.setInterval(tick, intervalMs);
+    };
+
+    const stop = () => {
+      if (timer == null) return;
+      window.clearInterval(timer);
+      timer = null;
+    };
+
+    const poke = () => {
+      lastInteraction = Date.now();
+    };
+
+    strip.addEventListener('pointerenter', () => {
+      paused = true;
+      poke();
+    });
+    strip.addEventListener('pointerleave', () => {
+      paused = false;
+      poke();
+    });
+    strip.addEventListener('focusin', () => {
+      paused = true;
+      poke();
+    });
+    strip.addEventListener('focusout', () => {
+      paused = false;
+      poke();
+    });
+    strip.addEventListener('pointerdown', poke, { passive: true });
+    strip.addEventListener('touchstart', poke, { passive: true });
+    strip.addEventListener('wheel', poke, { passive: true });
+    strip.addEventListener('scroll', poke, { passive: true });
+
+    const firstSlide = slides[0];
+    if (firstSlide && 'ResizeObserver' in window) {
+      const ro = new ResizeObserver(() => {
+        if (strip.scrollLeft <= 1) scrollToIndex(0, 'auto');
+      });
+      ro.observe(strip);
+    }
+
+    if (reduced) return;
+
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          if (!entry) return;
+          inView = entry.isIntersecting;
+          if (inView) start();
+          else stop();
+        },
+        { threshold: 0.1, rootMargin: '20% 0px 20% 0px' }
+      );
+      io.observe(strip);
+    }
+
+    start();
+  };
+
+  setupAutoFilmstrip();
+
   const heroMedia = document.querySelector('.fh-media');
   if (heroMedia && !reduced) {
     const cards = heroMedia.querySelectorAll('figure');
