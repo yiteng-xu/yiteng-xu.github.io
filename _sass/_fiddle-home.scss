@@ -11,10 +11,6 @@
   --fh-accent: #a855f7;
   --fh-accent-2: #38bdf8;
   --fh-accent-3: #f43f5e;
-  --fh-mask-pill: url("/images/fh-shapes/r14.svg");
-  --fh-mask-soft: url("/images/fh-shapes/r16.svg");
-  --fh-mask-frame: url("/images/fh-shapes/r24.svg");
-  --fh-mask-hero: url("/images/fh-shapes/r32.svg");
   --fh-marquee-speed: 28s;
   overflow-x: clip;
   background: radial-gradient(circle at 85% 10%, rgba(168, 85, 247, 0.16), transparent 36%), radial-gradient(circle at 8% 26%, rgba(56, 189, 248, 0.14), transparent 40%), var(--fh-bg);
@@ -503,8 +499,8 @@
 @supports (-webkit-mask-image: url("/images/fh-shapes/r14.svg")) or (mask-image: url("/images/fh-shapes/r14.svg")) {
   .home-fiddle .fh-quick-links a::before {
     border-radius: 0;
-    -webkit-mask-image: var(--fh-mask-pill);
-    mask-image: var(--fh-mask-pill);
+    -webkit-mask-image: url("/images/fh-shapes/r14.svg");
+    mask-image: url("/images/fh-shapes/r14.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -524,19 +520,19 @@
   }
 
   .home-fiddle .fh-media .fh-main {
-    -webkit-mask-image: var(--fh-mask-hero);
-    mask-image: var(--fh-mask-hero);
+    -webkit-mask-image: url("/images/fh-shapes/r32.svg");
+    mask-image: url("/images/fh-shapes/r32.svg");
   }
 
   .home-fiddle .fh-media .fh-side {
-    -webkit-mask-image: var(--fh-mask-frame);
-    mask-image: var(--fh-mask-frame);
+    -webkit-mask-image: url("/images/fh-shapes/r24.svg");
+    mask-image: url("/images/fh-shapes/r24.svg");
   }
 
   .home-fiddle .fh-marquee {
     border-radius: 0;
-    -webkit-mask-image: var(--fh-mask-frame);
-    mask-image: var(--fh-mask-frame);
+    -webkit-mask-image: url("/images/fh-shapes/r24.svg");
+    mask-image: url("/images/fh-shapes/r24.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -559,8 +555,8 @@
 
   .home-fiddle .fh-about__photo img {
     border-radius: 0;
-    -webkit-mask-image: var(--fh-mask-frame);
-    mask-image: var(--fh-mask-frame);
+    -webkit-mask-image: url("/images/fh-shapes/r24.svg");
+    mask-image: url("/images/fh-shapes/r24.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -571,8 +567,8 @@
 
   .home-fiddle .paper-box .paper-box-image img {
     border-radius: 0;
-    -webkit-mask-image: var(--fh-mask-soft);
-    mask-image: var(--fh-mask-soft);
+    -webkit-mask-image: url("/images/fh-shapes/r16.svg");
+    mask-image: url("/images/fh-shapes/r16.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -991,8 +987,8 @@
 @supports (-webkit-mask-image: url("/images/fh-shapes/r24.svg")) or (mask-image: url("/images/fh-shapes/r24.svg")) {
   .home-fiddle .fh-cursor-preview__frame {
     border-radius: 0;
-    -webkit-mask-image: var(--fh-mask-frame);
-    mask-image: var(--fh-mask-frame);
+    -webkit-mask-image: url("/images/fh-shapes/r24.svg");
+    mask-image: url("/images/fh-shapes/r24.svg");
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
