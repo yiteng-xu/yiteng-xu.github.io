@@ -3,13 +3,14 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"{% if page.dir %} dir="{{ page.dir }}"{% endif %} class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body{% if page.permalink == "/" %} class="home-fiddle"{% endif %}>
+  {% assign is_fiddle_home = page.fiddle_home or page.permalink == "/" %}
+  <body{% if is_fiddle_home %} class="home-fiddle"{% endif %}>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

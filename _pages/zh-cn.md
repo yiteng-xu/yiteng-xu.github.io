@@ -1,14 +1,11 @@
 ---
-permalink: /
+permalink: /zh-cn/
 title: ""
 excerpt: ""
 author_profile: true
-lang: en
+lang: zh-cn
 ref: home
 fiddle_home: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -23,14 +20,14 @@ redirect_from:
 <section class="fh-shell" aria-label="Portfolio hero">
   <div class="fh-grid">
     <div class="fh-copy">
-      <p class="fh-kicker">YITENG XU · HUMAN-CENTRIC AI PORTFOLIO</p>
-      <h1 class="fh-title">Human-Centric<br>3D Intelligence</h1>
-      <p class="fh-lead">Researching the interface between 3D Computer Vision, Robotics, and Embodied AI. Building interactive systems where humans and intelligent machines learn together.</p>
+      <p class="fh-kicker">YITENG XU · 以人为中心的 AI 作品集</p>
+      <h1 class="fh-title">以人为中心的<br>三维智能</h1>
+      <p class="fh-lead">研究 3D 计算机视觉、机器人与具身智能的交叉领域，打造人机协同学习的交互式系统。</p>
       <div class="fh-quick-links">
-        <a href="#publications">Publications</a>
-        <a href="#patents">Patents</a>
-        <a href="#educations">Education</a>
-        <a href="#skills">Skills</a>
+        <a href="#publications">论文</a>
+        <a href="#patents">专利</a>
+        <a href="#educations">教育经历</a>
+        <a href="#skills">技能</a>
       </div>
     </div>
     <div class="fh-media" aria-hidden="true">
@@ -110,11 +107,11 @@ redirect_from:
   </div>
 </section>
 
-<section class="fh-about" aria-label="About me">
+<section class="fh-about" aria-label="关于我">
   <div class="fh-about__copy" markdown="1">
-I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. Yuexin Ma. Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
+我目前是上海科技大学信息科学与技术学院博士三年级学生（导师：马越新教授）。本科毕业于上海科技大学（2023）。
 
-My research lies at the intersection of **3D Computer Vision**, **Robotics**, and **Embodied AI**. My primary goal is to enable intelligent agents (like humanoid robots) to perceive, understand, and interact with the complex, dynamic 3D world in a human-like manner. I am particularly interested in **multi-modal sensor fusion (LiDAR-Camera)**, **3D human pose and motion understanding**, and building **human-in-the-loop systems** for bidirectional learning in human-robot interaction.
+我的研究方向位于 **3D 计算机视觉**、**机器人** 与 **具身智能** 的交叉点，目标是让智能体（如人形机器人）能够以类人方式感知、理解并与复杂动态的三维世界交互。我特别关注 **多模态传感器融合（LiDAR-相机）**、**三维人体姿态与运动理解**，以及面向人机交互的 **Human-in-the-Loop** 双向学习系统。
   </div>
   <figure class="fh-about__photo">
     <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yiteng Xu" loading="lazy">

@@ -31,12 +31,63 @@
     const headings = Array.from(content.querySelectorAll(':scope > h1'));
     if (!headings.length) return;
 
+    const currentLang = (document.documentElement.lang || 'en').toLowerCase();
+    const isZh = currentLang.startsWith('zh');
+
+    const langLabels = {
+      en: 'English',
+      'zh-cn': '简体中文',
+      'zh-hans': '简体中文',
+      'zh-tw': '繁體中文',
+      'zh-hant': '繁體中文',
+      ja: '日本語',
+      ko: '한국어',
+      ar: 'العربية',
+      de: 'Deutsch',
+      es: 'Español',
+      fr: 'Français',
+    };
+
+    const buildLangSwitcher = () => {
+      const links = Array.from(document.querySelectorAll('link[rel="alternate"][hreflang][href]'))
+        .map((node) => ({
+          lang: String(node.getAttribute('hreflang') || '').toLowerCase(),
+          href: node.getAttribute('href') || '',
+        }))
+        .filter((item) => item.lang && item.lang !== 'x-default' && item.href);
+
+      const seen = new Set();
+      const items = links.filter((item) => {
+        if (seen.has(item.lang)) return false;
+        seen.add(item.lang);
+        return true;
+      });
+
+      if (items.length < 2) return '';
+
+      const title = isZh ? '语言' : 'Language';
+      return [
+        `<div class="fh-toc__lang" aria-label="${title}">`,
+        `<div class="fh-toc__lang-title">${title}</div>`,
+        '<div class="fh-toc__lang-links">',
+        items
+          .map((item) => {
+            const label = langLabels[item.lang] || item.lang.toUpperCase();
+            const active = item.lang === currentLang ? ' is-active' : '';
+            return `<a class="fh-toc__lang-link${active}" href="${item.href}" target="_self" rel="alternate" hreflang="${item.lang}">${label}</a>`;
+          })
+          .join(''),
+        '</div>',
+        '</div>',
+      ].join('');
+    };
+
     const items = [];
     const aboutAnchor = document.getElementById('about-me');
     const aboutTarget = content.querySelector('.fh-about') || content.querySelector('.fh-shell') || aboutAnchor;
     if (aboutAnchor && aboutTarget) {
       ensureId(aboutAnchor, 'about-me');
-      items.push({ id: 'about-me', label: 'About', target: aboutTarget });
+      items.push({ id: 'about-me', label: isZh ? '关于' : 'About', target: aboutTarget });
     }
 
     headings.forEach((heading, index) => {
@@ -50,9 +101,10 @@
 
     const toc = document.createElement('nav');
     toc.className = 'fh-toc';
-    toc.setAttribute('aria-label', 'On-page sections');
+    toc.setAttribute('aria-label', isZh ? '页面目录' : 'On-page sections');
     toc.innerHTML = [
-      '<div class="fh-toc__title">Contents</div>',
+      buildLangSwitcher(),
+      `<div class="fh-toc__title">${isZh ? '目录' : 'Contents'}</div>`,
       '<ul class="fh-toc__list">',
       items
         .map(
