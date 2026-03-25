@@ -1841,5 +1841,259 @@ Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
 }
 </style>
 
+# 🏞️ SHITAI TRAVEL GUIDE
+
+<div class="shitai-guide-entry" id="shitai-travel-guide">
+  <div class="stg-copy">
+    <span class="stg-kicker">Mobile-first travel app</span>
+    <h3>一个真正给手机浏览器准备的石台旅行网页 app</h3>
+    <p>
+      这不是普通图文攻略，而是围绕“清明三天两晚、双人出行、不租车、真能执行”重做的一套手机端旅行工具。
+      打开后可以直接在手机上看倒计时、切换玩法、查看逐小时安排、核对关键班次、估算预算、勾选打包清单。
+    </p>
+    <div class="stg-tags" aria-hidden="true">
+      <span>高铁 + 客运 + 县城乡公交</span>
+      <span>主计划 / 纯公交 / 升级版</span>
+      <span>预算引擎 + 清单本地保存</span>
+    </div>
+    <a class="stg-button" href="/shitai-travel-guide.html" target="_blank" rel="noopener">
+      Open the Shitai Travel App
+      <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <div class="stg-phone" aria-hidden="true">
+    <div class="stg-phone__notch"></div>
+    <div class="stg-phone__screen">
+      <div class="stg-phone__hero">
+        <strong>SHITAI</strong>
+        <span>Qingming / No-Car Mode</span>
+      </div>
+      <div class="stg-phone__pillrow">
+        <span>Day 1 蓬莱仙洞</span>
+        <span>Day 2 牯牛降</span>
+      </div>
+      <div class="stg-phone__module">
+        <label>Departure Clock</label>
+        <strong>2026.04.04</strong>
+        <p>倒计时、出发动作和返程原则全部集中在一个页面里。</p>
+      </div>
+      <div class="stg-phone__list">
+        <span>06:20 打车去虹桥</span>
+        <span>09:14 G7492</span>
+        <span>06:20 石台快客返程</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.shitai-guide-entry {
+  position: relative;
+  margin: 1.5rem 0 2.4rem;
+  padding: 1.5rem;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(17,24,39,0.08);
+  background:
+    radial-gradient(circle at top left, rgba(210,122,51,0.22), transparent 32%),
+    linear-gradient(135deg, rgba(248,242,231,0.96), rgba(236,242,238,0.96));
+  box-shadow: 0 18px 42px rgba(17,24,39,0.14);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.9fr);
+  gap: 1.2rem;
+}
+.shitai-guide-entry::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -22% auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(31,111,120,0.18), transparent 68%);
+  pointer-events: none;
+}
+.stg-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.95rem;
+  color: #13253b;
+}
+.stg-kicker {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(19,37,59,0.08);
+  color: #5d6671;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.stg-copy h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.8rem);
+  line-height: 1.2;
+  color: #17324d;
+}
+.stg-copy p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+.stg-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.stg-tags span {
+  display: inline-flex;
+  padding: 0.38rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(19,37,59,0.08);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.stg-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  padding: 0.66rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #17324d, #1f6f78);
+  color: #fff8f0;
+  font-weight: 700;
+  box-shadow: 0 14px 34px rgba(23,50,77,0.22);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.stg-button:hover, .stg-button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(23,50,77,0.28);
+  outline: none;
+}
+.stg-phone {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stg-phone__screen {
+  width: min(100%, 248px);
+  min-height: 430px;
+  padding: 1rem 0.95rem 1.1rem;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255,250,243,0.98), rgba(244,238,228,0.98)),
+    linear-gradient(135deg, rgba(23,50,77,0.1), transparent);
+  border: 7px solid #13253b;
+  box-shadow: 0 18px 40px rgba(19,37,59,0.2);
+  display: grid;
+  gap: 0.85rem;
+}
+.stg-phone__notch {
+  position: absolute;
+  top: 14px;
+  width: 88px;
+  height: 18px;
+  border-radius: 999px;
+  background: #13253b;
+}
+.stg-phone__hero {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(11,31,47,0.16), rgba(11,31,47,0.72)),
+    url("/images/shitai/guniujiang_banner.jpg") center/cover no-repeat;
+  color: #fff8f0;
+  display: grid;
+  gap: 0.3rem;
+}
+.stg-phone__hero strong {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+}
+.stg-phone__hero span {
+  font-size: 0.76rem;
+  opacity: 0.9;
+}
+.stg-phone__pillrow {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+.stg-phone__pillrow span,
+.stg-phone__list span {
+  padding: 0.38rem 0.58rem;
+  border-radius: 999px;
+  background: rgba(19,37,59,0.08);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #17324d;
+}
+.stg-phone__module {
+  padding: 0.9rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(19,37,59,0.08);
+}
+.stg-phone__module label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5d6671;
+}
+.stg-phone__module strong {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.35rem;
+  color: #17324d;
+}
+.stg-phone__module p {
+  margin: 0.4rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #5d6671;
+}
+.stg-phone__list {
+  display: grid;
+  gap: 0.45rem;
+}
+@media (prefers-color-scheme: dark) {
+  .shitai-guide-entry {
+    border-color: rgba(255,255,255,0.12);
+    background:
+      radial-gradient(circle at top left, rgba(210,122,51,0.18), transparent 32%),
+      linear-gradient(135deg, rgba(18,28,40,0.98), rgba(20,48,56,0.96));
+    box-shadow: 0 22px 46px rgba(0,0,0,0.34);
+  }
+  .stg-copy { color: #eef3f7; }
+  .stg-kicker,
+  .stg-phone__pillrow span,
+  .stg-phone__list span { background: rgba(255,255,255,0.1); color: rgba(245,247,250,0.92); }
+  .stg-copy h3,
+  .stg-phone__module strong { color: #fff8f0; }
+  .stg-tags span,
+  .stg-phone__module { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); color: #eef3f7; }
+  .stg-copy p,
+  .stg-phone__module p,
+  .stg-phone__module label { color: rgba(226,232,240,0.82); }
+  .stg-phone__screen { background: linear-gradient(180deg, rgba(24,34,44,0.98), rgba(18,28,40,0.98)); border-color: #0c1723; }
+}
+@media (max-width: 900px) {
+  .shitai-guide-entry {
+    grid-template-columns: 1fr;
+  }
+  .stg-phone {
+    justify-content: flex-start;
+  }
+}
+</style>
+
 <!-- - *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
 - *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China. -->
