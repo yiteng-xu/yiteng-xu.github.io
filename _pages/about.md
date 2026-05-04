@@ -31,6 +31,8 @@ redirect_from:
         <a href="#patents">Patents</a>
         <a href="#educations">Education</a>
         <a href="#skills">Skills</a>
+        <a href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">View CV</a>
+        <a href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
       </div>
     </div>
     <div class="fh-media" aria-hidden="true">
@@ -720,11 +722,14 @@ ACM SIGGRAPH Asia, 2025
 
 <div class="video-wrapper" style="position: relative; width: 100%; max-width: 960px; margin: 0.6rem auto 1.2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 36px rgba(16,24,40,.18); border: 1px solid rgba(10,10,10,0.08); background: rgba(255,255,255,0.85);">
   <video
+    class="fh-publication-video"
+    data-fh-autoplay-video
     autoplay
     muted
     loop
     playsinline
-    preload="metadata"
+    controls
+    preload="auto"
     poster="/images/SymBridge.png"
     style="display: block; width: 100%; height: auto;"
     aria-label="SymBridge demo video"

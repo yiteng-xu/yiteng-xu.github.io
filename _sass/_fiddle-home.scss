@@ -814,6 +814,7 @@
 }
 
 .home-fiddle .paper-box .paper-box-image {
+  position: relative !important;
   width: 100% !important;
   min-width: 0 !important;
   max-width: none !important;
@@ -855,12 +856,26 @@
   position: absolute;
   top: 0.55rem;
   left: 0.6rem;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  max-width: calc(100% - 1.2rem);
+  padding: 0.32rem 0.72rem;
   margin: 0;
   border-radius: 999px;
-  background: rgba(255, 252, 246, 0.84);
+  background: rgba(255, 252, 246, 0.92);
   border: 1px solid rgba(20, 93, 86, 0.24);
+  box-shadow: 0 10px 24px rgba(34, 46, 40, 0.14);
   color: var(--fh-accent);
+  font-weight: 800;
   font-size: 0.74rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .home-fiddle .video-wrapper {

@@ -224,6 +224,56 @@
     mediaTargets.forEach((img) => mediaObserver.observe(img));
   }
 
+  const autoplayVideos = Array.from(
+    document.querySelectorAll('video[data-fh-autoplay-video], .video-wrapper video[autoplay]')
+  );
+
+  const startAutoplayVideo = (video) => {
+    if (!video) return;
+    video.muted = true;
+    video.defaultMuted = true;
+    video.loop = true;
+    video.autoplay = true;
+    video.playsInline = true;
+    video.setAttribute('muted', '');
+    video.setAttribute('loop', '');
+    video.setAttribute('autoplay', '');
+    video.setAttribute('playsinline', '');
+
+    const play = () => {
+      if (document.hidden) return;
+      const promise = video.play();
+      if (promise && typeof promise.catch === 'function') promise.catch(() => {});
+    };
+
+    if (video.readyState >= 2) {
+      play();
+    } else {
+      video.addEventListener('canplay', play, { once: true });
+      video.load();
+    }
+  };
+
+  autoplayVideos.forEach((video) => {
+    startAutoplayVideo(video);
+
+    if ('IntersectionObserver' in window) {
+      const videoObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) startAutoplayVideo(video);
+          });
+        },
+        { threshold: 0.2, rootMargin: '20% 0px 20% 0px' }
+      );
+      videoObserver.observe(video);
+    }
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) autoplayVideos.forEach((video) => startAutoplayVideo(video));
+  });
+
   window.addEventListener('beforeprint', () => {
     targets.forEach((item) => item.classList.add('is-inview'));
     revealAllMedia();
