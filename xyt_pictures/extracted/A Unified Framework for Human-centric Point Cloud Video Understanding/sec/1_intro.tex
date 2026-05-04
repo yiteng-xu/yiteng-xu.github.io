@@ -1,0 +1,80 @@
+\section{Introduction}
+\label{sec:intro}
+
+Human-centric point cloud video understanding (PVU) is a burgeoning field focused on discerning, interpreting, and quantifying human-related information within sequences of human point clouds. This area has witnessed a surge in attention in recent years, particularly applied in LiDAR captured large-scale unconstrained scenarios~\cite{xu2023human,dai2023sloper4d,yan2023cimi4d,han2022licamgait}. Its significance lies in its critical role in facilitating various downstream tasks, including human action recognition~\cite{xu2023human}, 3D pose estimation~\cite{cong2023weakly}, motion capture~\cite{ren2023lidar,li2022lidarcap}, etc. These advancements hold the potential to further drive progress in real-world applications, such as intelligent surveillance, assistive robots, human-robot collaboration, etc.
+
+
+Current methods~\cite{xu2023human,ren2023lidar,li2022lidarcap} usually rely on extensive labeled data for supervision and employ generic point cloud-based feature extraction backbones~\cite{qi2017pointnet,qi2017pointnet++,ma2022rethinking,guo2021pct}. Nevertheless, obtaining the necessary data and annotations for 4D human-centric point cloud videos proves to be a challenging and expensive endeavor. Furthermore, fully supervised techniques tend to exhibit overfitting issues when applied to specific datasets or tasks, resulting in limited generalization capabilities. Additionally, the existing feature extraction networks are ill-suited for human-centric data, as they fail to account for human-specific characteristics. Hence, within the domain of human-centric PVU, the significance of self-supervised learning becomes evident in enhancing algorithmic generalization. Simultaneously, the development of a human-specific feature extractor that uses prior human-related knowledge holds great promise in bolstering the effectiveness of methods for downstream tasks.
+\begin{figure}[t]
+    \centering  
+    \includegraphics[width=0.5\textwidth]
+    {pic/teaser_point_level.drawio.pdf} 
+    \caption{UniPVU-Human extracts human-related prior knowledge at global level, part level, and point level to facilitate subsequent geometric and dynamic representation learning, finally cater to a range of downstream human-centric tasks, such as action recognition, 3D pose estimation, etc.}
+    \label{fig:overview}
+ \end{figure}
+
+Actually, self-supervised learning~\cite{wang2021self,zhang2023complete} for PVU has made great progress. Some approaches~\cite{sheng2023contrastive,sheng2023point,shen2023pointcmp} leverage contrastive learning techniques to capture essential spatio-temporal features within dynamic point clouds. Nevertheless, due to the inherent challenges posed by irregular point distributions stemming from varying capture distances, occlusions, and noise, the construction of high-quality positive and negative samples remains a nontrivial task, thereby making the optimization process difficult. The latest work~\cite{shen2023masked} exploits mask prediction for point cloud video self-learning by dividing sequential point clouds into tubes for masking and recovering. However, this method flattens all tubes for feature learning, inadvertently compromising the semantic and dynamic consistency in 4D videos. Moreover, all these methods are not tailored specifically to address human-centric PVU.
+
+
+Given the importance of human-centric tasks, the imperative need arises to establish a unified framework for the understanding of human point cloud videos. Notably, no specific solutions to this challenge have been identified to date. In this paper, we approach the problem by addressing two fundamental questions: \textit{first, what human-related prior knowledge can be extracted, and second, how can the knowledge be harnessed to enhance human-centric representation learning}?
+
+Considering the inherent structure of the human body, characterized by fixed components such as torso, head, arms, and legs, as well as the distinctive dynamic traits exhibited during human motion, we exploit both \textbf{the structural semantics of human body and human motion dynamics} to facilitate the acquisition of human-specific features from sequences of point clouds. In particular, we create two large-scale point-cloud-based datasets and corresponding pre-trained networks for body segmentation and motion flow estimation, respectively, so that human prior knowledge can be learned in advance and assist subsequent representation learning. 
+Furthermore, within our framework, we introduce two innovative stages tailored to maximize the utility of this prior knowledge. The first one, termed \textbf{semantic-guided spatio-temporal representation self-learning}, incorporates a body-part-based mask prediction mechanism designed to facilitate the acquisition of geometric and dynamic representations of humans in the absence of annotations. Building upon this foundation, the following stage, \textbf{hierarchical feature enhanced fine-tuning}, integrates and adapts global-level, part-level, and point-level point cloud features to cater to a range of downstream tasks. In this way, our approach, named \textbf{UniPVU-Human}, serves as a comprehensive exploration of human prior knowledge, furnishing a unified framework for the effective learning of human-centric representations.
+
+
+To evaluate the effectiveness of our method, we conduct extensive experiments on two popular LiDAR-point-cloud-based datasets~\cite{xu2023human,ren2023lidar}, focusing on human action recognition and human pose estimation, respectively. Our method achieves state-of-the-art performance on both tasks. Detailed ablation studies are also provided to verify each stage and technical design in our framework.
+
+To summarize, our contributions are as follows:
+\begin{enumerate}
+    \item We propose UniPVU-Human, the first unified framework for human-centric point cloud video understanding, which is significant for vast downstream applications.
+    \item Containing two novel stages, including semantic-guided spatio-temporal representation self-learning and hierarchical feature enhanced fine-tuning, our method fully takes advantage of prior knowledge of humans for effective and robust human-centric representation learning.
+    \item Our method achieves state-of-the-art performance on open datasets for various human-centric tasks.
+    
+\end{enumerate}
+
+%Modern intelligent robotics or autonomous vehicle are usually equipped with depth sensors like LiDAR or depth cameras, which can perceive the our dynamically changing 3D world by processing the point cloud sequences in various visibility environments. And human-centric point cloud video understanding becomes an emerging research field, for it plays an indispensable role in real-world human-related applications like autonomous vehicles, human-robot interaction and VR/AR. However, point cloud sequences are irregular and unordered spatially and inconsistent temporally, making it difficult to model the spatial-temporal structure in long term. Moreover, human body is non-rigid object which exists not only global rotations and translations but also local rotations and translations, such as relative movements among joints, which means it is more complicated and challenging to model the motion feature of human point cloud.
+
+%Recent works~\cite{fan2021point,fan2022point,shen2023masked} select anchor frames to divide long point cloud video sequences in to clips containing several frames. Then they select spatial anchor points in anchor frames to build point tubes with nearest points around spatially and temporally, and apply 4D convolution to capture the local features. After that, they flatten the point tubes features within clips spatially and among clips temporally, and use Transformer among all tubes features to learn the global appearance and motion representation jointly. However, it suffers high time expenditure and large memory, for the consumption for the square time complexity of self-attention on flattened point tubes
+%Besides, these methods don't build the one-to-one temporal correspondence of point tubes in adjacent clips. They flatten the tubes spatially and temporally and mix all tubes together, which destroy the original spatial geometric structure of human body in every frame and motion features of local fine-grained structure in long term, which is essential in capturing the relative movements among joints for non-rigid human body. 
+
+
+%To address this problem, we utilize prior geometry knowledge of human body to deconstruct the human into fine-grained parts by a part segmentation network pre-trained on synthetic dataset., making it possible to decouple the appearance and motion feature extraction by applying spatial modeling and temporal modeling respectively, which is more effective and efficient. 
+
+%Besides, most of 3D data entails labor-intensive human annotations~\cite{chen2023pointgpt}, which is expensive and time-consuming, causing the scale of existing 3D datasets much smaller than that of that of 2D datasets. Inspired by pre-trained Large Language Model(LLM) and Large Vision Model(LVM), ~\cite{devlin2018bert,radford2018improving,kirillov2023segment}, which apply self-supervised pre-training on large amounts of unlabeled data and performs well when fine-tuning on multiple downstream tasks, we fuse several LiDAR Human dataset into a million level large datasets and build a self-supervised pre-trained model using geometric and dynamic representation learning methods on it.
+%Extensive experiments on HuCenLife~\cite{xu2023human}, LIP~\cite{ren2023lidar} demonstrate the effectiveness of our proposed method.
+
+%To summarize, our contributions are as follows:
+% The research in LiDAR-based human-centric video understanding ~\cite{li2022lidarcap,xu2023human,cong2023weakly,shen2023lidargait,ren2023lidar} has experienced rapid progress. 
+% LiDAR can provide precise depth in large-scale scenarios, regardless of light or weather conditions, making it popular in many human-related applications like autonomous vehicles, human-robot interaction and VR/AR.
+% A lot of new feature extractor has emerged, which performs well in specific tasks, such as action recognition~\cite{xu2023human}, 3D pose estimation~\cite{ren2023lidar,li2022lidarcap} or gait recognition~\cite{ren2023lidar}. 
+% The key challenge of these tasks is to extract the geometric and motion representation of dynamic human point clouds. However, point cloud sequences are irregular and unordered spatially and inconsistent temporally, making it difficult to model the spatial-temporal structure of human motions. Besides, point clouds are semantically sparse but redundant in consecutive frames, therefore the balance between
+
+
+% Some works apply self-supervised representation learning methods on point cloud video understanding ~\cite{sheng2023contrastive,shen2023pointcmp,shen2023masked,sheng2023point}. They divide the video into small clips first, and then extract spatial-temporal features from each clip independently. Afterwards, they explore the long term temporal relationship among clip features.
+% However, these methods model temporal relationships at global frame scale, ignoring the long term motion of fine-grained local structure of point cloud, for it's challenging to track local structures in consecutive point cloud frames.
+% As a result, motion features extracted from these methods are coarse and redundant.
+
+
+% Nevertheless, The human body has special geometric characteristics, for a person is composed of fixed body parts. Therefore, we use part segmentation to partition the human body in this paper. Through tracking the body part in a long term, we can model the motion representation of humans more precisely. 
+% Besides, we also extract features of all parts in every single frame to capture global geometric representation.
+% Last but not least, We fuse human motion flow with points in fine-tuning stage, enhancing the model's ability to extract geometric and motion features in multiple levels, i.e. global instance level, body part level, and point-wise level simultaneously.
+
+
+% Compared to contrastive learning based methods~\cite{sheng2023point,xue2023ulip}, mask reconstruction based self-supervised pre-training methods~\cite{pang2022masked,zhang2022point} perform better in capturing fine-grained local features, which has been widely applied in static point cloud representation learning but less explored for point cloud videos. 
+% We set body part embedding as attention token and design a spatial-temporal mask-reconstruction module in pre-training stage, including a spatial-temporal transformer encoder, a decoder and a reconstruction head.
+% We randomly mask some part patches in temporal and spatial dimension of point cloud video as well as a proportion of points in visible part left, encouraging the encoder networks to  extract high-level latent geometric and motion feature of human from incomplete point clouds through reconstructing the mask point clouds.
+
+
+% Since our model learns from data itself without manually annotated supervision information, the representations learned by our model are not task-specific but the essential local and global human geometry and motion features.
+% Therefore, it can be transferred to various downstream tasks, making it a multi-task unified framework.
+% During fine-tuning, we discard the decoder and add task-specific heads, and achieve state-of-the-art performance in action recognition, 3D pose estimation, and gait recognition.
+
+% To summarize, our contributions are as follows:
+
+% •	We partition the point cloud of human into several body parts, establishing the long-term correspondences of each part in long point cloud sequences. Through spatial and temporal modeling of body parts, our model can capture geometric and motion feature of fine-grained local structure more precisely.
+
+% •	We design a self-supervised spatial-temporal mask reconstruction module, enabling the encoder network to learn high-level spatial-temporal latent representations in pre-training stage, which can be finetuned on various downstream tasks, leading to a multi-task unified framework in human-centric LiDAR point cloud video understanding.
+
+% •	We add human motion flow to LiDAR points, enhancing the model's ability to extract motion features in global instance level, body part level, and point-wise level simultaneously.
+
+

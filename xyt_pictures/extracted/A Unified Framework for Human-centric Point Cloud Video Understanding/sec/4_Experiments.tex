@@ -1,0 +1,241 @@
+\section{Experiments}
+\label{sec:experiments}
+\begin{table*}\scriptsize 
+\caption{Action Recognition in HuCenLife~\cite{xu2023human}.  $^{\dag}$ means adding global token and motion flow to these methods fair comparisons.}
+\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|r|r|r}
+\Xhline{1px}
+                       & \multicolumn{1}{l|}{lift} & \multicolumn{1}{l|}{carry} & \multicolumn{1}{l|}{move} & \multicolumn{1}{l|}{pull\_push} & \multicolumn{1}{l|}{sco-bal} & \multicolumn{1}{l|}{hum-inter} & \multicolumn{1}{l|}{fitness} & \multicolumn{1}{l|}{entertain} & \multicolumn{1}{l|}{sports} & \multicolumn{1}{l|}{bend-over} & \multicolumn{1}{l|}{sit} & \multicolumn{1}{l|}{walk-stand} & \multicolumn{1}{l}{mAcc} \\ \hline
+PointNet~\cite{qi2017pointnet}              & 45.5& 48.8& 33.3& 84& 59.4& 2.6& 65.3& 49.3& 34.8& 29.2& 54.3& 61& 47.3
+\\ \hline
+PointNet++~\cite{qi2017pointnet++}            & 49.5& 45.7& 35.6& 52.7& 59& 6& 28.6& 43.8& 41.2& 31.9& 38.8& 55& 40.7
+\\ \hline
+PointMLP~\cite{ma2022rethinking}              & 48.5& 47.7& 57.7& 80.1& 80.3& 36.1& 75.7& 60.8& 39.5& 54.9& 55.8& 59.7& 58.1
+\\ \hline
+PointNeXt~\cite{qian2022pointnext}             & 48.1& 56.6& 34.1& 80& 85.6& 22.6& 50& 38& 25.7& 25.5& 63.1& 70.9& 50
+\\ \hline
+PCT~\cite{guo2021pct} & 39.7& 54.9& 52.3& 80.2& 89.8& 9.8& 63.3& 73.6& 37.7& 62.5& 51& 75.8& 57.6
+\\ \hline
+HuCenLife~\cite{xu2023human}             & 45& 44.4& 52.7& 81.2& 86.7& 23.1& 81.2& 54.8& 41.7& 54.8& 53.2& 70& 57.4
+\\ \hline
+PointMAE$^{\dag}$~\cite{pang2022masked} & 53.4& 53.1& 47.2& 84.9& 88.8& 7.8& 71.4& 76.8& 39.2& 57.9& 41.8& 74.2& 58.0
+\\ \hline
+MaST-Pre$^{\dag}$~\cite{shen2023masked}  & 32.8& 39.9& 48.4& 84.5& 87.4& 31.4& 70.7& 59.1& 43.3& 51.7& 66.9& 32.5& 54.1
+\\ \hline
+
+\textbf{UniPVU-Human}& 27.1& 37.3& 57.1& 82.6& 84& 24.7& 85.4& 52.1& 53.9& 93.8& 67.3& 76.1& \textbf{61.8}\\ \Xhline{1px}
+\end{tabular}
+\label{experiment:hucenlife}
+\end{table*}
+
+To evaluate the effectiveness of our method, we conduct experiments on open datasets on tasks of human action recognition and human pose estimation.  
+%We also create two large-scale point-cloud-based synthetic datasets and corresponding pre-trained networks for body segmentation and motion flow estimation, respectively.
+Extensive ablation studies are also conducted for the comprehensive evaluation of modules and technical designs of our method. 
+
+\subsection{Datasets}
+In this section, we first introduce our two synthetic datasets for body segmentation and motion flow estimation. Then we give details for two open datasets, which are used for evaluating our unified framework on downstream real-life human-centric tasks.
+
+\textbf{Human Body Segmentation Synthetic Dataset. }
+\label{subsubsec:HBPSegData}
+To address the absence of 3D human body part segmentation datasets based on LiDAR point clouds, we leverage SMPL mesh from AMASS~\cite{mahmood2019amass} to simulate 1 million LiDAR human point cloud instances following LIP~\cite{ren2023lidar}. We automatically label the data by utilizing the SMPL mesh properties. Specifically, since ordered and regular SMPL mesh vertices provide 24 human body part labels, we can automatically assign each simulated LiDAR point the label of its nearest vertex. Due to the sparsity of point clouds, there tend to be fewer points for some body parts such as hands or feet, so we simplify the original 24 body part labels in the mesh vertices to 9, including head, left arm, right arm, upper body, lower body, left upper leg, left lower leg, right upper leg, and right lower leg.
+% noise and occlusion data augmentation
+In practical applications, occlusions and noise are inevitable. To address these challenges, we synthesize point clouds in various shapes and attach them to the appropriate positions of human point clouds to simulate common noises, such as carrying objects or using umbrellas. Subsequently, these points are labeled as ``noise". Additionally, we randomly crop the human point clouds to mimic occlusions. These operations enable our human body segmentation network to distinguish noise and adapt to occlusions, thus improving its robustness and performance. 
+
+
+\textbf{Human Motion Flow Synthetic Dataset. }
+\label{subsubsec:HMFlowData}
+Based on the LiDAR point cloud generation model~\cite{ren2023lidar,cong2021input}, we create a motion flow estimation synthetic dataset. 
+We derive human motion flow by matching irregular and unordered LiDAR point clouds with regular and ordered mesh vertices, thereby establishing a correspondence between synthetic points in consecutive frames. 
+We follow LIP~\cite{ren2023lidar} to create 2,378,871 frames of synthetic point clouds from SMPL mesh in AMASS~\cite{mahmood2019amass} and SURREAL~\cite{varol2017learning}, which provide diverse human motions. We match each point to the nearest mesh vertex by utilizing the k-Nearest Neighborhood (kNN) algorithm. Since the vertices of each frame have one-to-one correspondences, we can find the corresponding points in each frame based on the matched vertices. Moreover, we also use bidirectional filtering and set distance thresholds to improve the accuracy of finding corresponding points.
+
+\textbf{Action Recognition Dataset. }
+\textbf{HuCenLife}~\cite{xu2023human} is a human-centric action recognition dataset. It comprises 65,265 human instances and 12 kinds of human actions. We divide the dataset into 27142 partially overlapping clips containing 30 consecutive frames. 19594 clips are used as the train set while 7548 clips are used as the test set. It adopts the class mean accuracy (mAcc) as the evaluation metric.
+% \subsubsection{Gait Recognition in SUSTech1K}
+% \textbf{SUSTech1K}~\cite{shen2023lidargait} is collected using a mobile robot outfitted with a 128-beam LiDAR operating at 10 frames per second (fps) and a monocular camera at 30 fps, offering synchronized multi-modal data. This dataset encompasses a diverse collection of 1,050 subjects, 25,239 sequences, over 763,000 point cloud frames, and approximately 3.08 million RGB images, each paired with its silhouette. We follow LiDARGait~\cite{shen2023lidargait} to split the dataset, with 250 identities for training and the remainder for testing. 
+
+\textbf{3D Pose Estimation Dataset. }
+\textbf{LIPD}~\cite{ren2023lidar} is a long-range LiDAR-IMU hybrid human mocap dataset with diverse challenge motions. It comprises 15 performers with 30 types of motions, totaling 62,341 LiDAR point cloud frames, each paired with corresponding IMU measurements. Following the LIP~\cite{ren2023lidar} protocol, we divide the dataset into 39,593 frames for training and 22,748 frames for testing. We use mean per root-relative joint position error (MPJPE) in millimeters as the evaluation metric.
+% \subsubsection{Human Body Part Segmentation Synthetic Dataset Based on AMASS}
+
+% \begin{table}[]
+% \centering
+% \caption{3D Pose Estimation in LIP~\cite{ren2023lidar}.}
+% \label{experiment:pose estimation}
+% \begin{tabular}{l|c}
+% \Xhline{1px}
+%            & \multicolumn{1}{l}{MPJPE(mm)$\downarrow$} \\ \hline
+% LiDARCap~\cite{li2022lidarcap}           & 69.4                           \\ \hline
+% LIP~\cite{ren2023lidar} & 60.1                           \\ \hline
+
+% \textbf{UniPVU-Human}& \textbf{58.8}                          \\ \Xhline{1px}
+% \end{tabular}
+% \end{table}
+\begin{table}\scriptsize
+\centering
+\caption{3D Pose Estimation in LIP~\cite{ren2023lidar}.}
+\label{experiment:pose estimation}
+\begin{tabular}{l|c}
+\Xhline{1px}
+           & \multicolumn{1}{l}{MPJPE(mm)$\downarrow$} \\ \hline 
+LiDARCap(PC)~\cite{li2022lidarcap}          & 69.4                           \\ \hline \hline
+LIP(PC)~\cite{ren2023lidar} & 60.1                           \\ \hline
+\textbf{UniPVU-Human(PC)}& \textbf{58.8}                          \\ \hline \hline
+LIP(PC+IMU)~\cite{ren2023lidar} & 48.9                           \\ \hline
+\textbf{UniPVU-Human(PC+IMU)}& \textbf{47.2}                          \\ 
+
+\Xhline{1px}
+\end{tabular}
+\end{table}
+
+% \begin{table}[ht]
+% \centering
+% %\caption{We have established two settings: pure point cloud input (PC) and multimodal input (PC+IMU).}
+% \label{experiment:pose estimation}
+% \begin{tabular}{l|c}
+% \Xhline{1px}
+%            & \multicolumn{1}{l}{MPJPE(mm)$\downarrow$} \\ \hline 
+% LiDARCap(PC)          & 69.4                           \\ \hline \hline
+% LIP(PC) & 60.1                           \\ \hline
+% \textbf{UniPVU-Human(PC)}& \textbf{58.8}                          \\ \hline \hline
+% LIP(PC+IMU) & 48.9                           \\ \hline
+% \textbf{UniPVU-Human(PC+IMU)}& \textbf{47.2}                          \\ 
+
+% \Xhline{1px}
+% \end{tabular}
+% %\vspace{-2em}
+% \end{table}
+
+
+
+\subsection{Implementation Details}
+\label{subsec:pretraining}
+
+For HuCenLife, we use point clouds with consecutive frames of $L=30$ frames as the input ($L=32$ when dealing with LIP). The dimension $D$ of each point is 3. After normalizing and sampling to $N=384$ points by Farthest Point Sampling (FPS), we apply pre-trained HBSeg and HMFlow on real data to obtain the point-wise segmentation labels $S$ and motion flow vectors $F$ with dimension $D'$ set to 3. 
+
+% For each instance, we group points with the same part segmentation labels into $M$ = 9 point patches $P$. 
+For each instance, we group points with the same part segmentation labels into 9 point patches, denoted as $P$, with $M$ representing the total number of patches.
+Subsequently, $N' = 48$ points are sampled using FPS in each point patch $P$. 
+After being masked with temporal mask ratio $r_t=0.8$ and spatial mask ratio $r_s = 0.6$, each visible point patch has its part token embedding derived using Mini-PointNet \cite{qi2017pointnet}, with a channel dimension $C=384$.
+In the self-learning stage, the features of $F$ are not used, to prevent the premature leakage of location information of masked tokens to the STEncoder. 
+The spatial and temporal positional encoding are obtained by applying MLP to the average coordinate of $P$ and to the time index ranging from 0 to $L$-1, respectively. 
+For STEncoder, we set the number of heads to 6. It contains 4 spatial, 4 temporal, and 4 spatial transformer layers sequentially. 
+The decoder consists of 4 spatial transformer layers, and ChamferDistanceL2 is used as the loss function for mask reconstruction.
+AdamW optimizer is used with an initial learning rate of 0.001 and a weight decay of 0.05. The model is trained for 300 epochs with a batch size of 512.
+
+During fine-tuning, $P$ and corresponding motion flow vector $F$ are extracted by two tokenizers respectively and element-wise added in latent space (See details in supplementary materials), with a global token extracted from the entire human and a class token appended. Totally 11 tokens are sent to the pre-trained STEncoder. 
+The pre-trained model is fine-tuned for 100 epochs using a batch size of 256 on 4 GPUs.  We use the AdamW optimizer, and the initial learning rate is set to 0.0005 with a cosine decay strategy.
+
+
+
+
+
+
+
+
+% Following \ref{subsec:HBPSegModule} and \ref{subsec:HMFlowModule}, we obtain pre-trained HBSeg and HMFlow networks by training them on synthetic data.
+% For \textbf{HuCenLife}, we crop each human instance from 3D large scenes into a point cloud sequence across consecutive $L=30$ frames, utilizing bounding boxes from annotations. Then we normalize and sample to $N=384$ points by Farthest Point Sampling (FPS) algorithm. The dimension $D$ of each point is 3. After that, we apply pre-trained HBSeg and HMFlow on real data to obtain the point-wise segmentation labels $L$ and motion flow vectors $F$, where the dimension $D'$ of the motion flow vector is 3. 
+% The process of LIP is similar to that of HuCenLife, except that the frame numbers $L$ in a consecutive sequence is set to 32.
+
+% For each human instance, we group points with the same part segmentation labels to form $M$ = 9 point patches $P$. Subsequently, the number of points $N'$ in each point patch $P$ is sampled using FPS to 48. 
+% For spatio-temporal masking strategy, we set temporal mask ratio $r_t$ to 0.8 and spatial mask ratio $r_s$ to 0.6.
+% For each point patch $P$, Mini-PointNet \cite{qi2017pointnet} is employed to derive the part token embedding, with its channel dimension $C$ set to 384. 
+% In self-learning stage, the features of $F$ are not fused with those of $P$ to prevent the premature leakage of location information of masked tokens to the STEncoder. 
+% The spatial positional encoding and the temporal position encoding are obtained by applying MLP to the average coordinate of $P$ and to the time index ranging from 0 to $L$-1, respectively. 
+% For STEncoder, we set the depth for the Transformer to 12, the feature dimension $C$ to 384, and the number of heads to 6, respectively. It contains 4 spatial transformer layers, 4 temporal transformer layers and 4 spatial transformer layers sequentially. 
+% The decoder consists of 4 spatial transformer layers, and ChamferDistanceL2 is used as loss function for mask reconstruction.
+% AdamW optimizer is used with an initial learning rate of 0.001 and a weight decay of 0.05. The model is trained for 300 epochs with a batch size of 512.
+
+% % We evaluate our model by fine-tuning the pre-trained encoder with additional task-specific heads on \textbf{HuCenLife}~\cite{xu2023human} and \textbf{LIP}~\cite{ren2023lidar}, respectively, and hierarchical human-related knowledge will be added as well. 
+%  % For each task, we use same dataset for self-learning and fine-tuning.
+% During fine-tuning, 384 points are sampled in each frame. 9 part patches with 48 points and their corresponding motion flow vectors, as well as a class token and a global token are sent to the pre-trained tokenizerand encoder. Especially, $P$ and $F$ will be extracted by two tokenizers, respectively and element-wise added in latent space (See details in supplementary materials), and a global token extracted from the point cloud of entire human instance will be appended after 9 part tokens.
+% The pre-trained model is fine-tuned for 100 epochs using a batch size of 256 on 4 GPUs.  We use the AdamW optimizer, and the initial learning rate is set to 0.0005 with a cosine decay strategy.
+\subsection{Results}
+\subsubsection{Action Recognition in HuCenLife}
+
+The results of all methods on HuCenLife are shown in Table.\ref{experiment:hucenlife}, and the evaluation metric is class mean accuracy (mAcc). For the first seven methods in the table, which are designed for processing static point clouds, we apply them on each frame of the point cloud sequence and then fuse these frame features after the encoder network by element-wise adding. For methods that also use self-learning like PointMAE~\cite{pang2022masked} and MaST-Pre~\cite{shen2023masked}, we add a global token and motion flow for fair comparisons. The experimental results demonstrate that our method significantly outperforms the methods that do not utilize self-learning. Even against general static point cloud methods with self-learning, like PointMAE, our approach shows a marked improvement due to our comprehensive temporal dynamic modeling. Compared to methods like MaST-Pre, which also models both temporal and spatial dimensions of point cloud videos along with mask prediction, our method still maintains a substantial advantage. This advantage is particularly evident in some action categories where accurate recognition hinges on extracting not just geometric features but also motion characteristics, including Fitness, Sports (encompassing activities like basketball and badminton), Bend-Over, and Walk-Stand. Experimental data shows that UniPVU-Human demonstrates superior recognition performance in these action categories. This highlights the effectiveness of utilizing human body prior knowledge and underscores the powerful capability of our model to fully leverage this prior knowledge for enhanced performance.
+
+\subsubsection{3D Pose Estimation in LIP}
+The Mean Per Root-Relative Joint Position Error (MPJPE) in millimeters is used as the evaluation metric, where a smaller value indicates better performance. Unlike action recognition, pose estimation in long point cloud videos focuses on long-term joint movement consistency. Our UniPVU-Human leverages a self-learning module for crucial human motion representation and enhances motion detail with motion flow during fine-tuning.
+To ensure a fair comparison, we establish two settings as shown in Table.~\ref{experiment:pose estimation}.
+\textbf{\textcolor[RGB]{230,150,0}{\textbf{1)}}  Pure PC: } involves only pure point clouds as input, where our method's MPJPE (58.8) is 1.3 lower than that of LIP (60.1).
+\textbf{\textcolor[RGB]{230,150,0}{\textbf{2)}}  PC+IMU: } involves using both point cloud and IMU data as inputs. For UniPVU-Human, we replace the PointNet used for point cloud feature extraction in LIP with our model.
+The experimental results indicate that our method's MPJPE (47.2) is 1.7 lower than that of LIP (48.9) of full configuration. 
+Our method achieves SOTA performance under both settings, proving its superiority. 
+
+
+% As shown in Table.~\ref{experiment:pose estimation}, our method achieves the smallest MPJPE. This underscores the substantial advantage of employing hierarchical human-related prior knowledge for the extraction of human motion features. Moreover, our model effectively leverages this knowledge for the precise extraction of long-term human motion representations in point cloud videos. 
+
+
+\subsection{Ablation Studies}
+All ablation studies are conducted on HuCenLife~\cite{xu2023human}, for it is collected in real-life scenarios, making it more relevant to real-world applications.
+The results are shown in Table.~\ref{experimant:design}.
+
+Our UniPVU-human exploits both the structural semantics of human body and human motion to facilitate the acquisition of human-specific features by adopting human body parts as local patches for following spatio-temporal modeling with Transformers, unlike other methods which cluster the neighbor point clouds around the kernels sampled by FPS algorithm.
+As shown in the first and second lines of~\ref{experimant:design}, our setting is identical to PointMAE ~\cite{pang2022masked} both with and without self-learning. The mean accuracies (mAcc) in these settings are 53.4\% and 56.1\%, respectively.
+By enhancing PointMAE with hierarchical features in the fine-tuning stage, as shown in the third line of the table, the mAcc reaches 58\%, yielding a performance gain of 1.9\%. This indicates that hierarchical human-related features can also enhance performance in other models.
+However, this setting still trails our best model by 3.8\%, underscoring the effectiveness of our model's approach of using body parts as semantic tokens.
+
+Lines 5 to 7 of the table demonstrate that our model benefits from predicting masked tokens in both spatial and temporal dimensions within the self-learning module. Adding our self-learning module resulted in a substantial 6.2\% improvement in total. 
+
+During the aforementioned self-learning module, our model has already achieved the capability to model the semantic structure of the human body at the part level. 
+In the Hierarchical Feature Enhanced Fine-tuning module, we incorporate a global token and point-wise motion flow. As indicated in lines 8 to 10, the inclusion of these two designs leads to a notable performance improvement, highlighting the critical role of hierarchical human-related prior knowledge in enhancing the extraction of human geometric and motion representations. 
+In conclusion, by seamlessly integrating various elements of our design, UniPVU-Human achieves exceptional performance with a final accuracy of 61.8\%. This demonstrates the effectiveness of our harmonious incorporation of components in facilitating human-centric representation learning.
+
+% \begin{table}[]
+% \caption{Ablation Studies of Network Design on HuCenLife~\cite{xu2023human}.}
+% \begin{tabular}{ll|r}
+% \Xhline{1px}
+% \multicolumn{2}{l|}{}                                                                                                                                         & \multicolumn{1}{l}{mAcc} \\ \hline
+% \multicolumn{2}{l|}{Without body-part semantic guidance}                                                                                                                        & 59                        \\ \hline
+% \multicolumn{1}{l|}{\multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Semantic-guided Spatio\\ -temporal Representation \\ Self-learning\end{tabular}}} & w/o pretrain               & 55.8                      \\ \cline{2-3} 
+% \multicolumn{1}{l|}{}                                                                                                            & w/o temporal mask & 59.9                      \\ \cline{2-3} 
+% \multicolumn{1}{l|}{}                                                                                                            & w/o spatial mask  & 60.1                      \\ \hline
+% \multicolumn{1}{l|}{\multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Hierarchical Feature \\ Enhanced Fine-tuning\end{tabular}}}       & w/o HMFlow        & 61.3                      \\ \cline{2-3} 
+% \multicolumn{1}{l|}{}                                                                                                            & w/o global token  & 59.3                      \\ \hline
+% \multicolumn{2}{l|}{\textbf{UniPVU-Human}}                                                                                                                                     & \textbf{61.8}                      \\ \Xhline{1px}
+% \end{tabular}
+% \label{experimant:design}
+% \end{table}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}\scriptsize
+\caption{Ablation Studies of Network Design. To assess the effectiveness of designs in our UniPVU-Human, we perform ablation experiments by adding (\textcolor{green}{\checkmark}) or removing (\textcolor{red}{\XSolidBrush}) them, and then present the corresponding resulting changes in performance on HuCenLife~\cite{xu2023human}.}
+\begin{tabular}{c|cc|cc|c}
+\Xhline{1px}
+\multirow{2}{*}{part division} & \multicolumn{2}{c|}{Self-learning Mask}  & \multicolumn{2}{c|}{Hierarchical Feature} & \multirow{2}{*}{mAcc} \\ \cline{2-5}
+                               & \multicolumn{1}{c|}{spatial} & temporal & \multicolumn{1}{c|}{global token}   & motion flow  &                       \\ \hline
+\textcolor{red}{\XSolidBrush}                              & \multicolumn{1}{c|} {\textcolor{red}{\XSolidBrush} }            & \textcolor{red}{\XSolidBrush}             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }              & \textcolor{red}{\XSolidBrush}            & 53.4                  \\ \hline
+\textcolor{red}{\XSolidBrush}                              & \multicolumn{1}{c|} {\textcolor{green}{\checkmark} }            & \textcolor{red}{\XSolidBrush}             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }              & \textcolor{red}{\XSolidBrush}            & 56.1                  \\ \hline
+\textcolor{red}{\XSolidBrush}                              & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }            & \textcolor{red}{\XSolidBrush}             & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }              & \textcolor{green}{\checkmark}             & 58                    \\ \hline
+\textcolor{green}{\checkmark}                             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }            & \textcolor{red}{\XSolidBrush}             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }              & \textcolor{red}{\XSolidBrush}            & 54.1                  \\ \hline
+\textcolor{green}{\checkmark}                             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }            & \textcolor{red}{\XSolidBrush}             & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }              & \textcolor{green}{\checkmark}            & 55.6                  \\ \hline
+\textcolor{green}{\checkmark}                               & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }            & \textcolor{red}{\XSolidBrush}             & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }              & \textcolor{green}{\checkmark}            & 59.9                  \\ \hline
+\textcolor{green}{\checkmark}                               & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }            & \textcolor{green}{\checkmark}             & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }              & \textcolor{green}{\checkmark}            & 59.2                  \\ \hline
+\textcolor{green}{\checkmark}                               & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }            & \textcolor{green}{\checkmark}             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }              & \textcolor{red}{\XSolidBrush}            & 58.9                  \\ \hline
+\textcolor{green}{\checkmark}                               & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }            & \textcolor{green}{\checkmark}             & \multicolumn{1}{c|}{\textcolor{red}{\XSolidBrush} }              & \textcolor{green}{\checkmark}            & 59.3                  \\ \hline
+\textcolor{green}{\checkmark}                              & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }            & \textcolor{green}{\checkmark}             & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }              & \textcolor{red}{\XSolidBrush}            & 61.3                  \\ \hline
+\textcolor{green}{\checkmark}                              & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }            & \textcolor{green}{\checkmark}             & \multicolumn{1}{c|}{\textcolor{green}{\checkmark} }              & \textcolor{green}{\checkmark}            & \textbf{61.8}                  \\ \Xhline{1px}
+\end{tabular}
+\label{experimant:design}
+\end{table}
+\subsection{Effectiveness of Our Self-learning Mechanism in Semi-supervised Settings}
+For supervised learning methods, the optimization targets of neural networks mainly come from human annotations. To endow models with strong robustness and generalizability for diverse applications, extensive data annotation is usually required. Therefore, our method introduces a self-learning mechanism, which diminishes the dependency on manual annotations, allowing our model to undergo self-learning on a vast quantity of unannotated data. Additionally, our method learns intrinsic representations directly from the data, uninhibited by the constraints and biases of task-specific, scenario-specific, or dataset-specific manual annotations. As a result, the representations acquired are not task-specific and exhibit strong generalization capabilities, which improves performance on downstream tasks. 
+
+To validate this, we randomly sample the training set of HuCenLife by categories and assess our model's performance in fine-tuning with reduced data volumes, thereby verifying the effectiveness of self-learning. The experimental results in Table.~\ref{experimant:proportion} illustrate that when downsampling the downstream task dataset HuCenLife to 20\%, 30\%, and 50\%, our method shows the least decline in performance compared to UniPVU-Human without self-learning and MaST-Pre.
+
+% We conducted an ablation analysis to explore how varying proportions of training data impact our model’s performance, specifically, 50\%, 30\%, and 20\%. As shown in Table.~\ref{experimant:proportion}, our method demonstrates minimal accuracy decline across different experimental proportions. This resilience to data reduction indicates the robust capacity of UniPVU-Human, allowing it to effectively learn from smaller datasets.
+
+
+\begin{table}\footnotesize
+\caption{Effectiveness of Our Self-learning Mechanism in Semi-supervised Settings on HuCenLife. * means training on HuCenLife directly without the self-learning stage. The experimental results indicate that our method demonstrates the smallest decline in performance. }
+\begin{tabular}{l|llll}
+\Xhline{1px}
+\multirow{2}{*}{}    & \multicolumn{4}{c}{proportion of fine-tuning dataset}                                                         \\ \cline{2-5} 
+                           & \multicolumn{1}{r|}{20\%} & \multicolumn{1}{r|}{30\%} & \multicolumn{1}{r|}{50\%} & \multicolumn{1}{r}{100\%} \\ \hline
+MaST-Pre~\cite{shen2023masked}& \multicolumn{1}{r|}{39.8(-14.3)}     & \multicolumn{1}{r|}{42(-12.1)}     & \multicolumn{1}{r|}{48.8(-5.3)}     &                            54.1
+\\ \hline
+UniPVU-Human*& \multicolumn{1}{r|}{44.9(-10.9)}     & \multicolumn{1}{r|}{46.4(-9.4)}     & \multicolumn{1}{r|}{49.5(-6.3)}     &                            55.8
+\\ \hline
+\textbf{UniPVU-Human}& \multicolumn{1}{r|}{51(\textbf{-10.8})} & \multicolumn{1}{r|}{53.8(\textbf{-8})} & \multicolumn{1}{r|}{57.3(\textbf{-4.5})} & \multicolumn{1}{l}{61.8}  \\ \Xhline{1px}
+\end{tabular}
+\label{experimant:proportion}
+\end{table}

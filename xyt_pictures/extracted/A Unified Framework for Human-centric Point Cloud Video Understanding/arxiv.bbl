@@ -1,0 +1,258 @@
+\begin{thebibliography}{50}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen et~al.(2023)Chen, Wang, Yang, Yu, Yuan, and Yue]{chen2023pointgpt}
+Guangyan Chen, Meiling Wang, Yi Yang, Kai Yu, Li Yuan, and Yufeng Yue.
+\newblock Pointgpt: Auto-regressively generative pre-training from point clouds.
+\newblock \emph{arXiv preprint arXiv:2305.11487}, 2023.
+
+\bibitem[Choy et~al.(2019)Choy, Gwak, and Savarese]{choy20194d}
+Christopher Choy, JunYoung Gwak, and Silvio Savarese.
+\newblock 4d spatio-temporal convnets: Minkowski convolutional neural networks.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 3075--3084, 2019.
+
+\bibitem[Cong et~al.(2021)Cong, Zhu, and Ma]{cong2021input}
+Peishan Cong, Xinge Zhu, and Yuexin Ma.
+\newblock Input-output balanced framework for long-tailed lidar semantic segmentation.
+\newblock In \emph{2021 IEEE International Conference on Multimedia and Expo (ICME)}, pages 1--6. IEEE, 2021.
+
+\bibitem[Cong et~al.(2023)Cong, Xu, Ren, Zhang, Xu, Wang, Yu, and Ma]{cong2023weakly}
+Peishan Cong, Yiteng Xu, Yiming Ren, Juze Zhang, Lan Xu, Jingya Wang, Jingyi Yu, and Yuexin Ma.
+\newblock Weakly supervised 3d multi-person pose estimation for large-scale scenes based on monocular camera and single lidar.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial Intelligence}, pages 461--469, 2023.
+
+\bibitem[Dai et~al.(2023)Dai, Lin, Lin, Wen, Xu, Yi, Shen, Ma, and Wang]{dai2023sloper4d}
+Yudi Dai, YiTai Lin, XiPing Lin, Chenglu Wen, Lan Xu, Hongwei Yi, Siqi Shen, Yuexin Ma, and Cheng Wang.
+\newblock Sloper4d: A scene-aware dataset for global 4d human pose estimation in urban environments.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 682--692, 2023.
+
+\bibitem[Fan et~al.(2017)Fan, Su, and Guibas]{fan2017point}
+Haoqiang Fan, Hao Su, and Leonidas~J Guibas.
+\newblock A point set generation network for 3d object reconstruction from a single image.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 605--613, 2017.
+
+\bibitem[Fan et~al.(2021{\natexlab{a}})Fan, Yang, and Kankanhalli]{fan2021point}
+Hehe Fan, Yi Yang, and Mohan Kankanhalli.
+\newblock Point 4d transformer networks for spatio-temporal modeling in point cloud videos.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 14204--14213, 2021{\natexlab{a}}.
+
+\bibitem[Fan et~al.(2021{\natexlab{b}})Fan, Yu, Yang, and Kankanhalli]{fan2021deep}
+Hehe Fan, Xin Yu, Yi Yang, and Mohan Kankanhalli.
+\newblock Deep hierarchical representation of point cloud videos via spatio-temporal decomposition.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 44\penalty0 (12):\penalty0 9918--9930, 2021{\natexlab{b}}.
+
+\bibitem[Fan et~al.(2022{\natexlab{a}})Fan, Yang, and Kankanhalli]{fan2022point}
+Hehe Fan, Yi Yang, and Mohan Kankanhalli.
+\newblock Point spatio-temporal transformer networks for point cloud video modeling.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 45\penalty0 (2):\penalty0 2181--2192, 2022{\natexlab{a}}.
+
+\bibitem[Fan et~al.(2022{\natexlab{b}})Fan, Yu, Ding, Yang, and Kankanhalli]{fan2022pstnet}
+Hehe Fan, Xin Yu, Yuhang Ding, Yi Yang, and Mohan Kankanhalli.
+\newblock Pstnet: Point spatio-temporal convolution on point cloud sequences.
+\newblock \emph{arXiv preprint arXiv:2205.13713}, 2022{\natexlab{b}}.
+
+\bibitem[Gu et~al.(2019)Gu, Wang, Wu, Lee, and Wang]{gu2019hplflownet}
+Xiuye Gu, Yijie Wang, Chongruo Wu, Yong~Jae Lee, and Panqu Wang.
+\newblock Hplflownet: Hierarchical permutohedral lattice flownet for scene flow estimation on large-scale point clouds.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 3254--3263, 2019.
+
+\bibitem[Guo et~al.(2021)Guo, Cai, Liu, Mu, Martin, and Hu]{guo2021pct}
+Meng-Hao Guo, Jun-Xiong Cai, Zheng-Ning Liu, Tai-Jiang Mu, Ralph~R Martin, and Shi-Min Hu.
+\newblock Pct: Point cloud transformer.
+\newblock \emph{Computational Visual Media}, 7:\penalty0 187--199, 2021.
+
+\bibitem[Han et~al.(2022)Han, Cong, Xu, Wang, Yu, and Ma]{han2022licamgait}
+Xiao Han, Peishan Cong, Lan Xu, Jingya Wang, Jingyi Yu, and Yuexin Ma.
+\newblock Licamgait: Gait recognition in the wild by using lidar and camera multi-modal visual sensors.
+\newblock \emph{arXiv preprint arXiv:2211.12371}, 2022.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 770--778, 2016.
+
+\bibitem[He et~al.(2022)He, Chen, Xie, Li, Doll{\'a}r, and Girshick]{he2022masked}
+Kaiming He, Xinlei Chen, Saining Xie, Yanghao Li, Piotr Doll{\'a}r, and Ross Girshick.
+\newblock Masked autoencoders are scalable vision learners.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 16000--16009, 2022.
+
+\bibitem[Li et~al.(2022)Li, Zhang, Wang, Shen, Wen, Ma, Xu, Yu, and Wang]{li2022lidarcap}
+Jialian Li, Jingyi Zhang, Zhiyong Wang, Siqi Shen, Chenglu Wen, Yuexin Ma, Lan Xu, Jingyi Yu, and Cheng Wang.
+\newblock Lidarcap: Long-range marker-less 3d human motion capture with lidar point clouds.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 20502--20512, 2022.
+
+\bibitem[Li et~al.(2023)Li, Xiang, Chen, Zhang, and Yang]{li2023deep}
+Zhiqi Li, Nan Xiang, Honghua Chen, Jianjun Zhang, and Xiaosong Yang.
+\newblock Deep learning for scene flow estimation on point clouds: A survey and prospective trends.
+\newblock In \emph{Computer Graphics Forum}. Wiley Online Library, 2023.
+
+\bibitem[Liu et~al.(2019{\natexlab{a}})Liu, Qi, and Guibas]{liu2019flownet3d}
+Xingyu Liu, Charles~R Qi, and Leonidas~J Guibas.
+\newblock Flownet3d: Learning scene flow in 3d point clouds.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}, pages 529--537, 2019{\natexlab{a}}.
+
+\bibitem[Liu et~al.(2019{\natexlab{b}})Liu, Yan, and Bohg]{liu2019meteornet}
+Xingyu Liu, Mengyuan Yan, and Jeannette Bohg.
+\newblock Meteornet: Deep learning on dynamic 3d point cloud sequences.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pages 9246--9255, 2019{\natexlab{b}}.
+
+\bibitem[Liu et~al.(2023)Liu, Tian, Lv, Li, and Wang]{liu2023point}
+Yahui Liu, Bin Tian, Yisheng Lv, Lingxi Li, and Fei-Yue Wang.
+\newblock Point cloud classification using content-based transformer via clustering in feature space.
+\newblock \emph{IEEE/CAA Journal of Automatica Sinica}, 2023.
+
+\bibitem[Loper et~al.(2023)Loper, Mahmood, Romero, Pons-Moll, and Black]{loper2023smpl}
+Matthew Loper, Naureen Mahmood, Javier Romero, Gerard Pons-Moll, and Michael~J Black.
+\newblock Smpl: A skinned multi-person linear model.
+\newblock In \emph{Seminal Graphics Papers: Pushing the Boundaries, Volume 2}, pages 851--866. 2023.
+
+\bibitem[Ma et~al.(2022)Ma, Qin, You, Ran, and Fu]{ma2022rethinking}
+Xu Ma, Can Qin, Haoxuan You, Haoxi Ran, and Yun Fu.
+\newblock Rethinking network design and local geometry in point cloud: A simple residual mlp framework.
+\newblock \emph{arXiv preprint arXiv:2202.07123}, 2022.
+
+\bibitem[Mahmood et~al.(2019)Mahmood, Ghorbani, Troje, Pons-Moll, and Black]{mahmood2019amass}
+Naureen Mahmood, Nima Ghorbani, Nikolaus~F Troje, Gerard Pons-Moll, and Michael~J Black.
+\newblock Amass: Archive of motion capture as surface shapes.
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on computer vision}, pages 5442--5451, 2019.
+
+\bibitem[Pang et~al.(2022)Pang, Wang, Tay, Liu, Tian, and Yuan]{pang2022masked}
+Yatian Pang, Wenxiao Wang, Francis~EH Tay, Wei Liu, Yonghong Tian, and Li Yuan.
+\newblock Masked autoencoders for point cloud self-supervised learning.
+\newblock In \emph{European conference on computer vision}, pages 604--621. Springer, 2022.
+
+\bibitem[Puy et~al.(2020)Puy, Boulch, and Marlet]{puy2020flot}
+Gilles Puy, Alexandre Boulch, and Renaud Marlet.
+\newblock Flot: Scene flow on point clouds guided by optimal transport.
+\newblock In \emph{European conference on computer vision}, pages 527--544. Springer, 2020.
+
+\bibitem[Qi et~al.(2017{\natexlab{a}})Qi, Su, Mo, and Guibas]{qi2017pointnet}
+Charles~R Qi, Hao Su, Kaichun Mo, and Leonidas~J Guibas.
+\newblock Pointnet: Deep learning on point sets for 3d classification and segmentation.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 652--660, 2017{\natexlab{a}}.
+
+\bibitem[Qi et~al.(2017{\natexlab{b}})Qi, Yi, Su, and Guibas]{qi2017pointnet++}
+Charles~Ruizhongtai Qi, Li Yi, Hao Su, and Leonidas~J Guibas.
+\newblock Pointnet++: Deep hierarchical feature learning on point sets in a metric space.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017{\natexlab{b}}.
+
+\bibitem[Qian et~al.(2022)Qian, Li, Peng, Mai, Hammoud, Elhoseiny, and Ghanem]{qian2022pointnext}
+Guocheng Qian, Yuchen Li, Houwen Peng, Jinjie Mai, Hasan Hammoud, Mohamed Elhoseiny, and Bernard Ghanem.
+\newblock Pointnext: Revisiting pointnet++ with improved training and scaling strategies.
+\newblock \emph{Advances in Neural Information Processing Systems}, 35:\penalty0 23192--23204, 2022.
+
+\bibitem[Ren et~al.(2023)Ren, Zhao, He, Cong, Liang, Yu, Xu, and Ma]{ren2023lidar}
+Yiming Ren, Chengfeng Zhao, Yannan He, Peishan Cong, Han Liang, Jingyi Yu, Lan Xu, and Yuexin Ma.
+\newblock Lidar-aid inertial poser: Large-scale human motion capture by sparse inertial and lidar sensors.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics}, 29\penalty0 (5):\penalty0 2337--2347, 2023.
+
+\bibitem[Shen et~al.(2023{\natexlab{a}})Shen, Sheng, Fan, Wang, Guo, Liu, Wen, and Zhou]{shen2023masked}
+Zhiqiang Shen, Xiaoxiao Sheng, Hehe Fan, Longguang Wang, Yulan Guo, Qiong Liu, Hao Wen, and Xi Zhou.
+\newblock Masked spatio-temporal structure prediction for self-supervised learning on point cloud videos.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pages 16580--16589, 2023{\natexlab{a}}.
+
+\bibitem[Shen et~al.(2023{\natexlab{b}})Shen, Sheng, Wang, Guo, Liu, and Zhou]{shen2023pointcmp}
+Zhiqiang Shen, Xiaoxiao Sheng, Longguang Wang, Yulan Guo, Qiong Liu, and Xi Zhou.
+\newblock Pointcmp: Contrastive mask prediction for self-supervised learning on point cloud videos.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 1212--1222, 2023{\natexlab{b}}.
+
+\bibitem[Sheng et~al.(2023{\natexlab{a}})Sheng, Shen, and Xiao]{sheng2023contrastive}
+Xiaoxiao Sheng, Zhiqiang Shen, and Gang Xiao.
+\newblock Contrastive predictive autoencoders for dynamic point cloud self-supervised learning.
+\newblock \emph{arXiv preprint arXiv:2305.12959}, 2023{\natexlab{a}}.
+
+\bibitem[Sheng et~al.(2023{\natexlab{b}})Sheng, Shen, Xiao, Wang, Guo, and Fan]{sheng2023point}
+Xiaoxiao Sheng, Zhiqiang Shen, Gang Xiao, Longguang Wang, Yulan Guo, and Hehe Fan.
+\newblock Point contrastive prediction with semantic clustering for self-supervised learning on point cloud videos.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pages 16515--16524, 2023{\natexlab{b}}.
+
+\bibitem[Varol et~al.(2017)Varol, Romero, Martin, Mahmood, Black, Laptev, and Schmid]{varol2017learning}
+Gul Varol, Javier Romero, Xavier Martin, Naureen Mahmood, Michael~J Black, Ivan Laptev, and Cordelia Schmid.
+\newblock Learning from synthetic humans.
+\newblock In \emph{Proceedings of the IEEE conference on computer vision and pattern recognition}, pages 109--117, 2017.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30, 2017.
+
+\bibitem[Wang et~al.(2021)Wang, Yang, Rong, Feng, and Tian]{wang2021self}
+Haiyan Wang, Liang Yang, Xuejian Rong, Jinglun Feng, and Yingli Tian.
+\newblock Self-supervised 4d spatio-temporal feature learning via order prediction of sequential point cloud clips.
+\newblock In \emph{Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision}, pages 3762--3771, 2021.
+
+\bibitem[Wen et~al.(2022)Wen, Liu, Huang, Duan, and Yi]{wen2022point}
+Hao Wen, Yunze Liu, Jingwei Huang, Bo Duan, and Li Yi.
+\newblock Point primitive transformer for long-term 4d point cloud video understanding.
+\newblock In \emph{European Conference on Computer Vision}, pages 19--35. Springer, 2022.
+
+\bibitem[Wu et~al.(2019)Wu, Wang, Li, Liu, and Fuxin]{wu2019pointpwc}
+Wenxuan Wu, Zhiyuan Wang, Zhuwen Li, Wei Liu, and Li Fuxin.
+\newblock Pointpwc-net: A coarse-to-fine network for supervised and self-supervised scene flow estimation on 3d point clouds.
+\newblock \emph{arXiv preprint arXiv:1911.12408}, 2019.
+
+\bibitem[Xie et~al.(2020)Xie, Gu, Guo, Qi, Guibas, and Litany]{xie2020pointcontrast}
+Saining Xie, Jiatao Gu, Demi Guo, Charles~R Qi, Leonidas Guibas, and Or Litany.
+\newblock Pointcontrast: Unsupervised pre-training for 3d point cloud understanding.
+\newblock In \emph{Computer Vision--ECCV 2020: 16th European Conference, Glasgow, UK, August 23--28, 2020, Proceedings, Part III 16}, pages 574--591. Springer, 2020.
+
+\bibitem[Xu et~al.(2023)Xu, Cong, Yao, Chen, Hou, Zhu, He, Yu, and Ma]{xu2023human}
+Yiteng Xu, Peishan Cong, Yichen Yao, Runnan Chen, Yuenan Hou, Xinge Zhu, Xuming He, Jingyi Yu, and Yuexin Ma.
+\newblock Human-centric scene understanding for 3d large-scale scenarios.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on Computer Vision}, pages 20349--20359, 2023.
+
+\bibitem[Yan et~al.(2023)Yan, Wang, Dai, Shen, Wen, Xu, Ma, and Wang]{yan2023cimi4d}
+Ming Yan, Xin Wang, Yudi Dai, Siqi Shen, Chenglu Wen, Lan Xu, Yuexin Ma, and Cheng Wang.
+\newblock Cimi4d: A large multimodal climbing motion dataset under human-scene interactions.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 12977--12988, 2023.
+
+\bibitem[Yin et~al.(2021)Yin, Zhou, and Krahenbuhl]{centerpoint}
+Tianwei Yin, Xingyi Zhou, and Philipp Krahenbuhl.
+\newblock Center-based 3d object detection and tracking.
+\newblock In \emph{CVPR}, pages 11784--11793, 2021.
+
+\bibitem[Yu et~al.(2022)Yu, Tang, Rao, Huang, Zhou, and Lu]{yu2022point}
+Xumin Yu, Lulu Tang, Yongming Rao, Tiejun Huang, Jie Zhou, and Jiwen Lu.
+\newblock Point-bert: Pre-training 3d point cloud transformers with masked point modeling.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 19313--19322, 2022.
+
+\bibitem[Zeng et~al.(2023)Zeng, Wang, Nguyen, and Yue]{zeng2023self}
+Changyu Zeng, Wei Wang, Anh Nguyen, and Yutao Yue.
+\newblock Self-supervised learning for point cloud data: A survey.
+\newblock \emph{Expert Systems with Applications}, page 121354, 2023.
+
+\bibitem[Zhang et~al.(2022)Zhang, Guo, Gao, Fang, Zhao, Wang, Qiao, and Li]{zhang2022point}
+Renrui Zhang, Ziyu Guo, Peng Gao, Rongyao Fang, Bin Zhao, Dong Wang, Yu Qiao, and Hongsheng Li.
+\newblock Point-m2ae: multi-scale masked autoencoders for hierarchical point cloud pre-training.
+\newblock \emph{Advances in neural information processing systems}, 35:\penalty0 27061--27074, 2022.
+
+\bibitem[Zhang et~al.(2023)Zhang, Dong, Liu, and Yi]{zhang2023complete}
+Zhuoyang Zhang, Yuhao Dong, Yunze Liu, and Li Yi.
+\newblock Complete-to-partial 4d distillation for self-supervised point cloud sequence representation learning.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}, pages 17661--17670, 2023.
+
+\bibitem[Zhao et~al.(2021)Zhao, Jiang, Jia, Torr, and Koltun]{zhao2021point}
+Hengshuang Zhao, Li Jiang, Jiaya Jia, Philip~HS Torr, and Vladlen Koltun.
+\newblock Point transformer.
+\newblock In \emph{Proceedings of the IEEE/CVF international conference on computer vision}, pages 16259--16268, 2021.
+
+\bibitem[Zhou and Tuzel(2018)]{voxelnet}
+Yin Zhou and Oncel Tuzel.
+\newblock Voxelnet: End-to-end learning for point cloud based 3d object detection.
+\newblock In \emph{CVPR}, pages 4490--4499. IEEE Computer Society, 2018.
+
+\bibitem[Zhou et~al.(2022)Zhou, Zhao, Wang, Wang, and Foroosh]{centerformer}
+Zixiang Zhou, Xiangchen Zhao, Yu Wang, Panqu Wang, and Hassan Foroosh.
+\newblock Centerformer: Center-based transformer for 3d object detection.
+\newblock In \emph{ECCV}, pages 496--513. Springer, 2022.
+
+\bibitem[Zhu et~al.(2021)Zhu, Zhou, Wang, Hong, Li, Ma, Li, Yang, and Lin]{zhu2021cylindrical}
+Xinge Zhu, Hui Zhou, Tai Wang, Fangzhou Hong, Wei Li, Yuexin Ma, Hongsheng Li, Ruigang Yang, and Dahua Lin.
+\newblock Cylindrical and asymmetrical 3d convolution networks for lidar-based perception.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 44\penalty0 (10):\penalty0 6807--6822, 2021.
+
+\end{thebibliography}

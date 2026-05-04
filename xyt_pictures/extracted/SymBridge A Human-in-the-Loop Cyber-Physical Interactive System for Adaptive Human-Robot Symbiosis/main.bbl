@@ -1,0 +1,509 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{61}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Bhatnagar, Xie, Petrov, Sminchisescu, Theobalt, and Pons-Moll}{Bhatnagar et~al\mbox{.}}{2022}]%
+        {bhatnagar2022behave}
+\bibfield{author}{\bibinfo{person}{Bharat~Lal Bhatnagar}, \bibinfo{person}{Xianghui Xie}, \bibinfo{person}{Ilya~A Petrov}, \bibinfo{person}{Cristian Sminchisescu}, \bibinfo{person}{Christian Theobalt}, {and} \bibinfo{person}{Gerard Pons-Moll}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Behave: Dataset and method for tracking human object interactions}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}. \bibinfo{pages}{15935--15946}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cakmak, Srinivasa, Lee, Forlizzi, and Kiesler}{Cakmak et~al\mbox{.}}{2011}]%
+        {cakmak2011human}
+\bibfield{author}{\bibinfo{person}{Maya Cakmak}, \bibinfo{person}{Siddhartha~S Srinivasa}, \bibinfo{person}{Min~Kyung Lee}, \bibinfo{person}{Jodi Forlizzi}, {and} \bibinfo{person}{Sara Kiesler}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Human preferences for robot-human hand-over configurations}. In \bibinfo{booktitle}{{\em 2011 IEEE/RSJ International Conference on Intelligent Robots and Systems}}. IEEE, \bibinfo{pages}{1986--1993}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Chen, Wang, Nguyen, Fei-Fei, and Liu}{Chen et~al\mbox{.}}{2024}]%
+        {chen2024arcap}
+\bibfield{author}{\bibinfo{person}{Sirui Chen}, \bibinfo{person}{Chen Wang}, \bibinfo{person}{Kaden Nguyen}, \bibinfo{person}{Li Fei-Fei}, {and} \bibinfo{person}{C~Karen Liu}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Arcap: Collecting high-quality human demonstrations for robot learning with augmented reality feedback}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2410.08464\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cheng, Li, Yang, Yang, and Wang}{Cheng et~al\mbox{.}}{2024}]%
+        {cheng2024open}
+\bibfield{author}{\bibinfo{person}{Xuxin Cheng}, \bibinfo{person}{Jialong Li}, \bibinfo{person}{Shiqi Yang}, \bibinfo{person}{Ge Yang}, {and} \bibinfo{person}{Xiaolong Wang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Open-television: Teleoperation with immersive active visual feedback}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2407.01512\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Colgate, Wannasuphoprasit, and Peshkin}{Colgate et~al\mbox{.}}{1996}]%
+        {colgate1996cobots}
+\bibfield{author}{\bibinfo{person}{J~Edward Colgate}, \bibinfo{person}{Witaya Wannasuphoprasit}, {and} \bibinfo{person}{Michael~A Peshkin}.} \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{Cobots: Robots for collaboration with human operators}. In \bibinfo{booktitle}{{\em ASME international mechanical engineering congress and exposition}}, Vol.~\bibinfo{volume}{15281}. American Society of Mechanical Engineers, \bibinfo{pages}{433--439}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cong, Wang, Ma, and Yue}{Cong et~al\mbox{.}}{2025}]%
+        {cong2025semgeomo}
+\bibfield{author}{\bibinfo{person}{Peishan Cong}, \bibinfo{person}{Ziyi Wang}, \bibinfo{person}{Yuexin Ma}, {and} \bibinfo{person}{Xiangyu Yue}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Semgeomo: Dynamic contextual human motion generation with semantic and geometric guidance}. In \bibinfo{booktitle}{{\em Proceedings of the Computer Vision and Pattern Recognition Conference}}. \bibinfo{pages}{17561--17570}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Coumans and Bai}{Coumans and Bai}{2021}]%
+        {coumans2021}
+\bibfield{author}{\bibinfo{person}{Erwin Coumans} {and} \bibinfo{person}{Yunfei Bai}.} \bibinfo{year}{2016--2021}\natexlab{}.
+\newblock \bibinfo{title}{PyBullet, a Python module for physics simulation for games, robotics and machine learning}.
+\newblock \bibinfo{howpublished}{\url{http://pybullet.org}}.   (\bibinfo{year}{2016--2021}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dai, Valenzuela, and Tedrake}{Dai et~al\mbox{.}}{2014}]%
+        {dai2014whole}
+\bibfield{author}{\bibinfo{person}{Hongkai Dai}, \bibinfo{person}{Andr{\'e}s Valenzuela}, {and} \bibinfo{person}{Russ Tedrake}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Whole-body motion planning with centroidal dynamics and full kinematics}. In \bibinfo{booktitle}{{\em 2014 IEEE-RAS International Conference on Humanoid Robots}}. IEEE, \bibinfo{pages}{295--302}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Deitke, Han, Herrasti, Kembhavi, Kolve, Mottaghi, Salvador, Schwenk, VanderBilt, Wallingford, et~al\mbox{.}}{Deitke et~al\mbox{.}}{2020}]%
+        {deitke2020robothor}
+\bibfield{author}{\bibinfo{person}{Matt Deitke}, \bibinfo{person}{Winson Han}, \bibinfo{person}{Alvaro Herrasti}, \bibinfo{person}{Aniruddha Kembhavi}, \bibinfo{person}{Eric Kolve}, \bibinfo{person}{Roozbeh Mottaghi}, \bibinfo{person}{Jordi Salvador}, \bibinfo{person}{Dustin Schwenk}, \bibinfo{person}{Eli VanderBilt}, \bibinfo{person}{Matthew Wallingford}, {et~al\mbox{.}}} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Robothor: An open simulation-to-real embodied ai platform}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}}. \bibinfo{pages}{3164--3174}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Diller and Dai}{Diller and Dai}{2024}]%
+        {diller2024cg}
+\bibfield{author}{\bibinfo{person}{Christian Diller} {and} \bibinfo{person}{Angela Dai}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Cg-hoi: Contact-guided 3d human-object interaction generation}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}. \bibinfo{pages}{19888--19901}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ehsani, Han, Herrasti, VanderBilt, Weihs, Kolve, Kembhavi, and Mottaghi}{Ehsani et~al\mbox{.}}{2021}]%
+        {ehsani2021manipulathor}
+\bibfield{author}{\bibinfo{person}{Kiana Ehsani}, \bibinfo{person}{Winson Han}, \bibinfo{person}{Alvaro Herrasti}, \bibinfo{person}{Eli VanderBilt}, \bibinfo{person}{Luca Weihs}, \bibinfo{person}{Eric Kolve}, \bibinfo{person}{Aniruddha Kembhavi}, {and} \bibinfo{person}{Roozbeh Mottaghi}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Manipulathor: A framework for visual object manipulation}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}}. \bibinfo{pages}{4497--4506}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{El~Zaatari, Marei, Li, and Usman}{El~Zaatari et~al\mbox{.}}{2019}]%
+        {el2019cobot}
+\bibfield{author}{\bibinfo{person}{Shirine El~Zaatari}, \bibinfo{person}{Mohamed Marei}, \bibinfo{person}{Weidong Li}, {and} \bibinfo{person}{Zahid Usman}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Cobot programming for collaborative industrial tasks: An overview}.
+\newblock \bibinfo{journal}{{\em Robotics and Autonomous Systems\/}}  \bibinfo{volume}{116} (\bibinfo{year}{2019}), \bibinfo{pages}{162--180}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gonzalez-Aguirre, Osorio-Oliveros, Rodriguez-Hernandez, Liz{\'a}rraga-Iturralde, Morales~Menendez, Ramirez-Mendoza, Ramirez-Moreno, and Lozoya-Santos}{Gonzalez-Aguirre et~al\mbox{.}}{2021}]%
+        {gonzalez2021service}
+\bibfield{author}{\bibinfo{person}{Juan~Angel Gonzalez-Aguirre}, \bibinfo{person}{Ricardo Osorio-Oliveros}, \bibinfo{person}{Karen~L Rodriguez-Hernandez}, \bibinfo{person}{Javier Liz{\'a}rraga-Iturralde}, \bibinfo{person}{Ruben Morales~Menendez}, \bibinfo{person}{Ricardo~A Ramirez-Mendoza}, \bibinfo{person}{Mauricio~Adolfo Ramirez-Moreno}, {and} \bibinfo{person}{Jorge de~Jesus Lozoya-Santos}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Service robots: Trends and technology}.
+\newblock \bibinfo{journal}{{\em Applied Sciences\/}} \bibinfo{volume}{11}, \bibinfo{number}{22} (\bibinfo{year}{2021}), \bibinfo{pages}{10702}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{He, Luo, Xiao, Zhang, Kitani, Liu, and Shi}{He et~al\mbox{.}}{2024}]%
+        {he2024learning}
+\bibfield{author}{\bibinfo{person}{Tairan He}, \bibinfo{person}{Zhengyi Luo}, \bibinfo{person}{Wenli Xiao}, \bibinfo{person}{Chong Zhang}, \bibinfo{person}{Kris Kitani}, \bibinfo{person}{Changliu Liu}, {and} \bibinfo{person}{Guanya Shi}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Learning human-to-humanoid real-time whole-body teleoperation}. In \bibinfo{booktitle}{{\em 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}. IEEE, \bibinfo{pages}{8944--8951}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hentout, Aouache, Maoudj, and Akli}{Hentout et~al\mbox{.}}{2019}]%
+        {hentout2019human}
+\bibfield{author}{\bibinfo{person}{Abdelfetah Hentout}, \bibinfo{person}{Mustapha Aouache}, \bibinfo{person}{Abderraouf Maoudj}, {and} \bibinfo{person}{Isma Akli}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Human--robot interaction in industrial collaborative robotics: a literature review of the decade 2008--2017}.
+\newblock \bibinfo{journal}{{\em Advanced Robotics\/}} \bibinfo{volume}{33}, \bibinfo{number}{15-16} (\bibinfo{year}{2019}), \bibinfo{pages}{764--799}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hwangbo, Lee, Dosovitskiy, Bellicoso, Tsounis, Koltun, and Hutter}{Hwangbo et~al\mbox{.}}{2019}]%
+        {hwangbo2019learning}
+\bibfield{author}{\bibinfo{person}{Jemin Hwangbo}, \bibinfo{person}{Joonho Lee}, \bibinfo{person}{Alexey Dosovitskiy}, \bibinfo{person}{Dario Bellicoso}, \bibinfo{person}{Vassilios Tsounis}, \bibinfo{person}{Vladlen Koltun}, {and} \bibinfo{person}{Marco Hutter}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Learning agile and dynamic motor skills for legged robots}.
+\newblock \bibinfo{journal}{{\em Science Robotics\/}} \bibinfo{volume}{4}, \bibinfo{number}{26} (\bibinfo{year}{2019}), \bibinfo{pages}{eaau5872}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Interactive}{Interactive}{2022}]%
+        {PicoInteractive2022}
+\bibfield{author}{\bibinfo{person}{Pico Interactive}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \bibinfo{title}{PICO4 Ultra Virtual Reality Headset}.
+\newblock \bibinfo{howpublished}{\url{https://www.pico-interactive.com}}.   (\bibinfo{year}{2022}).
+\newblock
+\newblock
+\shownote{Accessed: 2025-01-23.}
+
+
+\bibitem[\protect\citeauthoryear{Iyer, Peng, Dai, Guzey, Haldar, Chintala, and Pinto}{Iyer et~al\mbox{.}}{2024}]%
+        {iyer2024open}
+\bibfield{author}{\bibinfo{person}{Aadhithya Iyer}, \bibinfo{person}{Zhuoran Peng}, \bibinfo{person}{Yinlong Dai}, \bibinfo{person}{Irmak Guzey}, \bibinfo{person}{Siddhant Haldar}, \bibinfo{person}{Soumith Chintala}, {and} \bibinfo{person}{Lerrel Pinto}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Open teach: A versatile teleoperation system for robotic manipulation}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2403.07870\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jiang, Liu, Cao, Cui, Chen, Wang, Zhu, and Huang}{Jiang et~al\mbox{.}}{2022}]%
+        {jiang2022chairs}
+\bibfield{author}{\bibinfo{person}{Nan Jiang}, \bibinfo{person}{Tengyu Liu}, \bibinfo{person}{Zhexuan Cao}, \bibinfo{person}{Jieming Cui}, \bibinfo{person}{Yixin Chen}, \bibinfo{person}{He Wang}, \bibinfo{person}{Yixin Zhu}, {and} \bibinfo{person}{Siyuan Huang}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Chairs: Towards full-body articulated human-object interaction}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2212.10621\/}}  \bibinfo{volume}{3} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jiang, Liu, Cao, Cui, Zhang, Chen, Wang, Zhu, and Huang}{Jiang et~al\mbox{.}}{2023}]%
+        {jiang2023full}
+\bibfield{author}{\bibinfo{person}{Nan Jiang}, \bibinfo{person}{Tengyu Liu}, \bibinfo{person}{Zhexuan Cao}, \bibinfo{person}{Jieming Cui}, \bibinfo{person}{Zhiyuan Zhang}, \bibinfo{person}{Yixin Chen}, \bibinfo{person}{He Wang}, \bibinfo{person}{Yixin Zhu}, {and} \bibinfo{person}{Siyuan Huang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Full-body articulated human-object interaction}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF International Conference on Computer Vision}}. \bibinfo{pages}{9365--9376}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kolve, Mottaghi, Han, VanderBilt, Weihs, Herrasti, Deitke, Ehsani, Gordon, Zhu, et~al\mbox{.}}{Kolve et~al\mbox{.}}{2017}]%
+        {kolve2017ai2}
+\bibfield{author}{\bibinfo{person}{Eric Kolve}, \bibinfo{person}{Roozbeh Mottaghi}, \bibinfo{person}{Winson Han}, \bibinfo{person}{Eli VanderBilt}, \bibinfo{person}{Luca Weihs}, \bibinfo{person}{Alvaro Herrasti}, \bibinfo{person}{Matt Deitke}, \bibinfo{person}{Kiana Ehsani}, \bibinfo{person}{Daniel Gordon}, \bibinfo{person}{Yuke Zhu}, {et~al\mbox{.}}} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Ai2-thor: An interactive 3d environment for visual ai}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:1712.05474\/}} (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Kulkarni, Rempe, Genova, Kundu, Johnson, Fouhey, and Guibas}{Kulkarni et~al\mbox{.}}{2024}]%
+        {kulkarni2024nifty}
+\bibfield{author}{\bibinfo{person}{Nilesh Kulkarni}, \bibinfo{person}{Davis Rempe}, \bibinfo{person}{Kyle Genova}, \bibinfo{person}{Abhijit Kundu}, \bibinfo{person}{Justin Johnson}, \bibinfo{person}{David Fouhey}, {and} \bibinfo{person}{Leonidas Guibas}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Nifty: Neural object interaction fields for guided human motion synthesis}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}. \bibinfo{pages}{947--957}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{LeCun}{LeCun}{2022}]%
+        {lecun2022path}
+\bibfield{author}{\bibinfo{person}{Yann LeCun}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{A path towards autonomous machine intelligence version 0.9. 2, 2022-06-27}.
+\newblock \bibinfo{journal}{{\em Open Review\/}} \bibinfo{volume}{62}, \bibinfo{number}{1} (\bibinfo{year}{2022}), \bibinfo{pages}{1--62}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Xia, Mart{\'\i}n-Mart{\'\i}n, Lingelbach, Srivastava, Shen, Vainio, Gokmen, Dharan, Jain, et~al\mbox{.}}{Li et~al\mbox{.}}{2021a}]%
+        {igibson}
+\bibfield{author}{\bibinfo{person}{Chengshu Li}, \bibinfo{person}{Fei Xia}, \bibinfo{person}{Roberto Mart{\'\i}n-Mart{\'\i}n}, \bibinfo{person}{Michael Lingelbach}, \bibinfo{person}{Sanjana Srivastava}, \bibinfo{person}{Bokui Shen}, \bibinfo{person}{Kent Vainio}, \bibinfo{person}{Cem Gokmen}, \bibinfo{person}{Gokul Dharan}, \bibinfo{person}{Tanish Jain}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{a}.
+\newblock \showarticletitle{igibson 2.0: Object-centric simulation for robot learning of everyday household tasks}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2108.03272\/}} (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Xia, Mart{\'\i}n-Mart{\'\i}n, Lingelbach, Srivastava, Shen, Vainio, Gokmen, Dharan, Jain, et~al\mbox{.}}{Li et~al\mbox{.}}{2021b}]%
+        {li2021igibson}
+\bibfield{author}{\bibinfo{person}{Chengshu Li}, \bibinfo{person}{Fei Xia}, \bibinfo{person}{Roberto Mart{\'\i}n-Mart{\'\i}n}, \bibinfo{person}{Michael Lingelbach}, \bibinfo{person}{Sanjana Srivastava}, \bibinfo{person}{Bokui Shen}, \bibinfo{person}{Kent Vainio}, \bibinfo{person}{Cem Gokmen}, \bibinfo{person}{Gokul Dharan}, \bibinfo{person}{Tanish Jain}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{b}.
+\newblock \showarticletitle{igibson 2.0: Object-centric simulation for robot learning of everyday household tasks}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2108.03272\/}} (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Zhang, Wong, Gokmen, Srivastava, Mart{\'\i}n-Mart{\'\i}n, Wang, Levine, Lingelbach, Sun, et~al\mbox{.}}{Li et~al\mbox{.}}{2023c}]%
+        {li2023behavior}
+\bibfield{author}{\bibinfo{person}{Chengshu Li}, \bibinfo{person}{Ruohan Zhang}, \bibinfo{person}{Josiah Wong}, \bibinfo{person}{Cem Gokmen}, \bibinfo{person}{Sanjana Srivastava}, \bibinfo{person}{Roberto Mart{\'\i}n-Mart{\'\i}n}, \bibinfo{person}{Chen Wang}, \bibinfo{person}{Gabrael Levine}, \bibinfo{person}{Michael Lingelbach}, \bibinfo{person}{Jiankai Sun}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{c}.
+\newblock \showarticletitle{Behavior-1k: A benchmark for embodied ai with 1,000 everyday activities and realistic simulation}. In \bibinfo{booktitle}{{\em Conference on Robot Learning}}. PMLR, \bibinfo{pages}{80--93}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Clegg, Mottaghi, Wu, Puig, and Liu}{Li et~al\mbox{.}}{2023a}]%
+        {li2023controllable}
+\bibfield{author}{\bibinfo{person}{Jiaman Li}, \bibinfo{person}{Alexander Clegg}, \bibinfo{person}{Roozbeh Mottaghi}, \bibinfo{person}{Jiajun Wu}, \bibinfo{person}{Xavier Puig}, {and} \bibinfo{person}{C~Karen Liu}.} \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{Controllable human-object interaction synthesis}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2312.03913\/}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Li, Wu, and Liu}{Li et~al\mbox{.}}{2023b}]%
+        {li2023object}
+\bibfield{author}{\bibinfo{person}{Jiaman Li}, \bibinfo{person}{Jiajun Wu}, {and} \bibinfo{person}{C~Karen Liu}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{Object motion guided human motion synthesis}.
+\newblock \bibinfo{journal}{{\em ACM Transactions on Graphics (TOG)\/}} \bibinfo{volume}{42}, \bibinfo{number}{6} (\bibinfo{year}{2023}), \bibinfo{pages}{1--11}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Liang, Zhang, Li, Yu, and Xu}{Liang et~al\mbox{.}}{2024}]%
+        {liang2024intergen}
+\bibfield{author}{\bibinfo{person}{Han Liang}, \bibinfo{person}{Wenqian Zhang}, \bibinfo{person}{Wenxuan Li}, \bibinfo{person}{Jingyi Yu}, {and} \bibinfo{person}{Lan Xu}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Intergen: Diffusion-based multi-human motion generation under complex interactions}.
+\newblock \bibinfo{journal}{{\em International Journal of Computer Vision\/}} (\bibinfo{year}{2024}), \bibinfo{pages}{1--21}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Liu, Ren, Li, and Dong}{Liu et~al\mbox{.}}{2024}]%
+        {liu2024collabsphere}
+\bibfield{author}{\bibinfo{person}{Yajie Liu}, \bibinfo{person}{Jie Ren}, \bibinfo{person}{Yongchang Li}, {and} \bibinfo{person}{Yanzhi Dong}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{CollabSphere: A Virtual Simulation System for Human-Robot Collaboration and Evaluation}. In \bibinfo{booktitle}{{\em 2024 9th International Conference on Intelligent Informatics and Biomedical Sciences (ICIIBMS)}}, Vol.~\bibinfo{volume}{9}. IEEE, \bibinfo{pages}{630--634}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Makoviychuk, Wawrzyniak, Guo, Lu, Storey, Macklin, Hoeller, Rudin, Allshire, Handa, et~al\mbox{.}}{Makoviychuk et~al\mbox{.}}{2021}]%
+        {makoviychuk2021isaac}
+\bibfield{author}{\bibinfo{person}{Viktor Makoviychuk}, \bibinfo{person}{Lukasz Wawrzyniak}, \bibinfo{person}{Yunrong Guo}, \bibinfo{person}{Michelle Lu}, \bibinfo{person}{Kier Storey}, \bibinfo{person}{Miles Macklin}, \bibinfo{person}{David Hoeller}, \bibinfo{person}{Nikita Rudin}, \bibinfo{person}{Arthur Allshire}, \bibinfo{person}{Ankur Handa}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Isaac gym: High performance gpu-based physics simulation for robot learning}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2108.10470\/}} (\bibinfo{year}{2021}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Miller and Allen}{Miller and Allen}{2004}]%
+        {miller2004graspit}
+\bibfield{author}{\bibinfo{person}{Andrew~T Miller} {and} \bibinfo{person}{Peter~K Allen}.} \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Graspit! a versatile simulator for robotic grasping}.
+\newblock \bibinfo{journal}{{\em IEEE Robotics \& Automation Magazine\/}} \bibinfo{volume}{11}, \bibinfo{number}{4} (\bibinfo{year}{2004}), \bibinfo{pages}{110--122}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mosbach, Moraw, and Behnke}{Mosbach et~al\mbox{.}}{2022}]%
+        {mosbach2022accelerating}
+\bibfield{author}{\bibinfo{person}{Malte Mosbach}, \bibinfo{person}{Kara Moraw}, {and} \bibinfo{person}{Sven Behnke}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Accelerating interactive human-like manipulation learning with gpu-based simulation and high-quality demonstrations}. In \bibinfo{booktitle}{{\em 2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)}}. IEEE, \bibinfo{pages}{435--441}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mueller, Tanke, and Gall}{Mueller et~al\mbox{.}}{2024}]%
+        {mueller2024massively}
+\bibfield{author}{\bibinfo{person}{Felix~B Mueller}, \bibinfo{person}{Julian Tanke}, {and} \bibinfo{person}{Juergen Gall}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Massively Multi-Person 3D Human Motion Forecasting with Scene Context}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2409.12189\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nasiriany, Maddukuri, Zhang, Parikh, Lo, Joshi, Mandlekar, and Zhu}{Nasiriany et~al\mbox{.}}{2024}]%
+        {nasiriany2024robocasa}
+\bibfield{author}{\bibinfo{person}{Soroush Nasiriany}, \bibinfo{person}{Abhiram Maddukuri}, \bibinfo{person}{Lance Zhang}, \bibinfo{person}{Adeet Parikh}, \bibinfo{person}{Aaron Lo}, \bibinfo{person}{Abhishek Joshi}, \bibinfo{person}{Ajay Mandlekar}, {and} \bibinfo{person}{Yuke Zhu}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2406.02523\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Nechyporenko, Hoque, Webb, Sivapurapu, and Zhang}{Nechyporenko et~al\mbox{.}}{2024}]%
+        {nechyporenko2024armada}
+\bibfield{author}{\bibinfo{person}{Nataliya Nechyporenko}, \bibinfo{person}{Ryan Hoque}, \bibinfo{person}{Christopher Webb}, \bibinfo{person}{Mouli Sivapurapu}, {and} \bibinfo{person}{Jian Zhang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{ARMADA: Augmented Reality for Robot Manipulation and Robot-Free Data Acquisition}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2412.10631\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Park, Bhatia, Ankile, and Agrawal}{Park et~al\mbox{.}}{2024}]%
+        {park2024dexhub}
+\bibfield{author}{\bibinfo{person}{Younghyo Park}, \bibinfo{person}{Jagdeep~Singh Bhatia}, \bibinfo{person}{Lars Ankile}, {and} \bibinfo{person}{Pulkit Agrawal}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{DexHub and DART: Towards Internet Scale Robot Data Collection}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2411.02214\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Peng, Xie, Wu, Jampani, Sun, and Jiang}{Peng et~al\mbox{.}}{2023}]%
+        {peng2023hoi}
+\bibfield{author}{\bibinfo{person}{Xiaogang Peng}, \bibinfo{person}{Yiming Xie}, \bibinfo{person}{Zizhao Wu}, \bibinfo{person}{Varun Jampani}, \bibinfo{person}{Deqing Sun}, {and} \bibinfo{person}{Huaizu Jiang}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Hoi-diff: Text-driven synthesis of 3d human-object interactions using diffusion models}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2312.06553\/}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Puig, Undersander, Szot, Cote, Yang, Partsey, Desai, Clegg, Hlavac, Min, et~al\mbox{.}}{Puig et~al\mbox{.}}{2023}]%
+        {puig2023habitat}
+\bibfield{author}{\bibinfo{person}{Xavier Puig}, \bibinfo{person}{Eric Undersander}, \bibinfo{person}{Andrew Szot}, \bibinfo{person}{Mikael~Dallaire Cote}, \bibinfo{person}{Tsung-Yen Yang}, \bibinfo{person}{Ruslan Partsey}, \bibinfo{person}{Ruta Desai}, \bibinfo{person}{Alexander~William Clegg}, \bibinfo{person}{Michal Hlavac}, \bibinfo{person}{So~Yeon Min}, {et~al\mbox{.}}} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Habitat 3.0: A co-habitat for humans, avatars and robots}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2310.13724\/}} (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Qi, Su, Mo, and Guibas}{Qi et~al\mbox{.}}{2017}]%
+        {qi2017pointnet}
+\bibfield{author}{\bibinfo{person}{Charles~R Qi}, \bibinfo{person}{Hao Su}, \bibinfo{person}{Kaichun Mo}, {and} \bibinfo{person}{Leonidas~J Guibas}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Pointnet: Deep learning on point sets for 3d classification and segmentation}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE conference on computer vision and pattern recognition}}. \bibinfo{pages}{652--660}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Radford, Kim, Hallacy, Ramesh, Goh, Agarwal, Sastry, Askell, Mishkin, Clark, et~al\mbox{.}}{Radford et~al\mbox{.}}{2021}]%
+        {radford2021learning}
+\bibfield{author}{\bibinfo{person}{Alec Radford}, \bibinfo{person}{Jong~Wook Kim}, \bibinfo{person}{Chris Hallacy}, \bibinfo{person}{Aditya Ramesh}, \bibinfo{person}{Gabriel Goh}, \bibinfo{person}{Sandhini Agarwal}, \bibinfo{person}{Girish Sastry}, \bibinfo{person}{Amanda Askell}, \bibinfo{person}{Pamela Mishkin}, \bibinfo{person}{Jack Clark}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Learning transferable visual models from natural language supervision}. In \bibinfo{booktitle}{{\em International conference on machine learning}}. PMLR, \bibinfo{pages}{8748--8763}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ren, Han, Yao, Long, Sun, and Ma}{Ren et~al\mbox{.}}{2025}]%
+        {ren2025livehps++}
+\bibfield{author}{\bibinfo{person}{Yiming Ren}, \bibinfo{person}{Xiao Han}, \bibinfo{person}{Yichen Yao}, \bibinfo{person}{Xiaoxiao Long}, \bibinfo{person}{Yujing Sun}, {and} \bibinfo{person}{Yuexin Ma}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{LiveHPS++: Robust and Coherent Motion Capture in Dynamic Free Environment}. In \bibinfo{booktitle}{{\em European Conference on Computer Vision}}. Springer, \bibinfo{pages}{127--144}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Robotics}{Robotics}{2023}]%
+        {lejukuavorobot}
+\bibfield{author}{\bibinfo{person}{LEJU Robotics}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{title}{LEJU Kuavo Robot}.
+\newblock \bibinfo{howpublished}{\url{https://www.lejurobot.com/}}.   (\bibinfo{year}{2023}).
+\newblock
+\newblock
+\shownote{Accessed: 2023-10-10.}
+
+
+\bibitem[\protect\citeauthoryear{Robotics}{Robotics}{2021}]%
+        {unitreeh1robot}
+\bibfield{author}{\bibinfo{person}{Unitree Robotics}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Unitree H1 Robot}.
+\newblock \bibinfo{howpublished}{\url{https://www.unitree.com}}.
+\newblock  (\bibinfo{year}{2021}).
+\newblock
+\newblock
+\shownote{Accessed: 2023-10-10.}
+
+
+\bibitem[\protect\citeauthoryear{Savva, Kadian, Maksymets, Zhao, Wijmans, Jain, Straub, Liu, Koltun, Malik, et~al\mbox{.}}{Savva et~al\mbox{.}}{2019}]%
+        {savva2019habitat}
+\bibfield{author}{\bibinfo{person}{Manolis Savva}, \bibinfo{person}{Abhishek Kadian}, \bibinfo{person}{Oleksandr Maksymets}, \bibinfo{person}{Yili Zhao}, \bibinfo{person}{Erik Wijmans}, \bibinfo{person}{Bhavana Jain}, \bibinfo{person}{Julian Straub}, \bibinfo{person}{Jia Liu}, \bibinfo{person}{Vladlen Koltun}, \bibinfo{person}{Jitendra Malik}, {et~al\mbox{.}}} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Habitat: A platform for embodied ai research}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF international conference on computer vision}}. \bibinfo{pages}{9339--9347}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shen, Xia, Li, Mart{\'\i}n-Mart{\'\i}n, Fan, Wang, P{\'e}rez-D’Arpino, Buch, Srivastava, Tchapmi, et~al\mbox{.}}{Shen et~al\mbox{.}}{2021}]%
+        {shen2021igibson}
+\bibfield{author}{\bibinfo{person}{Bokui Shen}, \bibinfo{person}{Fei Xia}, \bibinfo{person}{Chengshu Li}, \bibinfo{person}{Roberto Mart{\'\i}n-Mart{\'\i}n}, \bibinfo{person}{Linxi Fan}, \bibinfo{person}{Guanzhi Wang}, \bibinfo{person}{Claudia P{\'e}rez-D’Arpino}, \bibinfo{person}{Shyamal Buch}, \bibinfo{person}{Sanjana Srivastava}, \bibinfo{person}{Lyne Tchapmi}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{igibson 1.0: A simulation environment for interactive tasks in large realistic scenes}. In \bibinfo{booktitle}{{\em 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}. IEEE, \bibinfo{pages}{7520--7527}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Szot, Clegg, Undersander, Wijmans, Zhao, Turner, Maestre, Mukadam, Chaplot, Maksymets, et~al\mbox{.}}{Szot et~al\mbox{.}}{2021}]%
+        {szot2021habitat}
+\bibfield{author}{\bibinfo{person}{Andrew Szot}, \bibinfo{person}{Alexander Clegg}, \bibinfo{person}{Eric Undersander}, \bibinfo{person}{Erik Wijmans}, \bibinfo{person}{Yili Zhao}, \bibinfo{person}{John Turner}, \bibinfo{person}{Noah Maestre}, \bibinfo{person}{Mustafa Mukadam}, \bibinfo{person}{Devendra~Singh Chaplot}, \bibinfo{person}{Oleksandr Maksymets}, {et~al\mbox{.}}} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Habitat 2.0: Training home assistants to rearrange their habitat}.
+\newblock \bibinfo{journal}{{\em Advances in neural information processing systems\/}}  \bibinfo{volume}{34} (\bibinfo{year}{2021}), \bibinfo{pages}{251--266}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Todorov, Erez, and Tassa}{Todorov et~al\mbox{.}}{2012}]%
+        {todorov2012mujoco}
+\bibfield{author}{\bibinfo{person}{Emanuel Todorov}, \bibinfo{person}{Tom Erez}, {and} \bibinfo{person}{Yuval Tassa}.} \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{MuJoCo: A physics engine for model-based control}. In \bibinfo{booktitle}{{\em 2012 IEEE/RSJ International Conference on Intelligent Robots and Systems}}. IEEE, \bibinfo{pages}{5026--5033}.
+\newblock
+\showDOI{%
+\url{https://doi.org/10.1109/IROS.2012.6386109}}
+
+
+\bibitem[\protect\citeauthoryear{Vuong, Nguyen, Vu, Huang, Binh, Vo, and Nguyen}{Vuong et~al\mbox{.}}{2024}]%
+        {vuong2024habicrowd}
+\bibfield{author}{\bibinfo{person}{An Vuong}, \bibinfo{person}{Toan Nguyen}, \bibinfo{person}{Minh~Nhat Vu}, \bibinfo{person}{Baoru Huang}, \bibinfo{person}{HTT Binh}, \bibinfo{person}{Thieu Vo}, {and} \bibinfo{person}{Anh Nguyen}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Habicrowd: A high performance simulator for crowd-aware visual navigation}. In \bibinfo{booktitle}{{\em 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}. IEEE, \bibinfo{pages}{5821--5827}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Du, Xu, Li, Guo, and Liu}{Wang et~al\mbox{.}}{2024b}]%
+        {HumanTHOR}
+\bibfield{author}{\bibinfo{person}{Chenxu Wang}, \bibinfo{person}{Boyuan Du}, \bibinfo{person}{Jiaxin Xu}, \bibinfo{person}{Peiyan Li}, \bibinfo{person}{Di Guo}, {and} \bibinfo{person}{Huaping Liu}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{Demonstrating HumanTHOR: A Simulation Platform and Benchmark for Human-Robot Collaboration in a Shared Workspace}.
+\newblock \bibinfo{journal}{{\em Robotics: Science and Systems (RSS)\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Chen, Huang, Ben, Wang, Mi, Huang, Zhao, Chen, Yang, et~al\mbox{.}}{Wang et~al\mbox{.}}{2024a}]%
+        {wang2024grutopia}
+\bibfield{author}{\bibinfo{person}{Hanqing Wang}, \bibinfo{person}{Jiahe Chen}, \bibinfo{person}{Wensi Huang}, \bibinfo{person}{Qingwei Ben}, \bibinfo{person}{Tai Wang}, \bibinfo{person}{Boyu Mi}, \bibinfo{person}{Tao Huang}, \bibinfo{person}{Siheng Zhao}, \bibinfo{person}{Yilun Chen}, \bibinfo{person}{Sizhe Yang}, {et~al\mbox{.}}} \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{Grutopia: Dream general robots in a city at scale}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2407.10943\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Xu, Narasimhan, and Wang}{Wang et~al\mbox{.}}{2021}]%
+        {wang2021multi}
+\bibfield{author}{\bibinfo{person}{Jiashun Wang}, \bibinfo{person}{Huazhe Xu}, \bibinfo{person}{Medhini Narasimhan}, {and} \bibinfo{person}{Xiaolong Wang}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Multi-person 3d motion prediction with multi-range transformers}.
+\newblock \bibinfo{journal}{{\em Advances in Neural Information Processing Systems\/}}  \bibinfo{volume}{34} (\bibinfo{year}{2021}), \bibinfo{pages}{6036--6049}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wang, Mao, Zhu, Xu, Lyu, Li, Chen, Zhang, Chen, Xue, et~al\mbox{.}}{Wang et~al\mbox{.}}{2024c}]%
+        {wang2024embodiedscan}
+\bibfield{author}{\bibinfo{person}{Tai Wang}, \bibinfo{person}{Xiaohan Mao}, \bibinfo{person}{Chenming Zhu}, \bibinfo{person}{Runsen Xu}, \bibinfo{person}{Ruiyuan Lyu}, \bibinfo{person}{Peisen Li}, \bibinfo{person}{Xiao Chen}, \bibinfo{person}{Wenwei Zhang}, \bibinfo{person}{Kai Chen}, \bibinfo{person}{Tianfan Xue}, {et~al\mbox{.}}} \bibinfo{year}{2024}\natexlab{c}.
+\newblock \showarticletitle{Embodiedscan: A holistic multi-modal 3d perception suite towards embodied ai}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}. \bibinfo{pages}{19757--19767}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wonsick and Pad{\i}r}{Wonsick and Pad{\i}r}{2021}]%
+        {wonsick2021human}
+\bibfield{author}{\bibinfo{person}{Murphy Wonsick} {and} \bibinfo{person}{Ta{\c{s}}k{\i}n Pad{\i}r}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Human-humanoid robot interaction through virtual reality interfaces}. In \bibinfo{booktitle}{{\em 2021 IEEE Aerospace Conference (50100)}}. IEEE, \bibinfo{pages}{1--7}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wu, Shi, Huang, Yu, Xu, and Wang}{Wu et~al\mbox{.}}{2024}]%
+        {wu2024thor}
+\bibfield{author}{\bibinfo{person}{Qianyang Wu}, \bibinfo{person}{Ye Shi}, \bibinfo{person}{Xiaoshui Huang}, \bibinfo{person}{Jingyi Yu}, \bibinfo{person}{Lan Xu}, {and} \bibinfo{person}{Jingya Wang}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Thor: Text to human-object interaction diffusion via relation intervention}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:2403.11208\/}} (\bibinfo{year}{2024}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Lv, Yan, Jin, Wu, Xu, Liu, Zhou, Rao, Sheng, et~al\mbox{.}}{Xu et~al\mbox{.}}{2024a}]%
+        {xu2024inter}
+\bibfield{author}{\bibinfo{person}{Liang Xu}, \bibinfo{person}{Xintao Lv}, \bibinfo{person}{Yichao Yan}, \bibinfo{person}{Xin Jin}, \bibinfo{person}{Shuwen Wu}, \bibinfo{person}{Congsheng Xu}, \bibinfo{person}{Yifan Liu}, \bibinfo{person}{Yizhou Zhou}, \bibinfo{person}{Fengyun Rao}, \bibinfo{person}{Xingdong Sheng}, {et~al\mbox{.}}} \bibinfo{year}{2024}\natexlab{a}.
+\newblock \showarticletitle{Inter-x: Towards versatile human-human interaction analysis}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}. \bibinfo{pages}{22260--22271}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Zhou, Yan, Jin, Zhu, Rao, Yang, and Zeng}{Xu et~al\mbox{.}}{2024b}]%
+        {xu2024regennet}
+\bibfield{author}{\bibinfo{person}{Liang Xu}, \bibinfo{person}{Yizhou Zhou}, \bibinfo{person}{Yichao Yan}, \bibinfo{person}{Xin Jin}, \bibinfo{person}{Wenhan Zhu}, \bibinfo{person}{Fengyun Rao}, \bibinfo{person}{Xiaokang Yang}, {and} \bibinfo{person}{Wenjun Zeng}.} \bibinfo{year}{2024}\natexlab{b}.
+\newblock \showarticletitle{ReGenNet: Towards Human Action-Reaction Synthesis}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition}}. \bibinfo{pages}{1759--1769}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Mao, Gong, Xu, Chen, Xie, Zhang, and Wang}{Xu et~al\mbox{.}}{2023b}]%
+        {xu2023joint}
+\bibfield{author}{\bibinfo{person}{Qingyao Xu}, \bibinfo{person}{Weibo Mao}, \bibinfo{person}{Jingze Gong}, \bibinfo{person}{Chenxin Xu}, \bibinfo{person}{Siheng Chen}, \bibinfo{person}{Weidi Xie}, \bibinfo{person}{Ya Zhang}, {and} \bibinfo{person}{Yanfeng Wang}.} \bibinfo{year}{2023}\natexlab{b}.
+\newblock \showarticletitle{Joint-Relation Transformer for Multi-Person Motion Prediction}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF International Conference on Computer Vision}}. \bibinfo{pages}{9816--9826}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Xu, Li, Wang, and Gui}{Xu et~al\mbox{.}}{2023a}]%
+        {xu2023interdiff}
+\bibfield{author}{\bibinfo{person}{Sirui Xu}, \bibinfo{person}{Zhengyuan Li}, \bibinfo{person}{Yu-Xiong Wang}, {and} \bibinfo{person}{Liang-Yan Gui}.} \bibinfo{year}{2023}\natexlab{a}.
+\newblock \showarticletitle{InterDiff: Generating 3D Human-Object Interactions with Physics-Informed Diffusion}. In \bibinfo{booktitle}{{\em Proceedings of the IEEE/CVF International Conference on Computer Vision}}. \bibinfo{pages}{14928--14940}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Yang, Ikeda, Bertasius, and Szafir}{Yang et~al\mbox{.}}{2024}]%
+        {yang2024arcade}
+\bibfield{author}{\bibinfo{person}{Yue Yang}, \bibinfo{person}{Bryce Ikeda}, \bibinfo{person}{Gedas Bertasius}, {and} \bibinfo{person}{Daniel Szafir}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{ARCADE: Scalable Demonstration Collection and Generation via Augmented Reality for Imitation Learning}. In \bibinfo{booktitle}{{\em 2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}. IEEE, \bibinfo{pages}{2855--2861}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zhu, Zhong, Yang, Cong, Yu, Zhu, and Ma}{Zhu et~al\mbox{.}}{2025}]%
+        {zhu2025evolvinggrasp}
+\bibfield{author}{\bibinfo{person}{Yufei Zhu}, \bibinfo{person}{Yiming Zhong}, \bibinfo{person}{Zemin Yang}, \bibinfo{person}{Peishan Cong}, \bibinfo{person}{Jingyi Yu}, \bibinfo{person}{Xinge Zhu}, {and} \bibinfo{person}{Yuexin Ma}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Evolvinggrasp: Evolutionary grasp generation via efficient preference alignment}.
+\newblock \bibinfo{journal}{{\em ICCV\/}} (\bibinfo{year}{2025}).
+\newblock
+
+
+\end{thebibliography}

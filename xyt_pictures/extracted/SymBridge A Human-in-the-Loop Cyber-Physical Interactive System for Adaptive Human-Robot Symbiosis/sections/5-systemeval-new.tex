@@ -1,0 +1,450 @@
+\section{System Evaluation}
+\input{tables/finetune-table}
+We conduct system evaluation by assessing whether it meets the design goals. Accordingly, our experiments focus on answering three questions, presented in Sections~\ref{eval1}, \ref{eval2}, \ref{eval3}, respectively.
+
+A. Does the interactive model produce reasonable and plausible robot reactions that ensure natural and smooth interactions?
+
+B. Does the system support real-time and realistic interaction experience that helps humans adapt to human-robot interactions?
+
+C. Does the system facilitate data collection and efficient fine-tuning that continuously enhance robot interaction skills?
+
+\subsection{Evaluation of Interactive Model}
+\label{eval1}
+\noindent\textbf{Datasets.}
+The Ground Truth (GT) data for training and evaluating our model was generated from the large-scale human-human interaction dataset, Inter-X \cite{xu2024inter}, addressing the lack of a comparable human-robot dataset. The GT generation process involved treating one human's motion in an interaction pair as the input, while the second human's response was converted into the target robot motion using an \textbf{offline motion retargeting} pipeline. This pipeline employs the kinematics-based methodology from Human2Humanoid \cite{he2024learning} to map human movements to the specific constraints of our robot models (LEJU Kuavo \cite{lejukuavorobot} and Unitree H1 \cite{unitreeh1robot}) ensuring the resulting motion is physically plausible and serves as a high-quality supervision signal. This offline generation of GT is distinct from the online, learning-based \textbf{Robot Motion Retargeting Module (Sec. 5.5)}, which is trained using this data to perform real-time predictions. Through this procedure, we created the \textit{Inter-HRI} benchmark for our experiments, which retains the original train-test split from Inter-X and is downsampled to 10FPS to suit our motion capture setup. For a comprehensive walkthrough of the GT dataset generation, please refer to the \textbf{Supplementary Material, Section 3.1}.
+% No existing dataset specifically targets human-robot interaction. Therefore, we adapt human-human interaction data to HRI %by
+% for enabling robots to learn realistic behaviors. We introduce \textit{Inter-HRI} by extending the Inter-X dataset~\cite{xu2024inter}, which focuses on human-human interaction.
+% \textbf{Inter-HRI} is created by mapping one subject’s angle-axis parameters to specific robot joint representation like Unitree H1~\cite{unitreeh1robot} and LEJU Kuavo~\cite{lejukuavorobot}, following% PHC
+% ~\cite{luo2023perpetual}. It retains the original train-test split and is downsampled to 10FPS to suit our motion capture setup.
+
+
+\noindent\textbf{Evaluation Metrics.} 
+For measuring action precision, MPJPE is the mean per joint position error and PA-MPJPE aligns predictions via Procrustes analysis (rotation, translation, scale) before computing error~\cite{deitke2020robothor}. Both are reported in centimeters. Traj measures root joint trajectory error (\textit{cm}), while Orie measures orientation error(\textit{deg}).
+For measuring contact quality, we use dimensionless metrics: precision ($C_{\text{prec}}$), recall ($C_{\text{rec}}$), accuracy ($C_{\text{acc}}$), and F1 score ($C_{\text{F1}}$).
+For measuring generative fidelity, FID calculates Fréchet distance between inception network features. R-score evaluates text-motion alignment via Euclidean distances between embeddings and Top-3 retrieval accuracy. 
+%Both are dimensionless.
+
+%~\cite{dai2024motionlcmrealtimecontrollablemotion}
+%~\cite{li2023object}
+% \textbf{Min dist.}, \textbf{Pelvis dist.}, and \textbf{All dist.}~\cite{wang2024move} compute normalized distances from human mesh vertices to robot hand joints, quantifying affordance map accuracy in \textit{centimeters}. Lower distances indicate better performance.
+
+\noindent\textbf{Comparison.}
+\label{sec:baseline}
+We compare our Robotic Interaction Model against four recent state-of-the-art methods, all re-implemented or fine-tuned and evaluated fairly on the Inter-HRI benchmark.
+As shown in Fig.~\ref{fig:visintermodel-comp} and Tab.~\ref{tab:hhi}, our model consistently outperforms these baselines with the lowest PA-MPJPE and MPJPE, and significant improvements in contact metrics ($C_{\text{prec}}$, $C_{\text{F1}}$), FID, and R-score, indicating superior spatial accuracy, physical realism, and semantic consistency.
+These improvements result from our %Multi-Resolution Human Feature (
+MRHF Learner, which captures hierarchical temporal behavior, and the Affordance Predictor, enabling precise, socially-aware contact reasoning (details in supplementary material). Together, they enable realistic, contextually adaptive, and real-time human-robot interactions. More our results of diverse interaction types are presented in Fig.~\ref{fig:visintermodel-ours}.
+%Overall, the results emphasize the importance of multi-scale behavior modeling and dense affordance mapping for seamless human-robot collaboration.
+
+\noindent\textbf{Human Evaluation.}We also compared the quality of generated actions across ten representative action types in the Inter-X dataset using a 5-point Likert scale, where a higher score indicates a more natural and accurate result. 30 computer science students (15 male, 15 female) were asked to rate the outputs of five methods: JRT, MRT, ReGenNet, SAST, and our proposed approach. The results show that our method significantly outperforms the baselines, achieving an average score of 4.5, while the closest competitor, JRT, received an average of 2.46. MRT and ReGenNet followed with average scores of 2.1 and 1.86, respectively, and SAST ranked lowest with 1.64. These findings suggest that our approach generates actions that are perceived by humans as more realistic and semantically appropriate than those produced by existing methods.
+
+
+
+% We compare our method with four representative baselines that cover a wide spectrum of recent advances in multi-person motion prediction and interactive human-robot motion synthesis:
+% JRT~\cite{xu2023joint}: Models explicit joint relations for multi-person motion prediction.
+% MRT~\cite{wang2021multi}: Combines local and global dynamics via dual Transformers.
+% ReGenNet~\cite{xu2024regennet}: Diffusion-based action-reaction synthesis for interactive scenarios.
+% SAST~\cite{mueller2024massively}: Integrates scene and social context for long-term, multi-person motion forecasting.
+% All baselines are re-implemented or tuned following the official protocols on the Inter-HRI benchmark for fair comparison.
+
+% Experimental results (see Tab. 1) show that our approach achieves a new state-of-the-art across all evaluation metrics on the Inter-HRI benchmark, consistently outperforming these strong baselines. Notably, our model achieves the lowest PA-MPJPE and MPJPE scores, reflecting superior spatial accuracy in joint prediction. In addition, our method demonstrates remarkable improvements in contact-related metrics (C_prec, F1), perceptual realism (FID), and semantic consistency (R-score).
+
+% We attribute these advances to our model's core innovations: the Multi-Resolution Human Feature (MRHF) Learner, which captures hierarchical temporal cues from human behavior, and the Affordance Predictor, which enables fine-grained, socially-appropriate contact reasoning. The synergy between these modules allows our system to bridge the gap between physical realism, social appropriateness, and online adaptability—enabling highly realistic and contextually adaptive human-robot interactions.
+
+% In summary, the results underscore the importance of modeling both multi-scale human behavior and dense affordance maps for achieving seamless, real-time human-robot collaboration.
+
+
+
+% \subsubsection{Ablation Study}
+
+% $$\\$$
+% Modifying
+
+% Tab.~\ref{tab:ab-hoi} demonstrates the necessity of both the MRHF Learner and the Affordance Predictor. Removing either module leads to a clear degradation in core metrics. MRHF brings substantial gains in motion accuracy (PA-MPJPE/MPJPE), validating our motivation to capture multi-scale human dynamics. The Affordance Predictor Module further improves orientation, trajectory, and motion realism (Orie, Traj, FID), confirming its role in producing interaction-aware and semantically meaningful robot behavior. Combining both, our full model achieves the best performance across all aspects—including spatial precision and motion coherence—highlighting the complementary strengths and the effectiveness of our design.
+
+
+
+\subsection{Evaluation of Real-Time and Realistic HRI}
+\label{eval2}
+
+\noindent\textbf{Time Performance.} Our system involves a 10FPS LiDAR device, a host server running the motion capture and interactive model, and display ends, either an AR glass or a notebook for different perspectives.
+%The LiDAR device works at a 10FPS frequency. The host server runs the motion capture and interactive model, then broadcasts robot motions to
+%the display ends, either an AR glass or a notebook for different perspectives. 
+%, instantly receives the pose sequence and drives the robot character for visualization. 
+All modules run in parallel with cached queues between them.
+On a host server with an i9-14900kf CPU and a Nvidia A6000 GPU, it achieves a speed of 40FPS with overall latency less than 0.2sec.
+
+\noindent\textbf{Quality Performance.} %Our system captures human motions as the input of the robotic interaction model and present its generated robot motions to human users. 
+%We then examine the quality performance of our platform in terms of human-robot interaction. That is, given the interactive model with the above quantitative evaluation, how does our platform effectively leverage this model's capabilities? 
+In our system, the Ouster-1-128 LiDAR exhibits a scanning error of $\pm$1-3$\,cm$ in indoor environments. For motion capture, we employ a noise-resistant algorithm, which achieves a human keypoint estimation error of $6.2~cm$ and a joint angle error of $15.40~degree$ (evaluated on the FreeMotion %indoor 
+dataset). These errors define the input data error for the interaction model. On the other hand, %since the predicted robot reactions are converted as pose sequences to the display ends, we compute 
+between the robot predicted by the interactive model and that presented to the user, i.e. input and output of the retargeting module, the joint angle error is $3.80~degree$ for LEJU Kuavo and $6.81~degree$ for Unitree H1 in the Inter-HRI dataset.
+% \color{blue}Given the scanning error of the LiDAR(Ouster-1-128) device within $+-1-2cm$ in indoor scenes and the motion capture algorithm produces pose parameter error within xxx, we assess that the error of the captured human behavior, i.e. input of interactive model, is about xxx. \color{black} \color{purple}On the other hand, since the predicted robot reactions are converted as pose sequences to the display ends, we compute the error between the robot predicted by the interactive model and that presented to the user. Their average keypoint distance is within xxx, indicating that the predicted robot reactions are reliably conveyed to human users to enable the realistic and real-time human-robot interaction. %Thus the collected user ratings during the human-robot interaction process would provide authentic feedback for the interactive model.
+\color{black}
+
+\noindent\textbf{User Empirical Test.} To evaluate our system, we recruited a total of 50 participants (33 male, 17 female), aged between 18 and 56 years and ranging in height from 162 cm to 191 cm, with diverse academic and professional backgrounds in robotics, computer graphics, and augmented reality. Each participant required to test 5 types of interaction 3 iterations per type. %For each human-robot interaction, the user is informed of the interaction type and an appropriate initial position to ensure that LiDAR can perceive human motion during the following interaction process. Then the user wear the AR glasses and click the "connect" button to start. 
+After the interactions, the user rates their interaction experience on a 5-Likert scale from different dimensions, where 1 indicates "poor" and 5 indicates "excellent".
+Among the dimensions, 
+%We collect user ratings of the platform's performance from the following aspects. 
+\emph{interaction completion} reflects how well the user considers the interaction as successfully completed. \emph{Realism} is whether the user perceives a realistic visualization and a vivid interaction with the virtual robot. \emph{Rationality} and 
+\emph{fidelity} measure whether the robot's reaction can interact with the human user appropriately and whether it acts like a physical humanoid robot. \emph{Real-time performance} is whether the user considers the robot's reaction as smooth and timely. 
+\emph{Usability} and \emph{willing-to-use} reflects whether the users view the system as easy-to-use and would like to continue performing the human-robot interaction via our system.
+
+The process and statistics are presented in Fig.~\ref{fig:systeminter} and~\ref{fig:userstudy}. All dimensions receive average ratings above the moderate level. Our system exhibits high realism and moderate real-time characteristics, as well as positive rationality and fidelity, yet distinguishable from real human-human interactions. More importantly, most users consider our system as quite easy-to-use and would like to continue using it. 
+
+\noindent\textbf{Real Robot Test.} %We further examine the physical fidelity of the robot's reactions during the human-robot interaction. First, to conduct the physical simulation test, we adapt a perceptual humanoid controller [] to our robot model, \color{red}including xx and xx\color{black}, and train the policy network using reinforcement learning in Isaac gym. The policy network can drive the robot model to align with a specified action sequence as much as possible while strictly ensuring the physical feasibility constraints. \color{gray}We use the trained controller to perform the robot's reactions produced by the interactive model during the user empirical testing in the simulation environment. It turns out that the simulated robot movements exhibit an error within xxx compared to the predicted robot reactions, indicating the high physical fidelity of the movements of the virtual robot.\color{black}
+We deploy the virtual robot reactions to a real LEJU Kuavo robot. That is, we preserve the exact upper body movements and body center trajectory, and slightly tune the lower body movements with its default offline simulator software to maintain the robot's balance. As in Fig. ~\ref{fig:realrobot}, the appearance and movement of the real robot exhibits a high consistency with that presented by our system. This test indicates that the human-robot interaction experience via our system is reliable enough to assist human users in getting used to interacting with robots in the real world.
+
+\noindent\textbf{Discussion.} Our system currently supports a single active user, although the motion capture module can track multiple individuals. For reliable operation, users must remain within the LiDAR’s line of sight and unobstructed by obstacles. If no human is detected, the prediction pipeline pauses and the robot remains visible but stationary in the AR interface, thereby preventing unintended behaviors while maintaining scene continuity.
+
+
+\subsection{Evaluation of Robot Interaction Skill Enhancement}
+\label{eval3}
+
+\noindent\textbf{Setup.} We conduct model adaptation with a base model trained on a subset of Inter-HRI with 20 basic actions. The fine-tuning uses the loss function leveraging both positive and negative samples 
+\[
+L = L_{\text{pos}} - \alpha L_{\text{neg}},
+\]
+where $L_{\text{pos}}$  and $L_{\text{neg}}$ are reconstruction loss terms to encourage learning from desirable interactions while penalizing undesired behaviors, and $\alpha$ controls the negative loss influence.
+
+
+We evaluate two settings by processing existing datasets to mimic the interactions collected with our system. \textit{Cross Categories} focuses on interactions outside the 20 base types. \textit{Cross Domain} simulate real-world user movements by filtering samples of these types from another interaction dataset InterHuman~\cite{liang2024intergen}. 
+%
+In both settings, we use 1:1 positive and negative samples. Negative samples are produced by (1) injecting random noise to robot motions, (2) making static sequences like robot not responding to humans, and (3) re-pairing human-robot movements like mismatched interactions.
+
+\noindent\textbf{Results.}
+Tab.~\ref{tab:finetune} presents the quantitative results for \emph{Cross Categories} and \emph{Cross Domain}.
+Increasing data scale (to 100, 1,000, 10,000 samples) consistently improves performance on both settings. These improvements confirm that our model adaptation mechanism can effectively utilize
+various human-robot interaction data collected with our system to enhance robot interaction skills.
+
+%To enable the continuous enhancement of the robot’s interaction skills and facilitate its adaptive behaviors to user preferences, we employ a feedback-driven model adaptation mechanism.
+
+%\noindent\textbf{Setup.}
+%The model adaptation is based on the model trained on a subset of \textit{Inter-HRI}, which includes 20 base actions. Our basic loss function is elaborated in the supplementary. The adaptation process uses a modified one, incorporating positive and negative samples:
+%$
+%L = L_{\text{pos}} - \alpha L_{\text{neg}},
+%$
+%where $L_{\text{pos}}$ and $L_{\text{neg}}$ are positive and negative losses, respectively, and $\alpha$ controls the negative loss influence. It encourages learning from desirable interactive behaviors while penalizing undesired ones.
+
+%\noindent\textbf{Setting Construction.}
+%We constructed two model adaptation settings. \textit{Cross Categories} focuses on actions outside the basic 20 actions. \textit{Cross Domains} evaluates generalization to unseen patterns by filtering samples from another interaction dataset InterHuman~\cite{liang2024intergen} related to basic actions. 
+%In all settings, positive and negative samples are balanced 1:1. Positive samples come from GT. Negative samples are randomly sampled from (1) noise sequences with no valid interaction, (2) static sequences with no robot response, and (3) mismatched human-robot pairs.
+
+%\noindent\textbf{Results.}
+%Table.~\ref{tab:finetune} presents the quantitative results for Cross-Domain and Cross-Category settings, where increasing model adaptation data scale (100, 1,000, 10,000 samples) consistently improves the performance. 
+%%For example, in Cross Categories, PA-MPJPE decreases from 3.06 to 2.67 and FID from 0.274 to 0.208, indicating enhanced spatial accuracy and perceptual fidelity. %
+%These improvements confirm that our model adaptation design enables more robust and adaptable robot interaction skills.
+
+
+% \subsection{Evaluation of Robot Interaction Skill Enhancement}
+% \label{eval3}
+
+% \subsubsection{Finetuning Setup}
+% To enable the continuous enhancement of the robot's interaction skills and facilitate its adaptive behaviors to user preferences, we employ a finetuning mechanism. This mechanism is a core component of our model adaptation cycle, leveraging human feedback collected during human-robot interactions.
+
+% \paragraph{Loss Function}
+% Our finetuning process utilizes a modified loss function that explicitly incorporates both positive and negative samples. The loss function is defined as:
+% $$L = L_{pos} - A L_{neg}$$
+% where $L_{pos}$ represents the positive loss, $L_{neg}$ represents the negative loss, and $A$ is a coefficient used to constrain the influence of the negative loss. This formulation encourages the model to learn from desirable interactions ($L_{pos}$) while actively penalizing undesirable or incorrect behaviors ($L_{neg}$).
+
+% \paragraph{Dataset Construction for Finetuning}
+% We constructed two distinct types of datasets to comprehensively evaluate and improve the finetuned model's performance: `Cross Categories` and `Out Domain`.
+
+% \textbf{Finetune - Cross Categories:} This dataset focuses on actions *outside* the initial 20 actions selected for the base training set of our interaction model.
+% \begin{itemize}
+%     \item \textbf{Sample Selection:} Positive and negative samples are selected in a 1:1 ratio, consistent with the official InterX training set division.
+%     \item \textbf{Negative Sample Types:} To diversify the negative samples and robustly train the model to avoid erroneous interactions, we incorporated three distinct types of negative samples:
+%     \begin{enumerate}
+%         \item \textbf{Noise Samples:} Randomly generated or perturbed interaction sequences that do not correspond to any valid human-robot interaction.
+%         \item \textbf{Static Samples:} Sequences where the robot remains motionless or exhibits no reactive behavior despite human input, representing a lack of interaction.
+%         \item \textbf{Incorrectly Paired Interaction Samples:} Sequences where a valid human action is randomly paired with an inappropriate or mismatched robot response from the dataset.
+%     \end{enumerate}
+%     \item \textbf{Dataset Scaling:} From approximately 30,000 segmented samples derived from original sequences, we created finetuning sets of varying scales to evaluate the impact of data quantity: 100ft, 1000ft, and 10000ft. These sets were generated by shuffling the 30,000 samples and taking the first 100, 1000, and 10000 samples, respectively.
+%     \item \textbf{Test and Validation Sets:} Corresponding test and validation sets were constructed for actions outside the 20 base actions, adhering to the official InterX test and validation set divisions.
+% \end{itemize}
+
+% \textbf{Finetune - Out Domain:} This dataset evaluates the model's generalization capabilities to unseen interaction patterns, simulating real-world data collection from users.
+% \begin{itemize}
+%     \item \textbf{Dataset Source:} We utilized the InterHuman training set as the source.
+%     \item \textbf{Sample Filtering:} Samples were filtered to include only those corresponding to the 40 InterX actions, with a specific focus on the parts belonging to the initial 20 actions of our base training set. This simulates the collection of user feedback data within the context of the SymbioSim platform.
+%     \item \textbf{Test and Validation Sets:} The InterHuman test and validation sets were similarly filtered and used for evaluation in this out-domain scenario.
+% \end{itemize}
+
+% Our experimental findings consistently demonstrate that finetuning with both positive and negative samples significantly enhances the model's performance. Furthermore, the efficacy of this finetuning process is positively correlated with the quantity of training samples, indicating that more extensive user feedback leads to a more robust and adaptable robot interaction model.
+
+
+% \subsubsection{Results}
+% \label{sec:results}
+% We evaluate its efficacy across varying scales of finetuning data (100, 1000, 10000 samples). Tab.~\ref{tab:finetune} presents the quantitative results for "Cross Categories" and "Cross Domain" settings.
+
+% \textbf{Cross Categories:} This setting focuses on actions outside the base model's initial training set. As finetune scale increases, we observe consistent performance enhancements:
+% \begin{itemize}
+%     \item Error metrics (PA-MPJPE, MPJPE, Traj, Orie, FID) show significant reduction. For instance, PA-MPJPE improves from 3.06 (Base) to \textbf{2.67} with 10000 finetune samples, and MPJPE from 10.72 to \textbf{9.34}. FID decreases from 0.274 to \textbf{0.208}.
+%     \item Accuracy-based metrics (C\_prec, C\_rec, C\_acc, C\_F1, R-score) generally increase, indicating improved contact and interaction quality. C\_acc rises from 0.807 to \textbf{0.822}, and C\_F1 from 0.833 to \textbf{0.844}. R-score, reflecting overall interaction quality, improves from 0.448 to \textbf{0.465}.
+% \end{itemize}
+
+% \textbf{Cross Domain:} This evaluates generalization to unseen interaction patterns, simulating real-world user data. While R-score is not applicable due to extreme category imbalance, other metrics demonstrate similar trends:
+% \begin{itemize}
+%     \item Error metrics exhibit substantial improvements. PA-MPJPE drops from 4.57 (Base) to \textbf{3.85} with 10000 finetune samples, and MPJPE from 17.12 to \textbf{14.04}. Notably, FID shows a drastic reduction from 0.289 to \textbf{0.094}, indicating superior fidelity in generated motions within novel domains.
+%     \item Contact accuracy metrics generally improve, with C\_prec rising from 0.891 to \textbf{0.923}, C\_rec from 0.773 to \textbf{0.805}, C\_acc from 0.807 to \textbf{0.842}, and C\_F1 from 0.828 to \textbf{0.860}.
+% \end{itemize}
+
+% Overall, these results consistently demonstrate that finetuning with positive and negative samples significantly enhances the robot's interaction skills and adaptability. The performance gains are directly correlated with the quantity of finetuning data, validating SymBridge's model adaptation cycle as an effective mechanism for continuous improvement through human feedback.
+
+
+
+% \begin{table*}[t]
+% \caption{Results of interaction skill enhancement across different settings with varying finetune scales. Red indicates a decrease while Green indicates an increase relative to Base. Due to extreme category imbalance, R-score is not applicable in Cross Domain setting.}
+% \label{tab:results}
+% \centering
+% \resizebox{\linewidth}{!}{%
+% \begin{tabular}{|l|l|c|c|c|c|c|c|c|c|c|c|}
+% \hline
+% \textbf{Setting} & \textbf{Finetune Scale} & \textbf{PA-MPJPE$\downarrow$} & \textbf{MPJPE$\downarrow$} & \textbf{Traj$\downarrow$} & \textbf{Orie$\downarrow$} & \textbf{C\_prec$\uparrow$} & \textbf{C\_rec$\uparrow$} & \textbf{C\_acc$\uparrow$} & \textbf{C\_F1$\uparrow$} & \textbf{FID$\downarrow$} & \textbf{R-score$\uparrow$} \\
+% \hline
+% Base & & 4.57 & 17.12 & 0.286 & 28.14 & 0.891 & 0.773 & 0.807 & 0.828 & 0.289 & \\
+% \multirow{3}{*}{Cross Domain} & \textasciitilde{}100 & 4.44 & 16.32 & 0.280 & 26.86 & 0.908 & 0.774 & 0.817 & 0.836 & 0.241 & \\
+% & \textasciitilde{}1000 & 4.30 & 15.67 & 0.275 & 25.38 & 0.918 & 0.754 & 0.812 & 0.828 & 0.202 & / \\
+% & \textasciitilde{}10000 & \textbf{3.85} & \textbf{14.04} & \textbf{0.232} & \textbf{21.78} & \textbf{0.923} & \textbf{0.805} & \textbf{0.842} & \textbf{0.860} & \textbf{0.094} & / \\
+% \hline
+% Base & & 3.06 & 10.72 & 0.151 & 34.49 & 0.822 & 0.845 & 0.807 & 0.833 & 0.274 & 0.448 \\
+% \multirow{3}{*}{Cross Categories} & \textasciitilde{}100 & 3.00 & 10.52 & 0.150 & 34.20 & 0.817 & 0.849 & 0.806 & 0.833 & 0.262 & 0.451 \\
+% & \textasciitilde{}1000 & 2.88 & 10.06 & 0.143 & 32.08 & 0.826 & 0.850 & 0.813 & 0.838 & 0.241 & 0.455 \\
+% & \textasciitilde{}10000 & \textbf{2.67} & \textbf{9.34} & \textbf{0.135} & \textbf{30.02} & \textbf{0.841} & \textbf{0.847} & \textbf{0.822} & \textbf{0.844} & \textbf{0.208} & \textbf{0.465} \\
+% \hline
+% \end{tabular}%
+% }
+% \end{table*}
+
+
+
+
+
+% \begin{table*}[]
+% \centering
+
+% \resizebox{\linewidth}{!}{ 
+% \begin{tabular}{c|c|cccccccccc}
+% \hline
+% Setting                     & Finetune Scale                                               & PA-MPJPE↓ & MPJPE↓ & Traj↓ & Orie↓ & C\_prec↑ & C\_rec↑ & C_acc↑& C_F1↑ & FID↓ & R-score↑ \\ \hline
+% \multirow{4}{*}{Cross Domain} & Base        &   4.57        &       17.12    &    0.286     &   28.14  &  0.891   &     0.773      &    0.807     &     0.828    &     0.289     &     /      \\ \cline{2-12} & $\sim$100         &    \textcolor[rgb]{0.07,0.55,0.15}{4.44}       &    \textcolor[rgb]{0.07,0.55,0.15}{16.32}       &    \textcolor[rgb]{0.07,0.55,0.15}{0.280}      &   \textcolor[rgb]{0.07,0.55,0.15}{26.86}  &  \textcolor[rgb]{0.07,0.55,0.15}{ 0.908}  &     \textcolor[rgb]{0.07,0.55,0.15}{0.774}      &         \textcolor[rgb]{0.07,0.55,0.15}{0.817}   &    \textcolor[rgb]{0.07,0.55,0.15}{ 0.836 }     & \textcolor[rgb]{0.07,0.55,0.15}{0.241}   &   /   \\ \cline{2-12}& $\sim$1000         &   \textcolor[rgb]{0.07,0.55,0.15}{4.30}     &     \textcolor[rgb]{0.07,0.55,0.15}{15.67}      &     \textcolor[rgb]{0.07,0.55,0.15}{0.275}      &      \textcolor[rgb]{0.07,0.55,0.15}{25.38}     &    \textcolor[rgb]{0.07,0.55,0.15}{0.918}    &    \textcolor[rgb]{0.77,0.15,0.32}{0.754}     &      \textcolor[rgb]{0.07,0.55,0.15}{0.812}     &      \textcolor[rgb]{0.07,0.55,0.15}{0.828}     &    \textcolor[rgb]{0.07,0.55,0.15}{0.202}      &      /    \\ \cline{2-12}& $\sim$10000   &      \textcolor[rgb]{0.07,0.55,0.15}{\textbf{3.85}}    &      \textcolor[rgb]{0.07,0.55,0.15}{\textbf{14.04}}     &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.232}}    &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{21.78}}     &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.923}}   &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.805}}  &     \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.842}}     &   \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.860}}   &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.094}}    &     /     \\ \hline
+% \multirow{4}{*}{Cross Categories} & Base &   3.06        &       10.72    &     0.151     &   34.49  &  0.822   &     0.845      &    0.807     &     0.833    &     0.274      &     0.448  \\ \cline{2-12}& $\sim$100         &     \textcolor[rgb]{0.07,0.55,0.15}{3.00}      &      \textcolor[rgb]{0.07,0.55,0.15}{10.52}     &     \textcolor[rgb]{0.07,0.55,0.15}{0.150}     &   \textcolor[rgb]{0.07,0.55,0.15}{34.20}  &  \textcolor[rgb]{0.77,0.15,0.32}{0.817}   &      \textcolor[rgb]{0.07,0.55,0.15}{0.849}     &  \textcolor[rgb]{0.77,0.15,0.32}{ 0.806 }     &     \textcolor[rgb]{0.77,0.15,0.32}{0.833}    &    \textcolor[rgb]{0.07,0.55,0.15}{ 0.262}      &    \textcolor[rgb]{0.07,0.55,0.15}{0.451 }      \\ \cline{2-12}& $\sim$1000         &    \textcolor[rgb]{0.07,0.55,0.15}{2.88}    &       \textcolor[rgb]{0.07,0.55,0.15}{10.06}    &     \textcolor[rgb]{0.07,0.55,0.15}{ 0.143}     &    \textcolor[rgb]{0.07,0.55,0.15}{32.08}       &   \textcolor[rgb]{0.07,0.55,0.15}{ 0.826}    &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.850}}   &       \textcolor[rgb]{0.07,0.55,0.15}{0.813 }   &     \textcolor[rgb]{0.07,0.55,0.15}{0.838}      &    \textcolor[rgb]{0.07,0.55,0.15}{0.241 }      &    \textcolor[rgb]{0.07,0.55,0.15}{0.455}      \\ \cline{2-12}& $\sim$10000   &  \textcolor[rgb]{0.07,0.55,0.15}{\textbf{2.67}}     &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{9.34}}       &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{13.05}}     &    \textcolor[rgb]{0.07,0.55,0.15}{ \textbf{30.02}}      &     \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.841}}   &     \textcolor[rgb]{0.07,0.55,0.15}{0.847}   &      \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.822}}    &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.844}}   &    \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.208}}    &      \textcolor[rgb]{0.07,0.55,0.15}{\textbf{0.465}}    \\ \hline
+% \end{tabular}
+% }
+% \caption{Results of interaction skill enhancement across different settings with varying finetune scales. \textcolor[rgb]{0.77,0.15,0.32}{Red} indicates a decrease while \textcolor[rgb]{0.07,0.55,0.15}{Green} indicates an increase relative to Base. Due to extreme category imbalance, R-score is not applicable in Cross Domain setting.}
+% \label{tab:finetune}
+% \end{table*}
+
+
+% \begin{table}[ht!]
+%     \centering
+%     \small
+%     \setlength{\tabcolsep}{3pt}
+%     \caption{\textbf{Quantitative results of affordance map prediction.} Our system performs well across all the metrics, demonstrating its competent cabilities to provide valid and precise affordance map.}
+%     \label{tab:affordance}
+%         \begin{tabular}{cccc}%
+%             \toprule
+%             & min dist. & pelvis dist. & all dist.\\
+%             \midrule
+%             G.T.                &  $0.923& $1.509$& $1.551$\\
+%             \midrule
+%             Prediction                &  $0.889$& $1.520$& $1.565$\\
+%         \bottomrule
+%         \end{tabular}%
+        
+% \end{table}
+
+
+% \documentclass{article}
+% \usepackage[utf8]{inputenc}
+% \usepackage{enumitem}
+% \usepackage{geometry}
+% \geometry{a4paper, margin=1in}
+
+% \title{Workflow for Creating the Interaction Model Diagram}
+% \author{}
+% \date{}
+
+% \begin{document}
+
+% \maketitle
+
+
+% \color{blue}
+
+
+% The process of creating the interaction model figures is divided into the following steps:
+
+% \section*{A. Experiment Deployment} \color{green}(Done)\color{black}
+% \begin{itemize}[leftmargin=2em]
+%     \item All ablation studies are conducted by Yiteng.
+%     \item The "Ours" model in the comparison experiments is also managed by Yiteng.
+%     \item The JRT model is handled by Bushi.
+%     \item The SAST model is managed by Yaoqin.
+%     \item The MRT and ReGenNet models are handled by Yuhan.
+% \end{itemize}
+
+% \section*{B. Experiment Evaluation}\color{green}(Done)\color{black}
+% \begin{itemize}[leftmargin=2em]
+%     \item Bushi is responsible for constructing evaluation metrics.
+%     \item Bushi fills out the corresponding tables in Overleaf.
+% \end{itemize}
+
+% \section*{C. Writing of Experimental Content}\color{red}(Doing, Final version, ddl: today)\color{black}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yiteng is responsible for writing all experiment-related content, including comparison experiments, ablation studies, and finetuning experiments.
+%     \item Yiteng also writes the corresponding captions and descriptions for the tables.
+% \end{itemize}
+
+% \section*{D. Case Selection}\color{green}(Done)\color{black}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yuhan and Bushi are responsible for selecting the visualization cases.
+% \end{itemize}
+
+% \section*{E. Visualization Rendering}\color{red}(Doing, Final version, ddl: today)\color{black}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yaoqin is responsible for rendering the selected cases using the rendering library.
+% \end{itemize}
+
+
+% \newcommand{\done}{\textcolor{green!60!black}{Done}}
+% \newcommand{\doing}{\textcolor{red}{Doing, Deadline: Today}}
+
+% \section{TASK DIVISION}
+
+% \subsection{A. Experiment Deployment}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item \textbf{Ablation Studies:} Conducted by Yiteng (\done)
+%     \item \textbf{Comparison Experiments:}
+%     \begin{itemize}
+%         \item \textbf{Ours:} Yiteng (\done)
+%         \item \textbf{JRT:} Bushi (\done)
+%         \item \textbf{SAST:} Yaoqin (\done)
+%         \item \textbf{MRT and ReGenNet:} Yuhan (\done)
+%     \end{itemize}
+% \end{itemize}
+
+% \subsection{B. Experiment Evaluation}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item Evaluation of experiment result PKLs: Bushi, Yaoqin (\done)
+% \end{itemize}
+
+% \subsection{C. Writing of Experimental Content}
+% \textbf{Responsible: Yiteng}
+
+% \subsubsection*{i. Comparison Experiments} 
+% \begin{itemize}
+%     \item Writing and formatting: Yiteng (\done)
+% \end{itemize}
+
+% \subsubsection*{ii. Ablation Experiments} 
+% \begin{itemize}
+%     \item Writing and formatting: Yiteng (\done)
+% \end{itemize}
+
+% \subsubsection*{iii. Finetuning Experiments}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item First Version: Done by Yiteng (\done)
+%     \item Final Version: Add some detailed information about the finetune experiment by Yaoqin (\doing)
+% \end{itemize}
+
+% \subsection{D. Case Selection}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item Responsible: Yuhan and Bushi (\done)
+% \end{itemize}
+
+% \subsection{E. Visualization Rendering}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item Responsible: Yaoqin
+%     \item Task: Render selected cases using the rendering library (\doing)
+% \end{itemize}
+
+% \subsection{F. Appendix Writing}
+% \textbf{Responsible: Yiteng}
+
+% \subsubsection*{i. Data Pipeline between MoCap and Robotic Interaction Model}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item First Version: Done by Yiteng (\done)
+%     \item Final Version: Additional explanation on the 263 dimensional human motion representation vector by Yaoqin (\doing)
+% \end{itemize}
+
+% \subsubsection*{ii. Module and Block Details of the Interaction Model}
+% \begin{itemize}
+%     \item Writing: Yiteng (\doing)
+% \end{itemize}
+
+% \subsubsection*{iii. Ablation Study of the Interaction Model} (\done)
+% \begin{itemize}
+%      \item Writing: Yiteng (\done)
+% \end{itemize}
+% \subsubsection*{iv. Details of Finetune experiment}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item First Version: Done by Yiteng (\done)
+%     \item Final Version: Add some detailed information about the finetune experiment by Yaoqin (\doing)
+% \end{itemize}
+
+% \subsubsection*{v. Details about Comparisons}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item First Version: Done by Yiteng (\done)
+%     \item Final Version: Checked by Yuhan and Bushi (\done)
+% \end{itemize}
+
+% \subsubsection*{v. Details about Motion Regarting}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item Final Version: Yiming (\doing)
+% \end{itemize}
+
+% \subsubsection*{vi. Simplify the section on baselines, datasets and evaluation metrics in the main text, and move the detailed content to the supplementary materials}
+% \begin{itemize}[leftmargin=1.5em]
+%     \item Final Version: Yiteng (\doing)
+% \end{itemize}
+
+
+
+
+% \section{Task Division}
+
+
+% \section*{A. Experiment Deployment \textcolor{green}{(Done)}}
+% \begin{itemize}[leftmargin=2em]
+%     \item All ablation studies are conducted by Yiteng.
+%     \item The ``Ours'' model in the comparison experiments is also managed by Yiteng.
+%     \item The JRT model is handled by Bushi.
+%     \item The SAST model is managed by Yaoqin.
+%     \item The MRT and ReGenNet models are handled by Yuhan.
+% \end{itemize}
+
+% \section*{B. Experiment Evaluation \textcolor{green}{(Done)}}
+% \begin{itemize}[leftmargin=2em]
+%     \item Bushi is responsible for constructing evaluation metrics.
+%     \item Bushi also conducts metric testing on experiment results stored in \texttt{.pkl} files.
+%     \item Bushi fills out the corresponding tables in Overleaf.
+% \end{itemize}
+
+% \section*{C. Writing Experimental Content \textcolor{red}{(Doing, Final version, ddl: today)}}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yiteng is responsible for writing all experimental content, including comparison experiments, ablation studies, and finetuning experiments.
+%     \item Yiteng also writes captions and descriptions for the tables.
+% \end{itemize}
+
+% \section*{D. Case Selection \textcolor{green}{(Done)}}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yuhan and Bushi are responsible for selecting visualization cases.
+% \end{itemize}
+
+% \section*{E. Visualization Rendering \textcolor{red}{(Doing, Final version, ddl: today)}}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yaoqin is responsible for rendering the selected cases using the rendering library.
+% \end{itemize}
+
+% \section*{F. Appendix Writing \textcolor{red}{(Doing, Final version, ddl: today)}}
+% \begin{itemize}[leftmargin=2em]
+%     \item Yiteng is responsible for writing the entire appendix, which includes:
+%     \begin{itemize}
+%         \item I. The data flow connection between MoCap and the Robotic Interaction Model.
+%         \item II. Detailed descriptions of each module and block in the interaction model.
+%         \item III. Introduction to the ablation study of the interaction model.
+%         \item IV. Additional explanations to clarify points that reviewers might find difficult to understand.
+%     \end{itemize}
+% \end{itemize}
+

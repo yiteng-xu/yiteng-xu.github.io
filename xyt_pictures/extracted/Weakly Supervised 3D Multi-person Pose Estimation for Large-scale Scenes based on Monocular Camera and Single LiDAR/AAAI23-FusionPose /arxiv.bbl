@@ -1,0 +1,405 @@
+\begin{thebibliography}{60}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Arnab, Doersch, and Zisserman(2019)}]{temporal-arnab2019exploiting}
+Arnab, A.; Doersch, C.; and Zisserman, A. 2019.
+\newblock Exploiting temporal context for 3D human pose estimation in the wild.
+\newblock In \emph{CVPR}, 3395--3404.
+
+\bibitem[{Bai et~al.(2022)Bai, Hu, Zhu, Huang, Chen, Fu, and
+  Tai}]{bai2022transfusion}
+Bai, X.; Hu, Z.; Zhu, X.; Huang, Q.; Chen, Y.; Fu, H.; and Tai, C.-L. 2022.
+\newblock Transfusion: Robust lidar-camera fusion for 3d object detection with
+  transformers.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 1090--1099.
+
+\bibitem[{Cao et~al.(2017)Cao, Simon, Wei, and Sheikh}]{cao2017realtime}
+Cao, Z.; Simon, T.; Wei, S.-E.; and Sheikh, Y. 2017.
+\newblock Realtime multi-person 2d pose estimation using part affinity fields.
+\newblock In \emph{CVPR}, 7291--7299.
+
+\bibitem[{Chen et~al.(2019)Chen, Tyagi, Agrawal, Drover, Mv, Stojanov, and
+  Rehg}]{chen2019unsupervised}
+Chen, C.-H.; Tyagi, A.; Agrawal, A.; Drover, D.; Mv, R.; Stojanov, S.; and
+  Rehg, J.~M. 2019.
+\newblock Unsupervised 3d pose estimation with geometric self-supervision.
+\newblock In \emph{CVPR}, 5714--5724.
+
+\bibitem[{Chen et~al.(2017)Chen, Ma, Wan, Li, and Xia}]{MV3D}
+Chen, X.; Ma, H.; Wan, J.; Li, B.; and Xia, T. 2017.
+\newblock Multi-view 3D Object Detection Network for Autonomous Driving.
+\newblock 6526--6534.
+
+\bibitem[{Cheng et~al.(2020)Cheng, Yang, Wang, and Tan}]{temporal-cheng20203d}
+Cheng, Y.; Yang, B.; Wang, B.; and Tan, R.~T. 2020.
+\newblock 3d human pose estimation using spatio-temporal networks with explicit
+  occlusion training.
+\newblock In \emph{Proceedings of the AAAI Conference on Artificial
+  Intelligence}, volume~34, 10631--10638.
+
+\bibitem[{Cong, Zhu, and Ma(2021)}]{cong2021input}
+Cong, P.; Zhu, X.; and Ma, Y. 2021.
+\newblock Input-output balanced framework for long-tailed lidar semantic
+  segmentation.
+\newblock In \emph{2021 IEEE International Conference on Multimedia and Expo
+  (ICME)}, 1--6. IEEE.
+
+\bibitem[{Cong et~al.(2022)Cong, Zhu, Qiao, Ren, Peng, Hou, Xu, Yang, Manocha,
+  and Ma}]{Cong_2022_CVPR}
+Cong, P.; Zhu, X.; Qiao, F.; Ren, Y.; Peng, X.; Hou, Y.; Xu, L.; Yang, R.;
+  Manocha, D.; and Ma, Y. 2022.
+\newblock STCrowd: A Multimodal Dataset for Pedestrian Perception in Crowded
+  Scenes.
+\newblock In \emph{CVPR}, 19608--19617.
+
+\bibitem[{Dong et~al.(2019)Dong, Jiang, Huang, Bao, and Zhou}]{dong2019fast}
+Dong, J.; Jiang, W.; Huang, Q.; Bao, H.; and Zhou, X. 2019.
+\newblock Fast and robust multi-person 3d pose estimation from multiple views.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 7792--7801.
+
+\bibitem[{Fan, Su, and Guibas(2017)}]{fan2017point}
+Fan, H.; Su, H.; and Guibas, L.~J. 2017.
+\newblock A Point Set Generation Network for 3D Object Reconstruction from a
+  Single Image.
+\newblock In \emph{CVPR}.
+
+\bibitem[{F{\"u}rst et~al.(2021)F{\"u}rst, Gupta, Schuster, Wasenm{\"u}ller,
+  and Stricker}]{furst2021hperl}
+F{\"u}rst, M.; Gupta, S.~T.; Schuster, R.; Wasenm{\"u}ller, O.; and Stricker,
+  D. 2021.
+\newblock HPERL: 3d human pose estimation from RGB and lidar.
+\newblock In \emph{2020 25th International Conference on Pattern Recognition
+  (ICPR)}, 7321--7327. IEEE.
+
+\bibitem[{Han et~al.(2022)Han, Cong, Xu, Wang, Yu, and Ma}]{han2022licamgait}
+Han, X.; Cong, P.; Xu, L.; Wang, J.; Yu, J.; and Ma, Y. 2022.
+\newblock LiCamGait: Gait Recognition in the Wild by Using LiDAR and Camera
+  Multi-modal Visual Sensors.
+\newblock \emph{arXiv preprint arXiv:2211.12371}.
+
+\bibitem[{Ionescu et~al.(2013)Ionescu, Papava, Olaru, and
+  Sminchisescu}]{ionescu2013human3}
+Ionescu, C.; Papava, D.; Olaru, V.; and Sminchisescu, C. 2013.
+\newblock Human3. 6m: Large scale datasets and predictive methods for 3d human
+  sensing in natural environments.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 36(7): 1325--1339.
+
+\bibitem[{Kocabas, Karagoz, and Akbas(2019)}]{kocabas2019self}
+Kocabas, M.; Karagoz, S.; and Akbas, E. 2019.
+\newblock Self-supervised learning of 3d human pose using multi-view geometry.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision
+  and pattern recognition}, 1077--1086.
+
+\bibitem[{Ku et~al.(2018)Ku, Mozifian, Lee, Harakeh, and
+  Waslander}]{ku2018joint}
+Ku, J.; Mozifian, M.; Lee, J.; Harakeh, A.; and Waslander, S.~L. 2018.
+\newblock Joint 3d proposal generation and object detection from view
+  aggregation.
+\newblock In \emph{IROS}, 1--8. IEEE.
+
+\bibitem[{Li et~al.(2021)Li, Xu, Chen, Bian, Yang, and Lu}]{li2021hybrik}
+Li, J.; Xu, C.; Chen, Z.; Bian, S.; Yang, L.; and Lu, C. 2021.
+\newblock Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d
+  human pose and shape estimation.
+\newblock In \emph{CVPR}, 3383--3393.
+
+\bibitem[{Li et~al.(2022{\natexlab{a}})Li, Zhang, Wang, Shen, Wen, Ma, Xu, Yu,
+  and Wang}]{Li2022LiDARCapLM}
+Li, J.; Zhang, J.; Wang, Z.; Shen, S.; Wen, C.; Ma, Y.; Xu, L.; Yu, J.; and
+  Wang, C. 2022{\natexlab{a}}.
+\newblock LiDARCap: Long-range Marker-less 3D Human Motion Capture with LiDAR
+  Point Clouds.
+\newblock \emph{ArXiv}, abs/2203.14698.
+
+\bibitem[{Li et~al.(2022{\natexlab{b}})Li, Zhang, Wang, Shen, Wen, Ma, Xu, Yu,
+  and Wang}]{li2022lidarcap}
+Li, J.; Zhang, J.; Wang, Z.; Shen, S.; Wen, C.; Ma, Y.; Xu, L.; Yu, J.; and
+  Wang, C. 2022{\natexlab{b}}.
+\newblock LiDARCap: Long-range Marker-less 3D Human Motion Capture with LiDAR
+  Point Clouds.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 20502--20512.
+
+\bibitem[{Li et~al.(2022{\natexlab{c}})Li, Yu, Meng, Caine, Ngiam, Peng, Shen,
+  Lu, Zhou, Le et~al.}]{li2022deepfusion}
+Li, Y.; Yu, A.~W.; Meng, T.; Caine, B.; Ngiam, J.; Peng, D.; Shen, J.; Lu, Y.;
+  Zhou, D.; Le, Q.~V.; et~al. 2022{\natexlab{c}}.
+\newblock Deepfusion: Lidar-camera deep fusion for multi-modal 3d object
+  detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 17182--17191.
+
+\bibitem[{Liang et~al.(2022)Liang, He, Zhao, Li, Wang, Yu, and
+  Xu}]{liang2022hybridcap}
+Liang, H.; He, Y.; Zhao, C.; Li, M.; Wang, J.; Yu, J.; and Xu, L. 2022.
+\newblock HybridCap: Inertia-aid Monocular Capture of Challenging Human
+  Motions.
+\newblock \emph{arXiv preprint arXiv:2203.09287}.
+
+\bibitem[{Liang et~al.(2018)Liang, Yang, Wang, and Urtasun}]{liang2018deep}
+Liang, M.; Yang, B.; Wang, S.; and Urtasun, R. 2018.
+\newblock Deep continuous fusion for multi-sensor 3d object detection.
+\newblock In \emph{ECCV}, 641--656.
+
+\bibitem[{Liu et~al.(2022)Liu, Tang, Amini, Yang, Mao, Rus, and
+  Han}]{liu2022bevfusion}
+Liu, Z.; Tang, H.; Amini, A.; Yang, X.; Mao, H.; Rus, D.; and Han, S. 2022.
+\newblock BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye
+  View Representation.
+\newblock \emph{arXiv preprint arXiv:2205.13542}.
+
+\bibitem[{Loper et~al.(2015)Loper, Mahmood, Romero, Pons-Moll, and
+  Black}]{loper2015smpl}
+Loper, M.; Mahmood, N.; Romero, J.; Pons-Moll, G.; and Black, M.~J. 2015.
+\newblock SMPL: A skinned multi-person linear model.
+\newblock \emph{TOG}, 34(6): 1--16.
+
+\bibitem[{Mallot et~al.(1991)Mallot, B{\"u}lthoff, Little, and
+  Bohrer}]{mallot1991inverse}
+Mallot, H.~A.; B{\"u}lthoff, H.~H.; Little, J.; and Bohrer, S. 1991.
+\newblock Inverse perspective mapping simplifies optical flow computation and
+  obstacle detection.
+\newblock \emph{Biological cybernetics}, 64(3): 177--185.
+
+\bibitem[{Martinez et~al.(2017)Martinez, Hossain, Romero, and
+  Little}]{martinez2017simple}
+Martinez, J.; Hossain, R.; Romero, J.; and Little, J.~J. 2017.
+\newblock A simple yet effective baseline for 3d human pose estimation.
+\newblock In \emph{ICCV}, 2640--2649.
+
+\bibitem[{Mehta et~al.(2017)Mehta, Rhodin, Casas, Fua, Sotnychenko, Xu, and
+  Theobalt}]{mehta2017monocular}
+Mehta, D.; Rhodin, H.; Casas, D.; Fua, P.; Sotnychenko, O.; Xu, W.; and
+  Theobalt, C. 2017.
+\newblock Monocular 3d human pose estimation in the wild using improved cnn
+  supervision.
+\newblock In \emph{2017 international conference on 3D vision (3DV)}, 506--516.
+  IEEE.
+
+\bibitem[{Mehta, Sotnychenko, and etc.(2018)}]{mehta2018single}
+Mehta, D.; Sotnychenko, O.; and etc. 2018.
+\newblock Single-shot multi-person 3d pose estimation from monocular rgb.
+\newblock In \emph{2018 International Conference on 3D Vision (3DV)}, 120--130.
+  IEEE.
+
+\bibitem[{Mehta et~al.(2020)Mehta, Sotnychenko, Mueller, Xu, Elgharib, Fua,
+  Seidel, Rhodin, Pons-Moll, and Theobalt}]{mehta2020xnect}
+Mehta, D.; Sotnychenko, O.; Mueller, F.; Xu, W.; Elgharib, M.; Fua, P.; Seidel,
+  H.-P.; Rhodin, H.; Pons-Moll, G.; and Theobalt, C. 2020.
+\newblock XNect: Real-time multi-person 3D motion capture with a single RGB
+  camera.
+\newblock \emph{TOG}, 39(4): 82--1.
+
+\bibitem[{Mehta, Sridhar, and etc.(2017)}]{mehta2017vnect}
+Mehta, D.; Sridhar, S.; and etc. 2017.
+\newblock Vnect: Real-time 3d human pose estimation with a single rgb camera.
+\newblock \emph{TOG}, 36(4): 1--14.
+
+\bibitem[{Moon, Chang, and Lee(2019)}]{moon2019camera}
+Moon, G.; Chang, J.~Y.; and Lee, K.~M. 2019.
+\newblock Camera distance-aware top-down approach for 3d multi-person pose
+  estimation from a single rgb image.
+\newblock In \emph{ICCV}, 10133--10142.
+
+\bibitem[{Pavlakos et~al.(2017)Pavlakos, Zhou, Derpanis, and
+  Daniilidis}]{pavlakos2017coarse}
+Pavlakos, G.; Zhou, X.; Derpanis, K.~G.; and Daniilidis, K. 2017.
+\newblock Coarse-to-fine volumetric prediction for single-image 3D human pose.
+\newblock In \emph{CVPR}, 7025--7034.
+
+\bibitem[{Piergiovanni et~al.(2021)Piergiovanni, Casser, Ryoo, and
+  Angelova}]{piergiovanni20214d}
+Piergiovanni, A.; Casser, V.; Ryoo, M.~S.; and Angelova, A. 2021.
+\newblock 4d-net for learned multi-modal alignment.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, 15435--15445.
+
+\bibitem[{Prakash, Chitta, and Geiger(2021)}]{prakash2021multi}
+Prakash, A.; Chitta, K.; and Geiger, A. 2021.
+\newblock Multi-modal fusion transformer for end-to-end autonomous driving.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 7077--7087.
+
+\bibitem[{Qi et~al.(2017)Qi, Su, Mo, and Guibas}]{qi2017pointnet}
+Qi, C.~R.; Su, H.; Mo, K.; and Guibas, L.~J. 2017.
+\newblock Pointnet: Deep learning on point sets for 3d classification and
+  segmentation.
+\newblock In \emph{CVPR}, 652--660.
+
+\bibitem[{Rhodin, Salzmann, and Fua(2018)}]{rhodin2018unsupervised}
+Rhodin, H.; Salzmann, M.; and Fua, P. 2018.
+\newblock Unsupervised geometry-aware representation for 3d human pose
+  estimation.
+\newblock In \emph{Proceedings of the European conference on computer vision
+  (ECCV)}, 750--767.
+
+\bibitem[{Rogez, Weinzaepfel, and Schmid(2019)}]{rogez2019lcr}
+Rogez, G.; Weinzaepfel, P.; and Schmid, C. 2019.
+\newblock Lcr-net++: Multi-person 2d and 3d pose detection in natural images.
+\newblock \emph{TPAMI}, 42(5): 1146--1161.
+
+\bibitem[{Sun et~al.(2021)Sun, Bao, Liu, Fu, Black, and Mei}]{sun2021monocular}
+Sun, Y.; Bao, Q.; Liu, W.; Fu, Y.; Black, M.~J.; and Mei, T. 2021.
+\newblock Monocular, one-stage, regression of multiple 3d people.
+\newblock In \emph{ICCV}, 11179--11188.
+
+\bibitem[{Sun et~al.(2022)Sun, Liu, Bao, Fu, Mei, and Black}]{sun2022putting}
+Sun, Y.; Liu, W.; Bao, Q.; Fu, Y.; Mei, T.; and Black, M.~J. 2022.
+\newblock Putting people in their place: Monocular regression of 3d people in
+  depth.
+\newblock In \emph{CVPR}, 13243--13252.
+
+\bibitem[{Tome, Russell, and Agapito(2017)}]{tome2017lifting}
+Tome, D.; Russell, C.; and Agapito, L. 2017.
+\newblock Lifting from the deep: Convolutional 3d pose estimation from a single
+  image.
+\newblock In \emph{CVPR}, 2500--2509.
+
+\bibitem[{Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones,
+  Gomez, Kaiser, and Polosukhin}]{vaswani2017attention}
+Vaswani, A.; Shazeer, N.; Parmar, N.; Uszkoreit, J.; Jones, L.; Gomez, A.~N.;
+  Kaiser, {\L}.; and Polosukhin, I. 2017.
+\newblock Attention is all you need.
+\newblock \emph{Advances in neural information processing systems}, 30.
+
+\bibitem[{V{\'e}ges and L{\H{o}}rincz(2019)}]{veges2019absolute}
+V{\'e}ges, M.; and L{\H{o}}rincz, A. 2019.
+\newblock Absolute human pose estimation with depth prediction network.
+\newblock In \emph{IJCNN}, 1--7. IEEE.
+
+\bibitem[{Von~Marcard et~al.(2018)Von~Marcard, Henschel, Black, Rosenhahn, and
+  Pons-Moll}]{von20183DPW}
+Von~Marcard, T.; Henschel, R.; Black, M.~J.; Rosenhahn, B.; and Pons-Moll, G.
+  2018.
+\newblock Recovering accurate 3d human pose in the wild using imus and a moving
+  camera.
+\newblock In \emph{Proceedings of the European Conference on Computer Vision
+  (ECCV)}, 601--617.
+
+\bibitem[{Vora et~al.(2020)Vora, Lang, Helou, and
+  Beijbom}]{vora2020pointpainting}
+Vora, S.; Lang, A.~H.; Helou, B.; and Beijbom, O. 2020.
+\newblock Pointpainting: Sequential fusion for 3d object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF conference on computer vision
+  and pattern recognition}, 4604--4612.
+
+\bibitem[{Wandt et~al.(2021)Wandt, Rudolph, Zell, Rhodin, and
+  Rosenhahn}]{wandt2021canonpose}
+Wandt, B.; Rudolph, M.; Zell, P.; Rhodin, H.; and Rosenhahn, B. 2021.
+\newblock Canonpose: Self-supervised monocular 3d human pose estimation in the
+  wild.
+\newblock In \emph{CVPR}, 13294--13304.
+
+\bibitem[{Wang et~al.(2020{\natexlab{a}})Wang, Li, Liu, Qian, and
+  Lu}]{wang2020hmor}
+Wang, C.; Li, J.; Liu, W.; Qian, C.; and Lu, C. 2020{\natexlab{a}}.
+\newblock Hmor: Hierarchical multi-person ordinal relations for monocular
+  multi-person 3d pose estimation.
+\newblock In \emph{ECCV}, 242--259. Springer.
+
+\bibitem[{Wang et~al.(2021)Wang, Ma, Zhu, and Yang}]{wang2021pointaugmenting}
+Wang, C.; Ma, C.; Zhu, M.; and Yang, X. 2021.
+\newblock Pointaugmenting: Cross-modal augmentation for 3d object detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 11794--11803.
+
+\bibitem[{Wang et~al.(2020{\natexlab{b}})Wang, Sun, Cheng, Jiang, Deng, Zhao,
+  Liu, Mu, Tan, Wang et~al.}]{wang2020hrnet}
+Wang, J.; Sun, K.; Cheng, T.; Jiang, B.; Deng, C.; Zhao, Y.; Liu, D.; Mu, Y.;
+  Tan, M.; Wang, X.; et~al. 2020{\natexlab{b}}.
+\newblock Deep high-resolution representation learning for visual recognition.
+\newblock \emph{TPAMI}, 43(10): 3349--3364.
+
+\bibitem[{Yin, Zhou, and Kr{\"a}henb{\"u}hl(2021)}]{Yin2020Centerbased3O}
+Yin, T.; Zhou, X.; and Kr{\"a}henb{\"u}hl, P. 2021.
+\newblock Center-based 3D Object Detection and Tracking.
+\newblock \emph{CVPR}.
+
+\bibitem[{Ying and Zhao(2021)}]{ying2021rgb}
+Ying, J.; and Zhao, X. 2021.
+\newblock Rgb-D Fusion For Point-Cloud-Based 3d Human Pose Estimation.
+\newblock In \emph{2021 IEEE International Conference on Image Processing
+  (ICIP)}, 3108--3112. IEEE.
+
+\bibitem[{Yu et~al.(2021)Yu, Wang, Xu, Ni, Zhao, Wang, and
+  Zhang}]{yu2021skeleton2mesh}
+Yu, Z.; Wang, J.; Xu, J.; Ni, B.; Zhao, C.; Wang, M.; and Zhang, W. 2021.
+\newblock Skeleton2Mesh: Kinematics Prior Injected Unsupervised Human Mesh
+  Recovery.
+\newblock In \emph{ICCV}, 8619--8629.
+
+\bibitem[{Zhang et~al.(2021)Zhang, Cai, Yan, Feng et~al.}]{zhang2021direct}
+Zhang, J.; Cai, Y.; Yan, S.; Feng, J.; et~al. 2021.
+\newblock Direct multi-view multi-person 3d pose estimation.
+\newblock \emph{Advances in Neural Information Processing Systems}, 34:
+  13153--13164.
+
+\bibitem[{Zhang et~al.(2022{\natexlab{a}})Zhang, Tu, Yang, Chen, and
+  Yuan}]{temporal-zhang2022mixste}
+Zhang, J.; Tu, Z.; Yang, J.; Chen, Y.; and Yuan, J. 2022{\natexlab{a}}.
+\newblock MixSTE: Seq2seq Mixed Spatio-Temporal Encoder for 3D Human Pose
+  Estimation in Video.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 13232--13242.
+
+\bibitem[{Zhang et~al.(2022{\natexlab{b}})Zhang, Wang, Shi, Gao, Xu, and
+  Yu}]{zhang2022mutual}
+Zhang, J.; Wang, J.; Shi, Y.; Gao, F.; Xu, L.; and Yu, J. 2022{\natexlab{b}}.
+\newblock Mutual Adaptive Reasoning for Monocular 3D Multi-Person Pose
+  Estimation.
+\newblock \emph{arXiv preprint arXiv:2207.07900}.
+
+\bibitem[{Zhao et~al.(2022)Zhao, Ren, He, Cong, Liang, Yu, Xu, and
+  Ma}]{Zhao2022LiDARaidIP}
+Zhao, C.; Ren, Y.; He, Y.; Cong, P.; Liang, H.; Yu, J.; Xu, L.; and Ma, Y.
+  2022.
+\newblock LiDAR-aid Inertial Poser: Large-scale Human Motion Capture by Sparse
+  Inertial and LiDAR Sensors.
+\newblock \emph{ArXiv}, abs/2205.15410.
+
+\bibitem[{Zhen et~al.(2020)Zhen, Fang, Sun, Liu, Jiang, Bao, and
+  Zhou}]{zhen2020smap}
+Zhen, J.; Fang, Q.; Sun, J.; Liu, W.; Jiang, W.; Bao, H.; and Zhou, X. 2020.
+\newblock Smap: Single-shot multi-person absolute 3d pose estimation.
+\newblock In \emph{ECCV}, 550--566. Springer.
+
+\bibitem[{Zheng et~al.(2021)Zheng, Zhu, Mendieta, Yang, Chen, and
+  Ding}]{temporal-zheng20213d}
+Zheng, C.; Zhu, S.; Mendieta, M.; Yang, T.; Chen, C.; and Ding, Z. 2021.
+\newblock 3d human pose estimation with spatial and temporal transformers.
+\newblock In \emph{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}, 11656--11665.
+
+\bibitem[{Zheng et~al.(2022)Zheng, Shi, Gorban, Mao, Song, Qi, Liu, Chari,
+  Cornman, Zhou et~al.}]{zheng2022multi}
+Zheng, J.; Shi, X.; Gorban, A.; Mao, J.; Song, Y.; Qi, C.~R.; Liu, T.; Chari,
+  V.; Cornman, A.; Zhou, Y.; et~al. 2022.
+\newblock Multi-modal 3D Human Pose Estimation with 2D Weak Supervision in
+  Autonomous Driving.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition}, 4478--4487.
+
+\bibitem[{Zhu et~al.(2020)Zhu, Ma, Wang, Xu, Shi, and Lin}]{Zhu2020SSNSS}
+Zhu, X.; Ma, Y.; Wang, T.; Xu, Y.; Shi, J.; and Lin, D. 2020.
+\newblock SSN: Shape Signature Networks for Multi-class Object Detection from
+  Point Clouds.
+\newblock \emph{ECCV}.
+
+\bibitem[{Zhu et~al.(2021)Zhu, Zhou, Wang, Hong, Li, Ma, Li, Yang, and
+  Lin}]{zhu2021cylindrical}
+Zhu, X.; Zhou, H.; Wang, T.; Hong, F.; Li, W.; Ma, Y.; Li, H.; Yang, R.; and
+  Lin, D. 2021.
+\newblock Cylindrical and asymmetrical 3d convolution networks for lidar-based
+  perception.
+\newblock \emph{TPAMI}.
+
+\bibitem[{Zimmermann et~al.(2018)Zimmermann, Welschehold, Dornhege, Burgard,
+  and Brox}]{zimmermann20183d}
+Zimmermann, C.; Welschehold, T.; Dornhege, C.; Burgard, W.; and Brox, T. 2018.
+\newblock 3d human pose estimation in rgbd images for robotic task learning.
+\newblock In \emph{ICRA}, 1986--1992. IEEE.
+
+\end{thebibliography}

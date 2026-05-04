@@ -1,0 +1,25 @@
+\begin{table*}[]
+\centering
+
+\resizebox{\linewidth}{!}{ 
+\tiny\begin{tabular}{c|c|cccccccccc}
+\hline
+Robot Type                      & Methods                                                & PA-MPJPE↓ & MPJPE↓ & Traj↓ & Orie↓ & C\_prec↑ & C\_rec↑ & C_acc↑& C_F1↑ & FID↓ & R-score↑ \\ \hline
+\multirow{5}{*}{Unitree H1} & JRT~\cite{xu2023joint}          & 3.35& 11.99& 0.222& 36.51& 0.839& 0.798& 0.800& 0.818& 0.333& 0.420\\ 
+\cline{2-12}& MRT~\cite{wang2021multi}         & 3.16 & 11.31 & 0.220 & 35.63 & \textbf{0.852} & 0.803 & 0.810 & 0.827 & 0.320 & 0.424 \\ 
+\cline{2-12}& ReGenNet~\cite{xu2024regennet}   & 5.06 & 18.20 & 0.383 & 56.05 & 0.807 & 0.539 & 0.667 & 0.646 & 0.763 &0.363 \\ 
+\cline{2-12}& SAST~\cite{mueller2024massively} & 5.31 & 19.77 & 0.322 & 46.69 & 0.805 & 0.742 & 0.753 & 0.772 & 0.527 & 0.409 \\ 
+\cline{2-12}& Ours                             & \textbf{2.70} & \textbf{9.52} & \textbf{0.125} & \textbf{25.95} & 0.842 & \textbf{0.869} & \textbf{0.834} & \textbf{0.855} & \textbf{0.178} & \textbf{0.478} \\ \hline
+\multirow{5}{*}{LEJU Kuavo} & JRT~\cite{xu2023joint}           & 3.11& 10.82& 0.199& 32.52& \textbf{0.849}& 0.788& 0.808& 0.817& 0.320& 0.445\\ 
+\cline{2-12}& MRT~\cite{wang2021multi}         & 2.96 & 10.54 & 0.206 & 35.18 & 0.836 & 0.797 & 0.804 & 0.816 & 0.294 & 0.447 \\ 
+\cline{2-12}& ReGenNet~\cite{xu2024regennet}   & 4.05 & 14.72 & 0.320 & 51.60 & 0.783 & 0.647 & 0.710 & 0.708 & 0.562 & 0.397 \\ 
+\cline{2-12}& SAST~\cite{mueller2024massively} & 5.15 &  19.52 & 0.352 & 53.12  & 0.792 & 0.704  & 0.738 & 0.746 & 0.553 & 0.417 \\ 
+\cline{2-12}& Ours                             & \textbf{2.46} & \textbf{8.74} & \textbf{0.122} & \textbf{24.77} & 0.844& \textbf{0.862} & \textbf{0.838} & \textbf{0.853} & \textbf{0.178} & \textbf{0.498} \\ \hline
+\end{tabular}
+}
+\caption{{Quantitative comparison of human-robot interaction baselines on the Inter-HRI benchmark.} 
+%Our Robotic Interaction Model demonstrates superior results across all evaluated metrics, consistently outperforming recent state-of-the-art baselines. Notably, our method achieves the lowest PA-MPJPE and MPJPE values, as well as significant gains in contact-related metrics (C_rec, C_F1) and perceptual realism (FID). These improvements validate the effectiveness of our approach in generating accurate, natural, and socially-appropriate robot motions, thereby advancing the state of the art in real-time, context-adaptive human-robot interaction.
+}
+\vspace{-4ex}
+\label{tab:hhi}
+\end{table*}

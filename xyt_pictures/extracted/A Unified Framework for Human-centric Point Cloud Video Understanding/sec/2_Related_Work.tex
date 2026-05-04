@@ -1,0 +1,72 @@
+\section{Related Work}
+\label{sec:related_work}
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=2.1\columnwidth]{pic/main_figure_with_graph_new_token.drawio.pdf}
+    \caption{The main pipeline of UniPVU-Human, which can be divided into three stages, including (a) Prior Knowledge Extraction, (b) Semantic-Guided Spatio-temporal Representation Self-learning, and (c) Hierarchical Feature Enhanced Fine-tuning. First, the pre-trained HBSeg and HMFlow are used to provide geometric and dynamic information, including body part segmentation results and point-wise motion flow. Then, our self-learning stage incorporates a body-part-based mask prediction mechanism designed to facilitate the acquisition of geometric and dynamic representations of humans in the absence of annotations. Finally, we integrate global-level, part-level, and point-level features to boost the knowledge transfer to downstream tasks in the fine-tuning stage. } 
+    \label{fig:main_figure}
+    \vspace{-1ex}
+\end{figure*}
+\subsection{Feature Learning for Point Clouds}
+Point cloud is an important representation for 3D scenes and objects, and tremendous efforts have been made~\cite{ma2022rethinking,qian2022pointnext} for extracting valuable features from point clouds. PointNet~\cite{qi2017pointnet} is to learn a spatial encoding of each point and then aggregate all individual point features to a global point cloud signature\cite{qi2017pointnet++}.
+PointNet++\cite{qi2017pointnet++} further introduces a hierarchical feature learning paradigm to capture the local geometric structures recursively. 
+PointNeXt~\cite{qian2022pointnext} revisits PointNet++\cite{qi2017pointnet++} with improved
+training and scaling strategies.
+PCT~\cite{guo2021pct} and PointTransformer~\cite{zhao2021point} apply attention-based mechanism~\cite{vaswani2017attention} to point cloud representations.
+Subsequently, many methods~\cite{choy20194d,liu2019meteornet,choy20194d,fan2022pstnet} extend them to process dynamic point cloud videos for more extensive applications.  
+%MinkowskiNet~\cite{choy20194d} uses 4D sparse convolution on 4D occupancy grid converted from point clouds and PSTNet~\cite{fan2022pstnet} constructs the spatio-temporal convolution hierarchically.
+%3DV~\cite{wang20203dv} employs a temporal rank pooling to integrate point motion into a voxel set and then extracts the spatio-temporal representation using PointNet++.
+%MeteorNet~\cite{liu2019meteornet} appends a temporal dimension to PointNet++ to process 4D point clouds.
+P4Transformer~\cite{fan2021point} and PST-Transformer~\cite{fan2022point} use transformers among all local 4D tubes' features to capture long relationships. With the development of autonomous driving, some works~\cite{voxelnet,zhu2021cylindrical,centerformer,centerpoint} propose voxel-based or voxel-point-based feature extractors to process LiDAR point clouds for high efficiency.
+However, all these methods are not specifically designed for human dynamic point clouds, lacking the consideration of human-specific characteristics. 
+
+\subsection{LiDAR-based Human-centric Understanding}
+Recently, the understanding of human-centric point cloud videos, which are captured by LiDARs in large-scale scenes, has become an emerging field with a lot of new datasets and benchmarks for various human-centric tasks. 
+LiDARCap~\cite{li2022lidarcap} contributes an in-the-wild human motion dataset and proposes a LiDAR point cloud video-based motion capture framework. Subsequent works, LIP~\cite{ren2023lidar}, explores the feature fusion of different visual sensors to address 3D pose estimation task based on point clouds and images. 
+% Some works~\cite{shen2023lidargait,han2022licamgait} leverage point cloud videos to recognize the human gaits with the help of 3D geometric information. 
+Recently, HuCenLife~\cite{xu2023human} proposes a huge human-centric dataset with diverse daily-life scenarios and rich human activities, and provides baselines for human perception, action recognition, motion prediction, etc. However, all these approaches follow previous generic backbones to extract features from sequence human point clouds without making use of human prior knowledge. Moreover, they are all supervised methods, causing unsatisfactory results when generalizing to other datasets or tasks.
+
+
+\subsection{Self-supervised Learning for Point Clouds}
+To understand the point cloud representation from data itself instead of supervision by manual annotations, some methods improve the generalization capability via self-learning in the pre-training stage. There exist many methods~\cite{xie2020pointcontrast,yu2022point,pang2022masked,zhang2022point,chen2023pointgpt} learning the geometric representation from static point cloud in a self-supervised manner. Recently, more and more self-learning methods~\cite{wang2021self,zhang2023complete} are proposed to learn the spatio-temporal representations of point cloud videos. Some approaches~\cite{sheng2023contrastive,sheng2023point,shen2023pointcmp} adopt contrastive learning spatially and among frames to learn inherent geometric and dynamic features. However, LiDAR point clouds are sparsity-varying across different capture distances, are usually incomplete due to occlusions, and contain undesired noises, making these methods unstable due to low-quality positive and negative pairs. In the recent study~\cite{shen2023masked}, mask prediction~\cite{he2022masked} is employed for self-learning in point cloud videos by segmenting sequential point clouds into tubes. However, it flattens all tubes during feature learning, inadvertently affecting the semantic and dynamic consistency in 4D videos. Additionally, all these methods lack customization for the specific requirements of human-centric point cloud video understanding.
+
+
+%PointContrast~\cite{xie2020pointcontrast} used contrastive loss to associated matched point pairs in two views of point cloud generated from various data augmentations. PointBERT~\cite{yu2022point} introduced masked point modeling to predict the latent representation from an offline tokenizer. PointMAE~\cite{pang2022masked} solved the problem of position information leakage of PointBERT by shifting the mask tokens to the decoder and only input unmasked tokens into encoder. PointM2AE~\cite{zhang2022point} additionally utilizes a hierarchical transformer architecture of PointMAE to extract the multi scale representation of point clouds.PointGPT~\cite{chen2023pointgpt} arranges point patches in an ordered sequence exploit the GPT scheme for point cloud self-supervised learning.
+
+%Recently, self-supervised learning methods are proposed to learn the spatial-temporal representation of point cloud video or sequences better. 
+%Wang et al.~\cite{wang2021self} designs pretext task to pre-train dynamic point cloud networks by predicting the temporal order of shuffled segments.
+%C2P~\cite{zhang2023complete} input the complete and partial sequences to teacher and student networks respectively and develop complete-to-partial 4D knowledge distillation. 
+
+
+%(Remaining Contrastive Predictive Autoencoders for Dynamic Point Cloud~\cite{sheng2023contrastive}, 
+
+%PointCMP Contrastive Mask Prediction for Self-supervised Learning~\cite{shen2023pointcmp}, 
+
+%Point Contrastive Prediction with Semantic Clustering for Self-Supervised Learning on Point Cloud Videos~\cite{sheng2023point}, 
+
+%Masked Spatio-Temporal Structure Prediction for Self-supervised Learning~\cite{shen2023masked})
+
+
+
+
+
+% \subsection{Self-supervised Representation Learning in Indoor Point Cloud Video }
+% \subsection{Indoor Point Cloud Video Understanding Based on Depth Cameras}
+% For some indoor datasets like~\cite{shahroudy2016ntu,li2010action} based on depth or RGB-D cameras, a few works~\cite{liu2019meteornet,wen2022point,zhong2022no,fan2022pstnet,fan2021point,fan2022point,sheng2023contrastive,shen2023pointcmp,shen2023masked,sheng2023point} attempt to build dynamic models to process point cloud videos.
+% ~\cite{fan2022pstnet,fan2021point,fan2022point} select anchor frames to divide long point cloud video sequences in to clips containing several frames. Then they select spatial anchor points in anchor frames to build point tubes and apply 4D convolution to capture the local spatial-temporal features. After that, PSTNet ~\cite{fan2022pstnet} continues to apply 4D convolution on point tubes to form a stacked convolutions, which limits the temporal modeling range by observing only a few frames~\cite{fan2022point}. P4Transformer~\cite{fan2021point} and PST-Transformer~\cite{fan2022point} use transformer to build the global relationships among all tubes features.
+% Based on these methods, ~\cite{sheng2023contrastive,shen2023pointcmp,sheng2023point,shen2023masked} employ self-supervised pre-training by contrastive learning or mask prediction to learn appearance and dynamic representation of point cloud videos. 
+
+% However, applying transformer on all point tubes to model global spatial-temporal representation jointly suffers high time expenditure and large memory consumption for the square time complexity of self-attention on flattened point tubes($O(T*N)^2$, where $T$ is the number of clips and $N$ is the number of tubes in a clip). 
+% Besides, these methods don't build the one-to-one temporal correspondence of point tubes in adjacent clips, thus cannot track the local structure in long term to extract the motion features of fine-grained structure in global context, which is of vital importance in capturing the geometric and motion feature of human point clouds. In our method, we utilize prior knowledge of human body to deconstruct the human into fine-grained parts, then decouple the geometric and motion feature extraction by applying spatial modeling and temporal modeling respectively, which is more effective and efficient.
+% \subsection{Human-centric Outdoor Point Cloud Video Understanding Benchmarks Based on LiDAR}
+% Recently, the perception and understanding on LiDAR-based human-centric point cloud video sequence has become an emerging field with a lot of new datasets and benchmarks~\cite{li2022lidarcap,xu2023human,cong2023weakly,shen2023lidargait,ren2023lidar}. LiDARCap~\cite{li2022lidarcap} contributes a human motion capture dataset at a long range. 
+% Then some methods like LIP~\cite{ren2023lidar} and FusionPose~\cite{cong2023weakly} explore the feature fusion of different visual sensors to perform pose estimation task with multimodal datasets. 
+% LiDAR is also used to recognize the human gait~\cite{shen2023lidargait} and outperforms 2D methods by leveraging the 3D geometric information. HuCenLife~\cite{xu2023human} is the first LiDAR dataset collected in real daily-life scenarios with rich human activities. 
+% However, most of these works design task-specific methods on corresponding benchmark, hence there does not exist a multi-tasks unified framework for human-centric LiDAR-based point cloud video understanding. In this work, we propose such framework by making full use of the geometric and motion feature of LiDAR human.
+
+% \subsection{ Scene Flow in Point Cloud}
+% \label{subsec:scene_flow}
+% Scene flow estimation is a fundamental task that estimates the dense 3D displacement vectors of points from two consecutive frames~\cite{cheng2023multi}.
+% In recent years, there has been rapid progress in scene flow estimation in point cloud~\cite{cheng2023multi,huang2022dynamic,ding2022fh,puy2020flot,liu2019flownet3d,wang2023ihnet,teed2021raft,lang2023scoop,shen2023self}. FlowNet3D~\cite{liu2019flownet3d} designs a flow embedding layer which mix the feature of two consecutive point cloud frames extracted from PointNet++~\cite{qi2017pointnet++}. FLOT~\cite{puy2020flot} casts the task of scene flow estimation as finding soft correspondences on a pair of point clouds via solving an optimal transport problem~\cite{li2023deep}. RAFT-3D~\cite{teed2021raft} estimates the dense flow field by iteratively updating the SE3 field with the constructed 4D correlation volume~\cite{dong2023nsm4d}.
+
+% Based on these scene flow estimators, some methods build models to extract the motion feature of dynamic point clouds. MeteorNet~\cite{liu2019meteornet} use scene flow estimator to construct point-wise spatiotemporal neighborhoods. NSM4D~\cite{dong2023nsm4d} estimate scene flows by pretrained RAFT-3D~\cite{teed2021raft} to update the motion features of point cloud videos. However, most of these works focuses on rigid transformations in scenes. For non-rigid objects like the human body, there exist not only global rotations and translations but also local rotations and translations, such as relative motions among joints, which is more complicated and challenging. To address this problem, we create a synthetic dataset with human motion flow ground truth to train the flow estimator, which can provide point-wise motion information to benefit the motion feature extraction of point cloud humans.
