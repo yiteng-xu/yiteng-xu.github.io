@@ -169,7 +169,7 @@
   window.addEventListener('resize', updateProgress);
 
   const targets = document.querySelectorAll(
-    '.fh-shell, .milestones-section, .news-section, .travel-guide, .paper-box, .patent-box, .skills-section, .awards-section, #educations + ul, .skill-points'
+    '.fh-shell, .milestones-section, .news-section, .travel-guide, .shitai-guide-entry, .paper-box, .patent-box, .skills-section, .awards-section, #educations + ul, .skill-points'
   );
 
   if ('IntersectionObserver' in window) {
