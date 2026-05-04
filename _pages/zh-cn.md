@@ -20,40 +20,15 @@ fiddle_home: true
 <section class="fh-shell" aria-label="Portfolio hero">
   <div class="fh-grid">
     <div class="fh-copy">
-      <p class="fh-kicker">YITENG XU · 上海科技大学 · 以人为中心的 AI</p>
+      <p class="fh-kicker">YITENG XU · 以人为中心的 AI 作品集</p>
       <h1 class="fh-title">以人为中心的<br>三维智能</h1>
       <p class="fh-lead">研究 3D 计算机视觉、机器人与具身智能的交叉领域，打造人机协同学习的交互式系统。</p>
-      <div class="fh-signature" aria-label="研究主题">
-        <span>3D 计算机视觉</span>
-        <span>机器人</span>
-        <span>具身智能</span>
-        <span>Human-in-the-Loop</span>
-      </div>
       <div class="fh-quick-links">
         <a href="#publications">论文</a>
         <a href="#patents">专利</a>
         <a href="#educations">教育经历</a>
         <a href="#skills">技能</a>
       </div>
-      <div class="fh-actions">
-        <a class="fh-button is-primary" href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">查看中文简历</a>
-        <a class="fh-button" href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">英文简历</a>
-        <a class="fh-button is-ghost" href="https://scholar.google.com/citations?user=29Gs2nQAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
-      </div>
-      <dl class="fh-meta-grid">
-        <div>
-          <dt>当前身份</dt>
-          <dd>上海科技大学博士三年级学生</dd>
-        </div>
-        <div>
-          <dt>研究重点</dt>
-          <dd>LiDAR-相机融合、人体运动理解、具身学习</dd>
-        </div>
-        <div>
-          <dt>近期亮点</dt>
-          <dd>SIGGRAPH Asia 2025 论文 SymBridge</dd>
-        </div>
-      </dl>
     </div>
     <div class="fh-media" aria-hidden="true">
       <figure class="fh-main">
@@ -134,18 +109,17 @@ fiddle_home: true
 
 <section class="fh-about" aria-label="关于我">
   <div class="fh-about__copy" markdown="1">
-<p class="fh-about__eyebrow">关于我</p>
-<p class="fh-about__title">研究人与智能机器如何彼此学习、共同进化。</p>
-
 我目前是上海科技大学信息科学与技术学院博士三年级学生（导师：马越新教授）。本科毕业于上海科技大学（2023）。
 
 我的研究方向位于 **3D 计算机视觉**、**机器人** 与 **具身智能** 的交叉点，目标是让智能体（如人形机器人）能够以类人方式感知、理解并与复杂动态的三维世界交互。我特别关注 **多模态传感器融合（LiDAR-相机）**、**三维人体姿态与运动理解**，以及面向人机交互的 **Human-in-the-Loop** 双向学习系统。
   </div>
   <figure class="fh-about__photo">
     <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yiteng Xu" loading="lazy">
-    <figcaption class="fh-about__caption">中国上海 · 上海科技大学信息科学与技术学院</figcaption>
   </figure>
 </section>
+
+<!-- I am actively seeking research internship opportunities for the summer of 2025 that will allow me to apply my research to real-world challenges. -->
+[**查看简历** (中文)](/assets/files/CV_Yiteng_Xu.pdf){:target="_blank"}        [**View My CV** (English)](/assets/files/CV_Yiteng_Xu_English.pdf){:target="_blank"}
 
 
 # 🔥 Milestones

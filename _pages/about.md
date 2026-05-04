@@ -23,40 +23,15 @@ redirect_from:
 <section class="fh-shell" aria-label="Portfolio hero">
   <div class="fh-grid">
     <div class="fh-copy">
-      <p class="fh-kicker">YITENG XU · SHANGHAITECH UNIVERSITY · HUMAN-CENTRIC AI</p>
+      <p class="fh-kicker">YITENG XU · HUMAN-CENTRIC AI PORTFOLIO</p>
       <h1 class="fh-title">Human-Centric<br>3D Intelligence</h1>
       <p class="fh-lead">Researching the interface between 3D Computer Vision, Robotics, and Embodied AI. Building interactive systems where humans and intelligent machines learn together.</p>
-      <div class="fh-signature" aria-label="Research themes">
-        <span>3D Computer Vision</span>
-        <span>Robotics</span>
-        <span>Embodied AI</span>
-        <span>Human-in-the-Loop Systems</span>
-      </div>
       <div class="fh-quick-links">
         <a href="#publications">Publications</a>
         <a href="#patents">Patents</a>
         <a href="#educations">Education</a>
         <a href="#skills">Skills</a>
       </div>
-      <div class="fh-actions">
-        <a class="fh-button is-primary" href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">View CV</a>
-        <a class="fh-button" href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
-        <a class="fh-button is-ghost" href="https://scholar.google.com/citations?user=29Gs2nQAAAAJ&hl=zh-CN" target="_blank" rel="noopener">Google Scholar</a>
-      </div>
-      <dl class="fh-meta-grid">
-        <div>
-          <dt>Current role</dt>
-          <dd>Third-year Ph.D. student at ShanghaiTech University</dd>
-        </div>
-        <div>
-          <dt>Research focus</dt>
-          <dd>LiDAR-camera fusion, human motion understanding, embodied learning</dd>
-        </div>
-        <div>
-          <dt>Recent highlight</dt>
-          <dd>SIGGRAPH Asia 2025 paper on adaptive human-robot symbiosis</dd>
-        </div>
-      </dl>
     </div>
     <div class="fh-media" aria-hidden="true">
       <figure class="fh-main">
@@ -137,18 +112,17 @@ redirect_from:
 
 <section class="fh-about" aria-label="About me">
   <div class="fh-about__copy" markdown="1">
-<p class="fh-about__eyebrow">About</p>
-<p class="fh-about__title">Designing systems where people and intelligent machines can learn from one another.</p>
-
 I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. Yuexin Ma. Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
 
 My research lies at the intersection of **3D Computer Vision**, **Robotics**, and **Embodied AI**. My primary goal is to enable intelligent agents (like humanoid robots) to perceive, understand, and interact with the complex, dynamic 3D world in a human-like manner. I am particularly interested in **multi-modal sensor fusion (LiDAR-Camera)**, **3D human pose and motion understanding**, and building **human-in-the-loop systems** for bidirectional learning in human-robot interaction.
   </div>
   <figure class="fh-about__photo">
     <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yiteng Xu" loading="lazy">
-    <figcaption class="fh-about__caption">Shanghai, China · School of Information Science and Technology</figcaption>
   </figure>
 </section>
+
+<!-- I am actively seeking research internship opportunities for the summer of 2025 that will allow me to apply my research to real-world challenges. -->
+[**查看简历** (中文)](/assets/files/CV_Yiteng_Xu.pdf){:target="_blank"}        [**View My CV** (English)](/assets/files/CV_Yiteng_Xu_English.pdf){:target="_blank"}
 
 
 # 🔥 Milestones
