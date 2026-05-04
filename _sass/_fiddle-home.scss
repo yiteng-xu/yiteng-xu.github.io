@@ -41,7 +41,7 @@
     url("/images/fiddle-style/unipvu-part-black-noise.webp");
   background-size: 100% 34px, 34px 100%, 900px auto;
   background-repeat: repeat, repeat, repeat;
-  opacity: 0.22;
+  opacity: 0.08;
   mix-blend-mode: multiply;
 }
 
@@ -262,9 +262,10 @@
   margin: 0.8rem 0 2.25rem;
   border: 1px solid var(--fh-border);
   border-radius: 34px;
-  background: linear-gradient(145deg, rgba(255, 252, 247, 0.94), rgba(249, 242, 233, 0.97));
+  background: linear-gradient(145deg, rgba(255, 253, 249, 0.985), rgba(250, 245, 237, 0.98));
   box-shadow: 0 36px 96px rgba(34, 46, 40, 0.14);
   overflow: hidden;
+  isolation: isolate;
 }
 
 .home-fiddle .fh-shell::before {
@@ -272,8 +273,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(700px 320px at 7% 10%, rgba(20, 93, 86, 0.14), transparent 62%),
-    radial-gradient(680px 320px at 95% 92%, rgba(183, 108, 53, 0.16), transparent 62%);
+    radial-gradient(700px 320px at 7% 10%, rgba(20, 93, 86, 0.09), transparent 62%),
+    radial-gradient(680px 320px at 95% 92%, rgba(183, 108, 53, 0.1), transparent 62%);
   pointer-events: none;
 }
 
@@ -330,7 +331,7 @@
 .home-fiddle .fh-lead {
   margin: 0;
   max-width: 58ch;
-  color: var(--fh-text-soft);
+  color: #49534d;
   font-size: 1.08rem;
   line-height: 1.75;
 }
@@ -442,7 +443,7 @@
   padding: 0.92rem 1rem;
   border: 1px solid rgba(34, 46, 40, 0.08);
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.66);
+  background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 14px 30px rgba(34, 46, 40, 0.05);
 }
 
@@ -475,7 +476,7 @@
   padding: 0.48rem;
   border: 1px solid rgba(34, 46, 40, 0.08);
   border-radius: 26px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.97);
   box-shadow: 0 24px 48px rgba(34, 46, 40, 0.11);
   overflow: hidden;
 }
@@ -649,7 +650,7 @@
   padding: 1.35rem;
   border: 1px solid var(--fh-border);
   border-radius: 28px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(247, 240, 230, 0.94));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(247, 240, 230, 0.96));
   box-shadow: var(--fh-shadow);
 }
 
@@ -692,7 +693,7 @@
   padding: 0.7rem;
   border: 1px solid rgba(34, 46, 40, 0.08);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 22px 44px rgba(34, 46, 40, 0.1);
 }
 
@@ -742,7 +743,7 @@
 .home-fiddle #educations + ul {
   border: 1px solid var(--fh-border) !important;
   border-radius: 24px !important;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(248, 241, 232, 0.92)) !important;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 241, 232, 0.96)) !important;
   box-shadow: var(--fh-shadow) !important;
 }
 
@@ -847,7 +848,7 @@
   align-items: center;
   border: 1px solid var(--fh-border);
   border-radius: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 241, 232, 0.94));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 241, 232, 0.96));
   box-shadow: var(--fh-shadow-soft);
   padding: 1rem;
   margin: 1.2rem 0 !important;
