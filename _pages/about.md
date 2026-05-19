@@ -31,6 +31,8 @@ redirect_from:
         <a href="#patents">Patents</a>
         <a href="#educations">Education</a>
         <a href="#skills">Skills</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:{{ site.author.email }}">Email</a>
         <a href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">View CV</a>
         <a href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
       </div>
