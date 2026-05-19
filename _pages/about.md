@@ -31,10 +31,24 @@ redirect_from:
         <a href="#patents">Patents</a>
         <a href="#educations">Education</a>
         <a href="#skills">Skills</a>
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:{{ site.author.email }}">Email</a>
         <a href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">View CV</a>
         <a href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
+      </div>
+      <div class="fh-quick-links">
+        <a href="mailto:{{ site.author.email }}">Email</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="{{ site.author.semanticscholar }}" target="_blank" rel="noopener">Semantic Scholar</a>
+        <a href="{{ site.author.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a>
+        <a href="{{ site.author.dblp }}" target="_blank" rel="noopener">DBLP</a>
+      </div>
+      <div class="fh-quick-links">
+        <a href="{{ site.author.catalyzex }}" target="_blank" rel="noopener">CatalyzeX</a>
+        <a href="{{ site.author.acm }}" target="_blank" rel="noopener">ACM DL</a>
+        <a href="{{ site.author.underline }}" target="_blank" rel="noopener">Underline</a>
+        <a href="{{ site.author.rankdblp }}" target="_blank" rel="noopener">RankDBLP</a>
+        <a href="{{ site.author.uri }}" target="_blank" rel="noopener">ShanghaiTech Profile</a>
       </div>
     </div>
     <div class="fh-media" aria-hidden="true">

@@ -52,6 +52,18 @@
       {% if author.dblp %}
         <li><a href="{{ author.dblp }}"><i class="ai ai-dblp ai-fw" aria-hidden="true"></i> DBLP</a></li>
       {% endif %}
+      {% if author.catalyzex %}
+        <li><a href="{{ author.catalyzex }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> CatalyzeX</a></li>
+      {% endif %}
+      {% if author.acm %}
+        <li><a href="{{ author.acm }}"><i class="ai ai-acm-square ai-fw" aria-hidden="true"></i> ACM DL</a></li>
+      {% endif %}
+      {% if author.underline %}
+        <li><a href="{{ author.underline }}"><i class="fas fa-fw fa-video" aria-hidden="true"></i> Underline</a></li>
+      {% endif %}
+      {% if author.rankdblp %}
+        <li><a href="{{ author.rankdblp }}"><i class="fas fa-fw fa-chart-line" aria-hidden="true"></i> RankDBLP</a></li>
+      {% endif %}
       {% if author.xing %}
         <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i> XING</a></li>
       {% endif %}
@@ -106,6 +118,9 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
+      {% if author.semanticscholar %}
+        <li><a href="{{ author.semanticscholar }}"><i class="fas fa-fw fa-book" aria-hidden="true"></i> Semantic Scholar</a></li>
+      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
@@ -146,6 +161,18 @@
       {% endif %}
       {% if author.dblp %}
         <a href="{{ author.dblp }}"><i class="ai ai-dblp ai-fw" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.catalyzex %}
+        <a href="{{ author.catalyzex }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.acm %}
+        <a href="{{ author.acm }}"><i class="ai ai-acm-square ai-fw" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.underline %}
+        <a href="{{ author.underline }}"><i class="fas fa-fw fa-video" aria-hidden="true"></i></a>
+      {% endif %}
+      {% if author.rankdblp %}
+        <a href="{{ author.rankdblp }}"><i class="fas fa-fw fa-chart-line" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.xing %}
         <a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i></a>
@@ -200,6 +227,9 @@
       {% endif %}
       {% if author.googlescholar %}
         <a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i></a>
+      {% endif %}
+      {% if author.semanticscholar %}
+        <a href="{{ author.semanticscholar }}"><i class="fas fa-fw fa-book" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.pubmed %}
         <a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i></a>
