@@ -20,30 +20,39 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<section class="fh-shell" aria-label="Portfolio hero">
-  <div class="fh-grid">
-    <div class="fh-copy">
-      <p class="fh-kicker">YITENG XU · HUMAN-CENTRIC AI PORTFOLIO</p>
-      <h1 class="fh-title">Human-Centric<br>3D Intelligence</h1>
+<section class="fh-shell fh-shell--wide" aria-label="Portfolio hero">
+  <div class="fh-dashboard">
+    <div class="fh-intro">
+      <p class="fh-kicker">HUMAN-CENTRIC AI PORTFOLIO</p>
+      <h1 class="fh-title">Yiteng Xu</h1>
+      <p class="fh-subtitle">Human-Centric 3D Intelligence</p>
       <p class="fh-lead">Researching the interface between 3D Computer Vision, Robotics, and Embodied AI. Building interactive systems where humans and intelligent machines learn together.</p>
-      <div class="fh-quick-links">
-        <a href="#publications">Publications</a>
-        <a href="#patents">Patents</a>
-        <a href="#educations">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">View CV</a>
-        <a href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
+      <div class="fh-stats" aria-label="Profile summary">
+        <div class="fh-stat">
+          <span>Current Role</span>
+          <strong>Ph.D. Student</strong>
+        </div>
+        <div class="fh-stat">
+          <span>Affiliation</span>
+          <strong>ShanghaiTech</strong>
+        </div>
+        <div class="fh-stat">
+          <span>Core Theme</span>
+          <strong>3D Human Understanding</strong>
+        </div>
       </div>
-      <div class="fh-quick-links">
+      <div class="fh-quick-links fh-quick-links--primary">
         <a href="mailto:{{ site.author.email }}">Email</a>
-        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">English CV</a>
+        <a href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
         <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+      <div class="fh-quick-links fh-quick-links--profiles">
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
         <a href="{{ site.author.semanticscholar }}" target="_blank" rel="noopener">Semantic Scholar</a>
         <a href="{{ site.author.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>
         <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a>
         <a href="{{ site.author.dblp }}" target="_blank" rel="noopener">DBLP</a>
-      </div>
-      <div class="fh-quick-links">
         <a href="{{ site.author.catalyzex }}" target="_blank" rel="noopener">CatalyzeX</a>
         <a href="{{ site.author.acm }}" target="_blank" rel="noopener">ACM DL</a>
         <a href="{{ site.author.underline }}" target="_blank" rel="noopener">Underline</a>
@@ -51,23 +60,67 @@ redirect_from:
         <a href="{{ site.author.uri }}" target="_blank" rel="noopener">ShanghaiTech Profile</a>
       </div>
     </div>
-    <div class="fh-media" aria-hidden="true">
-      <figure class="fh-main">
-        <a class="fh-media__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
-          <img src="/images/fiddle-style/symbridge-teaser.webp" alt="SymBridge research visual teaser">
+
+    <div class="fh-map" aria-label="Homepage map">
+      <div class="fh-panel-head">
+        <span>Site Map</span>
+        <h2>What is on this page</h2>
+      </div>
+      <div class="fh-map-grid">
+        <a class="fh-map-tile" href="#about-me" style="--tile-accent:#145d56; --tile-soft:rgba(20,93,86,.13);">
+          <span>Research Profile</span>
+          <strong>About and Research</strong>
+          <p>3D Computer Vision, Robotics, Embodied AI, LiDAR-Camera Fusion, and human motion understanding.</p>
         </a>
-      </figure>
-      <figure class="fh-side">
-        <a class="fh-media__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
-          <img src="/images/fiddle-style/symbridge-interact.webp" alt="">
+        <a class="fh-map-tile" href="#publications" style="--tile-accent:#2f4c7f; --tile-soft:rgba(47,76,127,.13);">
+          <span>Publications</span>
+          <strong>Selected Papers</strong>
+          <p>CVPR, ICCV, SIGGRAPH Asia, AAAI, IJCAI, and related project pages.</p>
         </a>
-      </figure>
-      <figure class="fh-side">
-        <a class="fh-media__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
-          <img src="/images/fiddle-style/symbridge-physicalrobot.webp" alt="">
+        <a class="fh-map-tile" href="#news" style="--tile-accent:#b76c35; --tile-soft:rgba(183,108,53,.15);">
+          <span>News</span>
+          <strong>Public Updates</strong>
+          <p>Media coverage, lab news, conference activity, and public academic records.</p>
         </a>
-      </figure>
+        <a class="fh-map-tile" href="#milestones" style="--tile-accent:#61734d; --tile-soft:rgba(97,115,77,.14);">
+          <span>Milestones</span>
+          <strong>Awards and Timeline</strong>
+          <p>National Scholarship, Ph.D. journey, accepted papers, and research milestones.</p>
+        </a>
+        <a class="fh-map-tile" href="#skills" style="--tile-accent:#6c4a8f; --tile-soft:rgba(108,74,143,.12);">
+          <span>Skills</span>
+          <strong>Technical Stack</strong>
+          <p>Perception, multimodal fusion, point cloud video, robot interaction, and research tooling.</p>
+        </a>
+        <a class="fh-map-tile" href="#patents" style="--tile-accent:#8c5a2b; --tile-soft:rgba(140,90,43,.13);">
+          <span>Profiles</span>
+          <strong>Links and Patents</strong>
+          <p>LinkedIn, Scholar, Semantic Scholar, ResearchGate, ORCID, DBLP, ACM DL, and patents.</p>
+        </a>
+      </div>
     </div>
+
+    <aside class="fh-side-panel" aria-label="Profile and featured work">
+      <div class="fh-profile-mini">
+        <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yiteng Xu">
+        <div>
+          <span>ShanghaiTech University</span>
+          <strong>Yiteng Xu</strong>
+          <p>SIST Ph.D. Student<br>Shanghai, China</p>
+        </div>
+      </div>
+      <a class="fh-spotlight" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+        <span>SIGGRAPH Asia 2025</span>
+        <strong>SymBridge: real-to-sim human-robot symbiosis</strong>
+        <p>A cyber-physical interactive system for adaptive human-robot learning.</p>
+      </a>
+      <div class="fh-mirror-card">
+        <span>China-accessible mirror</span>
+        <strong>Need domestic access?</strong>
+        <p>The PageDrop version keeps the core profile reachable from mainland China.</p>
+        <a href="https://pagedrop.dev/s/yiteng-xu-cn/" target="_blank" rel="noopener">Open PageDrop mirror</a>
+      </div>
+    </aside>
   </div>
 
   <div class="fh-marquee" aria-label="Research interests and venues">

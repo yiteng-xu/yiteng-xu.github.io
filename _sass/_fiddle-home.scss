@@ -571,6 +571,315 @@
   object-position: center;
 }
 
+.home-fiddle .fh-shell--wide {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.home-fiddle .fh-shell--wide::before {
+  display: none;
+}
+
+.home-fiddle .fh-dashboard {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(360px, 0.72fr) minmax(590px, 1.08fr) minmax(300px, 0.56fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.home-fiddle .fh-intro {
+  min-width: 0;
+  padding: 1.7rem 0.4rem 0.8rem 0;
+}
+
+.home-fiddle .fh-intro .fh-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.95rem;
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--fh-accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.home-fiddle .fh-intro .fh-kicker::before {
+  content: "";
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--fh-accent-2);
+  box-shadow: 0 0 0 0.35rem rgba(183, 108, 53, 0.12);
+}
+
+.home-fiddle .fh-intro .fh-title {
+  font-size: 5rem;
+  line-height: 0.96;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.home-fiddle .fh-subtitle {
+  margin: 0.45rem 0 0;
+  font-family: "Fraunces", "Georgia", serif;
+  font-size: 1.65rem;
+  line-height: 1.08;
+  color: var(--fh-accent);
+}
+
+.home-fiddle .fh-intro .fh-lead {
+  max-width: 42rem;
+  margin: 1.05rem 0 1rem;
+  font-size: 0.98rem;
+}
+
+.home-fiddle .fh-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 1rem 0 0.95rem;
+}
+
+.home-fiddle .fh-stat {
+  min-height: 6rem;
+  padding: 0.82rem 0.9rem;
+  border: 1px solid var(--fh-border);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 12px 28px rgba(34, 46, 40, 0.07);
+}
+
+.home-fiddle .fh-stat span {
+  display: block;
+  margin: 0 0 0.42rem;
+  color: var(--fh-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.home-fiddle .fh-stat strong {
+  color: var(--fh-text);
+  font-size: 0.92rem;
+  line-height: 1.38;
+}
+
+.home-fiddle .fh-quick-links--primary {
+  gap: 0.5rem;
+}
+
+.home-fiddle .fh-quick-links--profiles {
+  gap: 0.38rem;
+  margin-top: 0.52rem;
+}
+
+.home-fiddle .fh-quick-links--profiles a {
+  padding: 0.32rem 0.62rem;
+  font-size: 0.76rem;
+}
+
+.home-fiddle .fh-map,
+.home-fiddle .fh-profile-mini,
+.home-fiddle .fh-spotlight,
+.home-fiddle .fh-mirror-card {
+  border: 1px solid var(--fh-border);
+  border-radius: 22px;
+  background:
+    linear-gradient(145deg, rgba(255, 252, 246, 0.76), rgba(246, 241, 234, 0.58)),
+    rgba(255, 255, 255, 0.5);
+  box-shadow: var(--fh-shadow-soft);
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+}
+
+.home-fiddle .fh-map {
+  padding: 1.3rem;
+}
+
+.home-fiddle .fh-panel-head {
+  margin: 0 0 0.9rem;
+}
+
+.home-fiddle .fh-panel-head span,
+.home-fiddle .fh-profile-mini span,
+.home-fiddle .fh-spotlight span,
+.home-fiddle .fh-mirror-card span {
+  display: block;
+  color: var(--fh-muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.home-fiddle .fh-panel-head h2 {
+  margin: 0.2rem 0 0;
+  font-size: 1.55rem;
+  line-height: 1.12;
+  color: var(--fh-text);
+}
+
+.home-fiddle .fh-map-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.72rem;
+}
+
+.home-fiddle .fh-map-tile {
+  min-height: 8rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.66), rgba(252, 248, 241, 0.34)),
+    radial-gradient(circle at top right, var(--tile-soft), transparent 48%);
+  color: var(--fh-text);
+  text-decoration: none;
+  box-shadow: 0 12px 28px rgba(34, 46, 40, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.home-fiddle .fh-map-tile:hover {
+  transform: translateY(-2px);
+  border-color: rgba(20, 93, 86, 0.22);
+  box-shadow: 0 18px 36px rgba(34, 46, 40, 0.1);
+  text-decoration: none;
+}
+
+.home-fiddle .fh-map-tile span {
+  display: block;
+  margin: 0 0 0.42rem;
+  color: var(--tile-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.home-fiddle .fh-map-tile strong {
+  display: block;
+  color: var(--fh-text);
+  font-size: 0.98rem;
+  line-height: 1.24;
+}
+
+.home-fiddle .fh-map-tile p {
+  display: -webkit-box;
+  margin: 0.42rem 0 0;
+  color: var(--fh-text-soft);
+  font-size: 0.82rem;
+  line-height: 1.42;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-fiddle .fh-side-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.home-fiddle .fh-profile-mini {
+  display: grid;
+  grid-template-columns: 5.6rem minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.home-fiddle .fh-profile-mini img {
+  width: 5.6rem;
+  aspect-ratio: 1 / 1.14;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(34, 46, 40, 0.12);
+  box-shadow: 0 12px 26px rgba(34, 46, 40, 0.12);
+}
+
+.home-fiddle .fh-profile-mini strong {
+  display: block;
+  margin: 0.18rem 0 0.22rem;
+  color: var(--fh-text);
+  font-size: 1.42rem;
+  line-height: 1.1;
+}
+
+.home-fiddle .fh-profile-mini p,
+.home-fiddle .fh-spotlight p,
+.home-fiddle .fh-mirror-card p {
+  margin: 0;
+  color: var(--fh-text-soft);
+  font-size: 0.9rem;
+  line-height: 1.48;
+}
+
+.home-fiddle .fh-spotlight {
+  min-height: 13.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  background:
+    linear-gradient(180deg, rgba(18, 24, 23, 0.05), rgba(18, 24, 23, 0.72)),
+    url("/images/fiddle-style/symbridge-teaser.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.home-fiddle .fh-spotlight:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.home-fiddle .fh-spotlight span,
+.home-fiddle .fh-spotlight strong,
+.home-fiddle .fh-spotlight p {
+  color: #fff;
+  text-shadow: 0 10px 28px rgba(0, 0, 0, 0.34);
+}
+
+.home-fiddle .fh-spotlight strong,
+.home-fiddle .fh-mirror-card strong {
+  display: block;
+  margin: 0.42rem 0 0.42rem;
+  font-size: 1.05rem;
+  line-height: 1.28;
+}
+
+.home-fiddle .fh-mirror-card {
+  padding: 1rem;
+  background:
+    linear-gradient(140deg, rgba(183, 108, 53, 0.72), rgba(20, 93, 86, 0.72)),
+    rgba(255, 255, 255, 0.5);
+}
+
+.home-fiddle .fh-mirror-card span,
+.home-fiddle .fh-mirror-card strong,
+.home-fiddle .fh-mirror-card p {
+  color: #fff;
+}
+
+.home-fiddle .fh-mirror-card a {
+  display: inline-flex;
+  margin-top: 0.85rem;
+  padding: 0.5rem 0.82rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--fh-accent);
+  font-weight: 800;
+  text-decoration: none;
+}
+
 @supports (-webkit-mask-image: url("/images/fh-shapes/r14.svg")) or (mask-image: url("/images/fh-shapes/r14.svg")) {
   .home-fiddle .fh-quick-links a::before {
     border-radius: 0;
@@ -1324,5 +1633,78 @@
 
   .home-fiddle .video-wrapper {
     border-radius: 12px !important;
+  }
+}
+
+@media (max-width: 1320px) {
+  .home-fiddle .fh-dashboard {
+    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  }
+
+  .home-fiddle .fh-side-panel {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-fiddle .fh-intro .fh-title {
+    font-size: 4.1rem;
+  }
+}
+
+@media (max-width: 920px) {
+  .home-fiddle .fh-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .home-fiddle .fh-side-panel {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .home-fiddle .fh-map-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-fiddle .fh-intro {
+    padding: 1rem 0.2rem 0.4rem;
+  }
+
+  .home-fiddle .fh-intro .fh-title {
+    font-size: 3.4rem;
+  }
+
+  .home-fiddle .fh-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .home-fiddle .fh-shell--wide {
+    border-radius: 0;
+  }
+
+  .home-fiddle .fh-map {
+    padding: 1rem;
+  }
+
+  .home-fiddle .fh-map-grid,
+  .home-fiddle .fh-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .home-fiddle .fh-intro .fh-title {
+    font-size: 2.8rem;
+  }
+
+  .home-fiddle .fh-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .home-fiddle .fh-profile-mini {
+    grid-template-columns: 4.8rem minmax(0, 1fr);
+  }
+
+  .home-fiddle .fh-profile-mini img {
+    width: 4.8rem;
   }
 }
