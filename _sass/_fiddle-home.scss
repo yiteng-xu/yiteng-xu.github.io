@@ -55,7 +55,7 @@
 
 @media (min-width: 1024px) {
   .home-fiddle #main {
-    padding-left: clamp(200px, 18vw, 280px);
+    padding-left: clamp(12px, 2vw, 36px);
     padding-right: clamp(12px, 2vw, 36px);
   }
 }
@@ -280,7 +280,7 @@
 
 @media (min-width: 1024px) {
   .home-fiddle .fh-toc {
-    display: block;
+    display: none;
   }
 }
 
@@ -1265,8 +1265,8 @@
 .home-fiddle .awards-section,
 .home-fiddle #educations + ul,
 .home-fiddle .skill-points {
-  opacity: 0;
-  transform: translateY(18px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.75s ease, transform 0.75s ease;
 }
 
@@ -1285,9 +1285,9 @@
 }
 
 .home-fiddle .fh-media-fade {
-  opacity: 0;
-  transform: translate3d(0, 12px, 0) scale(1.06);
-  filter: saturate(0.92) brightness(0.94);
+  opacity: 1;
+  transform: none;
+  filter: none;
   transition: opacity 1.05s cubic-bezier(0.22, 0.31, 0, 1), transform 1.05s cubic-bezier(0.22, 0.31, 0, 1),
     filter 1.05s cubic-bezier(0.22, 0.31, 0, 1);
   will-change: opacity, transform, filter;
