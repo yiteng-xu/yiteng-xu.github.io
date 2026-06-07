@@ -118,7 +118,7 @@ redirect_from:
         <span>China-accessible mirror</span>
         <strong>Need domestic access?</strong>
         <p>The PageDrop version keeps the core profile reachable from mainland China.</p>
-        <a href="https://pagedrop.dev/s/yiteng-xu-cn/" target="_blank" rel="noopener">Open PageDrop mirror</a>
+        <a href="https://yiteng-xu-cn.pagedrop.io/" target="_blank" rel="noopener">Open PageDrop mirror</a>
       </div>
     </aside>
   </div>
