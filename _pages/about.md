@@ -1,0 +1,2176 @@
+---
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+lang: en
+ref: home
+fiddle_home: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+{% if site.google_scholar_stats_use_cdn %}
+{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
+{% else %}
+{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
+{% endif %}
+{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+
+<span class='anchor' id='about-me'></span>
+
+<section class="fh-shell fh-shell--wide" aria-label="Portfolio hero">
+  <div class="fh-dashboard">
+    <div class="fh-intro">
+      <p class="fh-kicker">HUMAN-CENTRIC AI PORTFOLIO</p>
+      <h1 class="fh-title">Yiteng Xu</h1>
+      <p class="fh-subtitle">Human-Centric 3D Intelligence</p>
+      <p class="fh-lead">Researching the interface between 3D Computer Vision, Robotics, and Embodied AI. Building interactive systems where humans and intelligent machines learn together.</p>
+      <div class="fh-stats" aria-label="Profile summary">
+        <div class="fh-stat">
+          <span>Current Role</span>
+          <strong>Ph.D. Student</strong>
+        </div>
+        <div class="fh-stat">
+          <span>Affiliation</span>
+          <strong>ShanghaiTech</strong>
+        </div>
+        <div class="fh-stat">
+          <span>Core Theme</span>
+          <strong>3D Human Understanding</strong>
+        </div>
+      </div>
+      <div class="fh-quick-links fh-quick-links--primary">
+        <a href="mailto:{{ site.author.email }}">Email</a>
+        <a href="/assets/files/CV_Yiteng_Xu_English.pdf" target="_blank" rel="noopener">English CV</a>
+        <a href="/assets/files/CV_Yiteng_Xu.pdf" target="_blank" rel="noopener">中文简历</a>
+        <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+      <div class="fh-quick-links fh-quick-links--profiles">
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="{{ site.author.semanticscholar }}" target="_blank" rel="noopener">Semantic Scholar</a>
+        <a href="{{ site.author.researchgate }}" target="_blank" rel="noopener">ResearchGate</a>
+        <a href="{{ site.author.orcid }}" target="_blank" rel="noopener">ORCID</a>
+        <a href="{{ site.author.dblp }}" target="_blank" rel="noopener">DBLP</a>
+        <a href="{{ site.author.catalyzex }}" target="_blank" rel="noopener">CatalyzeX</a>
+        <a href="{{ site.author.acm }}" target="_blank" rel="noopener">ACM DL</a>
+        <a href="{{ site.author.underline }}" target="_blank" rel="noopener">Underline</a>
+        <a href="{{ site.author.rankdblp }}" target="_blank" rel="noopener">RankDBLP</a>
+        <a href="{{ site.author.uri }}" target="_blank" rel="noopener">ShanghaiTech Profile</a>
+      </div>
+    </div>
+
+    <div class="fh-map" aria-label="Homepage map">
+      <div class="fh-panel-head">
+        <span>Site Map</span>
+        <h2>What is on this page</h2>
+      </div>
+      <div class="fh-map-grid">
+        <a class="fh-map-tile" href="#about-me" style="--tile-accent:#145d56; --tile-soft:rgba(20,93,86,.13);">
+          <span>Research Profile</span>
+          <strong>About and Research</strong>
+          <p>3D Computer Vision, Robotics, Embodied AI, LiDAR-Camera Fusion, and human motion understanding.</p>
+        </a>
+        <a class="fh-map-tile" href="#publications" style="--tile-accent:#2f4c7f; --tile-soft:rgba(47,76,127,.13);">
+          <span>Publications</span>
+          <strong>Selected Papers</strong>
+          <p>CVPR, ICCV, SIGGRAPH Asia, AAAI, IJCAI, and related project pages.</p>
+        </a>
+        <a class="fh-map-tile" href="#news" style="--tile-accent:#b76c35; --tile-soft:rgba(183,108,53,.15);">
+          <span>News</span>
+          <strong>Public Updates</strong>
+          <p>Media coverage, lab news, conference activity, and public academic records.</p>
+        </a>
+        <a class="fh-map-tile" href="#milestones" style="--tile-accent:#61734d; --tile-soft:rgba(97,115,77,.14);">
+          <span>Milestones</span>
+          <strong>Awards and Timeline</strong>
+          <p>National Scholarship, Ph.D. journey, accepted papers, and research milestones.</p>
+        </a>
+        <a class="fh-map-tile" href="#skills" style="--tile-accent:#6c4a8f; --tile-soft:rgba(108,74,143,.12);">
+          <span>Skills</span>
+          <strong>Technical Stack</strong>
+          <p>Perception, multimodal fusion, point cloud video, robot interaction, and research tooling.</p>
+        </a>
+        <a class="fh-map-tile" href="#patents" style="--tile-accent:#8c5a2b; --tile-soft:rgba(140,90,43,.13);">
+          <span>Profiles</span>
+          <strong>Links and Patents</strong>
+          <p>LinkedIn, Scholar, Semantic Scholar, ResearchGate, ORCID, DBLP, ACM DL, and patents.</p>
+        </a>
+      </div>
+    </div>
+
+    <aside class="fh-side-panel" aria-label="Profile and featured work">
+      <div class="fh-profile-mini">
+        <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yiteng Xu">
+        <div>
+          <span>ShanghaiTech University</span>
+          <strong>Yiteng Xu</strong>
+          <p>SIST Ph.D. Student<br>Shanghai, China</p>
+        </div>
+      </div>
+      <a class="fh-spotlight" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+        <span>SIGGRAPH Asia 2025</span>
+        <strong>SymBridge: real-to-sim human-robot symbiosis</strong>
+        <p>A cyber-physical interactive system for adaptive human-robot learning.</p>
+      </a>
+      <div class="fh-mirror-card">
+        <span>China-accessible mirror</span>
+        <strong>Need domestic access?</strong>
+        <p>The PageDrop version keeps the core profile reachable from mainland China.</p>
+        <a href="https://yiteng-xu-cn.pagedrop.io/" target="_blank" rel="noopener">Open PageDrop mirror</a>
+      </div>
+    </aside>
+  </div>
+
+  <div class="fh-marquee" aria-label="Research interests and venues">
+    <div class="fh-marquee__inner">
+      <div class="fh-marquee__group">
+        <span class="fh-marquee__item">3D Computer Vision</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Robotics</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Embodied AI</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">LiDAR-Camera Fusion</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Human Pose &amp; Motion</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Human-in-the-Loop</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">Point Cloud Video</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">CVPR · ICCV · ECCV</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">SIGGRAPH Asia</span><span class="fh-marquee__sep" aria-hidden="true">✦</span>
+        <span class="fh-marquee__item">AAAI · IJCAI</span>
+      </div>
+      <div class="fh-marquee__group" aria-hidden="true">
+        <span class="fh-marquee__item">3D Computer Vision</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Robotics</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Embodied AI</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">LiDAR-Camera Fusion</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Human Pose &amp; Motion</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Human-in-the-Loop</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">Point Cloud Video</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">CVPR · ICCV · ECCV</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">SIGGRAPH Asia</span><span class="fh-marquee__sep">✦</span>
+        <span class="fh-marquee__item">AAAI · IJCAI</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="fh-filmstrip" aria-label="Selected research visuals">
+    <figure>
+      <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/fusionpose-teaser.webp" alt="FusionPose dataset and pose estimation visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/fusionpose-suplight.webp" alt="Low-light motion sequence visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/hucenlife-teaser.webp" alt="HuCenLife scene understanding visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/symbridge-pipeline.webp" alt="SymBridge pipeline visual">
+      </a>
+    </figure>
+    <figure>
+      <a class="fh-filmstrip__link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">
+        <img src="/images/fiddle-style/fusionpose-teaser2.webp" alt="FusionPose sequence visual">
+      </a>
+    </figure>
+  </div>
+</section>
+
+<section class="fh-about" aria-label="About me">
+  <div class="fh-about__copy" markdown="1">
+I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. Yuexin Ma. Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
+
+My research lies at the intersection of **3D Computer Vision**, **Robotics**, and **Embodied AI**. My primary goal is to enable intelligent agents (like humanoid robots) to perceive, understand, and interact with the complex, dynamic 3D world in a human-like manner. I am particularly interested in **multi-modal sensor fusion (LiDAR-Camera)**, **3D human pose and motion understanding**, and building **human-in-the-loop systems** for bidirectional learning in human-robot interaction.
+  </div>
+  <figure class="fh-about__photo">
+    <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Yiteng Xu" loading="lazy">
+  </figure>
+</section>
+
+<!-- I am actively seeking research internship opportunities for the summer of 2025 that will allow me to apply my research to real-world challenges. -->
+[**查看简历** (中文)](/assets/files/CV_Yiteng_Xu.pdf){:target="_blank"}        [**View My CV** (English)](/assets/files/CV_Yiteng_Xu_English.pdf){:target="_blank"}
+
+
+# 🔥 Milestones
+<div class="milestones-section" id="milestones">
+  <div class="milestones-controls" role="tablist" aria-label="Milestones view">
+    <button class="view-toggle active" role="tab" aria-selected="true" data-view="timeline">Timeline</button>
+    <button class="view-toggle" role="tab" aria-selected="false" data-view="list">List</button>
+  </div>
+
+  <div class="milestones-timeline" role="list">
+    <div class="timeline-line" aria-hidden="true"></div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Sep 2025</div>
+        <h3 class="milestone-title">Siggraph Asia 2025</h3>
+        <p class="milestone-desc">SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-paper">Publication</span>
+          <a class="chip chip-link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Oct 2024</div>
+        <h3 class="milestone-title">National Scholarship 国家奖学金</h3>
+        <p class="milestone-desc">Honored to receive the National Scholarship (Top 1%).</p>
+        <div class="milestone-tags">
+          <span class="chip chip-award">Award</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Feb 2024</div>
+        <h3 class="milestone-title">CVPR 2024</h3>
+        <p class="milestone-desc">UniPVU-Human: A unified framework for human-centric point cloud video understanding accepted by CVPR 2024.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-paper">Publication</span>
+          <a class="chip chip-link" href="https://openaccess.thecvf.com/content/CVPR2024/html/Xu_A_Unified_Framework_for_Human-centric_Point_Cloud_Video_Understanding_CVPR_2024_paper.html" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Sep 2023</div>
+        <h3 class="milestone-title">Start Ph.D. Journey</h3>
+        <p class="milestone-desc">Started my Ph.D. at ShanghaiTech University.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-life">Milestone</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Jul 2023</div>
+        <h3 class="milestone-title">ICCV 2023</h3>
+        <p class="milestone-desc">Human-centric scene understanding and the HuCenLife dataset accepted by ICCV 2023.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-paper">Publication</span>
+          <a class="chip chip-link" href="https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Dec 2022</div>
+        <h3 class="milestone-title">AAAI 2023 (Oral)</h3>
+        <p class="milestone-desc">Weakly supervised 3D multi-person pose estimation accepted as an Oral at AAAI 2023.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-paper">Publication</span>
+          <span class="chip chip-oral">Oral</span>
+          <a class="chip chip-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="milestones-list" hidden>
+    <li>Sep 2025 — Siggraph Asia 2025: SymBridge</li>
+    <li>Oct 2024 — National Scholarship 国家奖学金(Top 1%)</li>
+    <li>Feb 2024 — CVPR 2024: UniPVU-Human accepted</li>
+    <li>Sep 2023 — Started Ph.D. at ShanghaiTech</li>
+    <li>Jul 2023 — ICCV 2023: HuCenLife accepted</li>
+    <li>Dec 2022 — AAAI 2023 Oral: Weakly supervised 3D multi-person pose estimation</li>
+  </ul>
+</div>
+
+<noscript>
+  <style>
+    /* No-JS fallback: show list, hide stairs */
+    #awards .awards-stairs { display: none !important; }
+    #awards .awards-list[hidden] { display: block !important; }
+  </style>
+</noscript>
+
+<style>
+.milestones-section {
+  /* Default to light theme-friendly values for better contrast */
+  --ms-bg: var(--global-bg, #f7f7fb);
+  --ms-card: rgba(255, 255, 255, 0.9);
+  --ms-border: rgba(10, 10, 10, 0.08);
+  --ms-text: var(--global-text, #000000);
+  --ms-muted: #000000;
+  --ms-accent: #7c3aed; /* purple */
+  --ms-accent-2: #06b6d4; /* cyan */
+  --ms-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+}
+@media (prefers-color-scheme: dark) {
+  .milestones-section {
+    --ms-bg: #0b0c10;
+    --ms-card: rgba(255, 255, 255, 0.08);
+    --ms-border: rgba(255, 255, 255, 0.18);
+    --ms-text: #e5e7eb;
+    --ms-muted: #a3a3a3;
+  }
+}
+.milestones-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+}
+.milestones-controls .view-toggle {
+  appearance: none;
+  border: 1px solid var(--ms-border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0));
+  color: var(--ms-text);
+  font: inherit;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.milestones-controls .view-toggle:hover {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+  transform: translateY(-1px);
+}
+.milestones-controls .view-toggle.active {
+  background: linear-gradient(135deg, rgba(124,58,237,.18), rgba(6,182,212,.18));
+  border-color: transparent;
+}
+.milestones-timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 2rem;
+  padding: 1rem 0 0 0;
+}
+.milestones-timeline .timeline-line {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, rgba(124,58,237,.4), rgba(6,182,212,.4));
+  transform: translateX(-50%);
+  filter: blur(.3px);
+}
+.milestone {
+  position: relative;
+}
+.milestone:nth-child(odd) {
+  grid-column: 1;
+}
+.milestone:nth-child(even) {
+  grid-column: 2;
+}
+.milestone .milestone-card {
+  position: relative;
+  background: var(--ms-card);
+  border: 1px solid var(--ms-border);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 14px;
+  padding: 1rem 1.1rem 1rem 1.1rem;
+  box-shadow: var(--ms-shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, opacity .6s ease;
+}
+.js-enabled .milestone-card {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.js-enabled .milestone-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.milestone .milestone-dot {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 7px);
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle at 35% 35%, #fff 0%, #fff 20%, var(--ms-accent) 60%, var(--ms-accent-2) 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(124,58,237,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8);
+  transform: translateX(-50%);
+}
+.milestone .milestone-date {
+  font-size: 0.85rem;
+  color: var(--ms-muted);
+  letter-spacing: .02em;
+  margin-bottom: .25rem;
+}
+.milestone .milestone-title {
+  margin: 0 0 .35rem 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--ms-accent), var(--ms-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.milestone .milestone-desc {
+  margin: 0 0 .7rem 0;
+  color: var(--ms-text);
+}
+.milestone .milestone-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .75rem;
+  padding: .2rem .55rem;
+  border-radius: 999px;
+  border: 1px solid var(--ms-border);
+  background: rgba(255,255,255,.06);
+  color: var(--ms-text);
+  transition: border-color .25s ease, transform .25s ease;
+}
+.milestones-section .chip { color: #000 !important; }
+.chip-award { border-color: rgba(234,179,8,.45) }
+.chip-paper { border-color: rgba(59,130,246,.45) }
+.chip-oral { border-color: rgba(244,63,94,.45) }
+.chip-life { border-color: rgba(34,197,94,.45) }
+.chip-link {
+  text-decoration: none;
+  border-color: rgba(124,58,237,.45);
+}
+.chip-link:hover { transform: translateY(-1px) }
+.milestone:hover .milestone-card {
+  transform: translateY(-2px);
+  border-color: transparent;
+  box-shadow: 0 14px 40px rgba(16, 24, 40, 0.25);
+}
+.milestone:hover .milestone-title {
+  filter: saturate(1.15);
+}
+.milestone:hover .milestone-dot {
+  animation: ms-pulse 1.8s infinite;
+}
+@keyframes ms-pulse {
+  0% { box-shadow: 0 0 0 3px rgba(124,58,237,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8); }
+  70% { box-shadow: 0 0 0 8px rgba(124,58,237,0.12), 0 0 28px rgba(6,182,212,0.7), inset 0 0 6px rgba(255,255,255,0.8); }
+  100% { box-shadow: 0 0 0 3px rgba(124,58,237,0.25), 0 0 18px rgba(6,182,212,0.5), inset 0 0 6px rgba(255,255,255,0.8); }
+}
+@media (max-width: 900px) {
+  .milestones-timeline {
+    grid-template-columns: 1fr;
+  }
+  .milestones-timeline .timeline-line {
+    left: 0.5rem;
+    transform: none;
+  }
+  .milestone {
+    grid-column: 1 !important;
+  }
+  .milestone .milestone-card {
+    padding-left: 2rem;
+  }
+  .milestone .milestone-dot {
+    left: 0.5rem;
+    transform: none;
+  }
+}
+.milestones-list {
+  margin: 0.5rem 0 0 0;
+  padding-left: 1.1rem;
+  color: var(--ms-text);
+}
+.milestones-list li { margin: .35rem 0 }
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('milestones');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const timeline = root.querySelector('.milestones-timeline');
+  const list = root.querySelector('.milestones-list');
+  const buttons = root.querySelectorAll('.view-toggle');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      const view = btn.getAttribute('data-view');
+      if (view === 'list') {
+        list.hidden = false;
+        timeline.style.display = 'none';
+      } else {
+        timeline.style.display = 'grid';
+        list.hidden = true;
+      }
+    });
+  });
+
+  // Animate cards on scroll into view
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    root.querySelectorAll('.milestone-card').forEach(el => io.observe(el));
+  } else {
+    // Fallback: show immediately
+    root.querySelectorAll('.milestone-card').forEach(el => el.classList.add('in-view'));
+  }
+})();
+</script>
+
+
+# 🗞️ News
+
+<div id="news" class="news-section">
+  <p class="news-subtitle">互联网上与我相关的最新动态与报道</p>
+  <div class="news-grid">
+  {% for item in site.data.news %}
+    <a class="news-card" href="{{ item.link }}" target="_blank" rel="noopener">
+      <div class="news-accent"></div>
+      {% if item.image %}
+      <div class="news-thumb" style="background-image:url('{{ item.image }}')"></div>
+      {% endif %}
+      <div class="news-meta">
+        <span class="news-chip news-source"><i class="{{ item.icon | default: 'fas fa-newspaper' }}"></i> {{ item.source }}</span>
+        {% if item.date %}<span class="news-chip news-date">{{ item.date }}</span>{% endif %}
+      </div>
+      <h3 class="news-title">{{ item.title }} <i class="fas fa-external-link-alt news-ext"></i></h3>
+      {% if item.excerpt %}<p class="news-excerpt">{{ item.excerpt }}</p>{% endif %}
+    </a>
+  {% endfor %}
+  </div>
+</div>
+
+<style>
+/* ============== News (scoped) ============== */
+.news-section {
+  /* Default to light theme-friendly values for better contrast */
+  --nw-bg: var(--global-bg, #f7f7fb);
+  --nw-card: rgba(255, 255, 255, 0.92);
+  --nw-border: rgba(10, 10, 10, 0.08);
+  --nw-text: var(--global-text, #000000);
+  --nw-muted: #000000;
+  --nw-ac1: #8b5cf6; /* purple */
+  --nw-ac2: #06b6d4; /* cyan */
+  --nw-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  color: var(--nw-text);
+}
+@media (prefers-color-scheme: dark) {
+  .news-section {
+    --nw-bg: #0b0c10;
+    --nw-card: rgba(255, 255, 255, 0.06);
+    --nw-border: rgba(255, 255, 255, 0.12);
+    --nw-text: #e5e7eb;
+    --nw-muted: #a3a3a3;
+  }
+}
+.news-subtitle {
+  margin: 0.25rem 0 0.8rem;
+  font-size: 0.95rem;
+  color: var(--nw-muted);
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 1100px) { .news-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .news-grid { grid-template-columns: 1fr; } }
+
+.news-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--nw-text);
+  background: var(--nw-card);
+  border: 1px solid var(--nw-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--nw-shadow);
+  transform-style: preserve-3d;
+  will-change: transform, box-shadow, opacity;
+  outline: none;
+}
+.news-card, .news-card * { transition: color .25s ease, background .25s ease, border-color .25s ease; }
+.js-enabled .news-card {
+  opacity: 0;
+  transform: translateY(14px) scale(.985);
+  transition: transform .26s ease, box-shadow .26s ease, border-color .26s ease, opacity .65s ease;
+  transition-delay: calc(var(--d, 0) * 60ms);
+}
+.js-enabled .news-card.in-view { opacity: 1; transform: none; }
+.news-card:hover, .news-card:focus-visible {
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow: 0 18px 60px rgba(16,24,40,.28);
+}
+
+.news-accent {
+  position: absolute; inset: -40% -30% -60% -30%; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(600px 220px at var(--mx, 50%) var(--my, 50%), rgba(139,92,246,.28), transparent 60%),
+    radial-gradient(600px 220px at calc(var(--mx, 50%) + 140px) calc(var(--my, 50%) + 40px), rgba(6,182,212,.24), transparent 65%);
+  filter: blur(22px) saturate(130%);
+  opacity: 0; transition: opacity .28s ease;
+}
+.news-card:hover .news-accent, .news-card:focus-visible .news-accent { opacity: 1; }
+
+.news-thumb {
+  position: relative; z-index: 1;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(calc((var(--px, .5) - .5) * 10px), calc((var(--py, .5) - .5) * 10px), 0) scale(1.06);
+  transition: transform .25s ease;
+}
+.news-meta { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: .45rem; padding: .65rem .9rem 0; }
+.news-chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .75rem; padding: .2rem .55rem; border-radius: 999px;
+  border: 1px solid var(--nw-border); background: rgba(255,255,255,.06); color: var(--nw-text);
+}
+.news-section .news-chip { color: #000 !important; }
+.news-source { border-color: rgba(124,58,237,.45); }
+.news-date { border-color: rgba(59,130,246,.45); }
+.news-title {
+  position: relative; z-index: 1; margin: .4rem .9rem; display: flex; align-items: center; gap: .35rem;
+  font-size: 1.02rem; line-height: 1.25;
+  background: linear-gradient(135deg, var(--nw-ac1), var(--nw-ac2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.news-ext { font-size: .85em; opacity: .8; }
+.news-excerpt {
+  position: relative; z-index: 1; margin: 0 .9rem .95rem; color: var(--nw-text);
+  line-height: 1.45; max-height: 0; opacity: 0; overflow: hidden; transform: translateY(-4px);
+  transition: max-height .35s ease, opacity .35s ease, transform .35s ease;
+}
+.news-card:hover .news-excerpt, .news-card:focus-within .news-excerpt { max-height: 220px; opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-enabled .news-card { opacity: 1; transform: none; transition: none; }
+  .news-card, .news-card * { transition: none !important; }
+  .news-excerpt { max-height: none; opacity: 1; transform: none; }
+}
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('news');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Stagger and reveal on enter
+  const cards = Array.from(root.querySelectorAll('.news-card'));
+  cards.forEach((card, idx) => card.style.setProperty('--d', String(idx)));
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    cards.forEach(c => io.observe(c));
+  } else {
+    cards.forEach(c => c.classList.add('in-view'));
+  }
+
+  // Cursor-reactive aurora + subtle tilt/parallax
+  if (!reduced) {
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
+        const px = x / r.width;
+        const py = y / r.height;
+        card.style.setProperty('--mx', x + 'px');
+        card.style.setProperty('--my', y + 'px');
+        card.style.setProperty('--px', px.toFixed(4));
+        card.style.setProperty('--py', py.toFixed(4));
+        const rx = (py - 0.5) * -8;  // natural feel: invert X rotation
+        const ry = (px - 0.5) * 10;
+        card.style.transform = `perspective(900px) rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.removeProperty('--mx');
+        card.style.removeProperty('--my');
+        card.style.removeProperty('--px');
+        card.style.removeProperty('--py');
+      });
+    });
+  }
+})();
+</script>
+
+
+# 📝 Publications {#publications}
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2025</div><img src='/images/IDKB.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Practical Human Motion Prediction with LiDAR Point Clouds](https://arxiv.org/abs/2409.02914)
+
+Yuhang Lu, **Yichen Yao**, Jiadong Tu, Jiangnan Shao, Yuexin Ma, Xinge Zhu
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM Multimedia 2024</div><img src='/images/MotionPrediction.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Towards Practical Human Motion Prediction with LiDAR Point Clouds](https://dl.acm.org/doi/abs/10.1145/3664647.3680720)
+
+Xiao Han, Yiming Ren, **Yichen Yao**, Yujing Sun, Yuexin Ma
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2024</div><img src='/images/LiveHPS++.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[LiveHPS++: Robust and Coherent Motion Capture in Dynamic Free Environment](https://arxiv.org/abs/2407.09833)
+
+Yiming Ren, Xiao Han, **Yichen Yao**, Xiaoxiao Long, Yujing Sun, Yuexin Ma
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCAI 2024</div><img src='/images/RealDex.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[RealDex: Towards Human-like Grasping for Robotic Dexterous Hand](https://arxiv.org/abs/2402.13853)
+
+Yumeng Liu, Yaxun Yang, Youzhuo Wang, Xiaofei Wu, Jiamin Wang, **Yichen Yao**, Sören Schwertfeger, Sibei Yang, Wenping Wang, Jingyi Yu, Xuming He, Yuexin Ma
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2024</div><img src='/images/HUNTER.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[HUNTER: Unsupervised Human-centric 3D Detection via Transferring Knowledge from Synthetic Instances to Real Scenes](https://arxiv.org/abs/2403.02769)
+
+**Yichen Yao**, Zimo Jiang, Yujing Sun, Zhencai Zhu, Xinge Zhu, Runnan Chen, Yuexin Ma
+</div>
+</div> -->
+
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener"><div class="badge">SIGGRAPH Asia 2025</div><img src='/images/SymBridge.png' alt="sym" width="100%"></a></div>
+<div class='paper-box-text' markdown="1">
+
+[SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis](https://irc-vitahome.github.io/SymBridge/)
+
+Haoran Chen*, **Yiteng Xu\***, Yiming Ren, Yaoqin Ye, Xinran Li, Ning Ding, Yuxuan Wu, Yaoze Liu, Peishan Cong, Ziyi Wang, Bushi Liu, Yuhan Chen, Zhiyang Dou, Xiaokun Leng, Manyi Li†, Yuexin Ma†, Changhe Tu
+
+ACM SIGGRAPH Asia, 2025
+</div>
+</div>
+
+<div class="video-wrapper" style="position: relative; width: 100%; max-width: 960px; margin: 0.6rem auto 1.2rem; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 36px rgba(16,24,40,.18); border: 1px solid rgba(10,10,10,0.08); background: rgba(255,255,255,0.85);">
+  <video
+    class="fh-publication-video"
+    data-fh-autoplay-video
+    autoplay
+    muted
+    loop
+    playsinline
+    controls
+    preload="auto"
+    poster="/images/SymBridge.png"
+    style="display: block; width: 100%; height: auto;"
+    aria-label="SymBridge demo video"
+  >
+    <source src="/videos/SymBridge.mp4" type="video/mp4" />
+    您的浏览器不支持视频标签。您可以在此处下载视频：
+    <a href="/videos/SymBridge.mp4">SymBridge.mp4</a>
+  </video>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://openaccess.thecvf.com/content/CVPR2024/html/Xu_A_Unified_Framework_for_Human-centric_Point_Cloud_Video_Understanding_CVPR_2024_paper.html" target="_blank" rel="noopener"><div class="badge">CVPR 2024</div><img src='/images/unified.png' alt="sym" width="100%"></a></div>
+<div class='paper-box-text' markdown="1">
+
+[A Unified Framework for Human-centric Point Cloud Video Understanding](https://openaccess.thecvf.com/content/CVPR2024/html/Xu_A_Unified_Framework_for_Human-centric_Point_Cloud_Video_Understanding_CVPR_2024_paper.html)
+
+**Yiteng Xu**, Kecheng Ye, Xiao Han, Yiming Ren, Xinge ZHU, Yuexin Ma
+
+The IEEE / CVF Computer Vision and Pattern Recognition Conference (**CVPR**), 2024
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html" target="_blank" rel="noopener"><div class="badge">ICCV 2023</div><img src='/images/HuCenLife.png' alt="sym" width="100%"></a></div>
+<div class='paper-box-text' markdown="1">
+
+[Human-centric Scene Understanding for 3D Large-scale Scenarios](https://openaccess.thecvf.com/content/ICCV2023/html/Xu_Human-centric_Scene_Understanding_for_3D_Large-scale_Scenarios_ICCV_2023_paper.html)
+
+**Yiteng Xu\***, Peishan Cong\*, Yichen Yao\*, Runnan Chen, Yuenan Hou, Xinge Zhu, Xuming He, Jingyi Yu, Yuexin Ma
+
+In IEEE/CVF International Conference on Computer Vision (**ICCV**), 2023
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://ojs.aaai.org/index.php/AAAI/article/view/25120" target="_blank" rel="noopener"><div class="badge">AAAI 2023</div><img src='/images/fusionpose.png' alt="sym" width="100%"></a></div>
+<div class='paper-box-text' markdown="1">
+
+[Weakly Supervised 3D Multi-person Pose Estimation for Large-scale Scenes based on Monocular Camera and Single LiDAR](https://ojs.aaai.org/index.php/AAAI/article/view/25120)
+
+Peishan Cong\*, **Yiteng Xu\***, Yiming Ren, Juze Zhang, Lan Xu, Jingya Wang, Jingyi Yu, Yuexin Ma
+
+Thirty-Seventh AAAI Conference on Artificial Intelligence (**AAAI**), Oral, 2023
+</div>
+</div>
+
+# 📜 Patents {#patents}
+
+<div class='paper-box patent-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">Patent 2025</div>
+      <img src='/assets/files/Patents.jpg' alt='Patent front page' width='100%'>
+    </div>
+  </div>
+  <div class='paper-box-text'>
+    <h3 style="margin: 0 0 .4rem 0;"><a href="http://epub.cnipa.gov.cn/patent/CN120412083A" target="_blank" rel="noopener">General-purpose Dynamic Point Cloud Understanding Model and Multi-task Collaborative Optimization System</a></h3>
+    <div class="patent-meta">
+      <div class="pm"><strong>Publication No.</strong><span>CN120412083A</span></div>
+      <!-- <div class="pm"><strong>Application No.</strong><span>2025104473784</span></div> -->
+      <!-- <div class="pm"><strong>Type</strong><span>Invention patent application</span></div> -->
+      <!-- <div class="pm"><strong>Assignee</strong><span>ShanghaiTech University</span></div> -->
+      <!-- <div class="pm"><strong>Inventors</strong><span>Yiteng Xu; Yuexin Ma</span></div> -->
+      <!-- <div class="pm"><strong>IPC</strong><span>G06V40/20; G06V20/64; G06V20/70; G06V10/26; G06V10/44; G06V10/52; G06V10/54; G06V10/80; G06V10/82; G06N3/0455</span></div> -->
+    </div>
+    <p class="patent-abstract">
+      This invention discloses a general-purpose dynamic point cloud understanding model with a multi-task collaborative optimization system featuring a human-knowledge branch and a local-detail branch. It advances multi-level feature fusion for 3D human point clouds, optimizes dynamic temporal sequence modeling, and improves cross-task generalization. Applicable to intelligent surveillance, VR/AR, human–robot interaction, autonomous driving, and sports analytics, providing core algorithms for real-time, precise understanding of human behavior and state.
+    </p>
+    
+  </div>
+</div>
+
+<style>
+/* ============== Patents (scoped) ============== */
+.patent-box {
+  position: relative;
+  padding: 1rem 1rem;
+  border: 1px solid rgba(10,10,10,0.08);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(255,255,255,.96));
+  box-shadow: 0 10px 30px rgba(16,24,40,.10);
+  overflow: hidden;
+  /* entrance animation */
+  opacity: 0;
+  transform: translateY(10px);
+  animation: patent-fade-in .8s cubic-bezier(.2,.6,.2,1) .05s forwards;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+@media (prefers-color-scheme: dark) {
+  .patent-box {
+    border-color: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 16px 44px rgba(0,0,0,.45);
+  }
+}
+.patent-box::before {
+  content: "";
+  position: absolute; inset: -40% -20% auto -20%; height: 180px;
+  background:
+    radial-gradient(600px 220px at 20% 50%, rgba(124,58,237,.20), transparent 60%),
+    radial-gradient(600px 220px at 70% 50%, rgba(6,182,212,.18), transparent 65%);
+  filter: blur(22px) saturate(130%);
+  pointer-events: none;
+  animation: aurora-drift 14s ease-in-out infinite alternate;
+}
+.patent-box:hover, .patent-box:focus-within {
+  transform: translateY(-3px);
+  border-color: transparent;
+  box-shadow: 0 18px 48px rgba(16,24,40,.18);
+}
+.patent-box .paper-box-image img {
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(16,24,40,.12);
+  transition: transform .28s ease, box-shadow .28s ease;
+}
+.patent-box .paper-box-text {
+  padding: .5rem 1rem;
+}
+.patent-box .paper-box-image { opacity: 0; transform: translateX(-8px); animation: patent-fade-in .8s ease .12s forwards; }
+.patent-box .paper-box-text { opacity: 0; transform: translateX(8px); animation: patent-fade-in .8s ease .20s forwards; }
+.patent-box:hover .paper-box-image img { transform: scale(1.015); box-shadow: 0 14px 36px rgba(16,24,40,.18); }
+.patent-meta { display: grid; grid-template-columns: 1fr; gap: .35rem; margin: .6rem 0 .2rem; font-size: .95rem; }
+.patent-meta .pm { display: grid; grid-template-columns: 140px 1fr; gap: .6rem; align-items: start; }
+.patent-abstract { margin-top: .5rem; line-height: 1.55; }
+.patent-actions { margin-top: .6rem; }
+.patent-actions a { display: inline-block; padding: .28rem .65rem; border-radius: 999px; border: 1px solid rgba(124,58,237,.35); text-decoration: none; color: inherit; background: rgba(255,255,255,.06); }
+.patent-actions a:hover { transform: translateY(-1px); border-color: transparent; box-shadow: 0 8px 26px rgba(124,58,237,.22); }
+
+/* keyframes */
+@keyframes patent-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes aurora-drift {
+  from { transform: translateY(0); filter: blur(22px) saturate(130%); }
+  to { transform: translateY(-6px); filter: blur(24px) saturate(140%); }
+}
+
+/* accessibility & reduced motion */
+.patent-box:focus-within { outline: 2px solid rgba(124,58,237,.28); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  .patent-box, .patent-box .paper-box-image, .patent-box .paper-box-text { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .patent-box::before { animation: none !important; }
+  .patent-box *, .patent-box { transition: none !important; }
+}
+</style>
+
+# 🛠️ Technical Skills & Expertise
+
+<div id="skills" class="skills-section" aria-label="Technical Skills & Expertise">
+  <div class="skills-aurora" aria-hidden="true"></div>
+
+  <div class="skills-header">
+    <div class="skills-title-wrap">
+      <span class="skills-kicker">Designed for curiosity</span>
+      <h3 class="skills-title">Interactive Skills Studio</h3>
+    </div>
+    <div class="skills-modes" role="tablist" aria-label="Skills view selector">
+      <button class="skills-mode active" role="tab" aria-selected="true" data-mode="gallery">Gallery</button>
+      <button class="skills-mode" role="tab" aria-selected="false" data-mode="constellation">Constellation</button>
+    </div>
+  </div>
+
+  <div class="skills-grid" data-view="gallery">
+    <section class="skills-rings" aria-label="Core proficiencies" role="list">
+      <div class="ring" role="listitem" aria-label="Python — Expert" data-percent="95" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">Python</span>
+          <span class="ring-note">Expert</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="PyTorch — Expert" data-percent="92" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">PyTorch</span>
+          <span class="ring-note">Expert</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="3D Computer Vision — Expert" data-percent="93" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">3D CV</span>
+          <span class="ring-note">Expert</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="LiDAR–Camera Fusion — Advanced" data-percent="88" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">LiDAR × Cam</span>
+          <span class="ring-note">Advanced</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="Linux & DevOps — Advanced" data-percent="90" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">Linux · DevOps</span>
+          <span class="ring-note">Advanced</span>
+        </div>
+      </div>
+      <div class="ring" role="listitem" aria-label="Parametric Human Modeling — Advanced" data-percent="85" style="--p: 0">
+        <div class="ring-arc"></div>
+        <div class="ring-core">
+          <span class="ring-label">SMPL/SMPL-X</span>
+          <span class="ring-note">Advanced</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-cards" aria-label="Skill categories">
+      <article class="skill-card" tabindex="0">
+        <div class="card-accent"></div>
+        <header class="card-head">
+          <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 5h8v6H3zM13 5h8v4h-8zM3 13h8v6H3zM13 11h8v8h-8z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h4 class="card-title">Programming & Frameworks</h4>
+        </header>
+        <div class="card-body">
+          <div class="chip-row">
+            <span class="skill-chip chip-hot">Python</span>
+            <span class="skill-chip chip-hot">PyTorch</span>
+            <span class="skill-chip">Bash</span>
+            <span class="skill-chip">NumPy</span>
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">SciPy</span>
+            <span class="skill-chip">Scikit-learn</span>
+            <span class="skill-chip">Matplotlib</span>
+          </div>
+          <div class="card-more" hidden>
+            <ul class="mini-list">
+              <li>Algorithm design & model implementation</li>
+              <li>Large-scale data processing & analysis</li>
+              <li>Reproducible training pipelines</li>
+            </ul>
+          </div>
+        </div>
+        <button class="card-toggle" aria-expanded="false" aria-controls="pf-more">More</button>
+      </article>
+
+      <article class="skill-card" tabindex="0">
+        <div class="card-accent"></div>
+        <header class="card-head">
+          <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l3 6 6 .9-4.5 4.2 1.2 6.9L12 17l-5.7 4 1.2-6.9L3 9.9 9 9z" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h4 class="card-title">Domain & Toolchain</h4>
+        </header>
+        <div class="card-body">
+          <div class="chip-row">
+            <span class="skill-chip chip-hot">3D Computer Vision</span>
+            <span class="skill-chip">SMPL/SMPL-X</span>
+            <span class="skill-chip">Open3D</span>
+            <span class="skill-chip">PCL</span>
+            <span class="skill-chip">MeshLab</span>
+            <span class="skill-chip">LiDAR–Camera Fusion</span>
+            <span class="skill-chip">Human Motion</span>
+          </div>
+          <div class="card-more" hidden>
+            <ul class="mini-list">
+              <li>Human-centric scene understanding</li>
+              <li>Motion capture, mesh recovery & interaction</li>
+              <li>Multi-human↔Multi-robot interaction modeling</li>
+            </ul>
+          </div>
+        </div>
+        <button class="card-toggle" aria-expanded="false" aria-controls="dt-more">More</button>
+      </article>
+
+      <article class="skill-card" tabindex="0">
+        <div class="card-accent"></div>
+        <header class="card-head">
+          <svg class="card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.5"/></svg>
+          <h4 class="card-title">Systems & Methods</h4>
+        </header>
+        <div class="card-body">
+          <div class="chip-row">
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">Git / GitHub</span>
+            <span class="skill-chip">Slurm</span>
+            <span class="skill-chip">Docker</span>
+            <span class="skill-chip">LaTeX</span>
+            <span class="skill-chip">Draw.io</span>
+            <span class="skill-chip">Human-in-the-Loop</span>
+            <span class="skill-chip">Wizard of Oz</span>
+          </div>
+          <div class="card-more" hidden>
+            <ul class="mini-list">
+              <li>Cluster scheduling & experiment orchestration</li>
+              <li>High-quality documentation & diagrams</li>
+              <li>Rigorous user study design</li>
+            </ul>
+          </div>
+        </div>
+        <button class="card-toggle" aria-expanded="false" aria-controls="sm-more">More</button>
+      </article>
+    </section>
+  </div>
+
+  <div class="skills-constellation" hidden aria-live="polite">
+    <div class="float-chips">
+      <span class="float-chip fc-1">3D Computer Vision</span>
+      <span class="float-chip fc-2">Robotics</span>
+      <span class="float-chip fc-3">Embodied AI</span>
+      <span class="float-chip fc-4">Human–Robot Interaction</span>
+      <span class="float-chip fc-5">LiDAR · Camera</span>
+      <span class="float-chip fc-6">SMPL / SMPL-X</span>
+      <span class="float-chip fc-7">Open3D</span>
+      <span class="float-chip fc-8">PCL</span>
+      <span class="float-chip fc-9">Docker</span>
+      <span class="float-chip fc-10">Linux</span>
+      <span class="float-chip fc-11">PyTorch</span>
+      <span class="float-chip fc-12">Motion Capture</span>
+      <span class="float-chip fc-13">Generative Models</span>
+      <span class="float-chip fc-14">Point Clouds</span>
+      <span class="float-chip fc-15">Pose Estimation</span>
+      <span class="float-chip fc-16">Human-in-the-Loop</span>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ============== Skills Studio (scoped) ============== */
+.skills-section {
+  /* Default to light theme-friendly values for better contrast */
+  --sk-bg: var(--global-bg, #f7f7fb);
+  --sk-card: rgba(255,255,255,0.9);
+  --sk-border: rgba(10,10,10,0.08);
+  --sk-text: var(--global-text, #000000);
+  --sk-muted: #000000;
+  --sk-accent-1: #a855f7; /* purple */
+  --sk-accent-2: #06b6d4; /* cyan */
+  --sk-accent-3: #f472b6; /* pink */
+  --sk-accent-4: #f59e0b; /* amber */
+  --sk-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  padding: 1rem 0 0 0;
+  color: var(--sk-text);
+  isolation: isolate;
+}
+@media (prefers-color-scheme: dark) {
+  .skills-section {
+    --sk-bg: #0b0c10;
+    --sk-card: rgba(255,255,255,0.06);
+    --sk-border: rgba(255,255,255,0.12);
+    --sk-text: #e5e7eb;
+    --sk-muted: #a3a3a3;
+  }
+}
+.skills-aurora {
+  position: absolute; inset: -10% -5% -15% -5%; pointer-events: none; z-index: -1;
+  background:
+    radial-gradient(1200px 800px at 10% 20%, rgba(168,85,247,.28), transparent 45%),
+    radial-gradient(1000px 700px at 90% 10%, rgba(6,182,212,.28), transparent 45%),
+    radial-gradient(900px 700px at 80% 80%, rgba(244,114,182,.25), transparent 50%),
+    radial-gradient(900px 700px at 20% 85%, rgba(245,158,11,.22), transparent 50%);
+  filter: blur(40px) saturate(120%);
+  transform: translateZ(0);
+  animation: auroraShift 16s ease-in-out infinite alternate;
+}
+@keyframes auroraShift { from { transform: scale(1) translateY(0); } to { transform: scale(1.05) translateY(-2%); } }
+
+.skills-header { display: flex; justify-content: space-between; align-items: center; gap: .75rem; margin-bottom: .5rem; flex-wrap: wrap; }
+.skills-kicker { font-size: .8rem; color: var(--sk-muted); letter-spacing: .12em; text-transform: uppercase; }
+.skills-title { margin: .15rem 0 0; font-size: clamp(1.1rem, 1.2rem + .5vw, 1.5rem); background: linear-gradient(135deg, var(--sk-accent-1), var(--sk-accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.skills-modes { display: inline-flex; gap: .4rem; }
+.skills-mode { appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .35rem .8rem; border-radius: 999px; cursor: pointer; transition: all .25s ease; }
+.skills-mode:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
+.skills-mode.active { background: linear-gradient(135deg, rgba(168,85,247,.2), rgba(6,182,212,.2)); border-color: transparent; }
+
+.skills-grid { display: grid; gap: 1.2rem; }
+.skills-rings { display: grid; grid-template-columns: repeat(6, minmax(90px, 1fr)); gap: 1rem; align-items: center; }
+@media (max-width: 1100px) { .skills-rings { grid-template-columns: repeat(3, minmax(100px, 1fr)); } }
+@media (max-width: 600px) { .skills-rings { grid-template-columns: repeat(2, minmax(100px, 1fr)); } }
+
+.ring { --size: 132px; --thickness: 14px; position: relative; display: grid; place-items: center; aspect-ratio: 1/1; width: 100%; min-width: 110px; filter: drop-shadow(0 10px 22px rgba(16, 24, 40, .35)); }
+.ring-arc {
+  width: var(--size); height: var(--size); border-radius: 50%;
+  background:
+    conic-gradient(from -90deg,
+      color-mix(in oklab, var(--sk-accent-1) 70%, var(--sk-accent-3) 30%) calc(var(--p) * 1%),
+      rgba(255,255,255,0.08) 0);
+  -webkit-mask: radial-gradient(circle at center, transparent calc(50% - var(--thickness)), #000 calc(50% - var(--thickness) + 1px));
+  mask: radial-gradient(circle at center, transparent calc(50% - var(--thickness)), #000 calc(50% - var(--thickness) + 1px));
+  transition: background .8s ease;
+}
+.ring::after { content: ""; position: absolute; inset: 8%; border-radius: 50%; background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.2), rgba(255,255,255,0)); pointer-events: none; }
+.ring-core { position: absolute; display: grid; place-items: center; text-align: center; gap: .15rem; }
+.ring-label { font-weight: 700; letter-spacing: .02em; font-size: .95rem; }
+.ring-note { font-size: .75rem; color: var(--sk-muted); }
+
+.skills-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 1100px) { .skills-cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .skills-cards { grid-template-columns: 1fr; } }
+
+.skill-card { position: relative; background: var(--sk-card); border: 1px solid var(--sk-border); border-radius: 16px; overflow: hidden; box-shadow: var(--sk-shadow); transform-style: preserve-3d; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+.skill-card:hover { transform: translateY(-2px) scale(1.01); border-color: transparent; box-shadow: 0 18px 60px rgba(16,24,40,.28); }
+.card-accent { position: absolute; inset: -20% -30% auto -30%; height: 120px; background: radial-gradient(700px 200px at 30% 50%, rgba(168,85,247,.35), transparent 60%), radial-gradient(700px 200px at 70% 50%, rgba(6,182,212,.35), transparent 60%); filter: blur(24px) saturate(130%); pointer-events: none; }
+.card-head { display: flex; align-items: center; gap: .6rem; padding: .9rem .95rem .2rem; }
+.card-icon { color: color-mix(in oklab, var(--sk-accent-1) 60%, var(--sk-accent-2) 40%); }
+.card-title { margin: 0; font-size: 1.05rem; background: linear-gradient(135deg, var(--sk-accent-1), var(--sk-accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.card-body { padding: .25rem .95rem .8rem; }
+.chip-row { display: flex; flex-wrap: wrap; gap: .45rem; }
+.skill-chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .78rem; padding: .28rem .6rem; border-radius: 999px; border: 1px solid var(--sk-border); color: var(--sk-text); background: rgba(255,255,255,.06); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+.skills-section .skill-chip { color: #000 !important; }
+.skills-section .float-chip { color: #000 !important; }
+.skill-chip:hover { transform: translateY(-2px); border-color: transparent; background: linear-gradient(135deg, rgba(168,85,247,.25), rgba(6,182,212,.25)); }
+.chip-hot { border-color: rgba(124,58,237,.45); }
+.mini-list { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--sk-text); }
+.mini-list li { margin: .25rem 0; }
+.card-toggle { width: max-content; margin: 0 .95rem .9rem; appearance: none; border: 1px solid var(--sk-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--sk-text); font: inherit; padding: .3rem .7rem; border-radius: 10px; cursor: pointer; transition: all .25s ease; }
+.card-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.15); transform: translateY(-1px); }
+
+.skills-constellation { position: relative; min-height: 280px; display: grid; place-items: center; }
+.float-chips { display: flex; flex-wrap: wrap; gap: .55rem; justify-content: center; padding: .6rem; }
+.float-chip { font-size: .85rem; padding: .35rem .7rem; border-radius: 999px; border: 1px solid var(--sk-border); background: linear-gradient(135deg, rgba(168,85,247,.22), rgba(6,182,212,.22)); color: var(--sk-text); box-shadow: 0 8px 24px rgba(16,24,40,.18); animation: float 5.5s ease-in-out infinite; }
+.float-chip:hover { transform: translateY(-3px) scale(1.02); }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.fc-1 { animation-duration: 5.2s } .fc-2 { animation-duration: 6.1s } .fc-3 { animation-duration: 5.8s } .fc-4 { animation-duration: 6.4s }
+.fc-5 { animation-duration: 5.6s } .fc-6 { animation-duration: 6.0s } .fc-7 { animation-duration: 5.4s } .fc-8 { animation-duration: 6.2s }
+.fc-9 { animation-duration: 5.7s } .fc-10 { animation-duration: 6.3s } .fc-11 { animation-duration: 5.3s } .fc-12 { animation-duration: 6.6s }
+.fc-13 { animation-duration: 5.5s } .fc-14 { animation-duration: 6.5s } .fc-15 { animation-duration: 5.9s } .fc-16 { animation-duration: 6.7s }
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('skills');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // View toggle: Gallery <-> Constellation
+  const modes = root.querySelectorAll('.skills-mode');
+  const grid = root.querySelector('.skills-grid');
+  const constellation = root.querySelector('.skills-constellation');
+  modes.forEach(btn => {
+    btn.addEventListener('click', () => {
+      modes.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected', 'true');
+      const mode = btn.getAttribute('data-mode');
+      if (mode === 'constellation') {
+        grid.style.display = 'none';
+        constellation.hidden = false;
+      } else {
+        grid.style.display = 'grid';
+        constellation.hidden = true;
+      }
+    });
+  });
+
+  // Animate rings on enter
+  const rings = Array.from(root.querySelectorAll('.ring'));
+  const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+  function animateRing(el) {
+    const target = Number(el.dataset.percent || 0);
+    if (reduced) { el.style.setProperty('--p', target); return; }
+    const startVal = Number(getComputedStyle(el).getPropertyValue('--p')) || 0;
+    const duration = 900 + target * 6;
+    let startTime = 0;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      const k = Math.min((ts - startTime) / duration, 1);
+      const val = startVal + (target - startVal) * easeOutCubic(k);
+      el.style.setProperty('--p', val.toFixed(1));
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { animateRing(entry.target); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.35 });
+    rings.forEach(r => io.observe(r));
+  } else { rings.forEach(r => animateRing(r)); }
+
+  // Card: tilt and expand
+  const cards = Array.from(root.querySelectorAll('.skill-card'));
+  const maxTiltX = 7, maxTiltY = 10;
+  cards.forEach(card => {
+    // expand
+    const toggle = card.querySelector('.card-toggle');
+    const more = card.querySelector('.card-more');
+    if (toggle && more) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        more.hidden = expanded;
+      });
+    }
+    if (reduced) return;
+    // tilt
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width; // 0..1
+      const py = (e.clientY - r.top) / r.height; // 0..1
+      const rx = (py - 0.5) * -2 * maxTiltX; // invert for natural feel
+      const ry = (px - 0.5) * 2 * maxTiltY;
+      card.style.transform = `rotateX(${rx.toFixed(2)}deg) rotateY(${ry.toFixed(2)}deg) translateZ(0)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+})();
+</script>
+
+
+<!-- # 🎖 Honors and Awards -->
+
+
+<div id="awards" class="awards-section" aria-label="Honors and Awards">
+  <div class="awards-head">
+    <h2 class="awards-title">
+      <img src="/images/trophy.svg" alt="trophy" width="32" height="32" class="awards-ico" />
+      Honors and Awards
+    </h2>
+    <div class="awards-views" role="tablist" aria-label="Awards view selector">
+      <button class="awards-toggle active" role="tab" aria-selected="true" data-view="stairs">Stairs</button>
+      <button class="awards-toggle" role="tab" aria-selected="false" data-view="curve">Curve</button>
+      <button class="awards-toggle" role="tab" aria-selected="false" data-view="list">List</button>
+    </div>
+  </div>
+
+  <!-- 柱形台阶视图（明显的 1-5 级台阶） -->
+  <div class="awards-stairs" role="list" aria-label="Awards as ascending bars">
+    <!-- lvl=1 最低台阶 -->
+    <a class="step" role="listitem" style="--lvl:1" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964643670370074625" target="_blank" rel="noopener" tabindex="0" aria-label="Third Prize — 2024">
+      <div class="step-label">
+        <div class="step-title">Third Prize</div>
+        <div class="step-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
+      </div>
+    </a>
+
+    <!-- lvl=2 -->
+    <a class="step" role="listitem" style="--lvl:2" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener" tabindex="0" aria-label="Merit Student & Outstanding Student Leader — 2020–2024">
+      <div class="step-label">
+        <div class="step-title">Merit Student & Outstanding Student Leader</div>
+        <div class="step-sub">ShanghaiTech University · 2020–2024</div>
+      </div>
+    </a>
+
+    <!-- lvl=3 -->
+    <a class="step" role="listitem" style="--lvl:3" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener" tabindex="0" aria-label="Shanghai Outstanding Graduate — 2023">
+      <div class="step-label">
+        <div class="step-title">Shanghai Outstanding Graduate</div>
+        <div class="step-sub">2023</div>
+      </div>
+    </a>
+
+    <!-- lvl=4 -->
+    <a class="step" role="listitem" style="--lvl:4" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644453601820674" target="_blank" rel="noopener" tabindex="0" aria-label="National Second Prize — 2020">
+      <div class="step-label">
+        <div class="step-title">National Second Prize</div>
+        <div class="step-sub">The National Robotics Competition · 2020</div>
+      </div>
+    </a>
+
+    <!-- lvl=5 最高台阶 -->
+    <a class="step top" role="listitem" style="--lvl:5" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1965322313916268546" target="_blank" rel="noopener" tabindex="0" aria-label="National Scholarship (Top 1%) — 2024">
+      <div class="step-label">
+        <div class="step-title">National Scholarship</div>
+        <div class="step-sub">Top 1% · 2024</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- 上升曲线视图（代表逐步成长） -->
+  <div class="awards-curve" hidden aria-label="Awards as a rising curve">
+    <svg class="curve-svg" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="awGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#8b5cf6"/>
+          <stop offset="100%" stop-color="#06b6d4"/>
+        </linearGradient>
+      </defs>
+      <path class="curve-path" d="M8,78 C16,74 20,68 28,62 S40,54 48,48 S60,38 68,30 S80,24 88,18" stroke="url(#awGrad)" stroke-width="2.6" fill="none"/>
+      <g class="curve-points" fill="#fff" stroke="url(#awGrad)" stroke-width="1.6">
+        <circle cx="8" cy="78" r="2.6"/>
+        <circle cx="28" cy="62" r="2.6"/>
+        <circle cx="48" cy="48" r="2.6"/>
+        <circle cx="68" cy="30" r="2.6"/>
+        <circle cx="88" cy="18" r="3.2"/>
+      </g>
+    </svg>
+    <div class="curve-nodes">
+      <a class="node" style="--x:8%; --y:78%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964643670370074625" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">Third Prize</div>
+          <div class="node-sub">The 6th ShanghaiTech Innovation & Entrepreneurship · 2024</div>
+        </div>
+      </a>
+      <a class="node" style="--x:28%; --y:62%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">Merit Student & Outstanding Student Leader</div>
+          <div class="node-sub">ShanghaiTech University · 2020–2024</div>
+        </div>
+      </a>
+      <a class="node" style="--x:48%; --y:48%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">Shanghai Outstanding Graduate</div>
+          <div class="node-sub">2023</div>
+        </div>
+      </a>
+      <a class="node" style="--x:68%; --y:30%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644453601820674" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">National Second Prize</div>
+          <div class="node-sub">The National Robotics Competition · 2020</div>
+        </div>
+      </a>
+      <a class="node top" style="--x:88%; --y:18%" href="https://kms.shanghaitech.edu.cn/itemDetail?id=1965322313916268546" target="_blank" rel="noopener" tabindex="0">
+        <div class="node-card">
+          <div class="node-title">National Scholarship</div>
+          <div class="node-sub">Top 1% · 2024</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- 无障碍/降级列表视图（默认隐藏） -->
+  <ul class="awards-list" hidden>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1965322313916268546" target="_blank" rel="noopener"><strong>National Scholarship</strong></a> (Top 1%), 2024</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964644453601820674" target="_blank" rel="noopener"><strong>National Second Prize</strong></a>, The National Robotics Competition, 2020</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963545413367676929" target="_blank" rel="noopener"><strong>Shanghai Outstanding Graduate</strong></a>, 2023</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1963541292048760833" target="_blank" rel="noopener"><strong>Merit Student & Outstanding Student Leader</strong></a>, ShanghaiTech University, 2020 & 2021 & 2022 & 2023 & 2024</li>
+    <li><a href="https://kms.shanghaitech.edu.cn/itemDetail?id=1964643670370074625" target="_blank" rel="noopener"><strong>Third Prize</strong></a>, The 6th ShanghaiTech Innovation and Entrepreneurship Competition, 2024</li>
+  </ul>
+</div>
+
+<style>
+/* ============== Awards: Stairs + Curve (scoped) ============== */
+.awards-section {
+  --aw-bg: var(--global-bg, #f7f7fb);
+  --aw-card: rgba(255,255,255,0.9);
+  --aw-border: rgba(10,10,10,0.08);
+  --aw-text: var(--global-text, #000);
+  --aw-muted: #000000;
+  --aw-ac1: #8b5cf6; /* purple */
+  --aw-ac2: #06b6d4; /* cyan */
+  --aw-shadow: 0 18px 50px rgba(0,0,0,0.35);
+  --unit: clamp(32px, 5.5vw, 56px); /* step height unit */
+  position: relative;
+  margin: 1.2rem 0 2.4rem;
+  color: var(--aw-text);
+}
+@media (prefers-color-scheme: dark) {
+  .awards-section {
+    --aw-bg: #0b0c10;
+    --aw-card: rgba(255,255,255,0.08);
+    --aw-border: rgba(255,255,255,0.18);
+    --aw-text: #e5e7eb;
+    --aw-muted: #a3a3a3;
+    --aw-shadow: 0 18px 60px rgba(0,0,0,0.45);
+  }
+}
+.awards-head { display: flex; align-items: center; justify-content: space-between; gap: .8rem; flex-wrap: wrap; }
+.awards-title { display: flex; align-items: center; gap: .6rem; margin: .2rem 0 .6rem; font-size: 1.35rem; background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.awards-ico { filter: saturate(120%); }
+.awards-views { display: inline-flex; gap: .4rem; }
+.awards-toggle { appearance: none; border: 1px solid var(--aw-border); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,0)); color: var(--aw-text); font: inherit; padding: .35rem .8rem; border-radius: 999px; cursor: pointer; transition: all .25s ease; }
+.awards-toggle:hover { border-color: transparent; box-shadow: 0 0 0 3px rgba(124,58,237,.18); transform: translateY(-1px); }
+.awards-toggle.active { background: linear-gradient(135deg, rgba(139,92,246,.22), rgba(6,182,212,.22)); border-color: transparent; }
+
+/* Stairs (bars) */
+.awards-stairs {
+  position: relative;
+  height: clamp(320px, 40vw, 420px);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  align-items: end;
+  padding: 1rem 1rem 1.2rem;
+  background:
+    radial-gradient(900px 380px at 10% 90%, rgba(139,92,246,.08), transparent 60%),
+    radial-gradient(900px 380px at 80% 20%, rgba(6,182,212,.10), transparent 65%);
+  border-radius: 16px;
+  overflow: hidden;
+  isolation: isolate;
+}
+.awards-stairs::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: .9rem; height: 2px;
+  background: linear-gradient(90deg, rgba(139,92,246,.25), rgba(6,182,212,.25));
+}
+.step {
+  position: relative;
+  align-self: end;
+  height: calc(var(--lvl,1) * var(--unit));
+  border: 1px solid var(--aw-border);
+  border-radius: 10px;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--aw-card) 90%, transparent), rgba(255,255,255,0.05));
+  box-shadow: var(--aw-shadow);
+  text-decoration: none; color: var(--aw-text);
+  transform: translateY(10px) scaleY(.98);
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease, background .28s ease, opacity .6s ease;
+  opacity: 0;
+}
+.js-enabled .step.in-view { opacity: 1; transform: translateY(0) scaleY(1); }
+.step:hover, .step:focus-visible { border-color: transparent; box-shadow: 0 20px 60px rgba(16,24,40,.28); outline: none; }
+.step:hover { transform: translateY(-2px) scaleY(1.02); }
+.step::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: 10px;
+  background:
+    radial-gradient(500px 180px at 50% 0%, rgba(139,92,246,.22), transparent 60%),
+    radial-gradient(500px 180px at 60% 10%, rgba(6,182,212,.22), transparent 70%);
+  filter: blur(18px) saturate(120%);
+  opacity: 0; transition: opacity .28s ease;
+}
+.step:hover::before, .step:focus-visible::before { opacity: 1; }
+.step-label { position: absolute; left: 50%; bottom: calc(100% + 8px); transform: translateX(-50%); width: 95%; text-align: center; }
+.step-title { font-weight: 700; letter-spacing: .02em; font-size: clamp(.95rem, .9rem + .2vw, 1.05rem); background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.step-sub { font-size: .82rem; color: var(--aw-muted); }
+
+@media (max-width: 720px) {
+  .awards-stairs { height: clamp(280px, 70vh, 420px); padding: .8rem .7rem 1.2rem; gap: 10px; }
+  .step-label { width: 120%; }
+}
+
+/* Curve */
+.awards-curve { position: relative; height: clamp(320px, 40vw, 420px); border-radius: 16px; overflow: hidden; background:
+  radial-gradient(900px 380px at 10% 90%, rgba(139,92,246,.08), transparent 60%),
+  radial-gradient(900px 380px at 80% 20%, rgba(6,182,212,.10), transparent 65%);
+}
+.curve-svg { position: absolute; inset: 0; }
+.curve-path { stroke-linecap: round; stroke-linejoin: round; }
+.js-enabled .curve-path { stroke-dasharray: 400; stroke-dashoffset: 400; transition: stroke-dashoffset 1.2s ease .15s; }
+.js-enabled .curve-path.drawn { stroke-dashoffset: 0; }
+.curve-nodes { position: absolute; inset: 0; }
+.node { position: absolute; left: var(--x); top: var(--y); transform: translate(-50%, -50%); width: 28px; height: 28px; border-radius: 50%; outline: none; }
+.node::before { content: ""; position: absolute; inset: 6px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px rgba(139,92,246,.5); }
+.node.top::before { box-shadow: 0 0 0 2px rgba(6,182,212,.6); }
+.node:hover::before, .node:focus-visible::before { box-shadow: 0 0 0 3px rgba(139,92,246,.6), 0 8px 24px rgba(16,24,40,.3); }
+.node-card { position: absolute; left: 50%; bottom: 40px; transform: translate(-50%, 6px) scale(.98); background: var(--aw-card); color: var(--aw-text); border: 1px solid var(--aw-border); border-radius: 12px; padding: .5rem .7rem; box-shadow: var(--aw-shadow); width: max-content; max-width: 260px; opacity: 0; pointer-events: none; transition: opacity .25s ease, transform .25s ease; }
+.node:hover .node-card, .node:focus-visible .node-card { opacity: 1; transform: translate(-50%, 0) scale(1); }
+.node-title { font-weight: 700; letter-spacing: .02em; font-size: .98rem; background: linear-gradient(135deg, var(--aw-ac1), var(--aw-ac2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.node-sub { font-size: .82rem; color: var(--aw-muted); }
+
+/* List */
+.awards-list { margin: .6rem 0 0; padding-left: 1.1rem; color: var(--aw-text); }
+.awards-section .awards-list li { margin: .35rem 0; }
+</style>
+
+<script>
+(function() {
+  const root = document.getElementById('awards');
+  if (!root) return;
+  root.classList.add('js-enabled');
+  const stairs = root.querySelector('.awards-stairs');
+  const curve = root.querySelector('.awards-curve');
+  const list = root.querySelector('.awards-list');
+  const toggles = root.querySelectorAll('.awards-toggle');
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // 视图切换：Stairs <-> Curve <-> List
+  function setView(view) {
+    if (view === 'list') {
+      list.hidden = false; stairs.style.display = 'none'; if (curve) curve.style.display = 'none';
+    } else if (view === 'curve') {
+      list.hidden = true; stairs.style.display = 'none'; if (curve) { curve.style.display = 'block'; drawCurve(); }
+    } else { // stairs
+      list.hidden = true; stairs.style.display = 'grid'; if (curve) curve.style.display = 'none';
+    }
+  }
+  toggles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      toggles.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+      setView(btn.getAttribute('data-view'));
+    });
+  });
+
+  // 进入视口动画
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); } });
+    }, { threshold: 0.2 });
+    root.querySelectorAll('.step').forEach(el => io.observe(el));
+  } else {
+    root.querySelectorAll('.step').forEach(el => el.classList.add('in-view'));
+  }
+
+  // 曲线绘制动画
+  function drawCurve() {
+    if (!curve) return;
+    const path = curve.querySelector('.curve-path');
+    if (!path) return;
+    if (path.classList.contains('drawn')) return; // once
+    if (reduced) { path.classList.add('drawn'); return; }
+    const len = path.getTotalLength();
+    path.style.strokeDasharray = String(len);
+    path.style.strokeDashoffset = String(len);
+    requestAnimationFrame(() => { path.classList.add('drawn'); path.style.strokeDashoffset = '0'; });
+  }
+})();
+</script>
+
+# 📖 Educations {#educations}
+
+-   **Ph.D. in Computer Science and Technology** (2023 - Present)
+    -   *ShanghaiTech University, Shanghai, China*
+-   **B.S. in Computer Science and Technology** (2019 - 2023)
+    -   *ShanghaiTech University, Shanghai, China*
+
+# 🎯 Skill Points
+
+<div id="skill-points" class="skill-points">
+  <div class="sp-chips" role="list" aria-label="Skill Points">
+    <span class="sp-chip" role="listitem">3D Computer Vision</span>
+    <span class="sp-chip" role="listitem">Robotics</span>
+    <span class="sp-chip" role="listitem">Embodied AI</span>
+    <span class="sp-chip" role="listitem">Human-Robot Interaction (HRI)</span>
+    <span class="sp-chip" role="listitem">3D Perception</span>
+    <span class="sp-chip" role="listitem">Human-centric Scene Understanding</span>
+    <span class="sp-chip" role="listitem">Parametric Human Modeling (SMPL/SMPL-X)</span>
+    <span class="sp-chip" role="listitem">3D Motion Generation and Prediction</span>
+    <span class="sp-chip" role="listitem">Humanoid Robotics</span>
+    <span class="sp-chip" role="listitem">Multi-Agent Interaction</span>
+    <span class="sp-chip" role="listitem">Physics-based Simulation and Modeling</span>
+    <span class="sp-chip" role="listitem">Sensor Fusion (LiDAR & Camera)</span>
+    <span class="sp-chip" role="listitem">Human-in-the-Loop (HITL) Simulation</span>
+    <span class="sp-chip" role="listitem">Augmented Reality (AR) in Robotics</span>
+    <span class="sp-chip" role="listitem">Real-time Motion Capture</span>
+    <span class="sp-chip" role="listitem">Weakly Supervised Learning</span>
+    <span class="sp-chip" role="listitem">Self-Supervised Learning for Robotics</span>
+    <span class="sp-chip" role="listitem">Geometric Deep Learning</span>
+    <span class="sp-chip" role="listitem">3D Human Pose Estimation</span>
+    <span class="sp-chip" role="listitem">Point Cloud Video Understanding</span>
+    <span class="sp-chip" role="listitem">Assistive Robotics</span>
+    <span class="sp-chip" role="listitem">Python</span>
+    <span class="sp-chip" role="listitem">PyTorch</span>
+    <span class="sp-chip" role="listitem">NumPy</span>
+    <span class="sp-chip" role="listitem">Pandas</span>
+    <span class="sp-chip" role="listitem">SciPy</span>
+    <span class="sp-chip" role="listitem">Scikit-learn</span>
+    <span class="sp-chip" role="listitem">Matplotlib</span>
+    <span class="sp-chip" role="listitem">Open3D</span>
+    <span class="sp-chip" role="listitem">PCL</span>
+    <span class="sp-chip" role="listitem">PyTorch3D</span>
+    <span class="sp-chip" role="listitem">Trimesh</span>
+    <span class="sp-chip" role="listitem">MeshLab</span>
+    <span class="sp-chip" role="listitem">LaTeX</span>
+    <span class="sp-chip" role="listitem">Bash Scripting</span>
+    <span class="sp-chip" role="listitem">Algorithms and Data Structures</span>
+    <span class="sp-chip" role="listitem">Docker</span>
+    <span class="sp-chip" role="listitem">Slurm</span>
+    <span class="sp-chip" role="listitem">Git / GitHub</span>
+    <span class="sp-chip" role="listitem">PyTorch Lightning</span>
+    <span class="sp-chip" role="listitem">OpenCV</span>
+    <span class="sp-chip" role="listitem">Jupyter Notebook</span>
+    <span class="sp-chip" role="listitem">Linux</span>
+    <span class="sp-chip" role="listitem">Deep Learning</span>
+    <span class="sp-chip" role="listitem">Generative Models</span>
+    <span class="sp-chip" role="listitem">Diffusion Models</span>
+    <span class="sp-chip" role="listitem">Autoregressive Models</span>
+    <span class="sp-chip" role="listitem">Transformers</span>
+    <span class="sp-chip" role="listitem">3D Point Cloud Processing</span>
+    <span class="sp-chip" role="listitem">LiDAR Data Processing</span>
+    <span class="sp-chip" role="listitem">Point Cloud Segmentation (Semantic/Instance)</span>
+    <span class="sp-chip" role="listitem">Point Cloud Denoising</span>
+    <span class="sp-chip" role="listitem">3D Action Recognition</span>
+    <span class="sp-chip" role="listitem">3D Scene Flow Estimation</span>
+    <span class="sp-chip" role="listitem">3D Human Mesh Recovery</span>
+    <span class="sp-chip" role="listitem">3D Data Annotation</span>
+    <span class="sp-chip" role="listitem">Inverse Kinematics (IK)</span>
+    <span class="sp-chip" role="listitem">Forward Kinematics</span>
+    <span class="sp-chip" role="listitem">Geometric Constraints Modeling</span>
+    <span class="sp-chip" role="listitem">Spatio-temporal Representation Learning</span>
+    <span class="sp-chip" role="listitem">Chamfer Distance</span>
+    <span class="sp-chip" role="listitem">Point-based models (PointNet, PointNet++)</span>
+    <span class="sp-chip" role="listitem">3D Visualization</span>
+    <span class="sp-chip" role="listitem">Robot Perception Systems</span>
+    <span class="sp-chip" role="listitem">Robot Learning</span>
+    <span class="sp-chip" role="listitem">Motion Planning and Control</span>
+    <span class="sp-chip" role="listitem">Behavior Generation</span>
+    <span class="sp-chip" role="listitem">Human-Robot Collaboration</span>
+    <span class="sp-chip" role="listitem">Real-time Interactive Systems</span>
+    <span class="sp-chip" role="listitem">Robot Simulation Environments</span>
+    <span class="sp-chip" role="listitem">Sim-to-Real Transfer</span>
+    <span class="sp-chip" role="listitem">Augmented Reality Interfaces for Robotics</span>
+    <span class="sp-chip" role="listitem">Multi-robot Systems</span>
+    <span class="sp-chip" role="listitem">Data Science</span>
+    <span class="sp-chip" role="listitem">Multimodal Temporal Data Processing</span>
+    <span class="sp-chip" role="listitem">Data Analysis</span>
+    <span class="sp-chip" role="listitem">Data Visualization</span>
+    <span class="sp-chip" role="listitem">Large-scale Dataset Management</span>
+    <span class="sp-chip" role="listitem">High-Quality Interactive Dataset Collection</span>
+    <span class="sp-chip" role="listitem">Closed-loop System Integration</span>
+    <span class="sp-chip" role="listitem">Real-time Data Streaming</span>
+    <span class="sp-chip" role="listitem">Scientific Writing</span>
+    <span class="sp-chip" role="listitem">Project Planning and Management</span>
+    <span class="sp-chip" role="listitem">Problem Definition and Formulation</span>
+    <span class="sp-chip" role="listitem">User-Centered Experiment Design</span>
+    <span class="sp-chip" role="listitem">Human-in-the-Loop Studies</span>
+    <span class="sp-chip" role="listitem">"Wizard of Oz" Prototyping</span>
+    <span class="sp-chip" role="listitem">Quantitative and Qualitative Research</span>
+    <span class="sp-chip" role="listitem">Technical Documentation (LaTeX, Draw.io)</span>
+  </div>
+</div>
+
+<style>
+/* ============== Skill Points bubbles (scoped) ============== */
+.skill-points {
+  /* Default to light theme-friendly values for better contrast */
+  --sp-text: var(--global-text, #000000);
+  --sp-muted: #000000;
+  --sp-bg: rgba(255,255,255,0.9);
+  --sp-border: rgba(10,10,10,0.08);
+  --sp-ac1: #8b5cf6; /* purple */
+  --sp-ac2: #06b6d4; /* cyan */
+  --sp-hov-text: #000000; /* text color when highlighted */
+  --sp-shadow: 0 12px 30px rgba(16,24,40,0.12);
+  margin: .6rem 0 1.2rem;
+  color: var(--sp-text);
+}
+@media (prefers-color-scheme: dark) {
+  .skill-points {
+    --sp-text: #e5e7eb;
+    --sp-muted: #a3a3a3;
+    --sp-bg: rgba(255,255,255,0.04);
+    --sp-border: rgba(255,255,255,0.12);
+    --sp-hov-text: #ffffff;
+    --sp-shadow: 0 12px 36px rgba(0,0,0,0.28);
+  }
+}
+.sp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem .55rem;
+  align-items: center;
+}
+.sp-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .36rem .72rem;
+  font-size: .86rem;
+  line-height: 1;
+  color: var(--sp-text);
+  background: linear-gradient(180deg, var(--sp-bg), transparent);
+  border: 1px solid var(--sp-border);
+  border-radius: 999px;
+  box-shadow: var(--sp-shadow);
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  transform-style: preserve-3d;
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, background .22s ease, color .22s ease;
+  cursor: default;
+  will-change: transform;
+}
+.skill-points .sp-chip { color: #000 !important; }
+.sp-chip::before {
+  content: "";
+  position: absolute;
+  inset: -60% -40% -60% -40%;
+  background:
+    radial-gradient(280px 140px at var(--mx, 50%) var(--my, 50%), color-mix(in oklab, var(--sp-ac1) 55%, var(--sp-ac2) 45%), transparent 62%);
+  filter: blur(18px) saturate(130%);
+  opacity: 0;
+  transition: opacity .28s ease;
+  pointer-events: none;
+}
+.sp-chip:hover, .sp-chip:focus-visible {
+  transform: translateY(-1px);
+  border-color: transparent;
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--sp-ac1) 55%, transparent),
+    color-mix(in oklab, var(--sp-ac2) 55%, transparent)
+  );
+  color: var(--sp-hov-text);
+  box-shadow: 0 16px 46px rgba(16,24,40,.22);
+}
+.sp-chip:hover::before, .sp-chip:focus-visible::before { opacity: 0; }
+.sp-chip:focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(139,92,246,.18), 0 16px 46px rgba(16,24,40,.25); }
+
+@media (prefers-reduced-motion: reduce) {
+  .sp-chip { transition: none; }
+  .sp-chip::before { transition: none; }
+}
+</style>
+
+# 🧭 Japan Travel Guide
+
+<div class="travel-guide" id="travel-guide">
+  <div class="tg-text">
+    <h3>Explore Japan with an Immersive Planner</h3>
+    <p>
+      I recently launched an interactive website focused on independent travel in Japan, including city highlights, itinerary planning, transport passes, and local food recommendations.
+      Visit the page to get curated routes from Tokyo to Okinawa and practical tools for building your own personalized travel plan.
+    </p>
+    <a class="tg-button" href="/日本攻略(1).html" target="_blank" rel="noopener">
+      Open the Japan Travel Site
+      <span class="tg-arrow" aria-hidden="true">→</span>
+    </a>
+  </div>
+  <div class="tg-highlights" aria-hidden="true">
+    <ul>
+      <li>▶ City routes: Tokyo, Osaka, Hokkaido, and more</li>
+      <li>▶ Transit cards and JR PASS purchase guide</li>
+      <li>▶ Seasonal festivals and must-try foods</li>
+      <li>▶ Clear budget estimates and booking links</li>
+    </ul>
+  </div>
+</div>
+
+<style>
+.travel-guide {
+  position: relative;
+  margin: 1.4rem 0 2.2rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 18px;
+  border: 1px solid rgba(10,10,10,0.08);
+  background: linear-gradient(135deg, rgba(139,92,246,0.12), rgba(6,182,212,0.1));
+  box-shadow: 0 18px 42px rgba(16,24,40,0.18);
+  display: grid;
+  gap: 1.4rem;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  overflow: hidden;
+}
+@media (prefers-color-scheme: dark) {
+  .travel-guide {
+    border-color: rgba(255,255,255,0.18);
+    background: linear-gradient(135deg, rgba(139,92,246,0.18), rgba(6,182,212,0.16));
+    box-shadow: 0 20px 46px rgba(0,0,0,0.38);
+  }
+}
+.travel-guide::before {
+  content: "";
+  position: absolute;
+  inset: -30% -40% auto -30%;
+  height: 200px;
+  background:
+    radial-gradient(600px 240px at 20% 60%, rgba(168,85,247,0.32), transparent 65%),
+    radial-gradient(640px 240px at 70% 30%, rgba(6,182,212,0.28), transparent 65%);
+  filter: blur(22px) saturate(120%);
+  pointer-events: none;
+}
+.tg-text {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  color: var(--global-text, #111827);
+}
+.tg-text h3 {
+  margin: 0;
+  font-size: clamp(1.2rem, 1rem + 0.8vw, 1.5rem);
+  background: linear-gradient(135deg, rgba(124,58,237,1), rgba(6,182,212,1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.tg-text p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: inherit;
+}
+.tg-button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.48rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(124,58,237,0.35);
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(6px);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+.tg-button:hover, .tg-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: transparent;
+  box-shadow: 0 14px 36px rgba(124,58,237,0.28);
+  outline: none;
+}
+.tg-arrow {
+  font-size: 1.1rem;
+  transform: translateX(2px);
+}
+.tg-highlights {
+  position: relative;
+  z-index: 1;
+  border-left: 1px solid rgba(255,255,255,0.24);
+  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.tg-highlights ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem;
+  color: rgba(17,24,39,0.9);
+  font-weight: 600;
+}
+.tg-highlights li {
+  font-size: 0.92rem;
+  letter-spacing: 0.01em;
+}
+@media (prefers-color-scheme: dark) {
+  .tg-text { color: #f3f4f6; }
+  .tg-highlights { border-left-color: rgba(255,255,255,0.18); }
+  .tg-highlights ul { color: rgba(229,231,235,0.92); }
+  .tg-button { background: rgba(255,255,255,0.14); color: #f9fafb; }
+}
+@media (max-width: 880px) {
+  .travel-guide {
+    grid-template-columns: 1fr;
+  }
+  .tg-highlights {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.24);
+    padding: 1.1rem 0 0;
+  }
+}
+</style>
+
+# 🏞️ SHITAI TRAVEL GUIDE
+
+<div class="shitai-guide-entry" id="shitai-travel-guide">
+  <div class="stg-copy">
+    <span class="stg-kicker">Mobile-first travel app</span>
+    <h3>A phone-native Shitai travel app, not another static guide page</h3>
+    <p>
+      I rebuilt this one specifically for a mobile browser: Qingming holiday, two travelers, no rental car, and a plan that is actually executable.
+      The page opens as a compact trip app with a departure clock, mode switcher, hour-by-hour plan, transport deck, budget presets, and a persistent packing checklist.
+    </p>
+    <div class="stg-tags" aria-hidden="true">
+      <span>Train + coach + county bus</span>
+      <span>Hybrid / public / upgrade modes</span>
+      <span>Budget engine + saved checklist</span>
+    </div>
+    <a class="stg-button" href="/shitai-travel-guide.html" target="_blank" rel="noopener">
+      Open the Shitai Travel App
+      <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <div class="stg-phone" aria-hidden="true">
+    <div class="stg-phone__notch"></div>
+    <div class="stg-phone__screen">
+      <div class="stg-phone__hero">
+        <strong>SHITAI</strong>
+        <span>Qingming / No-Car Mode</span>
+      </div>
+      <div class="stg-phone__pillrow">
+        <span>Day 1 Penglai Cave</span>
+        <span>Day 2 Guniujiang</span>
+      </div>
+      <div class="stg-phone__module">
+        <label>Departure Clock</label>
+        <strong>2026.04.04</strong>
+        <p>Countdown, next actions, transport rules, and return logic all in one handheld layout.</p>
+      </div>
+      <div class="stg-phone__list">
+        <span>06:20 taxi to Hongqiao</span>
+        <span>09:14 G7492</span>
+        <span>06:20 Shitai coach back</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.shitai-guide-entry {
+  position: relative;
+  margin: 1.5rem 0 2.4rem;
+  padding: 1.5rem;
+  border-radius: 26px;
+  overflow: hidden;
+  border: 1px solid rgba(17,24,39,0.08);
+  background:
+    radial-gradient(circle at top left, rgba(210,122,51,0.22), transparent 32%),
+    linear-gradient(135deg, rgba(248,242,231,0.96), rgba(236,242,238,0.96));
+  box-shadow: 0 18px 42px rgba(17,24,39,0.14);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.9fr);
+  gap: 1.2rem;
+}
+.shitai-guide-entry::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -22% auto;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(31,111,120,0.18), transparent 68%);
+  pointer-events: none;
+}
+.stg-copy {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.95rem;
+  color: #13253b;
+}
+.stg-kicker {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.42rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(19,37,59,0.08);
+  color: #5d6671;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.stg-copy h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.1rem + 0.9vw, 1.8rem);
+  line-height: 1.2;
+  color: #17324d;
+}
+.stg-copy p {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+.stg-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.stg-tags span {
+  display: inline-flex;
+  padding: 0.38rem 0.72rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(19,37,59,0.08);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.stg-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  padding: 0.66rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #17324d, #1f6f78);
+  color: #fff8f0;
+  font-weight: 700;
+  box-shadow: 0 14px 34px rgba(23,50,77,0.22);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.stg-button:hover, .stg-button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(23,50,77,0.28);
+  outline: none;
+}
+.stg-phone {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stg-phone__screen {
+  width: min(100%, 248px);
+  min-height: 430px;
+  padding: 1rem 0.95rem 1.1rem;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255,250,243,0.98), rgba(244,238,228,0.98)),
+    linear-gradient(135deg, rgba(23,50,77,0.1), transparent);
+  border: 7px solid #13253b;
+  box-shadow: 0 18px 40px rgba(19,37,59,0.2);
+  display: grid;
+  gap: 0.85rem;
+}
+.stg-phone__notch {
+  position: absolute;
+  top: 14px;
+  width: 88px;
+  height: 18px;
+  border-radius: 999px;
+  background: #13253b;
+}
+.stg-phone__hero {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(11,31,47,0.16), rgba(11,31,47,0.72)),
+    url("/images/shitai/guniujiang_banner.jpg") center/cover no-repeat;
+  color: #fff8f0;
+  display: grid;
+  gap: 0.3rem;
+}
+.stg-phone__hero strong {
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+}
+.stg-phone__hero span {
+  font-size: 0.76rem;
+  opacity: 0.9;
+}
+.stg-phone__pillrow {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+.stg-phone__pillrow span,
+.stg-phone__list span {
+  padding: 0.38rem 0.58rem;
+  border-radius: 999px;
+  background: rgba(19,37,59,0.08);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #17324d;
+}
+.stg-phone__module {
+  padding: 0.9rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid rgba(19,37,59,0.08);
+}
+.stg-phone__module label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5d6671;
+}
+.stg-phone__module strong {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 1.35rem;
+  color: #17324d;
+}
+.stg-phone__module p {
+  margin: 0.4rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: #5d6671;
+}
+.stg-phone__list {
+  display: grid;
+  gap: 0.45rem;
+}
+@media (prefers-color-scheme: dark) {
+  .shitai-guide-entry {
+    border-color: rgba(255,255,255,0.12);
+    background:
+      radial-gradient(circle at top left, rgba(210,122,51,0.18), transparent 32%),
+      linear-gradient(135deg, rgba(18,28,40,0.98), rgba(20,48,56,0.96));
+    box-shadow: 0 22px 46px rgba(0,0,0,0.34);
+  }
+  .stg-copy { color: #eef3f7; }
+  .stg-kicker,
+  .stg-phone__pillrow span,
+  .stg-phone__list span { background: rgba(255,255,255,0.1); color: rgba(245,247,250,0.92); }
+  .stg-copy h3,
+  .stg-phone__module strong { color: #fff8f0; }
+  .stg-tags span,
+  .stg-phone__module { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); color: #eef3f7; }
+  .stg-copy p,
+  .stg-phone__module p,
+  .stg-phone__module label { color: rgba(226,232,240,0.82); }
+  .stg-phone__screen { background: linear-gradient(180deg, rgba(24,34,44,0.98), rgba(18,28,40,0.98)); border-color: #0c1723; }
+}
+@media (max-width: 900px) {
+  .shitai-guide-entry {
+    grid-template-columns: 1fr;
+  }
+  .stg-phone {
+    justify-content: flex-start;
+  }
+}
+</style>
+
+<!-- - *2023.09 - present*, Postgraduate, ShanghaiTech University, Shanghai, China.
+- *2019.09 - 2023.06*, Bachelor, ShanghaiTech University, Shanghai, China. -->

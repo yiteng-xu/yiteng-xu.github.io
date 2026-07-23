@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#17324d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>SHITAI TRAVEL GUIDE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4efe6;
+      --bg-soft: #fbf7f1;
+      --ink: #13253b;
+      --muted: #5e6771;
+      --line: rgba(19, 37, 59, 0.12);
+      --accent: #1f6f78;
+      --accent-strong: #17324d;
+      --accent-warm: #d27a33;
+      --accent-moss: #708d56;
+      --card: rgba(255, 252, 247, 0.82);
+      --shadow: 0 18px 40px rgba(19, 37, 59, 0.14);
+      --shadow-soft: 0 8px 22px rgba(19, 37, 59, 0.08);
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+      --nav-height: 74px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background:
+        radial-gradient(circle at top, rgba(210, 122, 51, 0.1), transparent 30%),
+        linear-gradient(180deg, #efe7db 0%, #f7f2eb 22%, #f4efe6 100%);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", sans-serif;
+      color: var(--ink);
+      background: transparent;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .app-shell {
+      width: min(100%, 540px);
+      margin: 0 auto;
+      padding: max(18px, env(safe-area-inset-top)) 16px calc(var(--nav-height) + 20px + env(safe-area-inset-bottom));
+    }
+
+    .app-bar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      margin: 0 -8px 16px;
+      padding: 10px 8px 14px;
+      backdrop-filter: blur(18px) saturate(130%);
+      -webkit-backdrop-filter: blur(18px) saturate(130%);
+      background: linear-gradient(180deg, rgba(244, 239, 230, 0.92), rgba(244, 239, 230, 0.4));
+    }
+
+    .app-bar__row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(23, 50, 77, 0.08);
+      background: rgba(255, 252, 247, 0.82);
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .brand {
+      display: grid;
+      gap: 2px;
+    }
+
+    .brand__title {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 34px;
+      line-height: 0.92;
+      letter-spacing: 0.04em;
+    }
+
+    .brand__meta {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: clip;
+      border-radius: 32px;
+      min-height: 360px;
+      background:
+        linear-gradient(180deg, rgba(11, 31, 47, 0.16) 0%, rgba(11, 31, 47, 0.76) 70%, rgba(11, 31, 47, 0.88) 100%),
+        url("/images/shitai/guniujiang_banner.jpg") center/cover no-repeat;
+      box-shadow: var(--shadow);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 18px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 18% 14%, rgba(240, 196, 139, 0.24), transparent 36%),
+        radial-gradient(circle at 82% 14%, rgba(54, 126, 139, 0.28), transparent 30%);
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 12px;
+    }
+
+    .hero__kicker {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 250, 242, 0.16);
+      border: 1px solid rgba(255, 250, 242, 0.22);
+      color: #f6efe5;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(48px, 12vw, 74px);
+      line-height: 0.9;
+      letter-spacing: 0.04em;
+      color: #fff9f2;
+      text-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 18em;
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255, 248, 238, 0.9);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .hero-stat {
+      padding: 12px;
+      border-radius: 18px;
+      background: rgba(255, 250, 242, 0.14);
+      border: 1px solid rgba(255, 250, 242, 0.16);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .hero-stat__label {
+      color: rgba(255, 247, 236, 0.72);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-stat__value {
+      margin-top: 6px;
+      color: #fff9f2;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.68);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: auto auto -40px -50px;
+      width: 140px;
+      height: 140px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(31, 111, 120, 0.11), transparent 70%);
+      pointer-events: none;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .section-title {
+      margin: 0;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      color: var(--accent-strong);
+    }
+
+    .section-note {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: right;
+    }
+
+    .countdown {
+      display: grid;
+      gap: 14px;
+    }
+
+    .countdown__status {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: var(--accent-warm);
+      box-shadow: 0 0 0 6px rgba(210, 122, 51, 0.15);
+    }
+
+    .countdown__numbers {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .count-box {
+      padding: 14px 12px;
+      border-radius: 18px;
+      background: #fffdfa;
+      border: 1px solid rgba(19, 37, 59, 0.08);
+    }
+
+    .count-box strong {
+      display: block;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 34px;
+      letter-spacing: 0.05em;
+      color: var(--accent-strong);
+    }
+
+    .count-box span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .next-actions,
+    .principles,
+    .risk-list,
+    .budget-breakdown,
+    .checklist {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mini-row {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(19, 37, 59, 0.07);
+    }
+
+    .mini-row__tag {
+      flex: 0 0 auto;
+      min-width: 58px;
+      padding-top: 1px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .mini-row__body {
+      color: var(--ink);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .plan-switcher {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .plan-tab {
+      appearance: none;
+      border: 0;
+      padding: 12px 10px;
+      border-radius: 16px;
+      background: rgba(19, 37, 59, 0.06);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .plan-tab.is-active {
+      background: linear-gradient(135deg, var(--accent-strong), var(--accent));
+      color: #fff7ef;
+      box-shadow: 0 10px 24px rgba(23, 50, 77, 0.2);
+    }
+
+    .plan-tab strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 14px;
+    }
+
+    .plan-tab span {
+      display: block;
+      opacity: 0.9;
+      font-size: 11px;
+      line-height: 1.4;
+    }
+
+    .plan-summary {
+      padding: 16px;
+      border-radius: 22px;
+      background:
+        linear-gradient(135deg, rgba(23, 50, 77, 0.98), rgba(31, 111, 120, 0.92)),
+        linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.1));
+      color: #fff6eb;
+      box-shadow: 0 16px 30px rgba(23, 50, 77, 0.18);
+    }
+
+    .plan-summary__title {
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .plan-summary__text {
+      margin: 0;
+      color: rgba(255, 246, 235, 0.86);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .plan-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .plan-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255, 246, 235, 0.12);
+      border: 1px solid rgba(255, 246, 235, 0.18);
+      font-size: 12px;
+      color: rgba(255, 246, 235, 0.92);
+    }
+
+    .day-list,
+    .transport-list,
+    .spot-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .day-card {
+      background: #fffdfa;
+      border-radius: 22px;
+      border: 1px solid rgba(19, 37, 59, 0.07);
+      overflow: hidden;
+    }
+
+    .day-card__header {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px 16px 14px;
+      border-bottom: 1px solid rgba(19, 37, 59, 0.06);
+      background:
+        linear-gradient(180deg, rgba(31, 111, 120, 0.08), transparent),
+        rgba(255, 255, 255, 0.78);
+    }
+
+    .day-card__index {
+      flex: 0 0 auto;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--accent-warm), #edb069);
+      color: #fffaf4;
+      display: grid;
+      place-items: center;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 26px;
+      letter-spacing: 0.08em;
+      box-shadow: 0 8px 18px rgba(210, 122, 51, 0.24);
+    }
+
+    .day-card__title {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .day-card__subtitle {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 10px;
+      padding: 14px 16px 16px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 68px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+
+    .timeline-item__time {
+      padding-top: 1px;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+
+    .timeline-item__content strong {
+      display: block;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .timeline-item__content span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .transport-card,
+    .spot-card {
+      overflow: hidden;
+      border-radius: 22px;
+      background: #fffdfa;
+      border: 1px solid rgba(19, 37, 59, 0.07);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .transport-card__body,
+    .spot-card__body {
+      padding: 16px;
+    }
+
+    .transport-card__title,
+    .spot-card__title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .transport-card__meta,
+    .spot-card__meta {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .route-times {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .route-time {
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(23, 50, 77, 0.06);
+      color: var(--accent-strong);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .quick-copy {
+      margin-top: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 12px 14px;
+      border: 0;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(23, 50, 77, 0.96), rgba(31, 111, 120, 0.92));
+      color: #fff8f0;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .quick-copy.is-copied {
+      background: linear-gradient(135deg, rgba(112, 141, 86, 0.96), rgba(31, 111, 120, 0.92));
+    }
+
+    .spot-card img {
+      width: 100%;
+      height: 176px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .spot-card__chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .spot-chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(210, 122, 51, 0.12);
+      color: #9a5822;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .budget-preset {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .budget-btn {
+      appearance: none;
+      border: 0;
+      border-radius: 16px;
+      padding: 12px 10px;
+      background: rgba(19, 37, 59, 0.06);
+      color: var(--muted);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .budget-btn.is-active {
+      background: rgba(210, 122, 51, 0.14);
+      color: #8a4f20;
+      box-shadow: inset 0 0 0 1px rgba(210, 122, 51, 0.18);
+    }
+
+    .budget-total {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: end;
+      padding: 16px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(210, 122, 51, 0.12), rgba(255, 255, 255, 0.72));
+      border: 1px solid rgba(210, 122, 51, 0.12);
+    }
+
+    .budget-total strong {
+      display: block;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 44px;
+      line-height: 0.92;
+      letter-spacing: 0.05em;
+      color: #91511f;
+    }
+
+    .budget-total span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .budget-breakdown .mini-row__tag {
+      min-width: 72px;
+    }
+
+    .check-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 13px 14px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(19, 37, 59, 0.07);
+    }
+
+    .check-item input {
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      margin: 0;
+      border-radius: 8px;
+      border: 1.5px solid rgba(23, 50, 77, 0.2);
+      background: #fffdfa;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+
+    .check-item input:checked {
+      background: var(--accent-strong);
+      border-color: var(--accent-strong);
+    }
+
+    .check-item input:checked::after {
+      content: "";
+      width: 10px;
+      height: 6px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-45deg) translateY(-1px);
+    }
+
+    .check-item__text strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .check-item__text span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(112, 141, 86, 0.12), rgba(255, 255, 255, 0.7));
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.7;
+      border: 1px solid rgba(112, 141, 86, 0.12);
+    }
+
+    .bottom-nav {
+      position: fixed;
+      left: 50%;
+      bottom: calc(12px + env(safe-area-inset-bottom));
+      transform: translateX(-50%);
+      z-index: 30;
+      width: min(calc(100% - 24px), 520px);
+      padding: 8px;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 6px;
+      border-radius: 24px;
+      background: rgba(18, 32, 49, 0.84);
+      backdrop-filter: blur(16px) saturate(150%);
+      -webkit-backdrop-filter: blur(16px) saturate(150%);
+      box-shadow: 0 18px 38px rgba(10, 18, 30, 0.24);
+    }
+
+    .bottom-nav a {
+      display: grid;
+      gap: 3px;
+      justify-items: center;
+      padding: 10px 4px;
+      border-radius: 16px;
+      color: rgba(249, 242, 233, 0.74);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .bottom-nav a span:first-child {
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .bottom-nav a:hover,
+    .bottom-nav a:focus-visible {
+      background: rgba(255, 248, 240, 0.12);
+      color: #fff8f0;
+      outline: none;
+    }
+
+    @media (min-width: 541px) {
+      .app-shell {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .plan-tab,
+      .budget-btn,
+      .quick-copy {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-bar">
+      <div class="app-bar__row">
+        <div class="brand">
+          <span class="eyebrow">Mobile Trip App</span>
+          <div class="brand__title">SHITAI TRAVEL GUIDE</div>
+          <div class="brand__meta">2026 年 4 月 4 日 - 2026 年 4 月 6 日 | 双人出行 | 不租车</div>
+        </div>
+        <a class="eyebrow" href="/#travel-guide">Back Home</a>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="hero__content">
+        <span class="hero__kicker">Qingming / No-Car Mode</span>
+        <h1>Shitai,<br>Ready To Go</h1>
+        <p>把“真能执行”作为第一原则，围绕高铁、客运班车、县城乡公交和一次必要短接驳，重构一个手机上就能直接用的石台旅行方案。</p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat__label">Base</div>
+            <div class="hero-stat__value">石台县城连住 2 晚</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat__label">Core</div>
+            <div class="hero-stat__value">蓬莱仙洞 + 牯牛降</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat__label">Return</div>
+            <div class="hero-stat__value">Day 3 早班回池州</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="grid">
+      <section class="card" id="overview">
+        <div class="section-header">
+          <h2 class="section-title">Departure Clock</h2>
+          <div class="section-note">动态倒计时按当前设备时间计算</div>
+        </div>
+        <div class="countdown">
+          <div class="countdown__status">
+            <span class="status-dot" id="status-dot"></span>
+            <span id="trip-status">正在计算出发状态</span>
+          </div>
+          <div class="countdown__numbers">
+            <div class="count-box">
+              <strong id="count-days">0</strong>
+              <span>Days</span>
+            </div>
+            <div class="count-box">
+              <strong id="count-hours">0</strong>
+              <span>Hours</span>
+            </div>
+            <div class="count-box">
+              <strong id="count-mins">0</strong>
+              <span>Minutes</span>
+            </div>
+          </div>
+          <div class="next-actions" id="next-actions"></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <h2 class="section-title">Ground Rules</h2>
+          <div class="section-note">这不是省钱挑战，是执行力设计</div>
+        </div>
+        <div class="principles">
+          <div class="mini-row">
+            <div class="mini-row__tag">Rule 01</div>
+            <div class="mini-row__body">不租车，但不死磕纯公交。推荐模式是 <strong>95% 公共交通 + 5% 首日下午短接驳</strong>。</div>
+          </div>
+          <div class="mini-row">
+            <div class="mini-row__tag">Rule 02</div>
+            <div class="mini-row__body">两晚都住石台县城。对不自驾旅行来说，<strong>县城补给、吃饭、返程效率</strong>比住景区口更重要。</div>
+          </div>
+          <div class="mini-row">
+            <div class="mini-row__tag">Rule 03</div>
+            <div class="mini-row__body">返程日不再叠加任何景点。<strong>Day 3 的价值是冗余</strong>，不是再冲一个打卡点。</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="plan">
+        <div class="section-header">
+          <h2 class="section-title">Mode Switch</h2>
+          <div class="section-note">三种玩法，按执行难度切换</div>
+        </div>
+        <div class="plan-switcher">
+          <button class="plan-tab is-active" data-plan="hybrid" type="button">
+            <strong>主计划</strong>
+            <span>一次短接驳，体验最完整</span>
+          </button>
+          <button class="plan-tab" data-plan="public" type="button">
+            <strong>纯公交</strong>
+            <span>更省钱，但 Day 1 更朴素</span>
+          </button>
+          <button class="plan-tab" data-plan="upgrade" type="button">
+            <strong>升级版</strong>
+            <span>把仙寓山留到下次</span>
+          </button>
+        </div>
+        <div id="plan-summary"></div>
+        <div id="day-list" class="day-list"></div>
+      </section>
+
+      <section class="card" id="transport">
+        <div class="section-header">
+          <h2 class="section-title">Transport Deck</h2>
+          <div class="section-note">把关键班次放到一个手掌里</div>
+        </div>
+        <div class="transport-list">
+          <article class="transport-card">
+            <div class="transport-card__body">
+              <h3 class="transport-card__title">上海虹桥 → 池州</h3>
+              <p class="transport-card__meta">推荐先抢 `G7492 09:14 → 12:39`。晚一点的 `G7136 10:20 → 13:39` 也能成立，但会压缩首日下午衔接空间。</p>
+              <div class="route-times">
+                <span class="route-time">G7492 09:14-12:39</span>
+                <span class="route-time">G7136 10:20-13:39</span>
+              </div>
+              <button class="quick-copy" type="button" data-copy="首选：上海虹桥站 09:14 G7492 到池州 12:39。备选：上海虹桥站 10:20 G7136 到池州 13:39。">复制车次</button>
+            </div>
+          </article>
+          <article class="transport-card">
+            <div class="transport-card__body">
+              <h3 class="transport-card__title">池州 ↔ 石台 客运班车</h3>
+              <p class="transport-card__meta">池州去石台可见窗口：06:50 / 08:20 / 08:35 / 10:20 / 11:10 / 12:30 / 13:50 / 15:00 / 16:00 / 16:50。返程从石台回池州，优先锁定 `06:20`。</p>
+              <div class="route-times">
+                <span class="route-time">去程建议 13:50</span>
+                <span class="route-time">返程首选 06:20</span>
+                <span class="route-time">返程备选 07:00 / 08:10</span>
+              </div>
+              <button class="quick-copy" type="button" data-copy="石台返程优先：06:20 石台汽车站到池州。不要在返程日上午再加景点。">复制返程原则</button>
+            </div>
+          </article>
+          <article class="transport-card">
+            <div class="transport-card__body">
+              <h3 class="transport-card__title">石台县城乡公交核心班次</h3>
+              <p class="transport-card__meta">最重要的是 1 路。石台新汽车站往牯牛降可见窗口 `07:00 / 09:00 / 10:40 / 12:40 / 15:00 / 16:30`，牯牛降回程可见窗口 `07:40 / 10:00 / 11:10 / 14:00 / 16:00 / 17:20`。10 路可触达蓬莱仙洞方向，但 Day 1 不如短接驳省心。</p>
+              <div class="route-times">
+                <span class="route-time">1 路去程 07:00 / 09:00</span>
+                <span class="route-time">1 路回程 14:00 / 16:00</span>
+                <span class="route-time">10 路 10:00 / 15:00</span>
+              </div>
+              <button class="quick-copy" type="button" data-copy="石台县城乡公交 1 路是牯牛降日的关键：去程 07:00 或 09:00，回程盯 14:00 或 16:00。">复制公交提示</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <h2 class="section-title">Scenic Palette</h2>
+          <div class="section-note">主线两个点，下次再加仙寓山线</div>
+        </div>
+        <div class="spot-grid">
+          <article class="spot-card">
+            <img src="/images/shitai/penglai_tripmoments.jpg" alt="蓬莱仙洞">
+            <div class="spot-card__body">
+              <h3 class="spot-card__title">蓬莱仙洞</h3>
+              <p class="spot-card__meta">最适合放在首日下午。对体力要求不高，小雨也不容易毁掉体验，是 Day 1 最稳的景点选择。</p>
+              <div class="spot-card__chips">
+                <span class="spot-chip">Day 1 首推</span>
+                <span class="spot-chip">轻体力</span>
+                <span class="spot-chip">雨天友好</span>
+              </div>
+            </div>
+          </article>
+          <article class="spot-card">
+            <img src="/images/shitai/guniujiang_banner.jpg" alt="牯牛降">
+            <div class="spot-card__body">
+              <h3 class="spot-card__title">牯牛降</h3>
+              <p class="spot-card__meta">这次行程最值得为它单独留一整天的景区。重点不是走满全程，而是把潭水、栈道、瀑布和山林氛围慢慢吃透。</p>
+              <div class="spot-card__chips">
+                <span class="spot-chip">Day 2 主场</span>
+                <span class="spot-chip">公交可达</span>
+                <span class="spot-chip">适合早起</span>
+              </div>
+            </div>
+          </article>
+          <article class="spot-card">
+            <img src="/images/shitai/xianyushan.jpg" alt="仙寓山">
+            <div class="spot-card__body">
+              <h3 class="spot-card__title">仙寓山线</h3>
+              <p class="spot-card__meta">不是不值得去，而是不适合勉强塞进这次三天两晚不租车版。它更适合下次单独拉成 4 天 3 晚或包一条完整山线。</p>
+              <div class="spot-card__chips">
+                <span class="spot-chip">升级版</span>
+                <span class="spot-chip">节奏更慢</span>
+                <span class="spot-chip">另开一趟</span>
+              </div>
+            </div>
+          </article>
+          <article class="spot-card">
+            <img src="/images/shitai/qicaiyugu.jpg" alt="七彩玉谷">
+            <div class="spot-card__body">
+              <h3 class="spot-card__title">七彩玉谷 / 大山村</h3>
+              <p class="spot-card__meta">和仙寓山属于同一类升级线路。美是美，但三天里强塞进去，只会把整个旅行从“松弛”变成“赶命”。</p>
+              <div class="spot-card__chips">
+                <span class="spot-chip">别贪多</span>
+                <span class="spot-chip">下次安排</span>
+                <span class="spot-chip">拍照线路</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="budget">
+        <div class="section-header">
+          <h2 class="section-title">Budget Engine</h2>
+          <div class="section-note">双人预算，按舒适度切换</div>
+        </div>
+        <div class="budget-preset">
+          <button class="budget-btn is-active" data-budget="tight" type="button">紧凑版<br>能省就省</button>
+          <button class="budget-btn" data-budget="balanced" type="button">平衡版<br>最推荐</button>
+          <button class="budget-btn" data-budget="relaxed" type="button">舒适版<br>更从容</button>
+        </div>
+        <div class="budget-total">
+          <div>
+            <strong id="budget-total">3240</strong>
+            <span>RMB / 双人预留</span>
+          </div>
+          <div class="section-note" id="budget-note">纯控制成本，牺牲一部分灵活度</div>
+        </div>
+        <div class="budget-breakdown" id="budget-breakdown"></div>
+      </section>
+
+      <section class="card" id="pack">
+        <div class="section-header">
+          <h2 class="section-title">Pocket Checklist</h2>
+          <div class="section-note">本地保存，勾过不会丢</div>
+        </div>
+        <div class="checklist" id="checklist"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <h2 class="section-title">Crash Prevention</h2>
+          <div class="section-note">最容易翻车的地方，提前消掉</div>
+        </div>
+        <div class="risk-list">
+          <div class="mini-row">
+            <div class="mini-row__tag">Risk 01</div>
+            <div class="mini-row__body">误以为“不租车”就必须全程死磕纯公交。真正实用的是把最难衔接的那一段单独处理掉。</div>
+          </div>
+          <div class="mini-row">
+            <div class="mini-row__tag">Risk 02</div>
+            <div class="mini-row__body">返程日上午还想加点内容。这个想法一旦上头，整个回上海链路都会变脆。</div>
+          </div>
+          <div class="mini-row">
+            <div class="mini-row__tag">Risk 03</div>
+            <div class="mini-row__body">首日下午到池州后在站前消磨时间。你们最容易失手的就是 Day 1 落地后的转场效率。</div>
+          </div>
+          <div class="mini-row">
+            <div class="mini-row__tag">Risk 04</div>
+            <div class="mini-row__body">盲目住景区口。对不自驾来说，县城的补给和返程组织能力通常更值钱。</div>
+          </div>
+        </div>
+        <div class="footer-note">
+          这份 app 以 `/root/xyt_7/shitai/shitai_trip_plan.tex` 为主要内容底稿整理，围绕 2026 年 4 月 4 日到 2026 年 4 月 6 日这次清明出行设计。临出发前 24 小时，仍然需要再次核对高铁、汽车票、城乡公交、公示时间以及天气。
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <nav class="bottom-nav" aria-label="页面导航">
+    <a href="#overview"><span>Time</span><span>倒计时</span></a>
+    <a href="#plan"><span>Plan</span><span>玩法</span></a>
+    <a href="#transport"><span>Ride</span><span>交通</span></a>
+    <a href="#budget"><span>Cash</span><span>预算</span></a>
+    <a href="#pack"><span>Pack</span><span>清单</span></a>
+  </nav>
+
+  <script>
+    const tripStart = new Date("2026-04-04T09:14:00+08:00");
+    const tripEnd = new Date("2026-04-06T14:22:00+08:00");
+
+    const nextActionsByState = {
+      before: [
+        ["Now", "高铁先抢去程 `G7492 09:14 → 12:39`，返程优先对齐 `G2820 10:59 → 14:22`。"],
+        ["Today", "把酒店收敛到石台县城，不要反复换住处。"],
+        ["24h", "出发前 24 小时再核对客运班次、县城乡公交和天气。"]
+      ],
+      during: [
+        ["Now", "不要追求塞满内容，先保证下一段交通衔接。"],
+        ["Keep", "Day 2 的重点是牯牛降，不必把腿走废。"],
+        ["Return", "返程日只保守执行，不新增景点。"]
+      ],
+      after: [
+        ["Review", "把照片、花费和实际班次补记下来，下次做仙寓山升级线更轻松。"],
+        ["Save", "保留县城住宿和牯牛降公交经验，复用价值最高。"],
+        ["Next", "如果还想再来，直接做 4 天 3 晚山线版本。"]
+      ]
+    };
+
+    const planData = {
+      hybrid: {
+        title: "主计划 / 混合交通版",
+        summary: "从上海虹桥高铁到池州，首日下午只使用一次点对点短接驳，先完成蓬莱仙洞，再住进石台县城。第二天靠石台县城乡公交 1 路完成牯牛降，第三天清晨直接回池州坐高铁返沪。",
+        badges: ["最推荐", "体验完整", "只打一小段车", "执行成功率最高"],
+        days: [
+          {
+            title: "Day 1 | 金桥 → 虹桥 → 池州 → 蓬莱仙洞 → 石台县城",
+            subtitle: "首日最重要的不是多玩，而是把落地衔接一次性处理顺。",
+            items: [
+              ["05:50", "起床核包", "身份证、手机、充电宝、雨具、药和纸巾放最外层。"],
+              ["06:20", "打车去虹桥站", "双人带行李，不建议折腾地铁换乘。"],
+              ["09:14", "乘 G7492 去池州", "高铁上把酒店、返程高铁和客运页截图保存。"],
+              ["12:39", "到达池州站", "不要在站前消耗时间，直接处理接驳。"],
+              ["12:50", "短接驳去蓬莱仙洞", "拼车 / 包车 / 出租都可以，目标是把 Day 1 断点打通。"],
+              ["14:30", "游览蓬莱仙洞", "首日轻体力，小雨环境也能成立。"],
+              ["16:10", "前往石台县城酒店", "两晚都住县城，不频繁换酒店。"],
+              ["18:10", "晚饭与补给", "顺手买水、面包和第二天上山零食。"]
+            ]
+          },
+          {
+            title: "Day 2 | 石台县城 ↔ 牯牛降",
+            subtitle: "整趟旅行的主景区日，早起的回报最大。",
+            items: [
+              ["06:40", "起床", "今天值得早起，牯牛降越早到越舒服。"],
+              ["07:35", "去汽车站 / 公交点", "尽量赶 07:00 或 09:00 往牯牛降的县城乡公交。"],
+              ["09:10", "开始牯牛降主段游览", "把体力放给潭水、栈道、瀑布和山林氛围。"],
+              ["11:40", "核心拍照时段", "认真拍 2 到 3 个位置，不要一路碎拍。"],
+              ["12:20", "午饭与补给", "尽量早点解决，不要拖到过饿。"],
+              ["14:00", "回程公交窗口", "优先盯 14:00 / 16:00，不要错过关键班次。"],
+              ["18:00", "县城晚饭", "第二晚可以正式吃一顿石台土菜。"]
+            ]
+          },
+          {
+            title: "Day 3 | 石台 → 池州 → 上海",
+            subtitle: "返程链条长，核心原则是守，不是冲。",
+            items: [
+              ["05:40", "起床", "返程日不需要浪漫，需要准时。"],
+              ["06:10", "去石台汽车站", "目标赶 06:20 快客回池州。"],
+              ["08:xx", "池州客运站 → 池州站", "到池州后直接打车去火车站，不要省这点时间。"],
+              ["10:59", "乘 G2820 回上海", "如果抢到的是 G1466，就整体提前约 1 小时执行。"],
+              ["14:22", "抵达上海虹桥", "直接打车回金桥，返沪后体力通常已经见底。"]
+            ]
+          }
+        ]
+      },
+      public: {
+        title: "纯公共交通版",
+        summary: "如果一点临时打车都不想用，那就接受 Day 1 基本只到石台县城休整。保住牯牛降，把蓬莱仙洞视作能插入则加、插不入就删的内容。",
+        badges: ["最省钱", "依赖官方班次", "首日更朴素", "容错更低"],
+        days: [
+          {
+            title: "Day 1 | 上海 → 池州 → 石台县城",
+            subtitle: "高铁接客运班车，直接进县城休整。",
+            items: [
+              ["09:14", "高铁到池州", "目标仍然是尽量早到。"],
+              ["13:50", "衔接池州 → 石台班车", "如果班次衔接不顺，首日就别再勉强加景点。"],
+              ["下午", "入住县城酒店", "把吃饭、补给和第二天公交路线全准备好。"]
+            ]
+          },
+          {
+            title: "Day 2 | 牯牛降全天",
+            subtitle: "这一天不变，仍然是整趟行程的核心。",
+            items: [
+              ["早班", "县城乡公交 1 路去牯牛降", "优先早班，体验差异明显。"],
+              ["白天", "专注一个主景区", "不要再试图拼别的支线。"],
+              ["回程", "公交返石台县城", "晚上顺手收好返程物品。"]
+            ]
+          },
+          {
+            title: "Day 3 | 早班快客返程",
+            subtitle: "依旧优先 06:20 石台 → 池州。",
+            items: [
+              ["06:20", "石台快客回池州", "给后面高铁留足冗余。"],
+              ["上午", "池州站候车", "早到比卡点强。"],
+              ["10:59", "高铁回上海", "不再增加任何变量。"]
+            ]
+          }
+        ]
+      },
+      upgrade: {
+        title: "升级版 / 下次再来的山线草图",
+        summary: "仙寓山、七彩玉谷、大山村、古徽道都值得，但不适合强塞进这次三天两晚的不租车版。更合理的做法是下次单开 4 天 3 晚，或者找愿意包一条完整山线的接驳方案。",
+        badges: ["更适合 4 天 3 晚", "适合单独成团", "拍照更强", "这次先忍住"],
+        days: [
+          {
+            title: "为什么不建议这次硬塞",
+            subtitle: "问题不是值不值得，而是交通断点太多。",
+            items: [
+              ["交通", "景点分散", "山路多、班次少，纯靠公共交通会拖垮节奏。"],
+              ["体验", "容易从松弛变赶路", "三天里每多加一条线，都会放大疲劳和失控概率。"],
+              ["建议", "留到下一次", "把这次做好，比贪多更有意义。"]
+            ]
+          },
+          {
+            title: "下次怎么开",
+            subtitle: "给升级版一个更合理的容器。",
+            items: [
+              ["方案 A", "4 天 3 晚", "县城 2 晚 + 山线 1 晚，节奏更自然。"],
+              ["方案 B", "单独包一日线", "专攻仙寓山 / 七彩玉谷 / 大山村。"],
+              ["方案 C", "只做摄影线", "把步行量和景点数都压低，换更完整的取景时间。"]
+            ]
+          }
+        ]
+      }
+    };
+
+    const budgetData = {
+      tight: {
+        total: "3240",
+        note: "纯控制成本，灵活度最低",
+        rows: [
+          ["交通", "高铁抢到便宜票，池州 ↔ 石台尽量走客运和公交。"],
+          ["住宿", "县城高性价比酒店，保留免费取消。"],
+          ["餐饮", "把重点放在吃饱、稳妥，不追求每顿都很讲究。"],
+          ["机动", "尽量不使用 Day 1 点对点接驳，接受首日内容变少。"]
+        ]
+      },
+      balanced: {
+        total: "4580",
+        note: "最推荐，和主计划匹配最好",
+        rows: [
+          ["交通", "高铁往返 + 池州 ↔ 石台班车 + Day 1 一次必要短接驳。"],
+          ["住宿", "县城中档酒店两晚，换来更稳定的吃饭和返程节奏。"],
+          ["餐饮", "第一晚稳，第二晚可以正式吃一顿本地土菜。"],
+          ["机动", "给临时打车、晚点或天气留一点现金冗余。"]
+        ]
+      },
+      relaxed: {
+        total: "6230",
+        note: "舒适优先，尽量少让自己受罪",
+        rows: [
+          ["交通", "更愿意为首日接驳和返程效率付费。"],
+          ["住宿", "县城更好的酒店，保证睡眠和热水体验。"],
+          ["餐饮", "不压缩吃饭质量，伴手礼和零食也一起算进去。"],
+          ["机动", "把天气、堵车、加餐、加购都当成正常波动。"]
+        ]
+      }
+    };
+
+    const checklistData = [
+      ["证件与票", "身份证、车票截图、酒店订单全部放同一个相册。"],
+      ["电力包", "手机线、充电宝、插头、耳机，不要把充电器留在酒店插座上。"],
+      ["雨雾装备", "清明时节皖南天气多变，雨具比墨镜更值钱。"],
+      ["轻装小包", "Day 2 去牯牛降只背小包，大件行李留酒店。"],
+      ["零食与水", "第一晚在县城补货，第二天上山不用临时找。"],
+      ["返程闹钟", "Day 3 至少设两个闹钟，返程日最怕睡过。"]
+    ];
+
+    const planSummary = document.getElementById("plan-summary");
+    const dayList = document.getElementById("day-list");
+    const nextActions = document.getElementById("next-actions");
+    const budgetTotal = document.getElementById("budget-total");
+    const budgetNote = document.getElementById("budget-note");
+    const budgetBreakdown = document.getElementById("budget-breakdown");
+    const checklist = document.getElementById("checklist");
+
+    function renderActions(state) {
+      nextActions.innerHTML = nextActionsByState[state].map(([tag, body]) => `
+        <div class="mini-row">
+          <div class="mini-row__tag">${tag}</div>
+          <div class="mini-row__body">${body}</div>
+        </div>
+      `).join("");
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const statusText = document.getElementById("trip-status");
+      const dot = document.getElementById("status-dot");
+      let diff = tripStart - now;
+      let state = "before";
+
+      if (now >= tripStart && now <= tripEnd) {
+        diff = tripEnd - now;
+        state = "during";
+        statusText.textContent = "旅途中：优先保证下一段交通衔接";
+        dot.style.background = "#1f6f78";
+        dot.style.boxShadow = "0 0 0 6px rgba(31, 111, 120, 0.15)";
+      } else if (now > tripEnd) {
+        diff = now - tripEnd;
+        state = "after";
+        statusText.textContent = "本次行程已结束，可以开始整理复盘";
+        dot.style.background = "#708d56";
+        dot.style.boxShadow = "0 0 0 6px rgba(112, 141, 86, 0.15)";
+      } else {
+        statusText.textContent = "距离 2026 年 4 月 4 日 09:14 出发还有";
+        dot.style.background = "#d27a33";
+        dot.style.boxShadow = "0 0 0 6px rgba(210, 122, 51, 0.15)";
+      }
+
+      const totalMinutes = Math.max(0, Math.floor(Math.abs(diff) / 60000));
+      const days = Math.floor(totalMinutes / 1440);
+      const hours = Math.floor((totalMinutes % 1440) / 60);
+      const mins = totalMinutes % 60;
+
+      document.getElementById("count-days").textContent = days;
+      document.getElementById("count-hours").textContent = hours;
+      document.getElementById("count-mins").textContent = mins;
+      renderActions(state);
+    }
+
+    function renderPlan(key) {
+      const plan = planData[key];
+      planSummary.innerHTML = `
+        <div class="plan-summary">
+          <h3 class="plan-summary__title">${plan.title}</h3>
+          <p class="plan-summary__text">${plan.summary}</p>
+          <div class="plan-badges">
+            ${plan.badges.map((badge) => `<span class="plan-badge">${badge}</span>`).join("")}
+          </div>
+        </div>
+      `;
+
+      dayList.innerHTML = plan.days.map((day, index) => `
+        <article class="day-card">
+          <div class="day-card__header">
+            <div class="day-card__index">${index + 1}</div>
+            <div>
+              <h3 class="day-card__title">${day.title}</h3>
+              <div class="day-card__subtitle">${day.subtitle}</div>
+            </div>
+          </div>
+          <div class="timeline">
+            ${day.items.map(([time, title, text]) => `
+              <div class="timeline-item">
+                <div class="timeline-item__time">${time}</div>
+                <div class="timeline-item__content">
+                  <strong>${title}</strong>
+                  <span>${text}</span>
+                </div>
+              </div>
+            `).join("")}
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderBudget(key) {
+      const budget = budgetData[key];
+      budgetTotal.textContent = budget.total;
+      budgetNote.textContent = budget.note;
+      budgetBreakdown.innerHTML = budget.rows.map(([tag, text]) => `
+        <div class="mini-row">
+          <div class="mini-row__tag">${tag}</div>
+          <div class="mini-row__body">${text}</div>
+        </div>
+      `).join("");
+    }
+
+    function renderChecklist() {
+      const saved = JSON.parse(localStorage.getItem("shitai-checklist") || "{}");
+      checklist.innerHTML = checklistData.map(([title, note], index) => `
+        <label class="check-item">
+          <input type="checkbox" data-check-index="${index}" ${saved[index] ? "checked" : ""}>
+          <div class="check-item__text">
+            <strong>${title}</strong>
+            <span>${note}</span>
+          </div>
+        </label>
+      `).join("");
+    }
+
+    document.querySelectorAll(".plan-tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".plan-tab").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        renderPlan(button.dataset.plan);
+      });
+    });
+
+    document.querySelectorAll(".budget-btn").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".budget-btn").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        renderBudget(button.dataset.budget);
+      });
+    });
+
+    document.addEventListener("change", (event) => {
+      const target = event.target;
+      if (!target.matches("[data-check-index]")) {
+        return;
+      }
+      const saved = JSON.parse(localStorage.getItem("shitai-checklist") || "{}");
+      saved[target.dataset.checkIndex] = target.checked;
+      localStorage.setItem("shitai-checklist", JSON.stringify(saved));
+    });
+
+    document.querySelectorAll(".quick-copy").forEach((button) => {
+      button.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(button.dataset.copy);
+          button.classList.add("is-copied");
+          const original = button.textContent;
+          button.textContent = "已复制到剪贴板";
+          window.setTimeout(() => {
+            button.classList.remove("is-copied");
+            button.textContent = original;
+          }, 1400);
+        } catch (error) {
+          button.textContent = "复制失败，请长按手动复制";
+        }
+      });
+    });
+
+    renderPlan("hybrid");
+    renderBudget("tight");
+    renderChecklist();
+    updateCountdown();
+    window.setInterval(updateCountdown, 30000);
+  </script>
+</body>
+</html>

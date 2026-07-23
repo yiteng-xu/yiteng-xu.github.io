@@ -1,0 +1,7 @@
+<script src="{{ '/assets/js/main.min.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}"></script>
+{% if page.fiddle_home or page.permalink == "/" %}
+<script src="{{ '/assets/js/fiddle-home.js' | relative_url }}?v={{ site.github.build_revision | default: site.time | date: '%s' }}" defer></script>
+{% endif %}
+
+{% include analytics.html %}
+{% include fetch_google_scholar_stats.html %}

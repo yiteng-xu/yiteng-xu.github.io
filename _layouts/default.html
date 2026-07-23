@@ -1,0 +1,34 @@
+---
+layout: compress
+---
+
+{% assign is_fiddle_home = page.fiddle_home or page.permalink == "/" %}
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"{% if page.dir %} dir="{{ page.dir }}"{% endif %} class="no-js{% if is_fiddle_home %} home-fiddle-html{% endif %}">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body{% if is_fiddle_home %} class="home-fiddle"{% endif %}>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      {% include sidebar.html %}
+    
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

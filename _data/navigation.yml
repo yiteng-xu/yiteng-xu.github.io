@@ -1,0 +1,22 @@
+# main links links
+main:
+  - title: "About Me"
+    url: "#about-me"
+
+  - title: "News"
+    url: "#news"
+
+  - title: "Publications"
+    url: "#publications"
+
+  - title: "Patents"
+    url: "#patents"
+
+  - title: "Honors and Awards"
+    url: "#awards"
+
+  - title: "Educations"
+    url: "#educations"
+
+  - title: "日本攻略"
+    url: "/日本攻略(1).html"
