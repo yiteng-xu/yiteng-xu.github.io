@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LinuxDO Reports · Yiteng Xu</title>
+  <style>
+    :root{color-scheme:light;--ink:#172033;--muted:#66758c;--line:#dce4ef;--accent:#3758d6}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(145deg,#e9efff,#f8fafc 34rem);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    main{max-width:900px;margin:auto;padding:70px 20px}
+    h1{font-size:clamp(32px,6vw,58px);line-height:1.1;letter-spacing:-.04em;margin:0 0 12px}
+    p{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-top:30px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;color:inherit;box-shadow:0 15px 35px #1e293b0d;transition:.18s ease}
+    .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+    .eyebrow{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .card strong{display:block;font-size:19px;margin:7px 0}
+    .card span{color:var(--muted);font-size:14px}
+    .back{display:inline-flex;margin-top:34px;color:var(--accent);text-decoration:none;font-weight:700}
+    @media(max-width:650px){main{padding:42px 14px}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">YITENG XU / LINUXDO REPORTS</p>
+    <h1>LinuxDO 信息报告</h1>
+    <p>每日更新的多层主题树与官方 agy 归纳页。原始材料、分片和运行状态保留在本机，不在此站公开。</p>
+    <section class="grid" aria-label="报告链接">
+      <a class="card" href="./linuxdo_life_quality_tree.html">
+        <span class="eyebrow">Track 01 · 8 + 12</span>
+        <strong>主题树状导航</strong>
+        <span>既有 8 大类与当前 12 类，多层展开、搜索和来源链接。</span>
+      </a>
+      <a class="card" href="./linuxdo_agy_digest.html">
+        <span class="eyebrow">Track 02 · AGY</span>
+        <strong>Gemini 每日归纳</strong>
+        <span>按分类分片后，通过官方 Antigravity CLI 调用 Gemini 3.1 Pro High 生成。</span>
+      </a>
+    </section>
+    <a class="back" href="/">← 返回原个人主页</a>
+  </main>
+</body>
+</html>
