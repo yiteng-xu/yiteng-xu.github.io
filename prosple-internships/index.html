@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prosple 上海实习筛选 · Yiteng Xu</title>
+  <meta name="description" content="基于 Prosple China 上海 product manager 实习搜索结果的个人筛选页，优先匹配金融学本科与管理学研究生背景。">
+  <style>
+    :root{color-scheme:light;--ink:#172033;--muted:#64748b;--line:#dbe4f0;--paper:#fff;--soft:#f5f7fb;--accent:#3758d6;--accent2:#0f766e;--warn:#9a3412;--bad:#991b1b;--good:#166534}
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(145deg,#e9efff,#f8fafc 34rem);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    main{max-width:1120px;margin:auto;padding:64px 20px 76px}
+    a{color:inherit}
+    h1{font-size:clamp(32px,6vw,58px);line-height:1.05;letter-spacing:-.045em;margin:0 0 14px}
+    h2{font-size:clamp(24px,3.2vw,36px);line-height:1.15;letter-spacing:-.03em;margin:0 0 14px}
+    h3{margin:.2rem 0 .35rem;font-size:1.08rem;line-height:1.35}
+    p{color:var(--muted);margin:.35rem 0}
+    .eyebrow{font-size:12px;color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:24px;align-items:stretch;margin-bottom:34px}
+    .hero-card,.panel,.job-card,.table-wrap{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:22px;box-shadow:0 16px 40px #1e293b12}
+    .hero-card{padding:32px}
+    .panel{padding:22px}
+    .lead{font-size:1.04rem;max-width:760px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .chip{display:inline-flex;align-items:center;border:1px solid #cbd5e1;border-radius:999px;background:#fff;padding:.32rem .68rem;font-size:.83rem;font-weight:700;color:#334155}
+    .chip.good{color:var(--good);border-color:#bbf7d0;background:#f0fdf4}
+    .chip.warn{color:var(--warn);border-color:#fed7aa;background:#fff7ed}
+    .score-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+    .score{border:1px solid var(--line);border-radius:16px;padding:14px;background:linear-gradient(180deg,#fff,#f8fafc)}
+    .score span{display:block;color:var(--muted);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .score strong{display:block;font-size:1.45rem;margin-top:.2rem}
+    .section{margin-top:34px}
+    .rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px}
+    .rule{border:1px solid var(--line);border-radius:18px;background:#fff;padding:16px}
+    .rule strong{display:block;margin-bottom:.2rem}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}
+    .job-card{padding:18px;display:flex;flex-direction:column;gap:8px}
+    .job-card .meta{display:flex;flex-wrap:wrap;gap:7px}
+    .tag{display:inline-flex;border-radius:999px;padding:.22rem .56rem;background:#eef2ff;color:#3730a3;font-size:.76rem;font-weight:800}
+    .tag.fit{background:#ecfdf5;color:#047857}
+    .tag.careful{background:#fff7ed;color:#c2410c}
+    .tag.low{background:#fef2f2;color:#b91c1c}
+    .rank{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:10px;background:#172033;color:#fff;font-weight:800;margin-right:8px;flex:0 0 auto}
+    .title-line{display:flex;align-items:flex-start;gap:2px}
+    .why{color:#475569;font-size:.93rem}
+    .table-wrap{overflow:auto;margin-top:16px}
+    table{width:100%;border-collapse:collapse;min-width:920px;background:#fff}
+    th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    th{background:#f8fafc;color:#334155;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}
+    td{font-size:.92rem}
+    tr:last-child td{border-bottom:0}
+    .decision{font-weight:800}
+    .decision.good{color:var(--good)}
+    .decision.low{color:var(--bad)}
+    .note{border-left:4px solid var(--accent);padding:14px 16px;background:#fff;border-radius:14px;margin-top:16px;color:#475569}
+    .nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+    .nav a{display:inline-flex;text-decoration:none;border:1px solid var(--line);border-radius:999px;background:#fff;padding:.48rem .82rem;font-weight:800;color:#1e3a8a}
+    .footer{margin-top:38px;color:var(--muted);font-size:.9rem}
+    @media(max-width:860px){main{padding:42px 14px}.hero,.rules,.grid{grid-template-columns:1fr}.score-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){.score-grid{grid-template-columns:1fr}h1{font-size:34px}}
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="eyebrow">YITENG XU / PROSPLE SHANGHAI INTERNSHIP FILTER</p>
+        <h1>上海 product manager 实习筛选</h1>
+        <p class="lead">基于 Prosple China 当前可见的上海 product manager / internship 搜索结果，按“上进型实习”标准做个人化筛选：优先匹配本科金融学、研究生管理学背景，同时看重真实项目、跨部门协作、咨询/实施、产品/运营和业务分析成长。</p>
+        <div class="chips" aria-label="筛选口径">
+          <span class="chip good">优先：金融 / 管理背景友好</span>
+          <span class="chip good">优先：咨询、产品、项目、运营</span>
+          <span class="chip warn">谨慎：硬件 / 纯工程门槛</span>
+          <span class="chip warn">剔除：行政杂活、纯填表打印</span>
+        </div>
+        <div class="nav" aria-label="站点导航">
+          <a href="/">← Homepage</a>
+          <a href="/linuxdo/">LinuxDO</a>
+          <a href="/日本攻略(1).html">日本攻略</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <p class="eyebrow">Snapshot</p>
+        <div class="score-grid">
+          <div class="score"><span>Visible cards</span><strong>20</strong></div>
+          <div class="score"><span>Recommended</span><strong>10</strong></div>
+          <div class="score"><span>Low fit</span><strong>10</strong></div>
+        </div>
+        <p class="note">来源限定为浏览器可见页面、用户截图与页面可访问文本；未绕过 Prosple 页面抓取隐藏数据。岗位细节会变化，投递前仍需点开雇主官网复核。</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <h2>筛选逻辑</h2>
+      <div class="rules">
+        <div class="rule">
+          <strong>1. 背景匹配</strong>
+          <p>金融学本科 + 管理学研究生优先匹配商业、咨询、项目管理、供应链、客户运营、数字产品类岗位。</p>
+        </div>
+        <div class="rule">
+          <strong>2. 成长含金量</strong>
+          <p>推荐能接触真实业务问题、跨部门沟通、系统/产品落地、客户需求、数据或流程分析的岗位。</p>
+        </div>
+        <div class="rule">
+          <strong>3. 降权规则</strong>
+          <p>明确以工程/数学/计算机为硬门槛，且核心是硬件、FAE、电气、故障分析、纯 QA/JAVA 开发的岗位降权或剔除。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>重点推荐的“上进型”实习</h2>
+      <div class="grid">
+        <article class="job-card">
+          <div class="title-line"><span class="rank">1</span><h3>Veeva Systems China · Implementation Consultant Intern</h3></div>
+          <div class="meta"><span class="tag fit">咨询 / 实施</span><span class="tag fit">管理背景友好</span><span class="tag">上海</span></div>
+          <p class="why">企业系统实施顾问路径，能练需求理解、客户沟通、业务流程和系统落地，比泛行政实习更接近可迁移的项目能力。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">2</span><h3>EY China · Platform Consulting Services Intern</h3></div>
+          <div class="meta"><span class="tag fit">平台咨询</span><span class="tag fit">商业与管理</span><span class="tag">北京 / 上海</span></div>
+          <p class="why">咨询 + 平台服务组合，适合管理背景进入数字化、流程优化和客户项目语境。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">3</span><h3>Apple China · Engineering Project Manager Intern</h3></div>
+          <div class="meta"><span class="tag fit">项目管理</span><span class="tag fit">跨部门协作</span><span class="tag careful">需技术沟通</span></div>
+          <p class="why">页面可见职责包括协调系统/PRQ EPM、跨职能团队和中国 OEM 团队，真实项目含量高；适合把管理背景包装成工程项目协调能力。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">4</span><h3>LVMH China · Digital Product &amp; Campaign Intern</h3></div>
+          <div class="meta"><span class="tag fit">数字产品</span><span class="tag fit">活动 / 增长</span><span class="tag">上海</span></div>
+          <p class="why">比普通品牌市场更靠近数字产品、活动转化和业务协作，适合金融/管理背景转向产品运营。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">5</span><h3>Texas Instruments China · Customer Operations Intern</h3></div>
+          <div class="meta"><span class="tag fit">业务运营</span><span class="tag fit">客户运营</span><span class="tag">2026 暑期</span></div>
+          <p class="why">虽然在半导体公司，但岗位关键词是 business &amp; operations，较适合做流程、客户、供应与运营分析。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">6</span><h3>Louis Vuitton China · Supply Chain Intern</h3></div>
+          <div class="meta"><span class="tag fit">供应链</span><span class="tag fit">运营管理</span><span class="tag">上海</span></div>
+          <p class="why">供应链/运营是管理背景可持续积累的硬能力方向，可与商业分析、库存、计划和跨部门协作结合。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">7</span><h3>EY China · Data &amp; AI Intern (AI Innovation Center)</h3></div>
+          <div class="meta"><span class="tag fit">数据 / AI</span><span class="tag fit">咨询场景</span><span class="tag careful">需补技术</span></div>
+          <p class="why">工程与数学标签带来门槛，但 EY 的 AI 创新中心更可能连接业务问题、方案展示和数据产品化，可作为冲刺型选择。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">8</span><h3>Riviera Events China · Project Management Intern</h3></div>
+          <div class="meta"><span class="tag fit">项目管理</span><span class="tag fit">供应商 / 预算</span><span class="tag">上海</span></div>
+          <p class="why">页面可见职责涉及客户满意度、项目目标、供应商沟通、时间表和预算，项目管理训练明确。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">9</span><h3>Zhongfu China Group · TPM Intern</h3></div>
+          <div class="meta"><span class="tag fit">技术项目管理</span><span class="tag careful">工程标签</span><span class="tag">上海</span></div>
+          <p class="why">TPM 天然是技术与项目的交界，如果岗位实际偏协调、排期、需求和交付，可作为管理背景进入技术产品侧的备选。</p>
+        </article>
+        <article class="job-card">
+          <div class="title-line"><span class="rank">10</span><h3>Zhongfu China Group · Customer Engineering Intern</h3></div>
+          <div class="meta"><span class="tag fit">客户 / 技术接口</span><span class="tag careful">需确认技术深度</span><span class="tag">上海</span></div>
+          <p class="why">客户工程可能有客户需求、方案沟通和问题定位价值；但如果实际是硬工程支持，应谨慎。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>全部可见实习项目与分类</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>公司</th><th>岗位</th><th>可见地点 / 学科标签</th><th>分类</th><th>理由</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Apple China</td><td>Engineering Project Manager Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +1</td><td class="decision good">上进</td><td>真实工程项目管理、跨团队协调；对管理背景有叙事空间。</td></tr>
+            <tr><td>2</td><td>LVMH China</td><td>Digital Product &amp; Campaign Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +1</td><td class="decision good">上进</td><td>数字产品 + 活动，适合产品运营、增长和商业协作。</td></tr>
+            <tr><td>3</td><td>Apple China</td><td>Mac Product Design Intern (Start ASAP)</td><td>Shanghai · Engineering &amp; Mathematics +1</td><td class="decision low">低匹配</td><td>“产品设计”看似相关，但 Apple Mac 很可能是硬件/工程设计核心，对金融管理背景门槛高。</td></tr>
+            <tr><td>4</td><td>Riviera Events China</td><td>Project Management Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management</td><td class="decision good">上进</td><td>客户、供应商、预算、排期和交付都是真项目管理训练。</td></tr>
+            <tr><td>5</td><td>Zhongfu China Group</td><td>TPM Intern (Start ASAP)</td><td>Shanghai · Engineering &amp; Mathematics</td><td class="decision good">上进</td><td>技术项目管理具备成长性；需确认不是纯工程执行。</td></tr>
+            <tr><td>6</td><td>LVMH China</td><td>Training Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +1</td><td class="decision low">低匹配</td><td>培训/HR 支持可能偏组织执行，产品、项目、数据含量不如数字产品或供应链岗位。</td></tr>
+            <tr><td>7</td><td>Veeva Systems China</td><td>Implementation Consultant Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +3</td><td class="decision good">上进</td><td>咨询实施、客户需求、企业系统落地，能力可迁移性强。</td></tr>
+            <tr><td>8</td><td>Emerson China</td><td>FAE Intern (Start ASAP)</td><td>Shanghai · Engineering &amp; Mathematics</td><td class="decision low">低匹配</td><td>FAE 通常是强技术/工程支持，不优先匹配金融管理背景。</td></tr>
+            <tr><td>9</td><td>Texas Instruments China</td><td>Application Engineering Intern (Start ASAP)</td><td>Shanghai · Engineering &amp; Mathematics +1</td><td class="decision low">低匹配</td><td>应用工程偏硬技术，除非目标是半导体技术支持，否则不优先。</td></tr>
+            <tr><td>10</td><td>Texas Instruments China</td><td>Failure Analysis Engineer - Summer Intern (Jun 2026)</td><td>Shanghai · Engineering &amp; Mathematics +1</td><td class="decision low">低匹配</td><td>故障分析工程师属于硬件/实验/工程分析核心，背景不匹配。</td></tr>
+            <tr><td>11</td><td>Dezan Shira &amp; Associates China</td><td>Asia Briefing Editorial Assistant - Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +3</td><td class="decision low">低匹配</td><td>有商业写作价值，但偏编辑内容，不是产品/项目/咨询/系统落地主线。</td></tr>
+            <tr><td>12</td><td>Louis Vuitton China</td><td>Supply Chain Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +1</td><td class="decision good">上进</td><td>供应链和运营管理是管理背景友好的硬能力方向。</td></tr>
+            <tr><td>13</td><td>EY China</td><td>Platform Consulting Services Intern (Start ASAP)</td><td>Beijing, Shanghai · Business &amp; Management +2</td><td class="decision good">上进</td><td>平台咨询服务连接业务流程、客户项目和数字化。</td></tr>
+            <tr><td>14</td><td>Texas Instruments China</td><td>Customer Operations (Business &amp; Operations) - Summer Intern (Jun 2026)</td><td>Shanghai · Business &amp; Management +1</td><td class="decision good">上进</td><td>客户运营、业务流程和运营分析更适合金融/管理背景。</td></tr>
+            <tr><td>15</td><td>Zhongfu China Group</td><td>Customer Engineering Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +1</td><td class="decision good">上进</td><td>客户需求与技术接口有成长性，但需复核技术门槛。</td></tr>
+            <tr><td>16</td><td>Yisheng China</td><td>Marketing Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +2</td><td class="decision low">低匹配</td><td>市场实习如果缺少产品、数据或项目 ownership，成长性不如数字产品/咨询/运营。</td></tr>
+            <tr><td>17</td><td>SAP China</td><td>QA Intern (S4HANA Public Cloud) (Start ASAP)</td><td>Shanghai · IT &amp; Computer Science</td><td class="decision low">低匹配</td><td>纯 QA 和公有云测试更偏计算机/测试执行，非当前背景优先。</td></tr>
+            <tr><td>18</td><td>IT Consulting China</td><td>JAVA Developer Assistant (Intern) (Start ASAP)</td><td>Shanghai · Engineering &amp; Mathematics +1</td><td class="decision low">低匹配</td><td>JAVA 开发助理是明确开发岗，除非转码，不建议作为管理主线。</td></tr>
+            <tr><td>19</td><td>Jabil China</td><td>Electrical Engineering Intern (Start ASAP)</td><td>Shanghai · Business &amp; Management +4</td><td class="decision low">低匹配</td><td>岗位核心是电气工程，即使标签含商业管理，也不优先。</td></tr>
+            <tr><td>20</td><td>EY China</td><td>Data &amp; AI Intern (AI Innovation Center) (Start ASAP)</td><td>Beijing, Shanghai, Shenzhen · Engineering &amp; Mathematics +1</td><td class="decision good">上进</td><td>数据/AI + 咨询创新中心有业务分析和方案落地潜力；技术门槛需补。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>投递优先级</h2>
+      <div class="rules">
+        <div class="rule">
+          <strong>第一梯队</strong>
+          <p>Veeva Implementation Consultant、EY Platform Consulting、Apple Engineering Project Manager、LVMH Digital Product &amp; Campaign。</p>
+        </div>
+        <div class="rule">
+          <strong>第二梯队</strong>
+          <p>TI Customer Operations、Louis Vuitton Supply Chain、EY Data &amp; AI、Riviera Project Management。</p>
+        </div>
+        <div class="rule">
+          <strong>谨慎备选</strong>
+          <p>Zhongfu TPM、Zhongfu Customer Engineering。投递前重点确认是否偏项目/客户/交付，而不是纯工程支持。</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer">Updated 2026-07-23 · Personal triage page based on visible Prosple search results only. This page does not reproduce hidden job data or private account information.</p>
+  </main>
+</body>
+</html>
