@@ -1713,3 +1713,101 @@
     width: 4.8rem;
   }
 }
+
+/* Homepage comparison entry points. The original home remains the canonical page. */
+.home-fiddle .homepage-lab {
+  margin: 3rem 0;
+  padding: clamp(1.25rem, 3vw, 2.2rem);
+  border: 1px solid rgba(15, 43, 44, 0.18);
+  background: #f6f7f3;
+  color: #172225;
+}
+
+.home-fiddle .homepage-lab__intro {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 62rem;
+}
+
+.home-fiddle .homepage-lab__eyebrow {
+  margin: 0;
+  color: #52615d;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.home-fiddle .homepage-lab__intro h2 {
+  margin: 0;
+  color: #172225;
+  font-size: clamp(1.65rem, 2.7vw, 2.55rem);
+  line-height: 1.05;
+}
+
+.home-fiddle .homepage-lab__intro p {
+  max-width: 62ch;
+  margin: 0;
+  color: #52615d;
+}
+
+.home-fiddle .homepage-lab__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.home-fiddle .homepage-lab__card {
+  display: grid;
+  gap: 0.65rem;
+  min-height: 15rem;
+  padding: 1rem;
+  border: 1px solid #172225;
+  color: #172225;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.home-fiddle .homepage-lab__card--miles { background: #f4f4f0; }
+.home-fiddle .homepage-lab__card--portfolite { background: #dce5db; }
+.home-fiddle .homepage-lab__card--kirk { background: #fff75b; }
+
+.home-fiddle .homepage-lab__card span,
+.home-fiddle .homepage-lab__card em {
+  color: #52615d;
+  font-size: 0.76rem;
+  font-style: normal;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-fiddle .homepage-lab__card strong {
+  align-self: center;
+  color: #172225;
+  font-size: clamp(1.2rem, 1.8vw, 1.65rem);
+  line-height: 1.05;
+}
+
+.home-fiddle .homepage-lab__card p {
+  margin: 0;
+  color: #42514e;
+  font-size: 0.9rem;
+}
+
+.home-fiddle .homepage-lab__card:hover,
+.home-fiddle .homepage-lab__card:focus-visible {
+  box-shadow: 5px 5px 0 #172225;
+  outline: none;
+  transform: translate(-2px, -2px);
+}
+
+@media (max-width: 820px) {
+  .home-fiddle .homepage-lab__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-fiddle .homepage-lab__card {
+    min-height: 11rem;
+  }
+}

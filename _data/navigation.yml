@@ -24,5 +24,14 @@ main:
   - title: "LinuxDO"
     url: "/linuxdo/"
 
-  - title: "Prosple Internships"
+  - title: "实习筛选"
     url: "/prosple-internships/"
+
+  - title: "主页方案 A"
+    url: "/homepage-miles/"
+
+  - title: "主页方案 B"
+    url: "/homepage-portfolite/"
+
+  - title: "主页方案 C"
+    url: "/homepage-kirk/"

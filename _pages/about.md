@@ -181,6 +181,34 @@ redirect_from:
   </div>
 </section>
 
+<section class="homepage-lab" aria-label="Alternative homepage designs">
+  <div class="homepage-lab__intro">
+    <p class="homepage-lab__eyebrow">DESIGN STUDIES</p>
+    <h2>Three alternate ways to explore this profile.</h2>
+    <p>These pages use the same research record, projects, and contact routes as this homepage. They differ only in visual language, so the comparison is useful rather than cosmetic.</p>
+  </div>
+  <div class="homepage-lab__grid">
+    <a class="homepage-lab__card homepage-lab__card--miles" href="/homepage-miles/">
+      <span>01 / Miles-inspired</span>
+      <strong>Minimal research portfolio</strong>
+      <p>Quiet typography, high contrast, and a deliberate reading rhythm.</p>
+      <em>Open design A</em>
+    </a>
+    <a class="homepage-lab__card homepage-lab__card--portfolite" href="/homepage-portfolite/">
+      <span>02 / Portfolite-inspired</span>
+      <strong>Editorial project case studies</strong>
+      <p>Large visual research tiles, paper-first navigation, and a polished project gallery.</p>
+      <em>Open design B</em>
+    </a>
+    <a class="homepage-lab__card homepage-lab__card--kirk" href="/homepage-kirk/">
+      <span>03 / Kirk-inspired</span>
+      <strong>Expressive research identity</strong>
+      <p>Bold color blocks and an energetic visual system built around embodied AI.</p>
+      <em>Open design C</em>
+    </a>
+  </div>
+</section>
+
 <section class="fh-about" aria-label="About me">
   <div class="fh-about__copy" markdown="1">
 I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. Yuexin Ma. Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
@@ -777,6 +805,19 @@ Yumeng Liu, Yaxun Yang, Youzhuo Wang, Xiaofei Wu, Jiamin Wang, **Yichen Yao**, S
 **Yichen Yao**, Zimo Jiang, Yujing Sun, Zhencai Zhu, Xinge Zhu, Runnan Chen, Yuexin Ma
 </div>
 </div> -->
+
+<div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://4dvlab.github.io/project_page/remogen/" target="_blank" rel="noopener"><div class="badge">CVPR 2026</div><img src='/images/remogen/teaser-1.png' alt="ReMoGen overview" width="100%"></a></div>
+<div class='paper-box-text' markdown="1">
+
+[ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data](https://4dvlab.github.io/project_page/remogen/)
+
+Yaoqin Ye, **Yiteng Xu**, Qin Sun, Xinge Zhu, Yujing Sun, Yuexin Ma
+
+The IEEE / CVF Computer Vision and Pattern Recognition Conference (**CVPR**), 2026
+
+ReMoGen is a modular framework for real-time interaction-to-reaction motion generation, combining a universal motion prior, independently trained Meta-Interaction modules, and frame-wise segment refinement across human-human and human-scene settings.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><a class="paper-box-link" href="https://irc-vitahome.github.io/SymBridge/" target="_blank" rel="noopener"><div class="badge">SIGGRAPH Asia 2025</div><img src='/images/SymBridge.png' alt="sym" width="100%"></a></div>
 <div class='paper-box-text' markdown="1">
