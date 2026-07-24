@@ -11,6 +11,9 @@
     "priority_have_prosple_company_page": true,
     "priority_have_apply_jump": true,
     "priority_have_external_apply": true,
+    "priority_have_company_briefs": true,
+    "company_brief_cards": 11,
+    "unique_company_brief_sources": 7,
     "card_apply_links_extracted": 24,
     "browser_extracted_apply_links_file": "D:\\Customized_Storybook\\prosple-output\\prosple_apply_links.json",
     "recommended_indices": [

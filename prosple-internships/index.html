@@ -17,7 +17,7 @@
     .section{margin-top:34px} .rules{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:14px} .rule{border:1px solid var(--line);border-radius:18px;background:#fff;padding:16px} .rule strong{display:block;margin-bottom:.2rem}
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px} .job-card{padding:18px;display:flex;flex-direction:column;gap:10px} .job-card.priority{border-color:#b7e4c7} .job-card.consider{border-color:#f3d08d}
     .job-head{display:flex;gap:10px;align-items:flex-start} .rank{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:11px;background:#172033;color:#fff;font-weight:900;flex:0 0 auto} .employer{font-size:.82rem;color:var(--accent2);font-weight:900;text-transform:uppercase;letter-spacing:.06em} .sub,.muted{color:var(--muted);font-size:.86rem}
-    .tag{display:inline-flex;border-radius:999px;padding:.22rem .56rem;background:#eef2ff;color:#3730a3;font-size:.76rem;font-weight:850} .why{color:#475569;font-size:.94rem} .risk{color:#6b4e16;font-size:.88rem;background:#fffbeb;border:1px solid #fde68a;border-radius:14px;padding:10px 12px}
+    .tag{display:inline-flex;border-radius:999px;padding:.22rem .56rem;background:#eef2ff;color:#3730a3;font-size:.76rem;font-weight:850} .why{color:#475569;font-size:.94rem} .company-brief{color:#334155;font-size:.92rem;background:#f8fafc;border:1px solid #dbeafe;border-radius:14px;padding:10px 12px}.company-brief strong{color:#172033}.company-brief a{color:#1d4ed8;font-weight:850;text-decoration:none}.company-brief a:hover{text-decoration:underline} .risk{color:#6b4e16;font-size:.88rem;background:#fffbeb;border:1px solid #fde68a;border-radius:14px;padding:10px 12px}
     .btn{display:inline-flex;flex-direction:column;gap:1px;text-decoration:none;border:1px solid var(--line);border-radius:14px;background:#fff;padding:.46rem .62rem;font-size:.78rem;font-weight:900;color:#1e3a8a;max-width:220px} .btn small{display:block;color:#64748b;font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .btn.primary{background:#172033;color:#fff;border-color:#172033} .btn.primary small{color:#dbeafe} .btn.apply{border-color:#bfdbfe;background:#eff6ff} .btn.tiny{padding:.26rem .42rem;font-size:.72rem;max-width:185px} .btn.disabled{color:#94a3b8;background:#f8fafc}
     .table-wrap{overflow:auto;margin-top:16px} table{width:100%;border-collapse:collapse;min-width:1280px;background:#fff} th,td{padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left} th{background:#f8fafc;color:#334155;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;position:sticky;top:0} td{font-size:.88rem} tr:last-child td{border-bottom:0} .decision{font-weight:900} .decision.good{color:var(--good)} .decision.warn{color:var(--warn)} .decision.low{color:var(--bad)} .note{padding:16px 18px;color:#475569;margin-top:16px;border-left:5px solid var(--accent)} .nav{margin-top:30px} .nav a{text-decoration:none;border:1px solid var(--line);border-radius:999px;background:#fff;padding:.48rem .82rem;font-weight:900;color:#1e3a8a} .footer{margin-top:38px;color:var(--muted);font-size:.9rem}
     @media(max-width:900px){main{padding:42px 14px}.hero,.rules,.grid{grid-template-columns:1fr}.score-grid{grid-template-columns:1fr 1fr}} @media(max-width:540px){.score-grid{grid-template-columns:1fr}h1{font-size:34px}}
@@ -59,6 +59,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management</span><span class="tag">财务分析</span><span class="tag">行业研究</span><span class="tag">财务建模</span></div>
         <p class="why">该岗位为中金公司债务重组业务项目实习生，工作地点涵盖上海。核心职责包括财务分析、行业研究、财务建模和尽职调查支持，业务含金量高且表现优秀者有留用机会。候选人山大金融本科及复旦管理硕士背景与专业要求高度匹配。</p>
+        <p class="company-brief"><strong>公司速览：</strong>中金公司是中国头部投资银行与综合金融服务机构，业务覆盖投资银行、股票/FICC、财富管理和投资管理。对金融本科、管理硕士路径来说，重组、股权融资和结构化销售能直接训练财务分析、行业研究、融资执行与机构客户理解，是本页最核心的一类高含金量平台。<a href="https://en.cicc.com/what-we-do/index.html" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>无硬性门槛风险，建议熟练掌握Excel、PPT及相关金融数据终端。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/china-international-capital-corporation-cicc/jobs-internships/debt-restructuring-business-project-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/china-international-capital-c...</small></a>
@@ -79,6 +80,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management ‌</span><span class="tag">财务分析</span><span class="tag">行业研究</span><span class="tag">尽职调查</span></div>
         <p class="why">中金公司股权融资部（医疗医药组）项目实习生，工作地点覆盖上海。岗位核心职责包括财务分析、行业研究、案例分析及尽职调查，与候选人山大金融本科及即将在复旦攻读管理学硕士的专业背景高度契合，业务含金量高，学习成长空间大。</p>
+        <p class="company-brief"><strong>公司速览：</strong>中金公司是中国头部投资银行与综合金融服务机构，业务覆盖投资银行、股票/FICC、财富管理和投资管理。对金融本科、管理硕士路径来说，重组、股权融资和结构化销售能直接训练财务分析、行业研究、融资执行与机构客户理解，是本页最核心的一类高含金量平台。<a href="https://en.cicc.com/what-we-do/index.html" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>需要尽快到岗（ASAP）；除核心投研业务外，也需承担少量绘图/打印等辅助性工作。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/china-international-capital-corporation-cicc/jobs-internships/equity-financing-project-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/china-international-capital-c...</small></a>
@@ -99,6 +101,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management</span><span class="tag">信用研究</span><span class="tag">行业与市场分析</span><span class="tag">Pitchbook制作</span></div>
         <p class="why">候选人拥有山大金融学士及复旦管理硕士背景，专业完全契合。工作地点包含上海，岗位涵盖德意志银行投资银行与资本市场（IBCM）及固定收益与货币（FIC）两大核心业务，涉及信用研究、行业与市场分析、Pitchbook制作及真实项目执行，学习含金量极高。</p>
+        <p class="company-brief"><strong>公司速览：</strong>德意志银行是德国起源的全球性银行，业务包括企业银行、投资银行、私人银行和资产管理。投行实习能接触资本市场、FIC、信用研究和交易支持；企业银行实习则更偏现金管理、贸易融资和机构客户服务，适合金融/管理背景理解跨国银行如何服务企业客户。<a href="https://www.db.com/who-we-are/index" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>需具备较好的数字敏感度与细节关注度，并能保证约定出勤；工作中包含部分KYC与行政辅助事项需妥善处理。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/deutsche-bank-china/jobs-internships/investment-bank-local-intern-china" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/deutsche-bank-china/jobs-inte...</small></a>
@@ -119,6 +122,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management ‌</span><span class="tag">财务分析</span><span class="tag">现金流预测</span><span class="tag">重组咨询</span></div>
         <p class="why">岗位位于上海，属于Kroll重组与财务咨询团队。核心职责包括财务与运营重组、现金流预测、财务分析及企业咨询等高含金量业务，无技术或理工科要求，与候选人山大金融本科及复旦管理硕士背景高度匹配，成长性极佳。</p>
+        <p class="company-brief"><strong>公司速览：</strong>Kroll 是全球金融与风险咨询公司，核心能力集中在估值、交易、重组、调查合规和风险治理。这个重组岗位比普通财务助理更“上进”：它训练现金流预测、债务与运营重组、企业困境分析和咨询交付，适合金融/管理背景建立硬核财务咨询能力。<a href="https://www.kroll.com/en/about-us" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>无硬性技术或专业壁垒，需确认ASAP到岗时间与入学行程安排。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/kroll-china/jobs-internships/restructuring-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/kroll-china/jobs-internships/...</small></a>
@@ -139,6 +143,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management ‌</span><span class="tag">财务分析</span><span class="tag">行业研究</span><span class="tag">尽职调查</span></div>
         <p class="why">中金公司（CICC）股权融资业务部项目实习生，地点包含上海。岗位职责涵盖基础财务分析、行业研究、案例分析、尽职调查及金融建模等投行/股权融资核心业务，与候选人山大金融本科及复旦管理学硕士背景完美匹配，含金量与成长空间极佳。</p>
+        <p class="company-brief"><strong>公司速览：</strong>中金公司是中国头部投资银行与综合金融服务机构，业务覆盖投资银行、股票/FICC、财富管理和投资管理。对金融本科、管理硕士路径来说，重组、股权融资和结构化销售能直接训练财务分析、行业研究、融资执行与机构客户理解，是本页最核心的一类高含金量平台。<a href="https://en.cicc.com/what-we-do/index.html" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>包含部分文档排版与打印等辅助性工作，投行项目实习工作强度通常较大；建议明确每周可到岗天数及实习时长。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/china-international-capital-corporation-cicc/jobs-internships/equity-financing-business-project-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/china-international-capital-c...</small></a>
@@ -159,6 +164,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management</span><span class="tag">Excel数据分析</span><span class="tag">供应链管理</span><span class="tag">库存调配与规划</span></div>
         <p class="why">路易威登上海供应链实习岗位，负责零售计划支持、库存调控与分析、新品与POP UP库存构建及周度未履约订单汇总等实质性供应链与业务运营工作。候选人山东大学金融学士及复旦管理硕士背景高度契合，无硬性理工科或编程门槛（仅需Excel及英语能力），品牌平台优异且学习成长空间大。</p>
+        <p class="company-brief"><strong>公司速览：</strong>Louis Vuitton 隶属于 LVMH 体系，LVMH 是全球奢侈品集团，强调品牌、工艺、长期经营和各 Maison 的独立身份。这个岗位不是简单店铺销售，而是供应链与零售运营：能学习高端消费品库存、补货、门店/活动支持和数据化运营，对管理学路径很有帮助。<a href="https://www.lvmh.com/en/our-group/our-mission" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>Python和Power BI为加分项而非硬性要求；部分日常涉及订单跟踪与调拨协调，需注意多从数据分析与供应链优化视角总结积累。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/louis-vuitton-china/jobs-internships/supply-chain-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/louis-vuitton-china/jobs-inte...</small></a>
@@ -179,6 +185,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management</span><span class="tag">数据分析</span><span class="tag">销售支持</span><span class="tag">客户对接</span></div>
         <p class="why">中金公司全球结构化销售团队项目实习，地点位于上海，明确招收金融及相关专业学生。候选人具有山大金融本科与复旦管理硕士背景，专业完全对口；实习内容涵盖数据分析、客户对接与销售支持，具有较高的含金量与实操学习价值。</p>
+        <p class="company-brief"><strong>公司速览：</strong>中金公司是中国头部投资银行与综合金融服务机构，业务覆盖投资银行、股票/FICC、财富管理和投资管理。对金融本科、管理硕士路径来说，重组、股权融资和结构化销售能直接训练财务分析、行业研究、融资执行与机构客户理解，是本页最核心的一类高含金量平台。<a href="https://en.cicc.com/what-we-do/index.html" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>要求实习至少6个月且每周出勤至少4天。候选人2026年9月将在上海复旦开学，由于地点同在上海，需注意开学后课程安排与每周4天出勤要求的协调。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/china-international-capital-corporation-cicc/jobs-internships/global-structured-sales-team-project-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/china-international-capital-c...</small></a>
@@ -199,6 +206,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management</span><span class="tag">行业研究</span><span class="tag">尽职调查</span><span class="tag">财务分析</span></div>
         <p class="why">该岗位为华兴资本上海医疗投行组实习生，核心职责涵盖医疗细分行业研究、项目尽调、财务与估值分析、财务模型构建及融资交易执行，成长含金量极高，完全契合投资银行与金融方向的实习目标。候选人具备山东大学金融学本科背景及财务会计基础，满足其明确要求的金融相关专业条件。</p>
+        <p class="company-brief"><strong>公司速览：</strong>华兴资本是服务中国新经济企业的金融机构，业务覆盖投资银行、投资管理、私募融资、并购顾问、股票承销、销售交易、研究和财富管理。医疗投行组适合金融背景进入“行业研究 + 估值建模 + 项目执行”的路径，但医疗赛道知识需要额外补课。<a href="https://www.huaxing.com/m/aboutUs" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>岗位优先考虑生物医药背景或医疗健康领域金融实习经验；候选人无医药复合背景，在医疗子行业专业壁垒理解上可能存在一定竞争劣势，但金融专业背景硬性符合要求。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/renaissance-cn/jobs-internships/investment-banking-division-medical-team-internship" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/renaissance-cn/jobs-internshi...</small></a>
@@ -219,6 +227,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management ‌</span><span class="tag">Accounting</span><span class="tag">Financial Reporting</span><span class="tag">Excel</span></div>
         <p class="why">岗位位于上海，明确要求会计或金融专业，与候选人山东大学金融学士及复旦管理硕士背景高度契合。职责包含国内外实体会计支持、月度结账及管理财务报告编制等实质性财务实践，学习价值良好；虽包含部分发票与数据录入等基础事务，但整体符合财务实习目标。</p>
+        <p class="company-brief"><strong>公司速览：</strong>Turner &amp; Townsend 是专业服务公司，聚焦项目管理、成本与商业管理、咨询服务，服务房地产、基础设施和自然资源等大型项目。财务实习偏企业财务与管理报表，不如投行刺激，但能理解专业服务公司的跨国财务流程、月结、报表和项目成本管理。<a href="https://careers.turnerandtownsend.com/graduate-development-program-usa/who-we-are" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>要求每周至少到岗3天；包含部分发票处理与数据录入等事务性工作。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/turner-townsend-china/jobs-internships/finance-intern" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/turner-townsend-china/jobs-in...</small></a>
@@ -239,6 +248,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management ‌</span><span class="tag">Corporate Banking</span><span class="tag">Cash Management</span><span class="tag">Trade Finance</span></div>
         <p class="why">候选人山东大学金融学本科及复旦管理学硕士背景与德意志银行企业银行（Corporate Bank）实习岗位高度匹配。岗位位于上海，能够深入了解现金管理、贸易融资、信贷及风险管理等核心金融产品与业务，具备良好的行业声誉与学习价值；但岗位职责中包含部分行政性事务，需合理预期。</p>
+        <p class="company-brief"><strong>公司速览：</strong>德意志银行是德国起源的全球性银行，业务包括企业银行、投资银行、私人银行和资产管理。投行实习能接触资本市场、FIC、信用研究和交易支持；企业银行实习则更偏现金管理、贸易融资和机构客户服务，适合金融/管理背景理解跨国银行如何服务企业客户。<a href="https://www.db.com/who-we-are/index" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>职责中包含执行团队主管指定的行政任务（administrative tasks），需注意实际业务参与度与行政支持的比例；要求保证全勤与高投入度。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/deutsche-bank-china/jobs-internships/corporate-bank-local-intern-china" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/deutsche-bank-china/jobs-inte...</small></a>
@@ -259,6 +269,7 @@
         </div>
         <div class="tags"><span class="tag">Business &amp; Management</span><span class="tag">数字项目管理</span><span class="tag">电商平台运营</span><span class="tag">跨部门沟通</span></div>
         <p class="why">岗位位于上海，负责Inditex（Zara母公司）电商数字项目管理、平台运营及跨部门协调，符合业务/产品运营与商业管理学习目标。候选人具备山大金融与复旦管理学背景，与商科要求高度契合。</p>
+        <p class="company-brief"><strong>公司速览：</strong>Zara 是 Inditex 旗下代表品牌，Inditex 是全球大型时尚零售集团；Zara 的业务模型贯穿设计、生产、分销和销售，并依托实体零售网络与线上渠道。这个岗位偏电商项目管理、平台运营和跨部门协作，适合想从商科进入消费品/零售数字化运营方向的候选人。<a href="https://www.zara.com/us/en/z-company-corp1391.html" target="_blank" rel="noopener noreferrer">官方来源</a></p>
         <p class="risk"><strong>注意?</strong>岗位提及移动App或小程序架构经验为强加分项，且优先海外学历背景，存在一定背景偏好与软性技术门槛风险。</p>
         <div class="links">
           <a class="btn primary" href="https://cn.prosple.com/graduate-employers/inditex-china/jobs-internships/e-commerce-intern-0" target="_blank" rel="noopener noreferrer">Prosple 岗位详情<small>cn.prosple.com/graduate-employers/inditex-china/jobs-internship...</small></a>
