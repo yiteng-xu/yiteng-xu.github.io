@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Overleaf / ReMoGen Asset Audit</title>
+  <style>
+    body{margin:0;background:#f8fafc;color:#172033;font:16px/1.7 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    main{max-width:980px;margin:auto;padding:56px 20px 80px}
+    h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:0 0 12px;letter-spacing:-.04em}
+    h2{margin-top:34px;color:#0f172a}
+    .card{background:#fff;border:1px solid #dbe4f0;border-radius:22px;box-shadow:0 18px 46px #17203314;padding:24px;margin-top:18px}
+    .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#3154d4;font-weight:900}
+    li{margin:.35rem 0}.ok{color:#166534}.pending{color:#a16207}.safe{color:#1d4ed8}
+    code{background:#eef2ff;border-radius:8px;padding:.12rem .32rem}
+    a{color:#1d4ed8;font-weight:800;text-decoration:none}a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Publication safety audit · 2026-07-24</p>
+  <h1>Overleaf / ReMoGen asset audit</h1>
+  <p>This page records the publication-safe state of the homepage paper-asset work.</p>
+
+  <section class="card">
+    <h2 class="ok">Completed</h2>
+    <ul>
+      <li>The user-provided COMPOSE/ReMoGen source ZIP was verified locally. It is approximately 76.3 MB and contains the expected TeX source tree plus high-resolution PDF figures.</li>
+      <li>The COMPOSE/ReMoGen exception is already represented on the original homepage and all three desktop homepage variants.</li>
+      <li>Publication-ready derivative images currently available in the repository:
+        <ul>
+          <li><code>images/remogen/teaser-1.png</code></li>
+          <li><code>images/remogen/vis-1.png</code></li>
+          <li><code>images/remogen/main-1.png</code></li>
+          <li><code>images/remogen/demo-1.png</code></li>
+          <li><code>images/remogen/hhi-comp-1.png</code></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2 class="pending">Still pending</h2>
+    <ul>
+      <li>The older Overleaf project ZIP batch has not been completed. The current cache only contains a login-page HTML response, not the authenticated 72-project listing or ZIP downloads.</li>
+      <li>The near-three-month exclusion rule remains in force: unpublished recent projects must not be downloaded into the public site or used as homepage assets, except for the explicitly allowed COMPOSE/ReMoGen project.</li>
+      <li>Final image-aesthetic selection is still pending official AGY CLI availability. The target route remains <code>gemini-3.1-pro --effort high</code> for image/aesthetic review.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2 class="safe">Safety notes</h2>
+    <ul>
+      <li>Temporary Overleaf/authorized-source directories are ignored and must not be committed.</li>
+      <li>Cookie/session extraction helpers are ignored and must not be committed.</li>
+      <li>No Overleaf cookies, OAuth tokens, raw browser session stores, or unpublished ZIP contents are published by this repository.</li>
+      <li>Current homepage changes use only committed, publication-safe images under <code>images/remogen/</code>.</li>
+    </ul>
+  </section>
+
+  <p><a href="/">Back to homepage</a></p>
+</main>
+</body>
+</html>
