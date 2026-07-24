@@ -18,9 +18,10 @@
     .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px} .job-card{padding:18px;display:flex;flex-direction:column;gap:10px} .job-card.priority{border-color:#b7e4c7} .job-card.consider{border-color:#f3d08d}
     .job-head{display:flex;gap:10px;align-items:flex-start} .rank{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:11px;background:#172033;color:#fff;font-weight:900;flex:0 0 auto} .employer{font-size:.82rem;color:var(--accent2);font-weight:900;text-transform:uppercase;letter-spacing:.06em} .sub,.muted{color:var(--muted);font-size:.86rem}
     .tag{display:inline-flex;border-radius:999px;padding:.22rem .56rem;background:#eef2ff;color:#3730a3;font-size:.76rem;font-weight:850} .why{color:#475569;font-size:.94rem} .company-brief{color:#334155;font-size:.92rem;background:#f8fafc;border:1px solid #dbeafe;border-radius:14px;padding:10px 12px}.company-brief strong{color:#172033}.company-brief a{color:#1d4ed8;font-weight:850;text-decoration:none}.company-brief a:hover{text-decoration:underline} .risk{color:#6b4e16;font-size:.88rem;background:#fffbeb;border:1px solid #fde68a;border-radius:14px;padding:10px 12px}
+    .company-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}.company-card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 30px #1720330d;padding:18px}.company-card h3{margin:0 0 5px;font-size:1.07rem}.company-card .meta{color:var(--accent2);font-size:.76rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.company-card dl{display:grid;grid-template-columns:82px minmax(0,1fr);gap:7px 10px;margin:12px 0 0}.company-card dt{font-weight:900;color:#334155}.company-card dd{margin:0;color:#475569}.company-card a{color:#1d4ed8;font-weight:850;text-decoration:none}.company-card a:hover{text-decoration:underline}
     .btn{display:inline-flex;flex-direction:column;gap:1px;text-decoration:none;border:1px solid var(--line);border-radius:14px;background:#fff;padding:.46rem .62rem;font-size:.78rem;font-weight:900;color:#1e3a8a;max-width:220px} .btn small{display:block;color:#64748b;font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .btn.primary{background:#172033;color:#fff;border-color:#172033} .btn.primary small{color:#dbeafe} .btn.apply{border-color:#bfdbfe;background:#eff6ff} .btn.tiny{padding:.26rem .42rem;font-size:.72rem;max-width:185px} .btn.disabled{color:#94a3b8;background:#f8fafc}
     .table-wrap{overflow:auto;margin-top:16px} table{width:100%;border-collapse:collapse;min-width:1280px;background:#fff} th,td{padding:10px 11px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left} th{background:#f8fafc;color:#334155;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;position:sticky;top:0} td{font-size:.88rem} tr:last-child td{border-bottom:0} .decision{font-weight:900} .decision.good{color:var(--good)} .decision.warn{color:var(--warn)} .decision.low{color:var(--bad)} .note{padding:16px 18px;color:#475569;margin-top:16px;border-left:5px solid var(--accent)} .nav{margin-top:30px} .nav a{text-decoration:none;border:1px solid var(--line);border-radius:999px;background:#fff;padding:.48rem .82rem;font-weight:900;color:#1e3a8a} .footer{margin-top:38px;color:var(--muted);font-size:.9rem}
-    @media(max-width:900px){main{padding:42px 14px}.hero,.rules,.grid{grid-template-columns:1fr}.score-grid{grid-template-columns:1fr 1fr}} @media(max-width:540px){.score-grid{grid-template-columns:1fr}h1{font-size:34px}}
+    @media(max-width:900px){main{padding:42px 14px}.hero,.rules,.grid,.company-guide{grid-template-columns:1fr}.score-grid{grid-template-columns:1fr 1fr}} @media(max-width:540px){.score-grid{grid-template-columns:1fr}h1{font-size:34px}}
   </style>
   <style>
     .audit-details{margin-top:16px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.72);padding:14px 16px}
@@ -47,6 +48,83 @@
   </section>
 
   <section class="section"><h2>筛选规则</h2><div class="rules"><div class="rule"><strong>1</strong><p>只按金融学本科 + 管理学研究生路径筛选，不把用户本人的计算机/AI背景带入判断。</p></div><div class="rule"><strong>2</strong><p>优先真实业务问题、财务/投资/咨询训练、跨部门项目、商业分析、运营和供应链能力。</p></div><div class="rule"><strong>3</strong><p>硬件、电气、FAE、故障分析、纯 QA、Java/软件开发、实验室和工程数学硬门槛岗位不进入推荐区。</p></div></div></section>
+
+  <section class="section" id="company-backgrounds">
+    <h2>重点公司背景速览</h2>
+    <p class="lead">11 个重点岗位实际覆盖 7 家不同雇主；中金和德银因为有多个高匹配岗位重复出现，这里按公司去重介绍，帮助先判断“这家公司是什么、做什么、值不值得投”。</p>
+    <div class="company-guide">
+      <article class="company-card">
+        <div class="meta">Investment banking / Securities</div>
+        <h3>China International Capital Corporation (CICC) · 中金公司</h3>
+        <dl>
+          <dt>做什么</dt><dd>中国头部投资银行与综合金融服务机构，覆盖投资银行、股票与 FICC、财富管理、资产管理和投资管理等业务。</dd>
+          <dt>定位/愿景</dt><dd>更像“高强度金融训练场”：围绕企业融资、并购重组、资本市场和机构客户需求，训练行业研究、财务建模、尽调和项目执行。</dd>
+          <dt>公司特点</dt><dd>平台大、项目密度高、金融专业相关度强；本页的重组、股权融资、结构化销售 4 个岗位都属于高含金量核心业务。</dd>
+          <dt>适配理由</dt><dd>非常适合山东大学金融本科 + 复旦管理硕士路径，是最贴近投行/券商/资本市场职业路线的一组岗位。<a href="https://en.cicc.com/what-we-do/index.html" target="_blank" rel="noopener noreferrer">官方业务介绍</a></dd>
+        </dl>
+      </article>
+      <article class="company-card">
+        <div class="meta">Global bank / Corporate &amp; investment banking</div>
+        <h3>Deutsche Bank China · 德意志银行</h3>
+        <dl>
+          <dt>做什么</dt><dd>德国起源的全球性银行，业务包括企业银行、投资银行、私人银行和资产管理；中国岗位主要对应投行和企业银行两条线。</dd>
+          <dt>定位/愿景</dt><dd>用全球网络服务企业、机构和高净值客户，核心是跨境金融、资本市场、现金管理、贸易融资和机构客户解决方案。</dd>
+          <dt>公司特点</dt><dd>国际化程度高，英文、数据分析、细节质量和金融产品理解都很重要；投行岗位偏信用研究/市场分析/Pitchbook，企业银行偏现金管理和企业客户。</dd>
+          <dt>适配理由</dt><dd>适合想进入外资银行、企业金融、资本市场或机构客户服务方向的商科候选人。<a href="https://www.db.com/who-we-are/index" target="_blank" rel="noopener noreferrer">官方 Who we are</a></dd>
+        </dl>
+      </article>
+      <article class="company-card">
+        <div class="meta">Restructuring / Risk advisory</div>
+        <h3>Kroll China</h3>
+        <dl>
+          <dt>做什么</dt><dd>全球金融与风险咨询公司，能力集中在估值、交易、重组、调查合规、网络与风险治理等专业服务。</dd>
+          <dt>定位/愿景</dt><dd>帮助企业在复杂交易、困境重组、合规调查和风险场景中做判断，属于“金融 + 咨询 + 风险管理”的交叉平台。</dd>
+          <dt>公司特点</dt><dd>重组实习不是普通财务助理，会接触现金流预测、债务与运营重组、企业困境分析、法院/债权人报告和客户沟通。</dd>
+          <dt>适配理由</dt><dd>适合金融/管理背景建立硬核财务咨询能力，成长性高，且没有工程或计算机硬门槛。<a href="https://www.kroll.com/en/about-us" target="_blank" rel="noopener noreferrer">官方 About us</a></dd>
+        </dl>
+      </article>
+      <article class="company-card">
+        <div class="meta">Luxury / Retail operations</div>
+        <h3>Louis Vuitton China / LVMH</h3>
+        <dl>
+          <dt>做什么</dt><dd>Louis Vuitton 隶属于 LVMH 体系，LVMH 是全球奢侈品集团，覆盖时装皮具、酒类、香水美妆、腕表珠宝和精品零售。</dd>
+          <dt>定位/愿景</dt><dd>强调长期品牌建设、工艺、创意与高端客户体验；商业模式围绕品牌、零售网络、供应链和门店运营展开。</dd>
+          <dt>公司特点</dt><dd>供应链岗位能看到高端消费品的库存、补货、门店支持、活动协同和跨部门运营，不是简单销售岗。</dd>
+          <dt>适配理由</dt><dd>适合管理学方向理解消费品公司如何把品牌、供应链、零售运营和数据协作结合起来。<a href="https://www.lvmh.com/en/our-group/our-mission" target="_blank" rel="noopener noreferrer">LVMH 官方使命</a></dd>
+        </dl>
+      </article>
+      <article class="company-card">
+        <div class="meta">Healthcare investment banking / New economy finance</div>
+        <h3>Renaissance CN · 华兴资本</h3>
+        <dl>
+          <dt>做什么</dt><dd>服务中国新经济企业的金融机构，覆盖投资银行、投资管理、私募融资、并购顾问、股票承销、销售交易、研究和财富管理。</dd>
+          <dt>定位/愿景</dt><dd>更偏“新经济 + 成长企业 + 资本市场”的金融服务平台，长期关注科技、消费、医疗健康等成长赛道。</dd>
+          <dt>公司特点</dt><dd>医疗投行组会把行业研究、估值建模、公司材料整理、交易执行支持结合起来；赛道专业性比普通金融岗更强。</dd>
+          <dt>适配理由</dt><dd>适合金融背景切入医疗健康投行，但需要提前补医药产业链、创新药/器械商业化和一级/二级市场基础知识。<a href="https://www.huaxing.com/m/aboutUs" target="_blank" rel="noopener noreferrer">官方 About us</a></dd>
+        </dl>
+      </article>
+      <article class="company-card">
+        <div class="meta">Professional services / Project &amp; cost management</div>
+        <h3>Turner &amp; Townsend China</h3>
+        <dl>
+          <dt>做什么</dt><dd>全球专业服务公司，聚焦大型项目的项目管理、成本与商业管理、咨询服务，常服务房地产、基础设施、能源和自然资源项目。</dd>
+          <dt>定位/愿景</dt><dd>帮助客户把大型复杂项目“按预算、按进度、按质量”落地，核心在项目控制、成本管理和商业决策支持。</dd>
+          <dt>公司特点</dt><dd>财务实习偏企业财务与管理报表：月结、报表、对账、发票、数据录入和临时财务项目；稳定但刺激度低于投行/重组。</dd>
+          <dt>适配理由</dt><dd>适合想了解跨国专业服务公司的财务流程和项目成本管理；如果目标是投行/咨询，优先级可低于中金、德银和 Kroll。<a href="https://careers.turnerandtownsend.com/graduate-development-program-usa/who-we-are" target="_blank" rel="noopener noreferrer">官方 Who we are</a></dd>
+        </dl>
+      </article>
+      <article class="company-card">
+        <div class="meta">Fashion retail / E-commerce operations</div>
+        <h3>Inditex China / Zara</h3>
+        <dl>
+          <dt>做什么</dt><dd>Inditex 是全球大型时尚零售集团，Zara 是旗下代表品牌；业务贯穿设计、生产、分销、门店零售和线上渠道。</dd>
+          <dt>定位/愿景</dt><dd>以快速响应市场需求、全球供应链和零售网络为核心，把时尚趋势、商品管理、线上线下销售和运营效率连接起来。</dd>
+          <dt>公司特点</dt><dd>电商实习偏平台运营、项目管理、活动支持和跨部门协作，能看到消费品零售的数字化增长逻辑。</dd>
+          <dt>适配理由</dt><dd>适合商科背景探索消费品、零售电商、品牌运营和商业分析；比纯行政岗更有学习价值，但金融相关性低于投行/银行。<a href="https://www.zara.com/us/en/z-company-corp1391.html" target="_blank" rel="noopener noreferrer">Zara 官方公司介绍</a></dd>
+        </dl>
+      </article>
+    </div>
+  </section>
   <section class="section"><h2>重点推荐</h2><div class="grid">
       <article class="job-card priority">
         <div class="job-head">
