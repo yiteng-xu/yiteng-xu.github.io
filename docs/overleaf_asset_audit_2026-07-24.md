@@ -1,3 +1,8 @@
+---
+title: "Overleaf / ReMoGen asset audit"
+permalink: /docs/overleaf-asset-audit-2026-07-24/
+---
+
 # Overleaf / ReMoGen asset audit — 2026-07-24
 
 This audit records the publication-safe state of the homepage paper-asset work.
