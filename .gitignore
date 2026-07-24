@@ -1,3 +1,6 @@
 _site/
 push.sh
 .DS_Store
+.tmp_overleaf_fetch/
+.tmp_remogen_authorized_*/
+tools/overleaf_project_fetch.py
