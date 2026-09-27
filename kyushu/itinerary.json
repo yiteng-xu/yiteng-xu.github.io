@@ -1,0 +1,1368 @@
+{
+  "days": [
+    {
+      "n": 1,
+      "city": "fukuoka",
+      "label": "福冈 → 长崎",
+      "title": "入境九州，沿铁道去长崎",
+      "summary": "首日只安排交通、入住与港边散步。假设白天抵达福冈；晚到时把长崎移到次日，不赶末班。",
+      "stay": "长崎站周边 · 第 1 晚",
+      "food": "晚饭选长崎什锦面 champon、皿乌冬；抵达后在车站附近解决，不追热门排队店。",
+      "rain": "雨天取消港边散步，直接入住休息。若航班晚到，住博多并重新调整后续住宿。",
+      "sources": [
+        "airport",
+        "jr"
+      ],
+      "activities": [
+        {
+          "time": "按实际航班",
+          "title": "国际楼 → 国内楼 → 博多",
+          "description": "国际航站楼没有直通地铁；先入境、取行李，再乘免费航站楼接驳。建议入境后预留 60–90 分钟到达博多站，不包含航班延误。",
+          "routes": [
+            {
+              "line": "机场免费航站楼接驳巴士",
+              "direction": "国内线航站楼方向",
+              "from": "福岡空港国際線ターミナル",
+              "to": "福岡空港国内線ターミナル",
+              "duration": "车程约 10–15 分钟，另加等车",
+              "time": "完成入境后",
+              "transfer": "国内线下车后按地下铁标识到 B2",
+              "note": "接驳受道路交通影响，国际线没有楼内地铁入口。",
+              "mode": "transit",
+              "mapFrom": "福岡空港国際線ターミナル",
+              "mapTo": "福岡空港国内線ターミナル",
+              "official": ""
+            },
+            {
+              "line": "福冈市地下铁 · 空港线",
+              "direction": "姪浜 / 唐津方向",
+              "from": "福岡空港駅",
+              "to": "博多駅",
+              "duration": "乘车约 5–6 分钟",
+              "time": "到达国内线后",
+              "transfer": "无换乘",
+              "note": "不要坐错七隈线；博多下车后跟随 JR 标识。",
+              "mode": "transit",
+              "mapFrom": "福岡空港駅",
+              "mapTo": "博多駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "建议 12:00–14:00",
+          "title": "博多 → 武雄温泉 → 长崎",
+          "description": "先吃午饭再搭长途列车。两段列车在武雄温泉衔接，不是从博多一车直达的“西九州新干线”。",
+          "routes": [
+            {
+              "line": "JR 特急 Relay Kamome（リレーかもめ）",
+              "direction": "武雄温泉方向",
+              "from": "博多駅",
+              "to": "武雄温泉駅",
+              "duration": "约 60–75 分钟",
+              "time": "按航班与 JR 班次",
+              "transfer": "武雄温泉换乘 Kamome",
+              "note": "买联程票并确认两段座位；站台由车次决定，不固定写死。",
+              "mode": "transit",
+              "mapFrom": "博多駅",
+              "mapTo": "武雄温泉駅",
+              "official": ""
+            },
+            {
+              "line": "西九州新干线 Kamome（かもめ）",
+              "direction": "长崎方向",
+              "from": "武雄温泉駅",
+              "to": "長崎駅",
+              "duration": "约 25–35 分钟",
+              "time": "衔接前段列车",
+              "transfer": "武雄温泉通常同站台对面换乘，听从现场指引",
+              "note": "博多到长崎合计通常约 1.5–2 小时，另留购票、候车时间。",
+              "mode": "transit",
+              "mapFrom": "武雄温泉駅",
+              "mapTo": "長崎駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "入住后 / 17:00 左右",
+          "title": "卸下行李，看看港口",
+          "description": "只在体力允许时去海边散步；首日不塞博物馆或山顶夜景。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎駅",
+              "to": "長崎水辺の森公園",
+              "duration": "约 25–35 分钟",
+              "time": "建议 17:00",
+              "transfer": "无换乘",
+              "note": "不想走可在长崎站前乘 1 号崇福寺方向至出岛，再步行到港边。",
+              "mode": "walking",
+              "mapFrom": "長崎駅",
+              "mapTo": "長崎水辺の森公園",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎水辺の森公園",
+              "to": "長崎駅",
+              "duration": "约 25–35 分钟",
+              "time": "晚饭后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "長崎水辺の森公園",
+              "mapTo": "長崎駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "city": "nagasaki",
+      "label": "长崎",
+      "title": "坡道与港口旧时光",
+      "summary": "大波止港边 → 南山手街巷 → 港边 → 眼镜桥；全程公共街区散步，不安排任何博物馆或寺庙。",
+      "stay": "长崎站周边 · 第 2 晚",
+      "food": "午饭在新地中华街周边找什锦面或皿乌冬，晚上可尝土耳其饭。商圈只作为吃饭节点。",
+      "rain": "缩短海边和坡道步行，去车站餐饮区或有遮棚街道附近找咖啡休息；不添加展馆、寺庙或购物参观。",
+      "sources": [
+        "tram"
+      ],
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "大波止与出岛 Wharf 海滨",
+          "description": "先看长崎港与停泊船只，再到出岛 Wharf 公共海滨步道；它与收费复原展陈区域是不同地点。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎駅",
+              "to": "長崎駅前電停",
+              "duration": "约 5–10 分钟",
+              "time": "建议 08:45",
+              "transfer": "无换乘",
+              "note": "JR 站与电车站不是同一个入口。",
+              "mode": "walking",
+              "mapFrom": "長崎駅",
+              "mapTo": "長崎駅前電停",
+              "official": ""
+            },
+            {
+              "line": "长崎电车 · 1 号系统",
+              "direction": "崇福寺行",
+              "from": "長崎駅前電停",
+              "to": "大波止電停",
+              "duration": "约 6–10 分钟",
+              "time": "建议 09:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "長崎駅前電停",
+              "mapTo": "大波止電停",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "大波止電停",
+              "to": "長崎港ターミナル",
+              "duration": "约 3–5 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "大波止電停",
+              "mapTo": "長崎港ターミナル",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎港ターミナル",
+              "to": "出島ワーフ",
+              "duration": "约 3–5 分钟",
+              "time": "港边散步后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "長崎港ターミナル",
+              "mapTo": "出島ワーフ",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "11:30",
+          "title": "新地午饭 → 南山手街景",
+          "description": "在南山手、东山手公共街巷看洋楼与山城风景，不进教堂、不安排庭园。控制坡道步行，累了即折返。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "出島ワーフ",
+              "to": "新地中華街",
+              "duration": "约 10–15 分钟",
+              "time": "建议 11:30",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "出島ワーフ",
+              "mapTo": "新地中華街",
+              "official": ""
+            },
+            {
+              "line": "长崎电车 · 5 号系统",
+              "direction": "石橋行",
+              "from": "新地中華街電停",
+              "to": "大浦天主堂電停",
+              "duration": "约 6–10 分钟",
+              "time": "建议 13:00",
+              "transfer": "无换乘",
+              "note": "站名虽叫大浦天主堂，本计划只在街区公共道路散步，不进入教堂。",
+              "mode": "transit",
+              "mapFrom": "新地中華街電停",
+              "mapTo": "大浦天主堂電停",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "大浦天主堂電停",
+              "to": "南山手町 長崎",
+              "duration": "约 10–20 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "坡道较多；导航终点为街区而不是收费庭园。",
+              "mode": "walking",
+              "mapFrom": "大浦天主堂電停",
+              "mapTo": "南山手町 長崎",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "15:00",
+          "title": "港口散步 → 眼镜桥",
+          "description": "从南山手下坡到海边休息，随后看中岛川与眼镜桥；不使用已经停运的 4 号电车。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "南山手町 長崎",
+              "to": "長崎水辺の森公園",
+              "duration": "约 15–20 分钟",
+              "time": "建议 15:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "南山手町 長崎",
+              "mapTo": "長崎水辺の森公園",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎水辺の森公園",
+              "to": "新地中華街電停",
+              "duration": "约 10–15 分钟",
+              "time": "建议 16:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "長崎水辺の森公園",
+              "mapTo": "新地中華街電停",
+              "official": ""
+            },
+            {
+              "line": "长崎电车 · 5 号系统",
+              "direction": "蛍茶屋行",
+              "from": "新地中華街電停",
+              "to": "めがね橋電停",
+              "duration": "约 8–12 分钟",
+              "time": "建议 16:15",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "新地中華街電停",
+              "mapTo": "めがね橋電停",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "めがね橋電停",
+              "to": "長崎眼鏡橋",
+              "duration": "约 3–5 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "めがね橋電停",
+              "mapTo": "長崎眼鏡橋",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "晚饭后",
+          "title": "回到长崎站",
+          "description": "在中岛川附近吃晚饭，再按两段电车回站前；也可步行约 20–25 分钟回车站。",
+          "routes": [
+            {
+              "line": "长崎电车 · 5 号系统",
+              "direction": "蛍茶屋行",
+              "from": "めがね橋電停",
+              "to": "市役所電停",
+              "duration": "约 2–5 分钟",
+              "time": "建议 19:00",
+              "transfer": "市役所换乘 3 号",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "めがね橋電停",
+              "mapTo": "市役所電停",
+              "official": ""
+            },
+            {
+              "line": "长崎电车 · 3 号系统",
+              "direction": "赤迫行",
+              "from": "市役所電停",
+              "to": "長崎駅前電停",
+              "duration": "约 5–8 分钟",
+              "time": "衔接前段",
+              "transfer": "市役所换乘",
+              "note": "符合官方线路组合的 IC / 非接触卡换乘优惠需按规定；现金不适用。",
+              "mode": "transit",
+              "mapFrom": "市役所電停",
+              "mapTo": "長崎駅前電停",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎駅前電停",
+              "to": "長崎駅",
+              "duration": "约 5–10 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "長崎駅前電停",
+              "mapTo": "長崎駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "city": "nagasaki",
+      "label": "长崎",
+      "title": "和平公园，稻佐山的蓝调时刻",
+      "summary": "上午走和平公园与浦上生活街道；下午休息，天气好再上稻佐山。",
+      "stay": "长崎站周边 · 第 3 晚",
+      "food": "浦上或车站周边午饭，晚饭在山下解决。带饮水和轻食，不把山顶餐厅作为唯一选项。",
+      "rain": "取消山顶和露天公园，在车站附近吃饭、找咖啡休息。夜景日可和晴天交换。",
+      "sources": [
+        "tram",
+        "peace",
+        "inasa",
+        "rope",
+        "inasaStatus"
+      ],
+      "activities": [
+        {
+          "time": "09:00",
+          "title": "长崎站前 → 和平公园",
+          "description": "和平公园与爆心地公园均为公共开放空间，建议散步约 1–1.5 小时；不进入原爆资料馆或其他展馆。",
+          "routes": [
+            {
+              "line": "长崎电车 · 1 或 3 号系统",
+              "direction": "赤迫行",
+              "from": "長崎駅前電停",
+              "to": "平和公園電停",
+              "duration": "约 15–20 分钟",
+              "time": "建议 09:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "長崎駅前電停",
+              "mapTo": "平和公園電停",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "平和公園電停",
+              "to": "長崎平和公園",
+              "duration": "约 5–10 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "平和公園電停",
+              "mapTo": "長崎平和公園",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎平和公園",
+              "to": "原爆落下中心地碑 長崎",
+              "duration": "约 5–10 分钟",
+              "time": "建议 10:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "長崎平和公園",
+              "mapTo": "原爆落下中心地碑 長崎",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "原爆落下中心地碑 長崎",
+              "to": "平和公園電停",
+              "duration": "约 5–10 分钟",
+              "time": "散步后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "原爆落下中心地碑 長崎",
+              "mapTo": "平和公園電停",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "11:30–13:00",
+          "title": "浦上生活街道与午饭",
+          "description": "到浦上站周边公共街道吃午饭，不安排宗教建筑或展馆。饭后回酒店留两小时休息。",
+          "routes": [
+            {
+              "line": "长崎电车 · 1 或 3 号系统",
+              "direction": "1 号崇福寺行 / 3 号蛍茶屋行",
+              "from": "平和公園電停",
+              "to": "浦上駅前電停",
+              "duration": "约 5–10 分钟",
+              "time": "建议 11:30",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "平和公園電停",
+              "mapTo": "浦上駅前電停",
+              "official": ""
+            },
+            {
+              "line": "长崎电车 · 1 或 3 号系统",
+              "direction": "1 号崇福寺行 / 3 号蛍茶屋行",
+              "from": "浦上駅前電停",
+              "to": "長崎駅前電停",
+              "duration": "约 5–10 分钟",
+              "time": "午饭后 / 建议 13:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "浦上駅前電停",
+              "mapTo": "長崎駅前電停",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "日落前约 90 分钟",
+          "title": "市区 → 稻佐山缆车",
+          "description": "按当日日落倒推，不固定 17:00。索道与斜坡车是两套设备，分别查当日运航；本方案乘索道。可替代为官网预约免费接驳：需提前预约，不能随到随乘。",
+          "routes": [
+            {
+              "line": "长崎巴士 · 3 / 4 号系统",
+              "direction": "下大橋 / 上小江原 / 相川方向",
+              "from": "長崎駅前バス停",
+              "to": "ロープウェイ前バス停",
+              "duration": "约 10–20 分钟，另加等车",
+              "time": "日落前约 90 分钟",
+              "transfer": "下车步行到缆车站",
+              "note": "这里的 3 / 4 是巴士编号，不是路面电车。核对车头与停靠站。",
+              "mode": "transit",
+              "mapFrom": "長崎駅前バス停",
+              "mapTo": "ロープウェイ前バス停",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "ロープウェイ前バス停",
+              "to": "長崎ロープウェイ淵神社駅",
+              "duration": "约 3–5 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "淵神社站为缆车站名，不安排神社参观。",
+              "mode": "walking",
+              "mapFrom": "ロープウェイ前バス停",
+              "mapTo": "長崎ロープウェイ淵神社駅",
+              "official": ""
+            },
+            {
+              "line": "长崎缆车（ロープウェイ）",
+              "direction": "稲佐岳方向",
+              "from": "淵神社駅 長崎ロープウェイ",
+              "to": "稲佐岳駅",
+              "duration": "乘车约 5 分钟",
+              "time": "预留购票与排队",
+              "transfer": "无换乘",
+              "note": "强风、检修会停运；查当天末班，缆车另购票。",
+              "mode": "transit",
+              "mapFrom": "淵神社駅 長崎ロープウェイ",
+              "mapTo": "稲佐岳駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "观景后",
+          "title": "原路下山 → 车站",
+          "description": "先确认返程巴士和缆车末班；预约接驳时按所订返程班次走。",
+          "routes": [
+            {
+              "line": "长崎缆车",
+              "direction": "淵神社方向",
+              "from": "稲佐岳駅",
+              "to": "淵神社駅 長崎ロープウェイ",
+              "duration": "约 5 分钟",
+              "time": "观景后",
+              "transfer": "下山后步行回巴士站",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "稲佐岳駅",
+              "mapTo": "淵神社駅 長崎ロープウェイ",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "長崎ロープウェイ淵神社駅",
+              "to": "ロープウェイ前バス停",
+              "duration": "约 3–5 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "長崎ロープウェイ淵神社駅",
+              "mapTo": "ロープウェイ前バス停",
+              "official": ""
+            },
+            {
+              "line": "长崎巴士",
+              "direction": "長崎駅前方面",
+              "from": "ロープウェイ前バス停",
+              "to": "長崎駅前バス停",
+              "duration": "约 10–20 分钟，另加等车",
+              "time": "按当天返程班次",
+              "transfer": "无换乘",
+              "note": "确认车辆停靠长崎站前；错过巴士可出租车返市区。",
+              "mode": "transit",
+              "mapFrom": "ロープウェイ前バス停",
+              "mapTo": "長崎駅前バス停",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "city": "kitakyushu",
+      "label": "长崎 → 小仓",
+      "title": "横穿北九州，住进小仓",
+      "summary": "上午移动，下午只沿紫川走一圈。长崎 → 武雄温泉 → 博多 → 小仓，三段列车写清楚。",
+      "stay": "小仓站周边 · 第 1 晚",
+      "food": "午饭在博多或小仓站解决，晚上试小仓肉乌冬、烧鸟；旦过市场留到 D6 白天。",
+      "rain": "入住后休息，在小仓站附近找餐饮或咖啡，不安排室内展馆参观。",
+      "sources": [
+        "jr"
+      ],
+      "activities": [
+        {
+          "time": "09:00 左右",
+          "title": "长崎 → 武雄温泉 → 博多",
+          "description": "提前购票。武雄温泉的衔接通常按成对车次安排；博多换车留约 20–30 分钟，带行李宁可宽松。",
+          "routes": [
+            {
+              "line": "西九州新干线 Kamome",
+              "direction": "武雄温泉方向",
+              "from": "長崎駅",
+              "to": "武雄温泉駅",
+              "duration": "约 25–35 分钟",
+              "time": "建议 09:00",
+              "transfer": "武雄温泉换 Relay Kamome",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "長崎駅",
+              "mapTo": "武雄温泉駅",
+              "official": ""
+            },
+            {
+              "line": "JR 特急 Relay Kamome",
+              "direction": "博多方向",
+              "from": "武雄温泉駅",
+              "to": "博多駅",
+              "duration": "约 60–75 分钟",
+              "time": "衔接前段列车",
+              "transfer": "武雄温泉换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "武雄温泉駅",
+              "mapTo": "博多駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "11:00–12:00 左右",
+          "title": "博多 → 小仓",
+          "description": "推荐省时方案为山阳新干线，需要另购票；若持 JR 九州 Pass，改选 JR 九州特急 Sonic（约 45–60 分钟）。",
+          "routes": [
+            {
+              "line": "山阳新干线",
+              "direction": "小仓 / 广岛 / 新大阪方向",
+              "from": "博多駅",
+              "to": "小倉駅",
+              "duration": "乘车约 15–20 分钟",
+              "time": "按抵达博多时间",
+              "transfer": "博多由在来线换到新干线站台",
+              "note": "Nozomi / Sakura / Hikari / Kodama 中选当天停小仓的车。此段不属于九州新干线，也不含于 JR 九州 Pass。",
+              "mode": "transit",
+              "mapFrom": "博多駅",
+              "mapTo": "小倉駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "入住后 / 15:00",
+          "title": "紫川与小仓城外观",
+          "description": "酒店寄存或入住后，沿紫川步行到城外拍照；不安排小仓城庭园或购物。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "小倉駅",
+              "to": "小倉城",
+              "duration": "约 15–20 分钟",
+              "time": "建议 15:00",
+              "transfer": "无换乘",
+              "note": "沿紫川公共步道散步；城内是否参观按兴趣另定。",
+              "mode": "walking",
+              "mapFrom": "小倉駅",
+              "mapTo": "小倉城",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "小倉城",
+              "to": "小倉駅",
+              "duration": "约 15–20 分钟",
+              "time": "晚饭后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "小倉城",
+              "mapTo": "小倉駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "city": "kitakyushu",
+      "label": "门司港 / 下关",
+      "title": "复古门司港，渡海吃唐户",
+      "summary": "一天看海峡两岸。唐户寿司活动按实际周几安排，非活动日不把寿司摊当作必开项目。",
+      "stay": "小仓站周边 · 第 2 晚",
+      "food": "唐户活动日吃寿司拼盘；非活动日选常设餐饮。门司港的特色是烤咖喱，不必两地都安排大餐。",
+      "rain": "小雨缩短旧建筑外观散步，找咖啡或餐馆休息；大风或渡船停航时全程留在门司港，取消唐户。",
+      "sources": [
+        "jr",
+        "ferry",
+        "market",
+        "marketUpdate"
+      ],
+      "activities": [
+        {
+          "time": "08:30",
+          "title": "小仓 → 门司港",
+          "description": "选鹿儿岛本线门司港方向；到“门司”站还没到，须在终点门司港下车。",
+          "routes": [
+            {
+              "line": "JR 鹿儿岛本线 · 普通 / 快速",
+              "direction": "門司港行",
+              "from": "小倉駅",
+              "to": "門司港駅",
+              "duration": "规划约 15–25 分钟，以车次为准",
+              "time": "建议 08:30",
+              "transfer": "无换乘",
+              "note": "现场查站台与终点；不要上往下关或大分方向的车。",
+              "mode": "transit",
+              "mapFrom": "小倉駅",
+              "mapTo": "門司港駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "09:00",
+          "title": "站房与港口旧建筑",
+          "description": "看门司港站、旧门司税关外观、海边广场；只在公共道路看建筑，不安排入馆。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "門司港駅",
+              "to": "旧門司税関",
+              "duration": "约 8–12 分钟",
+              "time": "建议 09:00",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "門司港駅",
+              "mapTo": "旧門司税関",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "旧門司税関",
+              "to": "門司港渡船場",
+              "duration": "约 5–10 分钟",
+              "time": "建议 10:30",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "旧門司税関",
+              "mapTo": "門司港渡船場",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "10:30–11:00",
+          "title": "乘船到唐户，午饭与海峡",
+          "description": "关门连络船成人单程 400 円，约 5 分钟。周五六寿司活动 09:00 起、日祝 08:00 起，活动结束与特别休业看官网；不硬编每日营业。",
+          "routes": [
+            {
+              "line": "关门汽船 · 关门连络船",
+              "direction": "下関（唐戸）方向",
+              "from": "門司港渡船場",
+              "to": "唐戸ターミナル",
+              "duration": "航程约 5 分钟，另加候船",
+              "time": "建议 10:30–11:00",
+              "transfer": "直航，船票另购",
+              "note": "船段请看官方时刻与运航；地图用于定位码头，不保证提供指定船班。",
+              "mode": "ferry",
+              "mapFrom": "門司港渡船場",
+              "mapTo": "唐戸ターミナル",
+              "official": "https://www.kanmon-kisen.co.jp/route/kanmon.html"
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "唐戸ターミナル",
+              "to": "唐戸市場",
+              "duration": "约 3–5 分钟",
+              "time": "下船后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "唐戸ターミナル",
+              "mapTo": "唐戸市場",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "14:30–16:00",
+          "title": "唐户海边 → 原路回小仓",
+          "description": "午饭后沿海边休息，不塞关门人行隧道的远距离往返；需要另走隧道时单独重排行程。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "唐戸市場",
+              "to": "唐戸ターミナル",
+              "duration": "约 3–5 分钟",
+              "time": "建议 14:30",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "唐戸市場",
+              "mapTo": "唐戸ターミナル",
+              "official": ""
+            },
+            {
+              "line": "关门汽船 · 关门连络船",
+              "direction": "門司港方向",
+              "from": "唐戸ターミナル",
+              "to": "門司港渡船場",
+              "duration": "航程约 5 分钟",
+              "time": "按官网返程班次",
+              "transfer": "无换乘",
+              "note": "强风停航时不要走到码头才查；离开唐户前确认。",
+              "mode": "ferry",
+              "mapFrom": "唐戸ターミナル",
+              "mapTo": "門司港渡船場",
+              "official": "https://www.kanmon-kisen.co.jp/route/kanmon.html"
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "門司港渡船場",
+              "to": "門司港駅",
+              "duration": "约 5–10 分钟",
+              "time": "下船后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "門司港渡船場",
+              "mapTo": "門司港駅",
+              "official": ""
+            },
+            {
+              "line": "JR 鹿儿岛本线 · 普通 / 快速",
+              "direction": "小倉 / 博多方面",
+              "from": "門司港駅",
+              "to": "小倉駅",
+              "duration": "规划约 15–25 分钟",
+              "time": "建议 16:00",
+              "transfer": "无换乘",
+              "note": "选停靠小仓的车；终点可比小仓更远。",
+              "mode": "transit",
+              "mapFrom": "門司港駅",
+              "mapTo": "小倉駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "city": "kitakyushu",
+      "label": "小仓 / 八幡",
+      "title": "旦过市场与皿仓山夜景",
+      "summary": "市场放在上午；午后走 JR 到八幡，再接免费巴士与两段山上交通。不用单轨去皿仓山。",
+      "stay": "小仓站周边 · 第 3 晚",
+      "food": "旦过午饭按当天实际营业店铺选择，市场店铺各有休业日。夜景后回小仓吃饭，不安排夜晚市场摊位。",
+      "rain": "取消山顶，在小仓有遮棚街道附近找餐馆或咖啡休息；晴天可与 D7 对调。通常周二休业，节假日例外。",
+      "sources": [
+        "jr",
+        "sara",
+        "shuttle",
+        "saraFare",
+        "tanga",
+        "monorail"
+      ],
+      "activities": [
+        {
+          "time": "09:30",
+          "title": "步行到旦过市场",
+          "description": "小仓站到旦过距离短，首选步行；想体验单轨可乘北九州单轨“企救丘行”到旦过站，约 3–5 分钟。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "小倉駅",
+              "to": "旦過市場",
+              "duration": "约 15–20 分钟",
+              "time": "建议 09:30",
+              "transfer": "无换乘",
+              "note": "市场不是统一全天营业：各店营业、施工区域与休业日分别确认。",
+              "mode": "walking",
+              "mapFrom": "小倉駅",
+              "mapTo": "旦過市場",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "旦過市場",
+              "to": "小倉駅",
+              "duration": "约 15–20 分钟",
+              "time": "午饭后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "旦過市場",
+              "mapTo": "小倉駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "日落前约 2 小时",
+          "title": "小仓 → 八幡 → 缆车山麓",
+          "description": "小仓直达皿仓山的旧巴士已于 2026-03-29 停运。推荐八幡站免费接驳，按平日 / 周末 / 季节时刻提前确认。",
+          "routes": [
+            {
+              "line": "JR 鹿儿岛本线 · 普通 / 快速",
+              "direction": "八幡 / 黒崎 / 博多方面",
+              "from": "小倉駅",
+              "to": "八幡駅",
+              "duration": "规划约 15–25 分钟",
+              "time": "日落前约 2 小时",
+              "transfer": "八幡下车换官方接驳",
+              "note": "选停八幡的车；不是八幡浜，也不是单轨。",
+              "mode": "transit",
+              "mapFrom": "小倉駅",
+              "mapTo": "八幡駅",
+              "official": ""
+            },
+            {
+              "line": "皿仓山官方免费接驳巴士",
+              "direction": "皿倉山ケーブルカー山麓駅方向",
+              "from": "八幡駅",
+              "to": "皿倉山ケーブルカー山麓駅",
+              "duration": "车程约 10 分钟，另加候车",
+              "time": "按官方接驳班次",
+              "transfer": "八幡站出站左侧圆环附近乘车",
+              "note": "Google 可能不显示免费接驳，请以官网为准；无班次时可出租约 5 分钟，步行上坡约 25 分钟。",
+              "mode": "transit",
+              "mapFrom": "八幡駅",
+              "mapTo": "皿倉山ケーブルカー山麓駅",
+              "official": "https://www.sarakurayama-cablecar.co.jp/shuttlebus/"
+            }
+          ]
+        },
+        {
+          "time": "日落前约 45 分钟",
+          "title": "缆车 → 山顶斜坡车",
+          "description": "两段交通都要乘，合计乘行约 10 分钟；成人往返联票 1,230 円。4–10 月通常 10:00–22:00（上行末班 21:20），11–3 月通常 10:00–20:00（上行末班 19:20）。",
+          "routes": [
+            {
+              "line": "皿仓山 Cable Car 缆车",
+              "direction": "山上方向",
+              "from": "皿倉山ケーブルカー山麓駅",
+              "to": "皿倉山ケーブルカー山上駅",
+              "duration": "约 6 分钟",
+              "time": "预留购票排队",
+              "transfer": "山上站换 Slope Car",
+              "note": "通常周二休业（节假日例外），另有检修；按当天运营确认。",
+              "mode": "transit",
+              "mapFrom": "皿倉山ケーブルカー山麓駅",
+              "mapTo": "皿倉山ケーブルカー山上駅",
+              "official": ""
+            },
+            {
+              "line": "皿仓山 Slope Car 斜坡车",
+              "direction": "展望台方向",
+              "from": "皿倉山ケーブルカー山上駅",
+              "to": "皿倉山展望台",
+              "duration": "约 3 分钟",
+              "time": "衔接缆车",
+              "transfer": "山上站步行换乘",
+              "note": "留意返程斜坡车与缆车末班，不能只看上行时间。",
+              "mode": "transit",
+              "mapFrom": "皿倉山ケーブルカー山上駅",
+              "mapTo": "皿倉山展望台",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "观景后",
+          "title": "沿原线路回小仓",
+          "description": "返程顺序：斜坡车 → 缆车 → 官方接驳 → JR，提前查接驳最后一班。",
+          "routes": [
+            {
+              "line": "皿仓山斜坡车 + 缆车",
+              "direction": "山下方向",
+              "from": "皿倉山展望台",
+              "to": "皿倉山ケーブルカー山麓駅",
+              "duration": "乘行约 10 分钟",
+              "time": "观景后",
+              "transfer": "山上站由斜坡车换缆车",
+              "note": "按季节末班提前下山。",
+              "mode": "transit",
+              "mapFrom": "皿倉山展望台",
+              "mapTo": "皿倉山ケーブルカー山麓駅",
+              "official": ""
+            },
+            {
+              "line": "皿仓山官方免费接驳巴士",
+              "direction": "八幡駅方向",
+              "from": "皿倉山ケーブルカー山麓駅",
+              "to": "八幡駅",
+              "duration": "约 10 分钟",
+              "time": "按官方返程班次",
+              "transfer": "八幡换 JR",
+              "note": "若接驳已结束，联系出租车。",
+              "mode": "transit",
+              "mapFrom": "皿倉山ケーブルカー山麓駅",
+              "mapTo": "八幡駅",
+              "official": "https://www.sarakurayama-cablecar.co.jp/shuttlebus/"
+            },
+            {
+              "line": "JR 鹿儿岛本线",
+              "direction": "小倉 / 門司港方面",
+              "from": "八幡駅",
+              "to": "小倉駅",
+              "duration": "规划约 15–25 分钟",
+              "time": "衔接接驳",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "八幡駅",
+              "mapTo": "小倉駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "city": "kitakyushu",
+      "label": "户畑 / 若松",
+      "title": "若户渡船，安静老港半日游",
+      "summary": "让海港慢下来：小仓 → 户畑 → 若松老港。下午回小仓留白，也可作为皿仓山的天气备用日。",
+      "stay": "小仓站周边 · 第 4 晚",
+      "food": "若松老港或户畑附近午饭，回小仓吃晚饭。沿岸小店可能休业，先找营业店再坐下。",
+      "rain": "取消若户渡船与港边步行，留在小仓用餐或找咖啡休息。",
+      "sources": [
+        "jr",
+        "wakato"
+      ],
+      "activities": [
+        {
+          "time": "09:30",
+          "title": "小仓 → 户畑 → 渡船码头",
+          "description": "JR 在户畑下车后步行到渡场；别走若户大桥，大桥不是此计划的步行跨海路线。",
+          "routes": [
+            {
+              "line": "JR 鹿儿岛本线 · 普通 / 快速",
+              "direction": "戸畑 / 黒崎 / 博多方面",
+              "from": "小倉駅",
+              "to": "戸畑駅",
+              "duration": "规划约 8–15 分钟",
+              "time": "建议 09:30",
+              "transfer": "户畑下车后步行",
+              "note": "选停靠户畑的列车。",
+              "mode": "transit",
+              "mapFrom": "小倉駅",
+              "mapTo": "戸畑駅",
+              "official": ""
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "戸畑駅",
+              "to": "若戸渡船 戸畑渡場",
+              "duration": "约 10–15 分钟",
+              "time": "下车后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "戸畑駅",
+              "mapTo": "若戸渡船 戸畑渡場",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "10:00–12:30",
+          "title": "渡海到若松，老港散步",
+          "description": "若户渡船成人单程 100 円，航程约 3 分钟。沿若松南海岸看若户大桥与旧建筑，原路折返即可。",
+          "routes": [
+            {
+              "line": "若户渡船",
+              "direction": "若松渡場方向",
+              "from": "若戸渡船 戸畑渡場",
+              "to": "若戸渡船 若松渡場",
+              "duration": "航程约 3 分钟，另加等船",
+              "time": "建议 10:00",
+              "transfer": "无换乘",
+              "note": "码头购票，查看当天时刻与天气运航。",
+              "mode": "ferry",
+              "mapFrom": "若戸渡船 戸畑渡場",
+              "mapTo": "若戸渡船 若松渡場",
+              "official": "https://www.city.kitakyushu.lg.jp/shisei/menu01_0513.html"
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "若戸渡船 若松渡場",
+              "to": "若松南海岸通り",
+              "duration": "约 5–10 分钟",
+              "time": "下船后",
+              "transfer": "无换乘",
+              "note": "沿海公共道路散步，不强求远距离延伸。",
+              "mode": "walking",
+              "mapFrom": "若戸渡船 若松渡場",
+              "mapTo": "若松南海岸通り",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "午饭后 / 13:30",
+          "title": "若松 → 户畑 → 小仓",
+          "description": "下午休息，或补昨天因天气错过的项目。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "若松南海岸通り",
+              "to": "若戸渡船 若松渡場",
+              "duration": "约 5–10 分钟",
+              "time": "建议 13:30",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "若松南海岸通り",
+              "mapTo": "若戸渡船 若松渡場",
+              "official": ""
+            },
+            {
+              "line": "若户渡船",
+              "direction": "戸畑渡場方向",
+              "from": "若戸渡船 若松渡場",
+              "to": "若戸渡船 戸畑渡場",
+              "duration": "航程约 3 分钟",
+              "time": "按当天船班",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "ferry",
+              "mapFrom": "若戸渡船 若松渡場",
+              "mapTo": "若戸渡船 戸畑渡場",
+              "official": "https://www.city.kitakyushu.lg.jp/shisei/menu01_0513.html"
+            },
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "若戸渡船 戸畑渡場",
+              "to": "戸畑駅",
+              "duration": "约 10–15 分钟",
+              "time": "下船后",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "walking",
+              "mapFrom": "若戸渡船 戸畑渡場",
+              "mapTo": "戸畑駅",
+              "official": ""
+            },
+            {
+              "line": "JR 鹿儿岛本线",
+              "direction": "小倉 / 門司港方面",
+              "from": "戸畑駅",
+              "to": "小倉駅",
+              "duration": "规划约 8–15 分钟",
+              "time": "衔接步行",
+              "transfer": "无换乘",
+              "note": "",
+              "mode": "transit",
+              "mapFrom": "戸畑駅",
+              "mapTo": "小倉駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "city": "fukuoka",
+      "label": "小仓 → 博多",
+      "title": "回博多，把返程留宽一点",
+      "summary": "不把远距离移动和国际航班硬挤在同一天。博多住一晚，下午可散步或休息。",
+      "stay": "博多站周边 · 第 1 晚",
+      "food": "博多站周边尝拉面或定食；河边晚饭按体力决定，不把屋台当必须排队项目。",
+      "rain": "寄存行李后在酒店附近用餐休息，不强行加入商场购物日。",
+      "sources": [
+        "jr",
+        "airport"
+      ],
+      "activities": [
+        {
+          "time": "10:00",
+          "title": "小仓 → 博多",
+          "description": "退房后直达博多，酒店寄存行李。单程票方案乘山阳新干线；周游券方案用 JR 九州特急 Sonic，约 45–60 分钟。",
+          "routes": [
+            {
+              "line": "山阳新干线",
+              "direction": "博多方向",
+              "from": "小倉駅",
+              "to": "博多駅",
+              "duration": "约 15–20 分钟",
+              "time": "建议 10:00",
+              "transfer": "无换乘",
+              "note": "选停博多的车，博多—小仓山阳新干线不在 JR 九州 Pass 内。",
+              "mode": "transit",
+              "mapFrom": "小倉駅",
+              "mapTo": "博多駅",
+              "official": ""
+            }
+          ]
+        },
+        {
+          "time": "午饭后 / 14:00",
+          "title": "可选：那珂川河边散步",
+          "description": "下午安排轻松公共河岸步道，逛累了直接回酒店。没有新增寺庙、庭园或购物清单。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "前往目的地",
+              "from": "博多駅",
+              "to": "天神中央公園 福岡",
+              "duration": "约 25–35 分钟",
+              "time": "建议 14:00",
+              "transfer": "无换乘",
+              "note": "只沿河步道散步；体力不足直接省略。",
+              "mode": "walking",
+              "mapFrom": "博多駅",
+              "mapTo": "天神中央公園 福岡",
+              "official": ""
+            },
+            {
+              "line": "福冈市地下铁 · 七隈线",
+              "direction": "博多行",
+              "from": "天神南駅",
+              "to": "博多駅",
+              "duration": "乘车约 4–6 分钟",
+              "time": "晚饭后",
+              "transfer": "无换乘",
+              "note": "从河边步行约 5–10 分钟到天神南站；注意天神南与空港线天神站是不同站。",
+              "mode": "transit",
+              "mapFrom": "天神南駅",
+              "mapTo": "博多駅",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "city": "fukuoka",
+      "label": "博多 → 上海",
+      "title": "从国际航站楼，安心返沪",
+      "summary": "航班未定，按起飞时间倒推。到国际楼预留约 3 小时，国内线地铁站不是最终目的地。",
+      "stay": "返沪 · 无住宿",
+      "food": "退房前吃早餐，进入国际航站楼后再看餐饮与值机开放时间。",
+      "rain": "按原交通走；接驳道路拥堵时更早出发。航班以实际购票为准。",
+      "sources": [
+        "airport"
+      ],
+      "activities": [
+        {
+          "time": "起飞前约 4–4.5 小时",
+          "title": "博多 → 国内楼 → 国际楼",
+          "description": "从酒店到车站、地铁、接驳候车与行车合计建议留 60–90 分钟，最后在国际航站楼办理值机和出境。",
+          "routes": [
+            {
+              "line": "福冈市地下铁 · 空港线",
+              "direction": "福岡空港行",
+              "from": "博多駅",
+              "to": "福岡空港駅",
+              "duration": "乘车约 5–6 分钟",
+              "time": "起飞前约 4–4.5 小时",
+              "transfer": "国内线终点出站后换免费接驳",
+              "note": "地铁到国内航站楼，不是在国际楼。",
+              "mode": "transit",
+              "mapFrom": "博多駅",
+              "mapTo": "福岡空港駅",
+              "official": ""
+            },
+            {
+              "line": "机场免费航站楼接驳巴士",
+              "direction": "国际线航站楼方向",
+              "from": "福岡空港国内線ターミナル",
+              "to": "福岡空港国際線ターミナル",
+              "duration": "车程约 10–15 分钟，另加候车",
+              "time": "地铁出站后",
+              "transfer": "国际楼下车后按航空公司柜台指示",
+              "note": "以接驳官网当天站点和运航为准；道路堵车另加余量。",
+              "mode": "transit",
+              "mapFrom": "福岡空港国内線ターミナル",
+              "mapTo": "福岡空港国際線ターミナル",
+              "official": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "tram": [
+      "长崎电铁：2026 路线与票价 PDF",
+      "https://www.naga-den.com/relays/download/9/1789/155//?file=%2Ffiles%2Flibs%2F6996%2F%2F202603271529469650.pdf"
+    ],
+    "jr": [
+      "JR 九州：列车 / 周游券",
+      "https://www.jrkyushu.co.jp/english/railpass/railpass.html"
+    ],
+    "airport": [
+      "福冈机场：地铁与航站楼接驳",
+      "https://www.fukuoka-airport.jp/en/access/subway.html"
+    ],
+    "rope": [
+      "长崎缆车：预约接驳",
+      "https://reserve.nagasaki-ropeway.jp/en/"
+    ],
+    "inasa": [
+      "长崎市：稻佐山交通",
+      "https://www.city.nagasaki.lg.jp/page/79583.html"
+    ],
+    "inasaStatus": [
+      "稻佐山：索道 / 斜坡车当日运航",
+      "https://inasayama.info/"
+    ],
+    "ferry": [
+      "关门汽船：时刻 / 票价 / 运航",
+      "https://www.kanmon-kisen.co.jp/route/kanmon.html"
+    ],
+    "market": [
+      "唐户市场：活动与营业",
+      "https://www.karatoichiba.com/"
+    ],
+    "marketUpdate": [
+      "唐户寿司活动：2026 新开场时间",
+      "https://www.karatoichiba.com/news/8050/"
+    ],
+    "sara": [
+      "皿仓山：交通 / 运航 / 休业",
+      "https://www.sarakurayama-cablecar.co.jp/access/"
+    ],
+    "shuttle": [
+      "皿仓山：八幡免费接驳时刻",
+      "https://www.sarakurayama-cablecar.co.jp/shuttlebus/"
+    ],
+    "wakato": [
+      "若户渡船：时刻与运航",
+      "https://www.city.kitakyushu.lg.jp/shisei/menu01_0513.html"
+    ],
+    "peace": [
+      "长崎市：和平公园",
+      "https://www.city.nagasaki.lg.jp/page/44706.html"
+    ],
+    "tanga": [
+      "旦过市场：2026 店铺地图与施工信息",
+      "https://www.city.kitakyushu.lg.jp/contents/27200254.html"
+    ],
+    "saraFare": [
+      "皿仓山：交通票价与常见问题",
+      "https://www.sarakurayama-cablecar.co.jp/faq/"
+    ],
+    "monorail": [
+      "北九州单轨：旦过站票价",
+      "https://www.kitakyushu-monorail.co.jp/schedule/tanga.php"
+    ]
+  }
+}

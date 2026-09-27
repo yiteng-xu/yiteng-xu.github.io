@@ -21,6 +21,9 @@ main:
   - title: "日本攻略"
     url: "/日本攻略(1).html"
 
+  - title: "九州攻略"
+    url: "/kyushu/"
+
   - title: "LinuxDO"
     url: "/linuxdo/"
 
