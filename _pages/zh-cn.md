@@ -137,6 +137,20 @@ fiddle_home: true
     <div class="milestone" role="listitem">
       <div class="milestone-dot" aria-hidden="true"></div>
       <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Feb 2026</div>
+        <h3 class="milestone-title">CVPR 2026 · ReMoGen</h3>
+        <p class="milestone-desc">ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data, accepted by CVPR 2026.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-paper">Publication</span>
+          <a class="chip chip-link" href="https://4dvlab.github.io/project_page/remogen/" target="_blank" rel="noopener">Project</a>
+          <a class="chip chip-link" href="https://arxiv.org/abs/2604.01082" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
         <div class="milestone-date">Sep 2025</div>
         <h3 class="milestone-title">Siggraph Asia 2025</h3>
         <p class="milestone-desc">SymBridge: A Human-in-the-Loop Cyber-Physical Interactive System for Adaptive Human-Robot Symbiosis.</p>
@@ -213,6 +227,7 @@ fiddle_home: true
   </div>
 
   <ul class="milestones-list" hidden>
+    <li>Feb 2026 — CVPR 2026: ReMoGen accepted</li>
     <li>Sep 2025 — Siggraph Asia 2025: SymBridge</li>
     <li>Oct 2024 — National Scholarship 国家奖学金(Top 1%)</li>
     <li>Feb 2024 — CVPR 2024: UniPVU-Human accepted</li>

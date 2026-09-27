@@ -181,34 +181,6 @@ redirect_from:
   </div>
 </section>
 
-<section class="homepage-lab" aria-label="Alternative homepage designs">
-  <div class="homepage-lab__intro">
-    <p class="homepage-lab__eyebrow">DESIGN STUDIES</p>
-    <h2>Three alternate ways to explore this profile.</h2>
-    <p>These pages use the same research record, projects, and contact routes as this homepage. They differ only in visual language, so the comparison is useful rather than cosmetic.</p>
-  </div>
-  <div class="homepage-lab__grid">
-    <a class="homepage-lab__card homepage-lab__card--miles" href="/homepage-miles/">
-      <span>01 / Miles-inspired</span>
-      <strong>Minimal research portfolio</strong>
-      <p>Quiet typography, high contrast, and a deliberate reading rhythm.</p>
-      <em>Open design A</em>
-    </a>
-    <a class="homepage-lab__card homepage-lab__card--portfolite" href="/homepage-portfolite/">
-      <span>02 / Portfolite-inspired</span>
-      <strong>Editorial project case studies</strong>
-      <p>Large visual research tiles, paper-first navigation, and a polished project gallery.</p>
-      <em>Open design B</em>
-    </a>
-    <a class="homepage-lab__card homepage-lab__card--kirk" href="/homepage-kirk/">
-      <span>03 / Kirk-inspired</span>
-      <strong>Expressive research identity</strong>
-      <p>Bold color blocks and an energetic visual system built around embodied AI.</p>
-      <em>Open design C</em>
-    </a>
-  </div>
-</section>
-
 <section class="fh-about" aria-label="About me">
   <div class="fh-about__copy" markdown="1">
 I am a third-year Ph.D. student at the School of Information Science and Technology, [ShanghaiTech University](https://www.shanghaitech.edu.cn/eng/), advised by Prof. Yuexin Ma. Previously, I obtained my B.S. degree from ShanghaiTech University in 2023.
@@ -233,6 +205,20 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
 
   <div class="milestones-timeline" role="list">
     <div class="timeline-line" aria-hidden="true"></div>
+
+    <div class="milestone" role="listitem">
+      <div class="milestone-dot" aria-hidden="true"></div>
+      <div class="milestone-card" tabindex="0">
+        <div class="milestone-date">Feb 2026</div>
+        <h3 class="milestone-title">CVPR 2026 · ReMoGen</h3>
+        <p class="milestone-desc">ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data, accepted by CVPR 2026.</p>
+        <div class="milestone-tags">
+          <span class="chip chip-paper">Publication</span>
+          <a class="chip chip-link" href="https://4dvlab.github.io/project_page/remogen/" target="_blank" rel="noopener">Project</a>
+          <a class="chip chip-link" href="https://arxiv.org/abs/2604.01082" target="_blank" rel="noopener">Paper</a>
+        </div>
+      </div>
+    </div>
 
     <div class="milestone" role="listitem">
       <div class="milestone-dot" aria-hidden="true"></div>
@@ -313,6 +299,7 @@ My research lies at the intersection of **3D Computer Vision**, **Robotics**, an
   </div>
 
   <ul class="milestones-list" hidden>
+    <li>Feb 2026 — CVPR 2026: ReMoGen accepted</li>
     <li>Sep 2025 — Siggraph Asia 2025: SymBridge</li>
     <li>Oct 2024 — National Scholarship 国家奖学金(Top 1%)</li>
     <li>Feb 2024 — CVPR 2024: UniPVU-Human accepted</li>
