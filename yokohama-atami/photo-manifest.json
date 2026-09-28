@@ -1,8 +1,8 @@
 {
   "trip": "横滨—热海 10 天 9 晚 Plan B",
   "retrieved": "2026-09-28",
-  "activityCount": 40,
-  "uniquePhotoCount": 44,
+  "activityCount": 42,
+  "uniquePhotoCount": 45,
   "activityPhotos": {
     "d1-a1": [
       "hanedaGate",
@@ -69,14 +69,19 @@
       "yokohamaStation"
     ],
     "d6-a1": [
+      "harborView"
+    ],
+    "d6-a2": [
+      "motomachiStreet"
+    ],
+    "d6-a3": [
       "yamashita",
       "yamashita2"
     ],
-    "d6-a2": [
-      "chinatown",
-      "chinatown2"
+    "d6-a4": [
+      "motomachiStation"
     ],
-    "d6-a3": [
+    "d6-a5": [
       "zushi",
       "zushi2"
     ],
@@ -862,6 +867,99 @@
       "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
     },
     {
+      "id": "harborView",
+      "title": "File:Harbor View Park (Yokohama) Observation deck.jpg",
+      "caption": "港见丘公园展望台与远处的横滨海湾大桥，2017 年摄",
+      "author": "妖精書士",
+      "source": "https://commons.wikimedia.org/wiki/File:Harbor_View_Park_(Yokohama)_Observation_deck.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4160,
+      "sourceOriginalHeight": 3120,
+      "downloadedPreviewWidth": 4160,
+      "downloadedPreviewHeight": 3120,
+      "downloadedPreviewBytes": 1964128,
+      "files": {
+        "640": {
+          "path": "images/harborView-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 32984
+        },
+        "1200": {
+          "path": "images/harborView-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 128286
+        }
+      },
+      "downloadedPreviewSha256": "d13d5d43149b816719ce6e511f0c043b01df31b4321bc4f7070bb44d7f770348",
+      "alteration": "Downloaded through image proxy, EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "motomachiStreet",
+      "title": "File:Motomachi shopping street.jpg",
+      "caption": "下山手后到达的横滨元町商店街，2018 年摄；不是山手本通",
+      "author": "Ymblanter",
+      "source": "https://commons.wikimedia.org/wiki/File:Motomachi_shopping_street.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 2736,
+      "sourceOriginalHeight": 3648,
+      "downloadedPreviewWidth": 1600,
+      "downloadedPreviewHeight": 2133,
+      "downloadedPreviewBytes": 500947,
+      "files": {
+        "640": {
+          "path": "images/motomachiStreet-640.webp",
+          "width": 640,
+          "height": 853,
+          "bytes": 77804
+        },
+        "1200": {
+          "path": "images/motomachiStreet-1200.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 214020
+        }
+      },
+      "downloadedPreviewSha256": "859b27633b03898e8bb13f3a29a2b7f7649da3d081773f644745f83ba5eed690",
+      "alteration": "Downloaded through image proxy at width 1600, EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "motomachiStation",
+      "title": "File:Motomachi-Chukagai Station Exit5.jpg",
+      "caption": "元町・中华街站元町口 5 号出口，2010 年摄；Commons 当前版本于 2018 年透视校正",
+      "author": "RGB256；透视校正：François de Dijon（2018）",
+      "source": "https://commons.wikimedia.org/wiki/File:Motomachi-Chukagai_Station_Exit5.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 5067,
+      "sourceOriginalHeight": 3950,
+      "downloadedPreviewWidth": 1600,
+      "downloadedPreviewHeight": 1248,
+      "downloadedPreviewBytes": 271182,
+      "files": {
+        "640": {
+          "path": "images/motomachiStation-640.webp",
+          "width": 640,
+          "height": 499,
+          "bytes": 39974
+        },
+        "1200": {
+          "path": "images/motomachiStation-1200.webp",
+          "width": 1200,
+          "height": 936,
+          "bytes": 114506
+        }
+      },
+      "downloadedPreviewSha256": "26cc239dcdfff80950a0da0819a29c7999aa5a2023bf139227e344f801a8f981",
+      "alteration": "Commons current version perspective-corrected by François de Dijon in 2018; downloaded through image proxy at width 1600, then EXIF orientation normalized and proportionally resized with Lanczos and WebP quality 82; no additional crop or scene edit"
+    },
+    {
       "id": "yamashita",
       "title": "File:Yokohama Yamashita Park and Marine Tower.jpg",
       "caption": "山下公园外侧的横滨港水面",
@@ -921,68 +1019,6 @@
         }
       },
       "downloadedPreviewSha256": "422c805529445690782e0397b4a1e3bc24decd328d0435c5c7c3fecde30c3855",
-      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
-    },
-    {
-      "id": "chinatown",
-      "title": "File:Yokohama Chinatown 4.jpg",
-      "caption": "横滨中华街餐饮街景",
-      "author": "Syced",
-      "source": "https://commons.wikimedia.org/wiki/File:Yokohama_Chinatown_4.jpg",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "retrieved": "2026-09-28",
-      "sourceOriginalWidth": 4080,
-      "sourceOriginalHeight": 3072,
-      "downloadedPreviewWidth": 1920,
-      "downloadedPreviewHeight": 1446,
-      "downloadedPreviewBytes": 950752,
-      "files": {
-        "640": {
-          "path": "images/chinatown-640.webp",
-          "width": 640,
-          "height": 482,
-          "bytes": 100754
-        },
-        "1200": {
-          "path": "images/chinatown-1200.webp",
-          "width": 1200,
-          "height": 904,
-          "bytes": 311916
-        }
-      },
-      "downloadedPreviewSha256": "e211374617fec659f79b93d920faf954ae88b8ea0b3a28bc69704c6c3e56a7e1",
-      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
-    },
-    {
-      "id": "chinatown2",
-      "title": "File:Walk in Yokohama Chinatown 8.jpg",
-      "caption": "横滨中华街临街食物店铺",
-      "author": "Syced",
-      "source": "https://commons.wikimedia.org/wiki/File:Walk_in_Yokohama_Chinatown_8.jpg",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "retrieved": "2026-09-28",
-      "sourceOriginalWidth": 4080,
-      "sourceOriginalHeight": 3072,
-      "downloadedPreviewWidth": 1920,
-      "downloadedPreviewHeight": 1446,
-      "downloadedPreviewBytes": 800076,
-      "files": {
-        "640": {
-          "path": "images/chinatown2-640.webp",
-          "width": 640,
-          "height": 482,
-          "bytes": 80896
-        },
-        "1200": {
-          "path": "images/chinatown2-1200.webp",
-          "width": 1200,
-          "height": 904,
-          "bytes": 242976
-        }
-      },
-      "downloadedPreviewSha256": "2303741d861c5d51404ab98c2be990746e22af206704e8f2d7c6604ade7cd651",
       "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
     },
     {

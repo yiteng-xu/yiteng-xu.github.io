@@ -2,7 +2,7 @@
 
 以下是 Wikimedia Commons 上可复用许可的真实摄影。网页仅按比例缩小、按 EXIF 校正方向并转为 WebP 压缩；没有有意裁切或修改场景。各照片及调整后的版本按其原始许可使用，作者与原图文件页在网页图片下方和本表均可访问。
 
-共 44 张不同照片，覆盖 40 段活动，每张提供 640 和 1200 像素宽的 WebP（源图宽度不足时保留实际宽度）。下载预览合计 30.47 MiB，两档 WebP 合计 10.93 MiB。
+当前网页使用 45 张不同照片，覆盖 42 段活动。D6 山手本通至元町活动的照片拍在下坡后的元町商店街，不冒充山手本通；返程活动展示元町・中华街站 5 号出口旧照，并与去美国山的 6 号出口明确区分。每张已使用照片提供 640 和 1200 像素宽的 WebP（源图宽度不足时保留实际宽度）。旧中华街两张 WebP 保留在资产目录，但不用于本版 D6。
 
 热海银座照片摄于 2007 年，仅用于说明地理位置；下田金目鲷便当照片摄于 2015 年，不代表当前供货。季节景观、列车外观和营业状态以出行日为准。下田港航拍不是行人视角；由比滨远眺照片拍摄点不属于步行路线。
 
@@ -31,6 +31,9 @@
 | nakameguroRiver | 中目黑附近目黑川与河畔步道，2024 年摄 | Syced | [文件页](https://commons.wikimedia.org/wiki/File:River_near_Nakameguro_-67757.jpeg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | daikanyamaWalk | 代官山安静街道，2022 年摄；不代表特定餐馆 | Syced | [文件页](https://commons.wikimedia.org/wiki/File:Walk_in_Daikanyama_6.jpg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | yokohamaStation | 横滨站及周边铁路，作为返程地标 | MaedaAkihiko | [文件页](https://commons.wikimedia.org/wiki/File:Yokohama-STA_East-2023.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| harborView | 港见丘公园展望台与远处海湾大桥，2017 年摄；仅按 EXIF 校正和缩放为 WebP，经图像代理下载，原图和许可仍以 Commons 文件页为准 | 妖精書士 | [文件页](https://commons.wikimedia.org/wiki/File:Harbor_View_Park_(Yokohama)_Observation_deck.jpg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
+| motomachiStreet | 横滨元町商店街，2018 年摄；位于山手下坡后的午饭区域，不是山手本通；经图像代理缩放下载，二次转为 WebP | Ymblanter | [文件页](https://commons.wikimedia.org/wiki/File:Motomachi_shopping_street.jpg) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| motomachiStation | 元町・中华街站元町口 5 号出口，RGB256 于 2010 年摄；Commons 当前版本由 François de Dijon 于 2018 年透视校正；返程识别参考，与美国山 6 号出口不同；经图像代理缩放下载，二次转为 WebP | RGB256；透视校正：François de Dijon（2018） | [文件页](https://commons.wikimedia.org/wiki/File:Motomachi-Chukagai_Station_Exit5.jpg) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | yamashita | 山下公园外侧的横滨港水面 | Tokyo538 | [文件页](https://commons.wikimedia.org/wiki/File:Yokohama_Yamashita_Park_and_Marine_Tower.jpg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |
 | yamashita2 | 山下公园公共草地与港边 | Guilhem Vellut from Annecy, France | [文件页](https://commons.wikimedia.org/wiki/File:Yamashita_Park_@_Yokohama_(9054590638).jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 | chinatown | 横滨中华街餐饮街景 | Syced | [文件页](https://commons.wikimedia.org/wiki/File:Yokohama_Chinatown_4.jpg) | [CC0](https://creativecommons.org/publicdomain/zero/1.0/) |

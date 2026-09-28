@@ -330,6 +330,34 @@ window.YOKOHAMA_ATAMI_PHOTOS = {
   ],
   "d6-a1": [
     {
+      "src": "images/harborView-1200.webp",
+      "srcset": "images/harborView-640.webp 640w, images/harborView-1200.webp 1200w",
+      "width": 1200,
+      "height": 900,
+      "alt": "港见丘公园展望台高处，远处可见横滨海湾大桥；2017 年摄",
+      "caption": "港见丘公园展望台与远处的横滨海湾大桥，2017 年摄",
+      "author": "妖精書士",
+      "source": "https://commons.wikimedia.org/wiki/File:Harbor_View_Park_(Yokohama)_Observation_deck.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "d6-a2": [
+    {
+      "src": "images/motomachiStreet-1200.webp",
+      "srcset": "images/motomachiStreet-640.webp 640w, images/motomachiStreet-1200.webp 1200w",
+      "width": 1200,
+      "height": 1600,
+      "alt": "横滨元町商店街街景，是从山手下坡后吃午饭的区域；2018 年摄",
+      "caption": "下山手后到达的横滨元町商店街，2018 年摄；照片不展示山手本通",
+      "author": "Ymblanter",
+      "source": "https://commons.wikimedia.org/wiki/File:Motomachi_shopping_street.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "d6-a3": [
+    {
       "src": "images/yamashita-1200.webp",
       "srcset": "images/yamashita-640.webp 640w, images/yamashita-1200.webp 1200w",
       "width": 1200,
@@ -354,33 +382,21 @@ window.YOKOHAMA_ATAMI_PHOTOS = {
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
     }
   ],
-  "d6-a2": [
+  "d6-a4": [
     {
-      "src": "images/chinatown-1200.webp",
-      "srcset": "images/chinatown-640.webp 640w, images/chinatown-1200.webp 1200w",
+      "src": "images/motomachiStation-1200.webp",
+      "srcset": "images/motomachiStation-640.webp 640w, images/motomachiStation-1200.webp 1200w",
       "width": 1200,
-      "height": 904,
-      "alt": "横滨中华街餐饮街景",
-      "caption": "横滨中华街餐饮街景",
-      "author": "Syced",
-      "source": "https://commons.wikimedia.org/wiki/File:Yokohama_Chinatown_4.jpg",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
-    },
-    {
-      "src": "images/chinatown2-1200.webp",
-      "srcset": "images/chinatown2-640.webp 640w, images/chinatown2-1200.webp 1200w",
-      "width": 1200,
-      "height": 904,
-      "alt": "横滨中华街临街食物店铺",
-      "caption": "横滨中华街临街食物店铺",
-      "author": "Syced",
-      "source": "https://commons.wikimedia.org/wiki/File:Walk_in_Yokohama_Chinatown_8.jpg",
-      "license": "CC0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      "height": 936,
+      "alt": "元町・中华街站元町口 5 号出口，RGB256 于 2010 年摄，François de Dijon 于 2018 年透视校正；供返程站识别参考",
+      "caption": "元町・中华街站元町口 5 号出口，2010 年摄、2018 年透视校正；与去美国山的 6 号出口不同",
+      "author": "RGB256；透视校正：François de Dijon（2018）",
+      "source": "https://commons.wikimedia.org/wiki/File:Motomachi-Chukagai_Station_Exit5.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   ],
-  "d6-a3": [
+  "d6-a5": [
     {
       "src": "images/zushi-1200.webp",
       "srcset": "images/zushi-640.webp 640w, images/zushi-1200.webp 1200w",
