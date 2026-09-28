@@ -1,0 +1,1516 @@
+{
+  "trip": "横滨—热海 10 天 9 晚 Plan B",
+  "retrieved": "2026-09-28",
+  "activityCount": 40,
+  "uniquePhotoCount": 44,
+  "activityPhotos": {
+    "d1-a1": [
+      "hanedaGate",
+      "hanedaExterior"
+    ],
+    "d1-a2": [
+      "yokohamaStation2"
+    ],
+    "d1-a3": [
+      "minatomirai"
+    ],
+    "d2-a1": [
+      "minatomirai2"
+    ],
+    "d2-a2": [
+      "redbrickSunny",
+      "redbrickHarbor"
+    ],
+    "d2-a3": [
+      "minatomirai"
+    ],
+    "d3-a1": [
+      "kamakuraStation",
+      "enoden"
+    ],
+    "d3-a2": [
+      "yuigahama",
+      "yuigahama2"
+    ],
+    "d3-a3": [
+      "shichirigahama2"
+    ],
+    "d3-a4": [
+      "enoden2"
+    ],
+    "d4-a1": [
+      "ginza"
+    ],
+    "d4-a2": [
+      "yurakuchoStation"
+    ],
+    "d4-a3": [
+      "hibiyaAutumn"
+    ],
+    "d4-a4": [
+      "tokyostation"
+    ],
+    "d4-a5": [
+      "tokyostation2"
+    ],
+    "d5-a1": [
+      "jiyugaoka2"
+    ],
+    "d5-a2": [
+      "jiyugaoka"
+    ],
+    "d5-a3": [
+      "nakameguroRiver"
+    ],
+    "d5-a4": [
+      "daikanyamaWalk"
+    ],
+    "d5-a5": [
+      "yokohamaStation"
+    ],
+    "d6-a1": [
+      "yamashita",
+      "yamashita2"
+    ],
+    "d6-a2": [
+      "chinatown",
+      "chinatown2"
+    ],
+    "d6-a3": [
+      "zushi",
+      "zushi2"
+    ],
+    "d7-a1": [
+      "atamiStation"
+    ],
+    "d7-a2": [
+      "atamiStation2"
+    ],
+    "d7-a3": [
+      "atamiBeach",
+      "atamiBeach2"
+    ],
+    "d8-a1": [
+      "atamiBeach"
+    ],
+    "d8-a2": [
+      "atamiStreet"
+    ],
+    "d8-a3": [
+      "atamiStation2"
+    ],
+    "d8-a4": [
+      "itoStation"
+    ],
+    "d8-a5": [
+      "itoBeach",
+      "itoBeach2"
+    ],
+    "d8-a6": [
+      "itoStation"
+    ],
+    "d9-a1": [
+      "atamiStation2"
+    ],
+    "d9-a2": [
+      "shimodaStation"
+    ],
+    "d9-a3": [
+      "shimodaBento",
+      "shimodaPort"
+    ],
+    "d9-a4": [
+      "perryRoad",
+      "perryRoad2"
+    ],
+    "d9-a5": [
+      "shimodaStation",
+      "shimodaPort2"
+    ],
+    "d9-a6": [
+      "hakoneYumoto2"
+    ],
+    "d10-a1": [
+      "atamiStation"
+    ],
+    "d10-a2": [
+      "hanedaGate"
+    ]
+  },
+  "processing": {
+    "widths": [
+      640,
+      1200
+    ],
+    "format": "WebP",
+    "quality": 82,
+    "resample": "Lanczos",
+    "changes": "Proportional resize, EXIF orientation normalization and compression only; no intentional crop or scene edit"
+  },
+  "photos": [
+    {
+      "id": "hanedaGate",
+      "title": "File:Haneda-Airport-T3-STA Keikyu-Gate.jpg",
+      "caption": "羽田机场 T3 京急车站闸机，2021 年摄",
+      "author": "MaedaAkihiko",
+      "source": "https://commons.wikimedia.org/wiki/File:Haneda-Airport-T3-STA_Keikyu-Gate.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 622861,
+      "files": {
+        "640": {
+          "path": "images/hanedaGate-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 48324
+        },
+        "1200": {
+          "path": "images/hanedaGate-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 162964
+        }
+      },
+      "downloadedPreviewSha256": "7763299692adab684b60e4dc5f58252dc4c4df0a0010390f827d2347f7df9753",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "hanedaExterior",
+      "title": "File:Views of Haneda airport near Terminal 3.jpg",
+      "caption": "羽田机场 T3 附近外观，2026 年摄",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:Views_of_Haneda_airport_near_Terminal_3.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 611665,
+      "files": {
+        "640": {
+          "path": "images/hanedaExterior-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 41042
+        },
+        "1200": {
+          "path": "images/hanedaExterior-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 151890
+        }
+      },
+      "downloadedPreviewSha256": "d6f22c409e9698831083feba506ecb7f025fdf90f26e73ec5f1193acc9e7db90",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yokohamaStation2",
+      "title": "File:Keikyū Main Line at Yokohama station, -20 jan 2024 10：52.jpg",
+      "caption": "横滨站京急线路进站区",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:Keiky%C5%AB_Main_Line_at_Yokohama_station,_-20_jan_2024_10%EF%BC%9A52.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4080,
+      "sourceOriginalHeight": 3072,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1446,
+      "downloadedPreviewBytes": 1126933,
+      "files": {
+        "640": {
+          "path": "images/yokohamaStation2-640.webp",
+          "width": 640,
+          "height": 482,
+          "bytes": 108568
+        },
+        "1200": {
+          "path": "images/yokohamaStation2-1200.webp",
+          "width": 1200,
+          "height": 904,
+          "bytes": 359196
+        }
+      },
+      "downloadedPreviewSha256": "4473ab050f2e88bb40f326dfa2bc76b06b5a763d04ff88d22ece92cc6beecf31",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "minatomirai",
+      "title": "File:Minato Mirai - Yokohama Skyline March 2025.jpg",
+      "caption": "横滨港未来夜色与水岸",
+      "author": "Justin Taylor",
+      "source": "https://commons.wikimedia.org/wiki/File:Minato_Mirai_-_Yokohama_Skyline_March_2025.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4032,
+      "sourceOriginalHeight": 3024,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 648696,
+      "files": {
+        "640": {
+          "path": "images/minatomirai-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 46280
+        },
+        "1200": {
+          "path": "images/minatomirai-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 161372
+        }
+      },
+      "downloadedPreviewSha256": "2b68232bdf2624f1c9f470fe32aa17a18977a47e70f9f470036febed281c4c8a",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "minatomirai2",
+      "title": "File:20250101 Minato Mirai 21 (Landmark Tower, Queen's Square Yokohama, Pacifico Yokohama, InterContinental Yokohama Grand) 122135.jpg",
+      "caption": "横滨港未来临水建筑与步道",
+      "author": "Matthide127",
+      "source": "https://commons.wikimedia.org/wiki/File:20250101_Minato_Mirai_21_(Landmark_Tower,_Queen%27s_Square_Yokohama,_Pacifico_Yokohama,_InterContinental_Yokohama_Grand)_122135.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4000,
+      "sourceOriginalHeight": 2250,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1080,
+      "downloadedPreviewBytes": 456787,
+      "files": {
+        "640": {
+          "path": "images/minatomirai2-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 37932
+        },
+        "1200": {
+          "path": "images/minatomirai2-1200.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 119812
+        }
+      },
+      "downloadedPreviewSha256": "3aa9f5e14ebecae4e3037ef333456aae7e0b4189dd32ad94b9abd6d6f3069285",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "redbrickSunny",
+      "title": "File:20250101 Yokohama Red Brick Warehouse 115345.jpg",
+      "caption": "横滨红砖仓库及外侧开放广场，2025 年摄",
+      "author": "Matthide127",
+      "source": "https://commons.wikimedia.org/wiki/File:20250101_Yokohama_Red_Brick_Warehouse_115345.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1080,
+      "downloadedPreviewBytes": 552220,
+      "files": {
+        "640": {
+          "path": "images/redbrickSunny-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 39966
+        },
+        "1200": {
+          "path": "images/redbrickSunny-1200.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 160652
+        }
+      },
+      "downloadedPreviewSha256": "80ef3b63cbf4e9fc358ed171bda6a7a8815b980e3657970441fe22edc3d8066c",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "redbrickHarbor",
+      "title": "File:View of Yokohama Red Brick Warehouse from Yokohama Osanbashi pier.jpg",
+      "caption": "从大栈桥隔海看横滨红砖仓库，2011 年摄",
+      "author": "Tu-ka-pon",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Yokohama_Red_Brick_Warehouse_from_Yokohama_Osanbashi_pier.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 526793,
+      "files": {
+        "640": {
+          "path": "images/redbrickHarbor-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 39094
+        },
+        "1200": {
+          "path": "images/redbrickHarbor-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 130178
+        }
+      },
+      "downloadedPreviewSha256": "eaabd08274a1ae72cd80057109c18f8b1f7dccc44d0e8c7e6e107ca2caa59511",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "kamakuraStation",
+      "title": "File:202408100935 IMG 0886.jpg",
+      "caption": "镰仓站闸机与站厅，2024 年摄",
+      "author": "ウィ貴公子",
+      "source": "https://commons.wikimedia.org/wiki/File:202408100935_IMG_0886.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 666466,
+      "files": {
+        "640": {
+          "path": "images/kamakuraStation-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 59738
+        },
+        "1200": {
+          "path": "images/kamakuraStation-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 172920
+        }
+      },
+      "downloadedPreviewSha256": "cfe09f74bde437541ed1e59bcf1226f89a0bfb48e1303c4158436b9d48fda8f5",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "enoden",
+      "title": "File:Front View from an Enoshima Electric Railway train 4.jpg",
+      "caption": "江之电海岸段前方景色",
+      "author": "Ken Shibata",
+      "source": "https://commons.wikimedia.org/wiki/File:Front_View_from_an_Enoshima_Electric_Railway_train_4.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 3840,
+      "sourceOriginalHeight": 2160,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1080,
+      "downloadedPreviewBytes": 586452,
+      "files": {
+        "640": {
+          "path": "images/enoden-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 43916
+        },
+        "1200": {
+          "path": "images/enoden-1200.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 159856
+        }
+      },
+      "downloadedPreviewSha256": "1ab169014014247015e3f180e2614c1283020483862dd2d05d6cc89db0333288",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yuigahama",
+      "title": "File:Kamakura Yuigahama Beach 2024.jpg",
+      "caption": "镰仓由比滨海岸",
+      "author": "Klaasjeoranje",
+      "source": "https://commons.wikimedia.org/wiki/File:Kamakura_Yuigahama_Beach_2024.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 3089,
+      "sourceOriginalHeight": 2048,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1273,
+      "downloadedPreviewBytes": 913862,
+      "files": {
+        "640": {
+          "path": "images/yuigahama-640.webp",
+          "width": 640,
+          "height": 424,
+          "bytes": 38042
+        },
+        "1200": {
+          "path": "images/yuigahama-1200.webp",
+          "width": 1200,
+          "height": 796,
+          "bytes": 212372
+        }
+      },
+      "downloadedPreviewSha256": "b2f4fa94ad495a93db65d3ac5a74dfd32a28981a6022552d3fc3d91857fc8462",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yuigahama2",
+      "title": "File:Yuigahama 2025 June 30 various 2.jpg",
+      "caption": "从高处远望由比滨海岸，非步行路线",
+      "author": "Nesnad",
+      "source": "https://commons.wikimedia.org/wiki/File:Yuigahama_2025_June_30_various_2.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 6593,
+      "sourceOriginalHeight": 3341,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 973,
+      "downloadedPreviewBytes": 644211,
+      "files": {
+        "640": {
+          "path": "images/yuigahama2-640.webp",
+          "width": 640,
+          "height": 324,
+          "bytes": 56020
+        },
+        "1200": {
+          "path": "images/yuigahama2-1200.webp",
+          "width": 1200,
+          "height": 608,
+          "bytes": 189924
+        }
+      },
+      "downloadedPreviewSha256": "08ab2d8dd7f7ff61baa3852b60a7305d217a72b8141bfe9cdc1d13db34b75122",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "shichirigahama2",
+      "title": "File:Shichirigahama beach and Enoshima 2022-05.jpg",
+      "caption": "七里滨海岸与江之岛远景",
+      "author": "Kirin7739",
+      "source": "https://commons.wikimedia.org/wiki/File:Shichirigahama_beach_and_Enoshima_2022-05.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 3128,
+      "sourceOriginalHeight": 2083,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1279,
+      "downloadedPreviewBytes": 525189,
+      "files": {
+        "640": {
+          "path": "images/shichirigahama2-640.webp",
+          "width": 640,
+          "height": 426,
+          "bytes": 39296
+        },
+        "1200": {
+          "path": "images/shichirigahama2-1200.webp",
+          "width": 1200,
+          "height": 799,
+          "bytes": 142634
+        }
+      },
+      "downloadedPreviewSha256": "65a46d33dd1f2d22199639d85daba72426eeb1911577d360ac583d229b47a417",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "enoden2",
+      "title": "File:The fastest and beyond - Enoshima Electric Railway (8508897736).jpg",
+      "caption": "江之岛电铁列车行驶的摄影",
+      "author": "Takashi Hososhima from Tokyo, Japan",
+      "source": "https://commons.wikimedia.org/wiki/File:The_fastest_and_beyond_-_Enoshima_Electric_Railway_(8508897736).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4751,
+      "sourceOriginalHeight": 3162,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1278,
+      "downloadedPreviewBytes": 200508,
+      "files": {
+        "640": {
+          "path": "images/enoden2-640.webp",
+          "width": 640,
+          "height": 426,
+          "bytes": 14830
+        },
+        "1200": {
+          "path": "images/enoden2-1200.webp",
+          "width": 1200,
+          "height": 799,
+          "bytes": 35418
+        }
+      },
+      "downloadedPreviewSha256": "42f60e2498e586e1dcb1286afe6ae3522f59abac9022ef1ae868da912489e80f",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "ginza",
+      "title": "File:Illuminated street corner at blue hour - facade of the building Fujiya in Ginza Chuo-ku Tokyo Japan.jpg",
+      "caption": "东京银座四丁目夜色与不二家外墙",
+      "author": "Basile Morin",
+      "source": "https://commons.wikimedia.org/wiki/File:Illuminated_street_corner_at_blue_hour_-_facade_of_the_building_Fujiya_in_Ginza_Chuo-ku_Tokyo_Japan.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4720,
+      "sourceOriginalHeight": 3192,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1298,
+      "downloadedPreviewBytes": 618551,
+      "files": {
+        "640": {
+          "path": "images/ginza-640.webp",
+          "width": 640,
+          "height": 433,
+          "bytes": 51602
+        },
+        "1200": {
+          "path": "images/ginza-1200.webp",
+          "width": 1200,
+          "height": 811,
+          "bytes": 164900
+        }
+      },
+      "downloadedPreviewSha256": "ebe147d1507c75947e098302f853fee635bef945f3d4d37e5500f2c47913a4b2",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yurakuchoStation",
+      "title": "File:JR Yurakucho Station - Oct 21 2021 various.jpeg",
+      "caption": "有乐町站外及高架沿街，2021 年摄",
+      "author": "Nesnad",
+      "source": "https://commons.wikimedia.org/wiki/File:JR_Yurakucho_Station_-_Oct_21_2021_various.jpeg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1496,
+      "downloadedPreviewBytes": 737460,
+      "files": {
+        "640": {
+          "path": "images/yurakuchoStation-640.webp",
+          "width": 640,
+          "height": 499,
+          "bytes": 56130
+        },
+        "1200": {
+          "path": "images/yurakuchoStation-1200.webp",
+          "width": 1200,
+          "height": 935,
+          "bytes": 173772
+        }
+      },
+      "downloadedPreviewSha256": "19aa7f8c7b6df08a87363942fbf004cb094e2672fc778591af1c4a3a6f3e52b1",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "hibiyaAutumn",
+      "title": "File:Morning stroll last gasp of autumn in Hibiya Park (52565156459).jpg",
+      "caption": "日比谷公园的秋日水面与树木，季节景观仅供参考",
+      "author": "Big Ben in Japan",
+      "source": "https://commons.wikimedia.org/wiki/File:Morning_stroll_last_gasp_of_autumn_in_Hibiya_Park_%2852565156459%29.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 2400,
+      "downloadedPreviewBytes": 1042610,
+      "files": {
+        "640": {
+          "path": "images/hibiyaAutumn-640.webp",
+          "width": 640,
+          "height": 800,
+          "bytes": 112562
+        },
+        "1200": {
+          "path": "images/hibiyaAutumn-1200.webp",
+          "width": 1200,
+          "height": 1500,
+          "bytes": 308902
+        }
+      },
+      "downloadedPreviewSha256": "8bb3e52b65942d9d1a1e909af98f34d5e9bfbeb44c49b37f17460b1be72d195d",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "tokyostation",
+      "title": "File:Tokyo station Marunouchi at night.jpg",
+      "caption": "东京站丸之内站房夜景",
+      "author": "Prcmise",
+      "source": "https://commons.wikimedia.org/wiki/File:Tokyo_station_Marunouchi_at_night.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 6000,
+      "sourceOriginalHeight": 3376,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1080,
+      "downloadedPreviewBytes": 578883,
+      "files": {
+        "640": {
+          "path": "images/tokyostation-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 47710
+        },
+        "1200": {
+          "path": "images/tokyostation-1200.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 145950
+        }
+      },
+      "downloadedPreviewSha256": "1adbf4cac2dad6cba0fae5b6ccdeea9a764ac8b8a5ef242197abbcf3a767fe31",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "tokyostation2",
+      "title": "File:Tokyo Station Marunouchi Building Night view1 201912.jpg",
+      "caption": "东京站丸之内站前夜景",
+      "author": "Wpcpey",
+      "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Station_Marunouchi_Building_Night_view1_201912.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4032,
+      "sourceOriginalHeight": 3024,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 893601,
+      "files": {
+        "640": {
+          "path": "images/tokyostation2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 68122
+        },
+        "1200": {
+          "path": "images/tokyostation2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 253384
+        }
+      },
+      "downloadedPreviewSha256": "295102cb9d8fb619d2174133db172dadbc997b726c34226ee24c29b00732e332",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "jiyugaoka2",
+      "title": "File:Jiyugaoka Station Tokyo 2026.jpg",
+      "caption": "自由之丘站前街口，2026 年摄",
+      "author": "ノーマルエディタ",
+      "source": "https://commons.wikimedia.org/wiki/File:Jiyugaoka_Station_Tokyo_2026.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 2144,
+      "sourceOriginalHeight": 1608,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 696586,
+      "files": {
+        "640": {
+          "path": "images/jiyugaoka2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 79358
+        },
+        "1200": {
+          "path": "images/jiyugaoka2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 221086
+        }
+      },
+      "downloadedPreviewSha256": "115b37bcb5552ae478416b6c841c70c4bf7f8d42790de1ce8a56e6cda7e70221",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "jiyugaoka",
+      "title": "File:Street views in Jiyugaoka 11.jpg",
+      "caption": "自由之丘住宅与餐饮街区一角",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:Street_views_in_Jiyugaoka_11.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4080,
+      "sourceOriginalHeight": 3072,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1446,
+      "downloadedPreviewBytes": 832038,
+      "files": {
+        "640": {
+          "path": "images/jiyugaoka-640.webp",
+          "width": 640,
+          "height": 482,
+          "bytes": 71194
+        },
+        "1200": {
+          "path": "images/jiyugaoka-1200.webp",
+          "width": 1200,
+          "height": 904,
+          "bytes": 232802
+        }
+      },
+      "downloadedPreviewSha256": "6d290cfa17751595f0cc6c25e09390394b45be29e7397d32ba109eb086cb0073",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "nakameguroRiver",
+      "title": "File:River near Nakameguro -67757.jpeg",
+      "caption": "中目黑附近目黑川与河畔步道，2024 年摄",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:River_near_Nakameguro_-67757.jpeg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1446,
+      "downloadedPreviewBytes": 772662,
+      "files": {
+        "640": {
+          "path": "images/nakameguroRiver-640.webp",
+          "width": 640,
+          "height": 482,
+          "bytes": 58644
+        },
+        "1200": {
+          "path": "images/nakameguroRiver-1200.webp",
+          "width": 1200,
+          "height": 904,
+          "bytes": 211162
+        }
+      },
+      "downloadedPreviewSha256": "14bae1d09b611b61058bb9deefa25a3fe5f2d34374ecb88ecfffd8464844d55e",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "daikanyamaWalk",
+      "title": "File:Walk in Daikanyama 6.jpg",
+      "caption": "代官山安静街道，2022 年摄；不代表特定餐馆",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:Walk_in_Daikanyama_6.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 865321,
+      "files": {
+        "640": {
+          "path": "images/daikanyamaWalk-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 62670
+        },
+        "1200": {
+          "path": "images/daikanyamaWalk-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 245250
+        }
+      },
+      "downloadedPreviewSha256": "02a4ccfeabce0e0afb8bfccf323b57193f41b754efeaa3c2e50551ff36f8b25e",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yokohamaStation",
+      "title": "File:Yokohama-STA East-2023.jpg",
+      "caption": "横滨站及周边铁路，作为返程地标",
+      "author": "MaedaAkihiko",
+      "source": "https://commons.wikimedia.org/wiki/File:Yokohama-STA_East-2023.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 5333,
+      "sourceOriginalHeight": 3556,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 1061940,
+      "files": {
+        "640": {
+          "path": "images/yokohamaStation-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 94994
+        },
+        "1200": {
+          "path": "images/yokohamaStation-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 320616
+        }
+      },
+      "downloadedPreviewSha256": "e6f54c5365dc084b1093a3c6744c4cf592034a6d383b652e4913ba9cc6345640",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yamashita",
+      "title": "File:Yokohama Yamashita Park and Marine Tower.jpg",
+      "caption": "山下公园外侧的横滨港水面",
+      "author": "Tokyo538",
+      "source": "https://commons.wikimedia.org/wiki/File:Yokohama_Yamashita_Park_and_Marine_Tower.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 6192,
+      "sourceOriginalHeight": 4128,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 695831,
+      "files": {
+        "640": {
+          "path": "images/yamashita-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 50098
+        },
+        "1200": {
+          "path": "images/yamashita-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 189714
+        }
+      },
+      "downloadedPreviewSha256": "5f394dd3ff2798df459ae6352ad6d2ffd12dbd94b53435173acb3a052fe7c3d7",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "yamashita2",
+      "title": "File:Yamashita Park @ Yokohama (9054590638).jpg",
+      "caption": "山下公园公共草地与港边",
+      "author": "Guilhem Vellut from Annecy, France",
+      "source": "https://commons.wikimedia.org/wiki/File:Yamashita_Park_@_Yokohama_(9054590638).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 3648,
+      "sourceOriginalHeight": 2736,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 607999,
+      "files": {
+        "640": {
+          "path": "images/yamashita2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 38888
+        },
+        "1200": {
+          "path": "images/yamashita2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 154606
+        }
+      },
+      "downloadedPreviewSha256": "422c805529445690782e0397b4a1e3bc24decd328d0435c5c7c3fecde30c3855",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "chinatown",
+      "title": "File:Yokohama Chinatown 4.jpg",
+      "caption": "横滨中华街餐饮街景",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:Yokohama_Chinatown_4.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4080,
+      "sourceOriginalHeight": 3072,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1446,
+      "downloadedPreviewBytes": 950752,
+      "files": {
+        "640": {
+          "path": "images/chinatown-640.webp",
+          "width": 640,
+          "height": 482,
+          "bytes": 100754
+        },
+        "1200": {
+          "path": "images/chinatown-1200.webp",
+          "width": 1200,
+          "height": 904,
+          "bytes": 311916
+        }
+      },
+      "downloadedPreviewSha256": "e211374617fec659f79b93d920faf954ae88b8ea0b3a28bc69704c6c3e56a7e1",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "chinatown2",
+      "title": "File:Walk in Yokohama Chinatown 8.jpg",
+      "caption": "横滨中华街临街食物店铺",
+      "author": "Syced",
+      "source": "https://commons.wikimedia.org/wiki/File:Walk_in_Yokohama_Chinatown_8.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4080,
+      "sourceOriginalHeight": 3072,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1446,
+      "downloadedPreviewBytes": 800076,
+      "files": {
+        "640": {
+          "path": "images/chinatown2-640.webp",
+          "width": 640,
+          "height": 482,
+          "bytes": 80896
+        },
+        "1200": {
+          "path": "images/chinatown2-1200.webp",
+          "width": 1200,
+          "height": 904,
+          "bytes": 242976
+        }
+      },
+      "downloadedPreviewSha256": "2303741d861c5d51404ab98c2be990746e22af206704e8f2d7c6604ade7cd651",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "zushi",
+      "title": "File:Zushi Beach 02.jpg",
+      "caption": "逗子海岸平缓的海边",
+      "author": "Tadashi Okoshi",
+      "source": "https://commons.wikimedia.org/wiki/File:Zushi_Beach_02.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4020,
+      "sourceOriginalHeight": 2671,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1276,
+      "downloadedPreviewBytes": 609777,
+      "files": {
+        "640": {
+          "path": "images/zushi-640.webp",
+          "width": 640,
+          "height": 425,
+          "bytes": 37796
+        },
+        "1200": {
+          "path": "images/zushi-1200.webp",
+          "width": 1200,
+          "height": 798,
+          "bytes": 169108
+        }
+      },
+      "downloadedPreviewSha256": "66ee5c07088d0d0043a48cc8648a5ff5750226e642c83ce373a74fc5c5122ce4",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "zushi2",
+      "title": "File:Zushi Beach - 01.jpg",
+      "caption": "逗子海岸帆船与沙滩",
+      "author": "Quercus acuta",
+      "source": "https://commons.wikimedia.org/wiki/File:Zushi_Beach_-_01.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 3825,
+      "sourceOriginalHeight": 2868,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 686013,
+      "files": {
+        "640": {
+          "path": "images/zushi2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 49754
+        },
+        "1200": {
+          "path": "images/zushi2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 184406
+        }
+      },
+      "downloadedPreviewSha256": "0dcfe87f96427a3cea05d546d44d57d8f09c1587a7d9fe0bbb41add4dff88a20",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "atamiStation",
+      "title": "File:Atami-STA.jpg",
+      "caption": "热海站外观及站前道路",
+      "author": "MaedaAkihiko",
+      "source": "https://commons.wikimedia.org/wiki/File:Atami-STA.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 5333,
+      "sourceOriginalHeight": 3556,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 562613,
+      "files": {
+        "640": {
+          "path": "images/atamiStation-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 45068
+        },
+        "1200": {
+          "path": "images/atamiStation-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 146160
+        }
+      },
+      "downloadedPreviewSha256": "24cdfb5920cc1b18a27865b541d597994804319007583cd93b3e135d1b565a92",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "atamiStation2",
+      "title": "File:JR Atami Station.jpg",
+      "caption": "热海站前广场",
+      "author": "Drivephotographer",
+      "source": "https://commons.wikimedia.org/wiki/File:JR_Atami_Station.jpg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4000,
+      "sourceOriginalHeight": 2250,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1080,
+      "downloadedPreviewBytes": 576798,
+      "files": {
+        "640": {
+          "path": "images/atamiStation2-640.webp",
+          "width": 640,
+          "height": 360,
+          "bytes": 47614
+        },
+        "1200": {
+          "path": "images/atamiStation2-1200.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 152966
+        }
+      },
+      "downloadedPreviewSha256": "50e7e561d4547d99462289359f89ac8219b7f9184ab3bc2de8eb8410404b93fc",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "atamiBeach",
+      "title": "File:View of Atami Sun Beach from northeast - Mar 14, 2024.jpg",
+      "caption": "热海 Sun Beach 的沙滩与海湾",
+      "author": "m-louis .®",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Atami_Sun_Beach_from_northeast_-_Mar_14,_2024.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 8256,
+      "sourceOriginalHeight": 5504,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 1069432,
+      "files": {
+        "640": {
+          "path": "images/atamiBeach-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 91668
+        },
+        "1200": {
+          "path": "images/atamiBeach-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 327052
+        }
+      },
+      "downloadedPreviewSha256": "a1f2b8ca200b71f41735f878c57b03003e2d94311324d61b5b06c772bce2e0ca",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "atamiBeach2",
+      "title": "File:Atami Sun Beach at night - Jan 27, 2026.jpg",
+      "caption": "热海海滨夜色，夜景仅供参考；不要求夜访",
+      "author": "Ryohei Noda",
+      "source": "https://commons.wikimedia.org/wiki/File:Atami_Sun_Beach_at_night_-_Jan_27,_2026.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 7989,
+      "sourceOriginalHeight": 5992,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 718511,
+      "files": {
+        "640": {
+          "path": "images/atamiBeach2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 50830
+        },
+        "1200": {
+          "path": "images/atamiBeach2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 169444
+        }
+      },
+      "downloadedPreviewSha256": "bf3b461106893919c4e310374c8685029682184230aa3fa810dd916fb6df9893",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "atamiStreet",
+      "title": "File:Ginza, Atami city - panoramio.jpg",
+      "caption": "热海银座街巷，2007 年摄；店铺现况请以当天为准",
+      "author": "Nagono",
+      "source": "https://commons.wikimedia.org/wiki/File:Ginza,_Atami_city_-_panoramio.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 2272,
+      "sourceOriginalHeight": 1704,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 883517,
+      "files": {
+        "640": {
+          "path": "images/atamiStreet-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 56006
+        },
+        "1200": {
+          "path": "images/atamiStreet-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 254314
+        }
+      },
+      "downloadedPreviewSha256": "2fbb540306e150dde93415a2b8e93e882086471fddc49950e96a1ddddfe917e2",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "itoStation",
+      "title": "File:231007 Ito Station Ito Shizuoka pref Japan03s3.jpg",
+      "caption": "伊东站站前广场，2023 年摄",
+      "author": "663highland",
+      "source": "https://commons.wikimedia.org/wiki/File:231007_Ito_Station_Ito_Shizuoka_pref_Japan03s3.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 653171,
+      "files": {
+        "640": {
+          "path": "images/itoStation-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 49960
+        },
+        "1200": {
+          "path": "images/itoStation-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 175960
+        }
+      },
+      "downloadedPreviewSha256": "41a5a669883c610dec5870fc7c5c5b54ed5379e7bb00a3b99f13788cb2caea06",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "itoBeach",
+      "title": "File:231007 Ito Orange Beach Ito Shizuoka pref Japan02s3.jpg",
+      "caption": "伊东 Orange Beach 的沙滩与海湾",
+      "author": "663highland",
+      "source": "https://commons.wikimedia.org/wiki/File:231007_Ito_Orange_Beach_Ito_Shizuoka_pref_Japan02s3.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 5472,
+      "sourceOriginalHeight": 3648,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 472355,
+      "files": {
+        "640": {
+          "path": "images/itoBeach-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 29278
+        },
+        "1200": {
+          "path": "images/itoBeach-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 109340
+        }
+      },
+      "downloadedPreviewSha256": "34886da21f45452ec586d2735186936d4615dc533060796c2f6ca02bf45f50f5",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "itoBeach2",
+      "title": "File:231007 Ito Orange Beach Ito Shizuoka pref Japan03s3.jpg",
+      "caption": "伊东 Orange Beach 的海滨树荫",
+      "author": "663highland",
+      "source": "https://commons.wikimedia.org/wiki/File:231007_Ito_Orange_Beach_Ito_Shizuoka_pref_Japan03s3.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 5472,
+      "sourceOriginalHeight": 3648,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 691916,
+      "files": {
+        "640": {
+          "path": "images/itoBeach2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 49794
+        },
+        "1200": {
+          "path": "images/itoBeach2-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 189716
+        }
+      },
+      "downloadedPreviewSha256": "2db2a60db8dc6161d364a561978ece1927147468261c098ed3051487580bb477",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "shimodaStation",
+      "title": "File:Izukyu Shimoda station 2024 Nov 3 various.jpeg",
+      "caption": "伊豆急下田站站台与列车，2024 年摄",
+      "author": "Nesnad",
+      "source": "https://commons.wikimedia.org/wiki/File:Izukyu_Shimoda_station_2024_Nov_3_various.jpeg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1016,
+      "downloadedPreviewBytes": 717052,
+      "files": {
+        "640": {
+          "path": "images/shimodaStation-640.webp",
+          "width": 640,
+          "height": 339,
+          "bytes": 58194
+        },
+        "1200": {
+          "path": "images/shimodaStation-1200.webp",
+          "width": 1200,
+          "height": 635,
+          "bytes": 208598
+        }
+      },
+      "downloadedPreviewSha256": "a14d8b99f3d8d1e444051ce686bce008e074630c335592f2bbdb521ca7152f38",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "shimodaBento",
+      "title": "File:金目鯛の塩焼き弁当（伊豆急下田駅） 02.jpg",
+      "caption": "伊豆急下田站售卖的金目鲷盐烤便当，2015 年摄；店铺供货不保证",
+      "author": "くろふね",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%87%91%E7%9B%AE%E9%AF%9B%E3%81%AE%E5%A1%A9%E7%84%BC%E3%81%8D%E5%BC%81%E5%BD%93%EF%BC%88%E4%BC%8A%E8%B1%86%E6%80%A5%E4%B8%8B%E7%94%B0%E9%A7%85%EF%BC%89_02.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": null,
+      "sourceOriginalHeight": null,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 661742,
+      "files": {
+        "640": {
+          "path": "images/shimodaBento-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 74842
+        },
+        "1200": {
+          "path": "images/shimodaBento-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 204216
+        }
+      },
+      "downloadedPreviewSha256": "fcc96921037b1e257d75bc0f190cb53a7441473ef8af671870ce48246514c0e1",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "shimodaPort",
+      "title": "File:Shimoda Port Shimodau Shizuoka pref Japan02s.jpg",
+      "caption": "下田港航拍；非游客步行视角",
+      "author": "663highland",
+      "source": "https://commons.wikimedia.org/wiki/File:Shimoda_Port_Shimodau_Shizuoka_pref_Japan02s.jpg",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4350,
+      "sourceOriginalHeight": 2900,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 921188,
+      "files": {
+        "640": {
+          "path": "images/shimodaPort-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 57732
+        },
+        "1200": {
+          "path": "images/shimodaPort-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 242634
+        }
+      },
+      "downloadedPreviewSha256": "0483e38a0f86b11f5696006e52a89d2b1f9fb4137e61867db875acc30cf8520b",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "perryRoad",
+      "title": "File:Old Street of Shimoda town - panoramio.jpg",
+      "caption": "下田佩里路沿水街景",
+      "author": "Koichi Shibata",
+      "source": "https://commons.wikimedia.org/wiki/File:Old_Street_of_Shimoda_town_-_panoramio.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4000,
+      "sourceOriginalHeight": 3000,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 902658,
+      "files": {
+        "640": {
+          "path": "images/perryRoad-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 79710
+        },
+        "1200": {
+          "path": "images/perryRoad-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 276652
+        }
+      },
+      "downloadedPreviewSha256": "8772768adf877d42ffbaad019583868c6045922d80354d5f03b25a9213e11865",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "perryRoad2",
+      "title": "File:3 Chome, Shimoda, Shizuoka Prefecture 415-0023, Japan - panoramio.jpg",
+      "caption": "下田佩里路的水道与石墙",
+      "author": "Fumihiko Ueno",
+      "source": "https://commons.wikimedia.org/wiki/File:3_Chome,_Shimoda,_Shizuoka_Prefecture_415-0023,_Japan_-_panoramio.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 3648,
+      "sourceOriginalHeight": 2736,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 849063,
+      "files": {
+        "640": {
+          "path": "images/perryRoad2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 66976
+        },
+        "1200": {
+          "path": "images/perryRoad2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 247992
+        }
+      },
+      "downloadedPreviewSha256": "e694c3d974753c8b58039000fb2d8d9994bfce99b1c01b289284d5a1a7ff1876",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "shimodaPort2",
+      "title": "File:Shimoda Port Shimodau Shizuoka pref Japan01s.jpg",
+      "caption": "下田港航拍；非游客步行视角",
+      "author": "663highland",
+      "source": "https://commons.wikimedia.org/wiki/File:Shimoda_Port_Shimodau_Shizuoka_pref_Japan01s.jpg",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4260,
+      "sourceOriginalHeight": 2840,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1280,
+      "downloadedPreviewBytes": 955114,
+      "files": {
+        "640": {
+          "path": "images/shimodaPort2-640.webp",
+          "width": 640,
+          "height": 427,
+          "bytes": 57696
+        },
+        "1200": {
+          "path": "images/shimodaPort2-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 249986
+        }
+      },
+      "downloadedPreviewSha256": "6eaf16e054761409867845cc892a5e54fbfd32d3a4102de6fa842459e405656d",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    },
+    {
+      "id": "hakoneYumoto2",
+      "title": "File:Hakone-Yumoto-Station-Front-entrance.jpg",
+      "caption": "箱根汤本站入口及到站列车",
+      "author": "Kansai-good",
+      "source": "https://commons.wikimedia.org/wiki/File:Hakone-Yumoto-Station-Front-entrance.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "retrieved": "2026-09-28",
+      "sourceOriginalWidth": 4032,
+      "sourceOriginalHeight": 3024,
+      "downloadedPreviewWidth": 1920,
+      "downloadedPreviewHeight": 1440,
+      "downloadedPreviewBytes": 786945,
+      "files": {
+        "640": {
+          "path": "images/hakoneYumoto2-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 79738
+        },
+        "1200": {
+          "path": "images/hakoneYumoto2-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 248014
+        }
+      },
+      "downloadedPreviewSha256": "8a3d59330cd628661adfe72aa4644a0852a96b0bb17417b7c1d62397f721f05d",
+      "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
+    }
+  ]
+}

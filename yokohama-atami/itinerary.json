@@ -1,0 +1,1770 @@
+{
+  "sources": [
+    {
+      "name": "京急：羽田T3↔横滨票价",
+      "url": "https://www.keikyu.co.jp/ride/ticket/pdf/KK16.pdf"
+    },
+    {
+      "name": "JR东日本：时刻及票价查询",
+      "url": "https://www.jreast.co.jp/en/"
+    },
+    {
+      "name": "江之电：车站与时刻",
+      "url": "https://www.enoden.co.jp/train/station/shichirigahama/time-table/"
+    },
+    {
+      "name": "镰仓观光协会：七里滨海岸",
+      "url": "https://www.trip-kamakura.com/facility/detail.php?id=77"
+    },
+    {
+      "name": "逗子观光协会：逗子海岸",
+      "url": "https://www.zushitrip.com/spot/detail_2.html"
+    },
+    {
+      "name": "伊豆急：普通运价",
+      "url": "https://www.izukyu.co.jp/fares/"
+    },
+    {
+      "name": "伊豆急：IC适用",
+      "url": "https://www.izukyu.co.jp/train/suica.php"
+    },
+    {
+      "name": "伊豆急：踊り子特急费",
+      "url": "https://www.izukyu.co.jp/fares/express.php"
+    },
+    {
+      "name": "热海观光协会：Sun Beach交通",
+      "url": "https://www.ataminews.gr.jp/spot/119/"
+    },
+    {
+      "name": "东横INN热海站前",
+      "url": "https://www.toyoko-inn.com/search/detail/00166/"
+    },
+    {
+      "name": "下田观光协会：佩里路",
+      "url": "https://shimoda-city.com/en/spots/5"
+    },
+    {
+      "name": "下田观光协会：みなと通り",
+      "url": "https://www.shimoda-city.info/kanko/minatostreet"
+    },
+    {
+      "name": "下田观光协会：金目亭",
+      "url": "https://www.shimoda-city.info/eat/3012"
+    },
+    {
+      "name": "箱根登山电车：运价",
+      "url": "https://www.hakonenavi.jp/hakone-tozan/"
+    },
+    {
+      "name": "箱根汤本站交通",
+      "url": "https://www.hakonenavi.jp/transportation/station/hakone-yumoto/"
+    },
+    {
+      "name": "东急东横线线路和票价",
+      "url": "https://www.tokyu.co.jp/railway/ticket/fares/"
+    },
+    {
+      "name": "东急线ワンデーパス常规票价与购买",
+      "url": "https://www.q-skip.tokyu.co.jp/tickets/4"
+    },
+    {
+      "name": "东急线ワンデーパス范围与售票机",
+      "url": "https://www.tokyu.co.jp/railway/ticket/value-ticket/oneday-pass/"
+    },
+    {
+      "name": "东京Metro票价表",
+      "url": "https://www.tokyometro.jp/info/files/20260414_jp.pdf"
+    },
+    {
+      "name": "JR东日本2026年运价改订",
+      "url": "https://www.jreast.co.jp/2026unchin-kaitei/"
+    },
+    {
+      "name": "路线查询：樱木町→新桥成人运价",
+      "url": "https://www.jorudan.co.jp/norikae/route/%E6%A1%9C%E6%9C%A8%E7%94%BA_%E6%96%B0%E6%A9%8B.html"
+    },
+    {
+      "name": "路线查询：东京→樱木町成人运价",
+      "url": "https://ekitan.com/transit/fare/sf-2590/st-2186"
+    },
+    {
+      "name": "路线查询：樱木町↔横滨成人运价",
+      "url": "https://ekitan.com/transit/fare/sf-2186/st-3260"
+    },
+    {
+      "name": "东急东横线方向与车站",
+      "url": "https://www.tokyu.co.jp/railway/ty/"
+    },
+    {
+      "name": "东京观光局自由之丘区域",
+      "url": "https://www.gotokyo.org/en/destinations/southern-tokyo/jiyugaoka/index.html"
+    },
+    {
+      "name": "JR东日本2026运价与樱木町→镰仓线路查询",
+      "url": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf"
+    },
+    {
+      "name": "江之电七里滨站间票价表",
+      "url": "https://www.enoden.co.jp/sc/train/station/shichirigahama/"
+    },
+    {
+      "name": "江之电のりおりくん一日券",
+      "url": "https://www.enoden.co.jp/tourism/ticket/noriorikun/"
+    },
+    {
+      "name": "港未来线马车道↔元町中华街票价",
+      "url": "https://www.mm21railway.co.jp/station/basyamichi/fare.html"
+    }
+  ],
+  "tickets": [
+    {
+      "item": "羽田 T3 ↔ 京急横滨",
+      "fare": "纸 370 / IC 363 円·单程成人",
+      "buy": "京急售票机购普通票或交通IC；其他航站楼按实际站名重查。",
+      "source": "https://www.keikyu.co.jp/ride/ticket/pdf/KK16.pdf"
+    },
+    {
+      "item": "樱木町 ↔ 镰仓 JR 全程",
+      "fare": "纸票／IC均 440 円·单程成人",
+      "buy": "横滨站内换横须贺线；一张全程票包含樱木町↔横滨接驳，往返880円。",
+      "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf"
+    },
+    {
+      "item": "江之电既定三段",
+      "fare": "镰仓→由比滨200＋由比滨→七里滨220＋七里滨→镰仓260＝680 円·成人",
+      "buy": "全站售票机购普通票或交通IC；只坐这三段时比800円一日券省120円。",
+      "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/"
+    },
+    {
+      "item": "港未来线 马车道 ↔ 元町中华街",
+      "fare": "成人纸 200 / IC 193 円·单程",
+      "buy": "D6主线往返纸400／IC386円；东急一日券不覆盖港未来线。",
+      "source": "https://www.mm21railway.co.jp/station/basyamichi/fare.html"
+    },
+    {
+      "item": "樱木町 → 新桥（横滨站内换乘）",
+      "fare": "纸 530 / IC 528 円·单程成人",
+      "buy": "一张JR全程票；不可把樱木町→横滨接驳再另计。票价为2026路线查询值。",
+      "source": "https://www.jorudan.co.jp/norikae/route/%E6%A1%9C%E6%9C%A8%E7%94%BA_%E6%96%B0%E6%A9%8B.html"
+    },
+    {
+      "item": "东京 → 樱木町",
+      "fare": "纸 620 / IC 616 円·单程成人",
+      "buy": "JR普通基础票；京滨东北・根岸线选能到樱木町的南行列车。票价为2026路线查询值。",
+      "source": "https://ekitan.com/transit/fare/sf-2590/st-2186"
+    },
+    {
+      "item": "东京东急线ワンデーパス",
+      "fare": "磁票常规 780 円·成人当日",
+      "buy": "东急各站自动售票机购买磁票，常规始发至22:30可购；覆盖D5东急线各段，不含樱木町↔横滨JR接驳。Q SKIP线上促销价另以当日为准。",
+      "source": "https://www.tokyu.co.jp/railway/ticket/value-ticket/oneday-pass/"
+    },
+    {
+      "item": "樱木町 ↔ 横滨 JR 接驳",
+      "fare": "纸 160 / IC 155 円·单程成人",
+      "buy": "D5东横线日往返各一程；不含在东急一日券里。2026路线查询价。",
+      "source": "https://ekitan.com/transit/fare/sf-2186/st-3260"
+    },
+    {
+      "item": "热海 ↔ 伊东 · 普通",
+      "fare": "纸 350 / IC 341 円·单程成人",
+      "buy": "热海站售票机或交通IC；D8选伊东时才计往返纸票700円。踊り子特急另收费。",
+      "source": "https://www.izukyu.co.jp/fares/"
+    },
+    {
+      "item": "热海 ↔ 伊豆急下田 · 普通",
+      "fare": "纸 2,210 / IC 2,197 円·单程成人",
+      "buy": "跨JR伊东线／伊豆急普通票可购纸票或互通IC；D9选下田时才计往返纸票4,420円。",
+      "source": "https://www.izukyu.co.jp/fares/"
+    },
+    {
+      "item": "小田原 ↔ 箱根汤本",
+      "fare": "360 円·单程成人",
+      "buy": "箱根登山电车普通票，往返720円；D9选箱根时才计入，不用买1,580円全线日票。",
+      "source": "https://www.hakonenavi.jp/hakone-tozan/"
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "area": "transfer",
+      "label": "上海 → 横滨",
+      "title": "到达羽田，入住横滨",
+      "summary": "假设直飞羽田且落地后仍有铁路可搭。夜到只办交通、吃饭和入住；凌晨到达不假设酒店可免费提前入住。",
+      "stay": "横滨：樱木町东口／关内／马车道平地双人房，待订",
+      "food": "机场或酒店附近简餐；不追第一晚景点。",
+      "rain": "航班晚点时先查京急末班及酒店入住，取消散步。",
+      "activities": [
+        {
+          "title": "羽田T3 → 京急横滨",
+          "description": "入境后找京急站，选经横滨的机场线车。某些车在京急蒲田换乘，按车头和站台提示。",
+          "routes": [
+            {
+              "line": "京急空港线 → 京急本线",
+              "direction": "横浜・金沢文庫方面",
+              "from": "羽田空港第3ターミナル駅",
+              "to": "京急横浜駅",
+              "duration": "约 25–35 分钟，另加候车",
+              "note": "只适用T3；其他航站楼改实际站。",
+              "source": "https://www.keikyu.co.jp/ride/ticket/pdf/KK16.pdf",
+              "transfer": "直通或京急蒲田换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票 370 円／IC 363 円；两人纸票 740 円",
+                "buy": "京急售票机买普通票，或互通IC卡进出闸。",
+                "use": "本票到京急横滨；JR樱木町需另付。",
+                "source": "https://www.keikyu.co.jp/ride/ticket/pdf/KK16.pdf"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "航班落地后"
+        },
+        {
+          "title": "横滨站换 JR 到樱木町",
+          "description": "京急与JR不同闸口，换乘后坐京滨东北・根岸线往樱木町／大船方向一站。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "京急横浜駅",
+              "to": "JR横浜駅",
+              "duration": "站内约 5–10 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "桜木町・磯子・大船方面",
+              "from": "JR横浜駅",
+              "to": "JR桜木町駅",
+              "duration": "约 4–6 分钟",
+              "note": "成人纸票160円／IC155円；京急与JR不同闸，须另购此段。",
+              "source": "https://ekitan.com/transit/fare/sf-2186/st-3260",
+              "transfer": "京急横滨站换JR横滨站",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票160円／IC155円",
+                "buy": "JR横滨站售票机买到樱木町的普通票或刷交通IC。",
+                "use": "京急票不覆盖此JR一站。",
+                "source": "https://ekitan.com/transit/fare/sf-2186/st-3260"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "接续后"
+        },
+        {
+          "title": "入住后直接休息",
+          "description": "有体力可在住处附近找饭馆；港边行程留到第二天。",
+          "routes": [],
+          "optional": true,
+          "time": "晚上"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "area": "yokohama",
+      "label": "横滨港",
+      "title": "汽車道与新港，半日留白",
+      "summary": "沿樱木町东口、汽車道、新港公共海边走一小段；红砖仓库只在新港区域顺路看外观。大栈桥不在本日短环线上，想去须另行导航，屋顶有坡道。",
+      "stay": "横滨：同上第 2 晚",
+      "food": "樱木町或新港找营业的小饭馆，不做购物任务。",
+      "rain": "下雨缩短露天步行，在附近饭馆喝茶休息。",
+      "activities": [
+        {
+          "title": "樱木町 → 汽車道",
+          "description": "樱木町东口到旧轨道海边，按喜欢的位置停。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "JR桜木町駅 東口",
+              "to": "汽車道 横浜",
+              "duration": "约 8–12 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "早餐后"
+        },
+        {
+          "title": "汽車道 → 新港海边",
+          "description": "沿公共滨水慢走，红砖仓库路过可从外面看一眼，不入馆、不购物。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "汽車道 横浜",
+              "to": "新港中央広場 横浜",
+              "duration": "约 10–15 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "午饭前后"
+        },
+        {
+          "title": "回酒店休息",
+          "description": "原路返樱木町；不把山下公园塞到同一天。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "新港中央広場 横浜",
+              "to": "JR桜木町駅 東口",
+              "duration": "约 15–20 分钟",
+              "note": "如果走累，可按地图选短程出租车。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "随时"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "area": "yokohama",
+      "label": "镰仓海岸",
+      "title": "由比滨与七里滨，坐电车看海",
+      "summary": "横滨基地安排镰仓海岸日。两处海滩之间坐江之电，不沿公路远走；若累了只去七里滨。",
+      "stay": "横滨：同上第 3 晚",
+      "food": "镰仓站附近午饭，海边找坐处。",
+      "rain": "风雨大就保留车站附近吃饭，回横滨休息。",
+      "activities": [
+        {
+          "title": "横滨 → 镰仓",
+          "description": "先到横滨站。JR横须贺线选逗子／久里滨方向，镰仓站下车；不用去寺社。",
+          "routes": [
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "横浜・東京方面",
+              "from": "桜木町駅",
+              "to": "横浜駅",
+              "duration": "约 3 分钟",
+              "note": "已含在樱木町→镰仓全程JR票内，不另付接驳票。",
+              "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "与樱木町→镰仓440円全程票同一张，不另买票",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf"
+              }
+            },
+            {
+              "line": "JR 横须贺线",
+              "direction": "逗子・久里浜方面",
+              "from": "横浜駅",
+              "to": "鎌倉駅",
+              "duration": "约 25–35 分钟",
+              "note": "横滨站内换普通车直达镰仓，不出闸。",
+              "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf",
+              "transfer": "横浜駅站内换JR横须贺线",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人樱木町↔镰仓JR全程单程纸票／IC均440円；往返880円",
+                "buy": "樱木町站一次购到镰仓的JR全程票，或用同一张IC进出闸。",
+                "use": "横滨站内换JR横须贺线，不出闸、不把樱木町→横滨一站另付。",
+                "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "早餐后"
+        },
+        {
+          "title": "镰仓 → 由比滨",
+          "description": "镰仓站旁午饭后进江之电站，藤泽方向到由比滨；海边短停。",
+          "routes": [
+            {
+              "line": "江之岛电铁",
+              "direction": "藤沢方面",
+              "from": "鎌倉駅",
+              "to": "由比ヶ浜駅",
+              "duration": "约 4–6 分钟",
+              "note": "普通票成人200円，沿途不下车打卡。",
+              "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "江之电成人本段普通票 200 円；三段合计680円",
+                "buy": "江之电全站自动售票机购普通票，或按运营方规则使用互通IC。",
+                "use": "只坐既定三段时普通票合计680円，比800円一日券省120円。",
+                "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "由比ヶ浜駅",
+              "to": "由比ヶ浜海岸",
+              "duration": "约 6–10 分钟",
+              "note": "走平缓街道，到海边就休息。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "午饭后"
+        },
+        {
+          "title": "由比滨 → 七里滨",
+          "description": "回由比滨站坐江之电藤泽方向至七里滨。站到海滩官方约2分钟，不另爬坡寻找餐厅。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "由比ヶ浜海岸",
+              "to": "由比ヶ浜駅",
+              "duration": "约 6–10 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "江之岛电铁",
+              "direction": "藤沢方面",
+              "from": "由比ヶ浜駅",
+              "to": "七里ヶ浜駅",
+              "duration": "约 10–15 分钟",
+              "note": "普通票成人220円；不要沿海边公路走到七里滨。",
+              "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "江之电成人本段普通票 220 円；三段合计680円",
+                "buy": "江之电全站自动售票机购普通票，或按运营方规则使用互通IC。",
+                "use": "只坐既定三段时普通票合计680円，比800円一日券省120円。",
+                "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "七里ヶ浜駅",
+              "to": "七里ヶ浜海岸",
+              "duration": "约 2–4 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "下午"
+        },
+        {
+          "title": "七里滨 → 横滨",
+          "description": "回七里滨站坐江之电镰仓方向，镰仓站换JR横须贺线返横滨。",
+          "routes": [
+            {
+              "line": "江之岛电铁",
+              "direction": "鎌倉方面",
+              "from": "七里ヶ浜駅",
+              "to": "鎌倉駅",
+              "duration": "约 15–20 分钟",
+              "note": "普通票成人260円，傍晚海风大可提前返程。",
+              "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "江之电成人本段普通票 260 円；三段合计680円",
+                "buy": "江之电全站自动售票机购普通票，或按运营方规则使用互通IC。",
+                "use": "只坐既定三段时普通票合计680円，比800円一日券省120円。",
+                "source": "https://www.enoden.co.jp/sc/train/station/shichirigahama/"
+              }
+            },
+            {
+              "line": "JR 横须贺线",
+              "direction": "横浜・東京方面",
+              "from": "鎌倉駅",
+              "to": "横浜駅",
+              "duration": "约 25–35 分钟",
+              "note": "镰仓→樱木町全程JR票成人440円，横滨站内换乘不出闸。",
+              "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人樱木町↔镰仓JR全程单程纸票／IC均440円；往返880円",
+                "buy": "樱木町站一次购到镰仓的JR全程票，或用同一张IC进出闸。",
+                "use": "横滨站内换JR横须贺线，不出闸、不把樱木町→横滨一站另付。",
+                "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf"
+              }
+            },
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "桜木町・大船方面",
+              "from": "横浜駅",
+              "to": "桜木町駅",
+              "duration": "约 3 分钟",
+              "note": "已含在镰仓→樱木町全程JR票内，不另付接驳票。",
+              "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "与镰仓→樱木町440円全程票同一张，不另买票",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/2026unchin-kaitei/assets/pdf/pamphlet.pdf"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "体力允许时"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "area": "yokohama",
+      "label": "东京日归 ①",
+      "title": "银座、有乐町与东京站夜景",
+      "summary": "横滨当天往返东京，只在银座、有乐町、日比谷和丸之内相邻街区活动。站内／地下通道可休息，不安排购物。",
+      "stay": "横滨：同上第 4 晚",
+      "food": "银座或有乐町找不用预约的午饭；晚餐可回横滨吃。",
+      "rain": "下雨缩成银座吃饭＋东京站丸之内站前短停，较早回横滨。",
+      "activities": [
+        {
+          "title": "樱木町 → 新桥 → 银座",
+          "description": "从樱木町坐JR京滨东北・根岸线北行到横滨，站内换JR东海道线东京方面至新桥。全程同一张JR基础票，不在横滨分买重复计费。出站后步行至银座南侧。",
+          "routes": [
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "横浜・東京方面",
+              "from": "桜木町駅",
+              "to": "横浜駅",
+              "duration": "约 3 分钟",
+              "note": "此段已包含在樱木町→新桥全程JR票价内。",
+              "source": "https://www.jreast.co.jp/2026unchin-kaitei/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "与樱木町→新桥全程同一张票，勿另买横滨接驳票。",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/2026unchin-kaitei/"
+              }
+            },
+            {
+              "line": "JR 东海道本线 · 普通／快速",
+              "direction": "品川・東京方面",
+              "from": "横浜駅",
+              "to": "新橋駅",
+              "duration": "约 20–25 分钟",
+              "note": "横滨站内换乘，不出闸。樱木町→新桥查询价成人纸票530円／IC528円。",
+              "source": "https://www.jorudan.co.jp/norikae/route/%E6%A1%9C%E6%9C%A8%E7%94%BA_%E6%96%B0%E6%A9%8B.html",
+              "transfer": "横浜駅同站换JR东海道线",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人樱木町→新桥全程纸票530円／IC528円",
+                "buy": "JR自动售票机输入终点新桥买全程票，或同一IC从樱木町进、新桥出。",
+                "use": "横滨站内直接换乘JR东海道线，不拆成两张票。",
+                "source": "https://www.jorudan.co.jp/norikae/route/%E6%A1%9C%E6%9C%A8%E7%94%BA_%E6%96%B0%E6%A9%8B.html"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "新橋駅 銀座口",
+              "to": "銀座八丁目",
+              "duration": "约 8–12 分钟",
+              "note": "若疲劳，Metro银座线新桥→银座一站另成人纸票180円／IC178円。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "早餐后"
+        },
+        {
+          "title": "银座 → 有乐町",
+          "description": "银座街区慢走，饿了找饭馆。走累可直接在银座站附近坐车去日比谷／东京站，别强求全程步行。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "銀座四丁目",
+              "to": "有楽町駅",
+              "duration": "约 10–15 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "午饭前后"
+        },
+        {
+          "title": "有乐町 → 日比谷",
+          "description": "日比谷公园边或车站附近坐坐；不入馆，不做购物路线。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "有楽町駅",
+              "to": "日比谷駅",
+              "duration": "约 6–9 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "下午"
+        },
+        {
+          "title": "日比谷 → 丸之内东京站",
+          "description": "默认从有乐町附近步行约15–20分钟至东京站；若累了，替换为有乐町JR山手线内回り往东京／上野方向一站。白天京滨东北快速可能通过有乐町，不误乘。夜景取决于当天日落。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "日比谷駅",
+              "to": "有楽町駅",
+              "duration": "约 6–9 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "有楽町駅",
+              "to": "東京駅 丸の内駅前広場",
+              "duration": "约 15–20 分钟",
+              "note": "默认步行；若改坐下列山手线，不再走此段。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "JR 山手线 · 内回り",
+              "direction": "東京・上野方面",
+              "from": "有楽町駅",
+              "to": "東京駅",
+              "duration": "约 2 分钟",
+              "note": "可选替代上段步行，普通JR车费另付；请填预算其他市内交通。",
+              "source": "https://www.jreast.co.jp/2026unchin-kaitei/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/2026unchin-kaitei/"
+              },
+              "optional": true
+            }
+          ],
+          "optional": false,
+          "time": "傍晚"
+        },
+        {
+          "title": "东京站 → 樱木町",
+          "description": "JR京滨东北・根岸线南行，选显示桜木町／磯子／大船的各站停靠列车可直达樱木町；若终到蒲田、鹤见、东神奈川或横滨，需换后车。",
+          "routes": [
+            {
+              "line": "JR 京滨东北・根岸线 · 各站停靠",
+              "direction": "横浜・桜木町・磯子・大船方面",
+              "from": "東京駅",
+              "to": "桜木町駅",
+              "duration": "约 40–50 分钟",
+              "note": "东京→樱木町查询价成人纸票620円／IC616円；京滨东北直达车比东海道线慢但少换乘。",
+              "source": "https://ekitan.com/transit/fare/sf-2590/st-2186",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人东京→樱木町纸票620円／IC616円",
+                "buy": "东京站JR售票机买到樱木町，或同一IC进出闸。",
+                "use": "要选樱木町及以后终到的各站停靠列车。",
+                "source": "https://ekitan.com/transit/fare/sf-2590/st-2186"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "晚饭前后"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "area": "yokohama",
+      "label": "东京日归 ②",
+      "title": "自由之丘与中目黑慢逛",
+      "summary": "依东急东横线坐车串联两处小街区。代官山仅近站短停可选，中目黑到代官山坐一站车，避免上坡硬走。",
+      "stay": "横滨：同上第 5 晚",
+      "food": "自由之丘午餐、中目黑喝茶；商店只作路过街景。",
+      "rain": "雨天留一处吃饭与咖啡，其余车站直接返横滨。",
+      "activities": [
+        {
+          "title": "樱木町 → 横滨 → 自由之丘",
+          "description": "先JR根岸线北行一站至横滨；出JR闸进入东急东横线，往涩谷方向，选停自由之丘列车。东急线一日券常规价成人780円，D5所选东急车段均覆盖，JR接驳另计。",
+          "routes": [
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "横浜・東京方面",
+              "from": "桜木町駅",
+              "to": "横浜駅",
+              "duration": "约 3 分钟",
+              "note": "JR接驳查询价成人纸票160円／IC155円，往返各算一次。",
+              "source": "https://ekitan.com/transit/fare/sf-2186/st-3260",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票160円／IC155円",
+                "buy": "JR售票机或同一卡IC进出闸。",
+                "use": "东急一日券不覆盖JR接驳。",
+                "source": "https://ekitan.com/transit/fare/sf-2186/st-3260"
+              }
+            },
+            {
+              "line": "东急东横线",
+              "direction": "渋谷方面",
+              "from": "横浜駅",
+              "to": "自由が丘駅",
+              "duration": "约 25–35 分钟",
+              "note": "单买成人纸票310円／IC309円；本页预算采用成人东急一日券780円。",
+              "source": "https://www.tokyu.co.jp/railway/ticket/value-ticket/oneday-pass/",
+              "transfer": "横滨站JR出闸转东急站",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "东急单买纸票310円／IC309円；一日券常规780円覆盖本日东急各段",
+                "buy": "东急线各站自动售票机可购磁票，通常始发至22:30；Q SKIP线上电子券另有规则。",
+                "use": "仅东急线可用；不含JR樱木町接驳，也不假定任意Suica都可加载。",
+                "source": "https://www.tokyu.co.jp/railway/ticket/value-ticket/oneday-pass/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "早餐后"
+        },
+        {
+          "title": "自由之丘街区",
+          "description": "在南口玛丽克莱尔街和绿道附近吃午饭、坐下来喝茶；不因打卡商业街绕远。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "自由が丘駅 南口",
+              "to": "自由が丘駅 南口绿道",
+              "duration": "约 5–10 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "中午"
+        },
+        {
+          "title": "自由之丘 → 中目黑",
+          "description": "东急东横线继续往涩谷方向到中目黑，选停靠车。目黑川附近短坐，不做长距离沿河步行。",
+          "routes": [
+            {
+              "line": "东急东横线",
+              "direction": "中目黒・渋谷方面",
+              "from": "自由が丘駅",
+              "to": "中目黒駅",
+              "duration": "约 10–15 分钟",
+              "note": "单买成人180円；东急一日券已覆盖，不另加同段票。",
+              "source": "https://www.tokyu.co.jp/railway/ticket/fares/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "单买成人180円；东急一日券已覆盖",
+                "buy": "若已买一日券直接按券乘车，否则售票机买到中目黑或刷IC。",
+                "use": "按站台屏选停中目黑车。",
+                "source": "https://www.tokyu.co.jp/railway/ticket/fares/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "下午"
+        },
+        {
+          "title": "代官山近站短段（可省）",
+          "description": "愿意再看一条街时，从中目黑坐东横线往涩谷方向一站到代官山；站旁短停后坐各站停车一站回中目黑接返程，不从中目黑爬坡走去。",
+          "routes": [
+            {
+              "line": "东急东横线 · 各站停靠",
+              "direction": "渋谷方面",
+              "from": "中目黒駅",
+              "to": "代官山駅",
+              "duration": "约 2 分钟",
+              "note": "一站单买成人140円；东急一日券已覆盖。急行／特急不停代官山。",
+              "source": "https://www.tokyu.co.jp/railway/ticket/fares/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "单买成人140円；一日券已覆盖",
+                "buy": "已买东急一日券时不另付；否则在站内售票机购普通票或刷IC。",
+                "use": "必须坐停代官山的各站停车。",
+                "source": "https://www.tokyu.co.jp/railway/ticket/fares/"
+              }
+            },
+            {
+              "line": "东急东横线 · 各站停靠",
+              "direction": "横浜方面",
+              "from": "代官山駅",
+              "to": "中目黒駅",
+              "duration": "约 2 分钟",
+              "note": "返回中目黑再接主返程；东急一日券已覆盖这一段，若未买券应单买成人140円。",
+              "source": "https://www.tokyu.co.jp/railway/ticket/fares/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "单买成人140円；东急一日券已覆盖",
+                "buy": "代官山站售票机买到中目黑，或凭已购东急一日券直接乘。",
+                "use": "选各站停车，下车在中目黑。",
+                "source": "https://www.tokyu.co.jp/railway/ticket/fares/"
+              }
+            }
+          ],
+          "optional": true,
+          "time": "还有体力时"
+        },
+        {
+          "title": "中目黑 → 横滨",
+          "description": "在东急东横线选横滨・元町中华街方向车回横滨，避开经日吉走新横滨／海老名支线的车。若先去代官山，已坐回中目黑再从这里出发。",
+          "routes": [
+            {
+              "line": "东急东横线",
+              "direction": "横浜・元町・中華街方面",
+              "from": "中目黒駅",
+              "to": "横浜駅",
+              "duration": "约 30–40 分钟",
+              "note": "单买成人纸票310円／IC309円；东急一日券已覆盖。",
+              "source": "https://www.tokyu.co.jp/railway/ticket/fares/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "单买中目黑→横滨纸票310円／IC309円；一日券已覆盖",
+                "buy": "持东急一日券直接乘，未购券买到横滨的普通票。",
+                "use": "看终点横滨或元町中华街，避开相铁新横滨线分支。",
+                "source": "https://www.tokyu.co.jp/railway/ticket/fares/"
+              }
+            },
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "桜木町・磯子・大船方面",
+              "from": "横浜駅",
+              "to": "桜木町駅",
+              "duration": "约 3 分钟",
+              "note": "出东急闸换JR；成人纸票160円／IC155円，不含在东急一日券内。",
+              "source": "https://ekitan.com/transit/fare/sf-2186/st-3260",
+              "transfer": "东急横滨站换JR横滨站",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票160円／IC155円",
+                "buy": "JR售票机或同一卡IC进出闸。",
+                "use": "两家公司不同闸口，先从东急出站。",
+                "source": "https://ekitan.com/transit/fare/sf-2186/st-3260"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "下午后段"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "area": "yokohama",
+      "label": "横滨或逗子",
+      "title": "山下公园、中华街；逗子可替换",
+      "summary": "主线只做山下公园与中华街半日，下午休息。若更想再看海，可用逗子海岸半日整段替换，不要两套同日叠加。",
+      "stay": "横滨：同上第 6 晚",
+      "food": "中华街挑一家小饭馆；不安排购物。",
+      "rain": "雨天可只吃午饭，下午回酒店。",
+      "activities": [
+        {
+          "title": "住处 → 山下公园",
+          "description": "从樱木町一带选港未来线元町・中华街站接近公园，具体接站按住处选择；公园里挑海边座位。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "JR桜木町駅 東口",
+              "to": "馬車道駅",
+              "duration": "约 8–11 分钟",
+              "note": "本段为樱木町住处示例；若住关内／马车道，直接选最近车站。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "横滨高速铁道 港未来线",
+              "direction": "元町・中華街方面",
+              "from": "馬車道駅",
+              "to": "元町・中華街駅",
+              "duration": "约 6–8 分钟",
+              "note": "成人纸票200円／IC193円；若住关内可按实际住处改起点。",
+              "source": "https://www.mm21railway.co.jp/station/basyamichi/fare.html",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票200円／IC193円",
+                "buy": "马车道站售票机购普通票或刷交通IC。",
+                "use": "东急一日券不覆盖横滨高速铁道港未来线。",
+                "source": "https://www.mm21railway.co.jp/station/basyamichi/fare.html"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "元町・中華街駅",
+              "to": "山下公園 横浜",
+              "duration": "约 4–7 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "早餐后"
+        },
+        {
+          "title": "山下公园 → 中华街",
+          "description": "从海边步行至中华街吃午饭，午后回住处休息。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "山下公園 横浜",
+              "to": "横浜中華街",
+              "duration": "约 8–12 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "横浜中華街",
+              "to": "元町・中華街駅",
+              "duration": "约 4–7 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "横滨高速铁道 港未来线",
+              "direction": "横浜方面",
+              "from": "元町・中華街駅",
+              "to": "馬車道駅",
+              "duration": "约 6–8 分钟",
+              "note": "成人纸票200円／IC193円；返樱木町住处再步行约8–11分钟。",
+              "source": "https://www.mm21railway.co.jp/station/basyamichi/fare.html",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票200円／IC193円，往返纸票400円／IC386円",
+                "buy": "元町中华街站售票机买普通票或刷交通IC。",
+                "use": "港未来线与东急线虽直通运行，运营方及票价范围不同。",
+                "source": "https://www.mm21railway.co.jp/station/basyamichi/fare.html"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "馬車道駅",
+              "to": "JR桜木町駅 東口",
+              "duration": "约 8–11 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "中午"
+        },
+        {
+          "title": "可选替换：逗子海岸半日",
+          "description": "选择逗子时取消本日山下公园＋中华街安排。从樱木町坐JR一站到横滨，站内换横须贺线直达逗子；东口到海岸官方约15分钟。预算1,100円/人是樱木町↔逗子整段规划占位，已含横滨接驳，不另加160円。叶山需巴士，本方案不再延伸。江之岛仅作为另日片濑东浜远望备选，不上岛。",
+          "routes": [
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "横浜・東京方面",
+              "from": "桜木町駅",
+              "to": "横浜駅",
+              "duration": "约 3 分钟",
+              "note": "买樱木町→逗子一张JR全程票，横滨站内换乘不出闸；预算1,100円/人含本段，非额外票。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            },
+            {
+              "line": "JR 横须贺线",
+              "direction": "逗子・久里浜方面",
+              "from": "横浜駅",
+              "to": "逗子駅",
+              "duration": "约 30–40 分钟",
+              "note": "横滨站内换车，不出闸；与山下公园主线二选一，不当天叠加。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "逗子駅 東口",
+              "to": "逗子海岸",
+              "duration": "约 15 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "逗子海岸",
+              "to": "逗子駅 東口",
+              "duration": "约 15 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "JR 横须贺线",
+              "direction": "横浜・東京方面",
+              "from": "逗子駅",
+              "to": "横浜駅",
+              "duration": "约 30–40 分钟",
+              "note": "海岸返站步行另计约15分钟；买逗子→樱木町一张全程票。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            },
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "桜木町・大船方面",
+              "from": "横浜駅",
+              "to": "桜木町駅",
+              "duration": "约 3 分钟",
+              "note": "横滨站内换车不出闸；预算逗子整段占位已含这最后一站。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            }
+          ],
+          "optional": true,
+          "time": "替换整段 D6"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "area": "transfer",
+      "label": "横滨 → 热海",
+      "title": "换基地，站前休息；海滨短停可选",
+      "summary": "退房后坐JR普通列车到热海，行李留站旁酒店，近处吃饭。若仍有体力才搭公交到海边短停；热海多坡，不拖箱走海岸。",
+      "stay": "热海：站旁双人房第1晚（例如东横INN热海站前，实际价格待查）",
+      "food": "车站附近吃午饭，下午可只休息。",
+      "rain": "未到入住时间先寄存行李；不在雨天拖箱下坡去海边。",
+      "activities": [
+        {
+          "title": "樱木町 → 横滨 → 热海",
+          "description": "以樱木町住处为例：JR根岸线北行一站到横滨，站内换东海道本线往热海。买樱木町→热海的JR整张普通票，不把第一站另计；选热海行直达，若小田原终到须在小田原换往热海。",
+          "routes": [
+            {
+              "line": "JR 京滨东北・根岸线",
+              "direction": "横浜・東京方面",
+              "from": "桜木町駅",
+              "to": "横浜駅",
+              "duration": "约 3 分钟",
+              "note": "已包含在樱木町→热海JR整张基础票内，横滨站内换乘不出闸。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "同一张樱木町→热海JR全程票，不另买樱木町→横滨接驳。",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            },
+            {
+              "line": "JR 东海道本线 · 普通／快速",
+              "direction": "小田原・熱海方面",
+              "from": "横浜駅",
+              "to": "熱海駅",
+              "duration": "约 1小时20分，以车次为准",
+              "note": "预算2,100円/人是樱木町→热海全段规划占位，非横滨→热海确定票价；乘车日期确认后按JR查询。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "横浜駅站内换乘；熱海行直达或小田原再换",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "退房后"
+        },
+        {
+          "title": "车站附近放行李",
+          "description": "站前连锁候选东横INN官网称离热海站约4分钟、15:00入住、10:00退房、含早餐；沿海低处酒店另比，但不保证廉价连锁。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "熱海駅",
+              "to": "東横INN熱海駅前",
+              "duration": "约 4–6 分钟",
+              "note": "仅为住宿区域示意。海岸返回站区有坡，后续搭巴士。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "到站后"
+        },
+        {
+          "title": "有余力才去海滨短停",
+          "description": "到热海后若房间未准备好或仍有体力，可把行李留酒店，坐巴士到Sun Beach短停，再坐车回热海站。站海之间有坡，不拖箱步行往返。",
+          "routes": [
+            {
+              "line": "东海巴士 · 经サンビーチ的市内线",
+              "direction": "熱海港・紅葉ガ丘方面",
+              "from": "熱海駅 バス乗り場",
+              "to": "サンビーチ バス停",
+              "duration": "约 5 分钟",
+              "note": "公交具体站台和成人票价按当天查询。",
+              "source": "https://www.ataminews.gr.jp/spot/119/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.ataminews.gr.jp/spot/119/"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "サンビーチ バス停",
+              "to": "熱海サンビーチ",
+              "duration": "约 3 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "东海巴士 · 往热海站",
+              "direction": "熱海駅方面",
+              "from": "サンビーチ バス停",
+              "to": "熱海駅",
+              "duration": "约 5–10 分钟",
+              "note": "离开海岸后乘巴士返站，避免上坡步行。",
+              "source": "https://www.ataminews.gr.jp/spot/119/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.ataminews.gr.jp/spot/119/"
+              }
+            }
+          ],
+          "optional": true,
+          "time": "入住前后 · 可省"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "area": "atami",
+      "label": "热海海滨",
+      "title": "热海休息或伊东半日",
+      "summary": "默认在热海海边与低处街道放慢脚步；若天气和体力好，可整段替换为伊东Orange Beach半日。两套路线只选一套。",
+      "stay": "热海：同上第 2 晚",
+      "food": "选热海时到海边或银座低处吃饭；选伊东时在伊东站附近吃午饭。",
+      "rain": "大风雨留热海住处附近休息，不乘跨城列车。",
+      "activities": [
+        {
+          "title": "热海站 → Sun Beach",
+          "description": "热海官方建议往热海港／红叶丘方向公交到サンビーチ，约5分钟车程，再走约3分钟。上车前核对经停站。",
+          "routes": [
+            {
+              "line": "东海巴士 · 经サンビーチ的市内线",
+              "direction": "熱海港・紅葉ガ丘方面",
+              "from": "熱海駅 バス乗り場",
+              "to": "サンビーチ バス停",
+              "duration": "公交约 5 分钟",
+              "note": "具体线路、站台和运价以当天东海巴士及Google Maps为准。",
+              "source": "https://www.ataminews.gr.jp/spot/119/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.ataminews.gr.jp/spot/119/"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "サンビーチ バス停",
+              "to": "熱海サンビーチ",
+              "duration": "约 3 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "早餐后",
+          "branch": "atami",
+          "imageKey": "d8-a1"
+        },
+        {
+          "title": "沙滩与银座低处吃饭",
+          "description": "沿海边选择平缓短段，午饭去热海银座周边；不从海边沿坡步行回站。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "熱海サンビーチ",
+              "to": "熱海銀座商店街",
+              "duration": "约 8–12 分钟",
+              "note": "只是去吃饭，店铺并非购物任务。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "午饭前",
+          "branch": "atami",
+          "imageKey": "d8-a2"
+        },
+        {
+          "title": "坐车返回热海站",
+          "description": "从银座附近查当日往热海站的公交，若等车久或疲劳可坐短程出租车。",
+          "routes": [
+            {
+              "line": "东海巴士 · 往热海站",
+              "direction": "熱海駅方面",
+              "from": "熱海銀座 周边巴士站",
+              "to": "熱海駅",
+              "duration": "约 8–15 分钟",
+              "note": "具体上车站和票价依当天导航；站海之间有明显坡道。",
+              "source": "https://www.ataminews.gr.jp/spot/119/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.ataminews.gr.jp/spot/119/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "下午",
+          "branch": "atami",
+          "imageKey": "d8-a3"
+        },
+        {
+          "title": "热海 → 伊东",
+          "description": "JR伊东线普通列车往伊东方向，约半小时。往返纸票成人700円；不用踊り子特急。",
+          "routes": [
+            {
+              "line": "JR 伊东线 · 普通",
+              "direction": "伊東方面",
+              "from": "熱海駅",
+              "to": "伊東駅",
+              "duration": "约 25–30 分钟",
+              "note": "普通车直达，选车次时看终点站。",
+              "source": "https://www.izukyu.co.jp/fares/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人热海→伊东普通车单程纸票 350 円／IC 341 円；两人纸票 700 円",
+                "buy": "热海站售票机购普通票，或使用支持的互通交通IC。",
+                "use": "普通车不另买特急券；同一卡进出闸。",
+                "source": "https://www.izukyu.co.jp/fares/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "早餐后",
+          "branch": "ito",
+          "imageKey": "d8-a4"
+        },
+        {
+          "title": "伊东站 → 橘子海滩",
+          "description": "从伊东站沿城区低处到海边，短停后原路返站；不另去坡上或温泉。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "伊東駅",
+              "to": "伊東オレンジビーチ",
+              "duration": "约 12–18 分钟",
+              "note": "实际路线和坡度按当天地图调整。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "中午前后",
+          "branch": "ito",
+          "imageKey": "d8-a5"
+        },
+        {
+          "title": "伊东 → 热海",
+          "description": "同一条JR伊东线普通车返热海。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "伊東オレンジビーチ",
+              "to": "伊東駅",
+              "duration": "约 12–18 分钟",
+              "note": "按体力提早返站候车。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "JR 伊东线 · 普通",
+              "direction": "熱海方面",
+              "from": "伊東駅",
+              "to": "熱海駅",
+              "duration": "约 25–30 分钟",
+              "note": "到站后留下午休息。",
+              "source": "https://www.izukyu.co.jp/fares/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人热海→伊东普通车单程纸票 350 円／IC 341 円；两人纸票 700 円",
+                "buy": "热海站售票机购普通票，或使用支持的互通交通IC。",
+                "use": "普通车不另买特急券；同一卡进出闸。",
+                "source": "https://www.izukyu.co.jp/fares/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "午后",
+          "branch": "ito",
+          "imageKey": "d8-a6"
+        }
+      ],
+      "choices": {
+        "atami": "热海海滨休息（默认）",
+        "ito": "伊东 Orange Beach 半日"
+      }
+    },
+    {
+      "n": 9,
+      "area": "atami",
+      "label": "自选远近",
+      "title": "下田／箱根汤本／热海躺平三选一",
+      "summary": "这一日暂不决定目的地，预算先不计跨城车费。之后可选择热海休息、普通列车去下田港边吃金目鲷看佩里路，或仅去箱根汤本站旁短停。三套互斥，不登山。",
+      "stay": "热海：同上第 3 晚",
+      "food": "热海休息就近吃饭；下田可找金目鲷；箱根只在汤本站旁吃饭。",
+      "rain": "大风雨可选择热海休息，不强行跨城。",
+      "activities": [
+        {
+          "title": "热海休息与补给",
+          "description": "睡到自然醒，附近吃饭；若海边天气好，可按D8公交再访，不加新的陡坡线路。",
+          "routes": [],
+          "optional": false,
+          "time": "全天自由",
+          "branch": "rest",
+          "imageKey": "d9-a1"
+        },
+        {
+          "title": "热海 → 伊豆急下田",
+          "description": "先JR伊东线到伊东；按当天车次有直通伊豆急的普通车，也可能在伊东同站换乘。终点伊豆急下田，不误上踊り子特急。",
+          "routes": [
+            {
+              "line": "JR 伊东线 → 伊豆急行线 · 普通",
+              "direction": "伊東・伊豆急下田方面",
+              "from": "熱海駅",
+              "to": "伊豆急下田駅",
+              "duration": "约 1小时45分至2小时15分",
+              "note": "直通列车免换乘；非直通在伊東駅换乘。纸票成人单程2210円、IC 2197円。",
+              "source": "https://www.izukyu.co.jp/fares/",
+              "transfer": "直通或伊東駅换乘",
+              "departure": "建议约09:00，按当天时刻",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人热海→伊豆急下田普通车单程纸票 2,210 円／IC 2,197 円；两人纸票 4,420 円",
+                "buy": "热海站售票机或窗口购跨两公司普通票；伊豆急全16站可用互通IC卡。",
+                "use": "普通车不加踊り子特急费；IC用同一卡进出闸且余额充足。",
+                "source": "https://www.izukyu.co.jp/fares/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "上午",
+          "branch": "shimoda",
+          "imageKey": "d9-a2"
+        },
+        {
+          "title": "金目鲷午饭与港边",
+          "description": "先在站附近吃饭，再沿みなと通り看下田港。金目亭在港东鱼市场，只有营业且愿意多走时才去。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "伊豆急下田駅",
+              "to": "下田 みなと通り",
+              "duration": "约 12–18 分钟",
+              "note": "若站旁已经吃饭，直接往港西侧走即可。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "午前至中午",
+          "branch": "shimoda",
+          "imageKey": "d9-a3"
+        },
+        {
+          "title": "港边 → 佩里路",
+          "description": "沿低处街道去佩里路看看水边街景；不以历史景点巡游为目标，也不入寺庙。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "下田 みなと通り",
+              "to": "ペリーロード 下田",
+              "duration": "约 12–20 分钟",
+              "note": "两处相对位置按当天地图选最短平地路线。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            }
+          ],
+          "optional": false,
+          "time": "下午前段",
+          "branch": "shimoda",
+          "imageKey": "d9-a4"
+        },
+        {
+          "title": "回站与返热海",
+          "description": "佩里路到站官方约15分钟；建议16–17时左右返热海，以当天普通车时刻为准。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "ペリーロード 下田",
+              "to": "伊豆急下田駅",
+              "duration": "约 15 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "伊豆急行线 → JR 伊东线 · 普通",
+              "direction": "伊東・熱海方面",
+              "from": "伊豆急下田駅",
+              "to": "熱海駅",
+              "duration": "约 1小时45分至2小时15分",
+              "note": "直通或伊东换乘，返程仍为普通车票；当日核最后接续。",
+              "source": "https://www.izukyu.co.jp/fares/",
+              "transfer": "直通或伊東駅换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人热海→伊豆急下田普通车单程纸票 2,210 円／IC 2,197 円；两人纸票 4,420 円",
+                "buy": "热海站售票机或窗口购跨两公司普通票；伊豆急全16站可用互通IC卡。",
+                "use": "普通车不加踊り子特急费；IC用同一卡进出闸且余额充足。",
+                "source": "https://www.izukyu.co.jp/fares/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "下午",
+          "branch": "shimoda",
+          "imageKey": "d9-a5"
+        },
+        {
+          "title": "可选替换：仅箱根汤本站附近",
+          "description": "先JR东海道本线往东京方向至小田原，换箱根登山电车往箱根汤本。车站附近短停后原路返回，别乘往强罗方向上山车。",
+          "routes": [
+            {
+              "line": "JR 东海道本线 · 普通",
+              "direction": "小田原・横浜方面",
+              "from": "熱海駅",
+              "to": "小田原駅",
+              "duration": "约 20–25 分钟",
+              "note": "JR运价按出行日查询；预算中为规划占位。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            },
+            {
+              "line": "箱根登山电车",
+              "direction": "箱根湯本方面",
+              "from": "小田原駅",
+              "to": "箱根湯本駅",
+              "duration": "约 15–20 分钟",
+              "note": "成人单程360円。仅汤本站短游不建议1580円全线日票。",
+              "source": "https://www.hakonenavi.jp/hakone-tozan/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人纸票单程 360 円，往返 720 円",
+                "buy": "小田原站售票机购普通票或按官方规则用IC。",
+                "use": "返程从箱根汤本站乘往小田原方向车，勿乘3号站台往强罗。",
+                "source": "https://www.hakonenavi.jp/hakone-tozan/"
+              }
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "箱根湯本駅",
+              "to": "箱根湯本駅前 商店街入口",
+              "duration": "约 2–5 分钟",
+              "note": "只在站旁低处短停，不上坡寻景点。",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "箱根湯本駅前 商店街入口",
+              "to": "箱根湯本駅",
+              "duration": "约 2–5 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "箱根登山电车",
+              "direction": "小田原方面",
+              "from": "箱根湯本駅",
+              "to": "小田原駅",
+              "duration": "约 15–20 分钟",
+              "note": "返程乘箱根汤本站2号站台往小田原方向；成人普通票单程360円。",
+              "source": "https://www.hakonenavi.jp/hakone-tozan/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "成人单程360円",
+                "buy": "箱根汤本站售票机买到小田原的普通票，或按官方规则使用IC。",
+                "use": "勿乘3号站台往强罗的上山车。",
+                "source": "https://www.hakonenavi.jp/hakone-tozan/"
+              }
+            },
+            {
+              "line": "JR 东海道本线 · 普通",
+              "direction": "熱海方面",
+              "from": "小田原駅",
+              "to": "熱海駅",
+              "duration": "约 20–25 分钟",
+              "note": "小田原站换JR热海方向普通车；预算中热海↔小田原价仍是待核估算。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "小田原站换JR",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            }
+          ],
+          "optional": true,
+          "time": "愿意额外乘车时",
+          "branch": "hakone",
+          "imageKey": "d9-a6"
+        }
+      ],
+      "choices": {
+        "rest": "确定留热海休息",
+        "shimoda": "下田港与佩里路",
+        "hakone": "仅箱根汤本站附近"
+      }
+    },
+    {
+      "n": 10,
+      "area": "transfer",
+      "label": "热海 → 羽田 → 上海",
+      "title": "普通线返机场，按航班倒推",
+      "summary": "默认普通列车热海→横滨、京急转羽田实际航站楼。可先粗略以起飞前5.5–6小时离开酒店（含站前交通、候车换乘和国际航班提前约3小时抵机场）倒推，非保证时刻；航司值机截止以机票为准。早班需倒序住横滨或加机场前夜；若午夜航班前一晚去机场，住宿夜数也要调整。",
+      "stay": "本日离境，无住宿",
+      "food": "车站或机场简单用餐。",
+      "rain": "台风或铁路延误时提前改签/提前夜住机场附近；勿依赖最后一班车。",
+      "activities": [
+        {
+          "title": "热海 → 横滨",
+          "description": "JR东海道本线普通／快速往小田原・横滨・东京方向，可选横滨可停的直达车；D10预算默认按普通线路。",
+          "routes": [
+            {
+              "line": "JR 东海道本线 · 普通／快速",
+              "direction": "小田原・横浜・東京方面",
+              "from": "熱海駅",
+              "to": "横浜駅",
+              "duration": "约 1小时20–35 分钟",
+              "note": "票价初值为可编辑规划估算，请在出行日按JR东日本查询；不默认新干线。",
+              "source": "https://www.jreast.co.jp/en/",
+              "transfer": "无换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "按具体出发日、票种和车次查询；预算中是规划占位",
+                "buy": "车站自动售票机购票，或按运营方规定使用交通IC；特急车需另买特急券。",
+                "use": "纸票按闸机验票；IC以同一卡进出闸并确认余额。",
+                "source": "https://www.jreast.co.jp/en/"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "按航班倒推"
+        },
+        {
+          "title": "京急横滨 → 羽田实际航站楼",
+          "description": "JR横滨与京急横滨站内换闸；选直通羽田的机场线列车，非直达车在京急蒲田换乘。机场T2/T3站点不同，以机票航站楼为准。",
+          "routes": [
+            {
+              "line": "步行",
+              "direction": "沿人行道路",
+              "from": "JR横浜駅",
+              "to": "京急横浜駅",
+              "duration": "站内约 5–10 分钟",
+              "note": "",
+              "mode": "walking",
+              "departure": "按体力决定",
+              "transfer": "无换乘"
+            },
+            {
+              "line": "京急本线 → 京急空港线",
+              "direction": "羽田空港方面",
+              "from": "京急横浜駅",
+              "to": "羽田空港第3ターミナル駅",
+              "duration": "约 25–35 分钟",
+              "note": "T3成人纸票370円/IC363円；T2请重查终点及费用。",
+              "source": "https://www.keikyu.co.jp/ride/ticket/pdf/KK16.pdf",
+              "transfer": "直达或京急蒲田换乘",
+              "departure": "按当天班次",
+              "mode": "transit",
+              "ticket": {
+                "priceText": "羽田T3成人纸票370円／IC363円",
+                "buy": "京急售票机买票或用互通IC。",
+                "use": "直通列车优先；否则京急蒲田站换机场线。",
+                "source": "https://www.keikyu.co.jp/ride/ticket/pdf/KK16.pdf"
+              }
+            }
+          ],
+          "optional": false,
+          "time": "提前留值机时间"
+        }
+      ]
+    }
+  ]
+}
