@@ -98,6 +98,10 @@ redirect_from:
           <p>LinkedIn, Scholar, Semantic Scholar, ResearchGate, ORCID, DBLP, ACM DL, and patents.</p>
         </a>
       </div>
+<div class="personal-notes" aria-label="个人手记" style="margin-top:18px;padding:15px 18px;border:1px solid rgba(34,46,40,.13);border-radius:12px;background:rgba(255,252,246,.8);">
+  <span style="display:block;font-size:12px;color:#687568;margin-bottom:5px;">个人手记</span>
+  <a href="{{ '/notes-88e9a514e1289053866f706d/' | relative_url }}" target="_self" style="display:inline-block;font-size:16px;font-weight:650;padding:4px 0;">镇江旅行计划 ↗</a>
+</div>
     </div>
 
     <aside class="fh-side-panel" aria-label="Profile and featured work">
