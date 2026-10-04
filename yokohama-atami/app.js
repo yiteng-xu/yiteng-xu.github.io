@@ -3,7 +3,7 @@ const data=window.YOKOHAMA_ATAMI_PLAN||{days:[],sources:[],tickets:[]};
 const $=id=>document.getElementById(id);
 const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const state={read(key,fallback){try{return JSON.parse(localStorage.getItem('ya-'+key))??fallback;}catch{return fallback;}},write(key,value){try{localStorage.setItem('ya-'+key,JSON.stringify(value));}catch{}}};
-let start=state.read('start',''),filter='all',done=new Set(state.read('done',[]));
+let start=state.read('start',''),filter='all',done=new Set(state.read('done-v3',[]));
 const dateFor=n=>{if(!start)return null;const date=new Date(start+'T12:00:00');date.setDate(date.getDate()+n-1);return Number.isNaN(+date)?null:date;};
 const dateText=n=>dateFor(n)?.toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'long'})||'日期待定 · 第 '+n+' 天';
 const mapLink=(from,to,mode='transit')=>'https://www.google.com/maps/dir/?'+new URLSearchParams({api:'1',origin:from,destination:to,travelmode:mode});
@@ -15,12 +15,12 @@ function render(){
  $('days').innerHTML=days.map(day=>{
   const value=day.n===8?budget.day8Choice:day.n===9?budget.day9Choice:null;
   const activeBranch=value==='undecided'?'rest':value;
-  const activities=day.n===6?(budget.visitZushi?day.activities.slice(-1):day.activities.slice(0,-1)):day.choices?day.activities.filter(activity=>activity.branch===activeBranch):day.activities;
-  const choicePrompt=day.n===9?({undecided:'D9 暂未决定 · 下方仅显示热海停留参考，不计跨城票',rest:'D9 已选热海休息',shimoda:'D9 已选下田港',hakone:'D9 已选箱根汤本站附近'}[value]||'D9 选择当天路线'):'D8 选择当天路线';
+  const activities=day.n===6?day.activities.filter(activity=>!activity.optional||budget.visitTogoshi):day.choices?day.activities.filter(activity=>activity.branch===activeBranch):day.activities;
+  const choicePrompt=day.n===9?({undecided:'D9 暂未决定 · 下方仅显示热海停留参考，不计跨城票',rest:'D9 已选热海休息',shimoda:'D9 已选下田港',fuji:'D9 已选富士市 · 本町通与富士山街景'}[value]||'D9 选择当天路线'):'D8 选择当天路线';
   const options=day.choices?`<label class="day-choice">${choicePrompt}<select data-day-choice="${day.n}">${day.n===9?`<option value="undecided"${value==='undecided'?' selected':''}>暂未决定 · 不计跨城车费</option>`:''}${Object.entries(day.choices).map(([key,label])=>`<option value="${escapeHTML(key)}"${value===key?' selected':''}>${escapeHTML(label)}</option>`).join('')}</select></label>`:'';
-  const displaySummary=day.n===9?({rest:'已选择留在热海休息，只在住处附近吃饭；没有下田或箱根跨城车费。',shimoda:'已选择下田港边慢游，普通列车往返、金目鲷午饭与佩里路短段；不叠加箱根行程。',hakone:'已选择箱根汤本站附近短停，经小田原往返；不登山，也不叠加下田行程。'}[value]||day.summary):day.n===8&&value==='ito'?'已选择伊东 Orange Beach 半日，热海↔伊东普通车往返；热海海边休息方案不再叠加。':day.n===6&&budget.visitZushi?'已选择逗子海岸半日，樱木町↔逗子整段铁路占位计费；美国山与港见丘主线不再叠加。':day.summary;
-  const displayFood=day.n===6&&budget.visitZushi?'逗子站附近找午饭，海边有喜欢的店也可短停；不安排购物。':day.food;
-  const displayRain=day.n===6&&budget.visitZushi?'风雨大时缩短逗子海岸停留，按原路返横滨休息。':day.rain;
+  const displaySummary=day.n===9?({rest:'已选择留在热海休息，只在住处附近吃饭；没有富士市或下田跨城车费。',shimoda:'已选择下田港边慢游，普通列车往返、金目鲷午饭与佩里路短段；不叠加富士市行程。',fuji:'已选择富士市，本町通街景与午饭咖啡，晴好时看富士山；普通车往返，不叠加下田。'}[value]||day.summary):day.n===8&&value==='ito'?'已选择伊东 Orange Beach 半日，热海↔伊东普通车往返；热海海边休息方案不再叠加。':day.summary;
+  const displayFood=day.food;
+  const displayRain=day.rain;
   return `<article class="day" id="day-${day.n}"${filter!=='all'&&filter!==day.area?' hidden':''}><header><div class="day-number"><small>DAY</small>${String(day.n).padStart(2,'0')}</div><div><span class="tiny">${escapeHTML(day.label||day.area)}</span><h3>${escapeHTML(day.title)}</h3><p>${dateText(day.n)} · ${escapeHTML(day.stay||'住宿待确认')}</p></div><label class="quiet"><input data-done="${day.n}" type="checkbox"${done.has(day.n)?' checked':''}> 已完成</label></header><p>${escapeHTML(displaySummary)}</p>${options}<details><summary>查看当前方案详细路线 · ${activities.reduce((sum,activity)=>sum+(activity.routes||[]).length,0)} 段导航</summary><div class="day-body">${activities.map((activity,index)=>`<section class="activity"><span class="tiny">${escapeHTML(activity.time||'按体力安排')}${activity.optional?' · 可选':''}</span><h4>${escapeHTML(activity.title)}</h4><p>${escapeHTML(activity.description)}</p>${photoHTML(activity.imageKey||`d${day.n}-a${index+1}`)}${(activity.routes||[]).map(route=>route.optional?`<details class="route-alternative"><summary>可选路线：${escapeHTML(route.from)} → ${escapeHTML(route.to)}</summary>${routeHTML(route)}</details>`:routeHTML(route)).join('')}</section>`).join('')}<div class="intro-grid"><article><strong>吃饭与休息</strong><p>${escapeHTML(displayFood||'在当地饭馆按营业选择。')}</p></article><article><strong>雨天或疲劳</strong><p>${escapeHTML(displayRain||'缩短户外步行，回住处休息。')}</p></article></div></div></details></article>`;
  }).join('');
  $('date-note').textContent=start?'已按所选日期换算各日；铁路时刻、票价和餐厅营业日仍须按出行日核对。':'日期未定：班次、票价与天气按出行日再核。';
@@ -30,11 +30,11 @@ $('start-date').addEventListener('change',event=>{start=event.target.value;state
 $('clear-date').addEventListener('click',()=>{$('start-date').value='';$('start-date').dispatchEvent(new Event('change'));});
 document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{const selected=b===button;b.classList.toggle('active',selected);b.setAttribute('aria-pressed',String(selected));});render();}));
 $('days').addEventListener('change',event=>{
- if(event.target.matches('[data-done]')){const n=Number(event.target.dataset.done);event.target.checked?done.add(n):done.delete(n);state.write('done',[...done]);return;}
+ if(event.target.matches('[data-done]')){const n=Number(event.target.dataset.done);event.target.checked?done.add(n):done.delete(n);state.write('done-v3',[...done]);return;}
  if(event.target.matches('[data-day-choice]')){const key=event.target.dataset.dayChoice==='8'?'day8Choice':'day9Choice';const budgetSelect=document.querySelector(`select[data-budget="${key}"]`);budgetSelect.value=event.target.value;budgetSelect.dispatchEvent(new Event('change',{bubbles:true}));}
 });
 window.addEventListener('ya:budget-change',render);
 $('print').addEventListener('click',()=>{document.querySelectorAll('.day details').forEach(el=>{el.open=true;});window.print();});
 render();
 $('sources-list').innerHTML=(data.sources||[]).map(source=>`<a href="${escapeHTML(source.url)}" target="_blank" rel="noopener">${escapeHTML(source.name)} ↗</a>`).join('')||'官方来源将在每张路线卡标明。';
-$('ticket-guidance').innerHTML=`<p class="tip">以下是核查于 2026-09-28 的成人票价速查。注明“路线查询价”的 JR 区间在确定日期后再核，预算里同名项可改；车站售票机普通票与交通 IC 入闸操作以运营方当日规定为准。踊り子特急除基础票外，须另买指定席／座席未指定特急券，默认行程只算普通车。</p><div class="fare-scroll"><table class="fare-table"><thead><tr><th>区间／票券</th><th>成人票价</th><th>购买与适用</th><th>来源</th></tr></thead><tbody>${(data.tickets||[]).map(ticket=>`<tr><th>${escapeHTML(ticket.item)}</th><td>${escapeHTML(ticket.fare)}</td><td>${escapeHTML(ticket.buy)}</td><td><a href="${escapeHTML(ticket.source)}" target="_blank" rel="noopener">核查 ↗</a></td></tr>`).join('')}</tbody></table></div><p class="tip">热海站到海边是城市坡路，轻装可从站前商店街下行；返站按体力选步行、公交或短程出租车。公交具体站台和票价按当日东海巴士查询。东京地铁或有乐町→东京的一站JR若临时改乘，请在预算“其他未列市内交通”中补充。D6逗子选项替换横滨山手半日，预算不会两套同时算。</p>`;
+$('ticket-guidance').innerHTML=`<p class="tip">蒲田段线路说明更新于 2026-10-04；热海段票价沿用 2026-09-28 核查记录，出发前再核。蒲田段不套用旧横滨出发票价，预算中的交通占位可编辑；车站售票机普通票与交通 IC 入闸操作以运营方当日规定为准。踊り子特急除基础票外，须另买指定席／座席未指定特急券，默认行程只算普通车。</p><div class="fare-scroll"><table class="fare-table"><thead><tr><th>区间／票券</th><th>成人票价</th><th>购买与适用</th><th>来源</th></tr></thead><tbody>${(data.tickets||[]).map(ticket=>`<tr><th>${escapeHTML(ticket.item)}</th><td>${escapeHTML(ticket.fare)}</td><td>${escapeHTML(ticket.buy)}</td><td><a href="${escapeHTML(ticket.source)}" target="_blank" rel="noopener">核查 ↗</a></td></tr>`).join('')}</tbody></table></div><p class="tip">热海站到海边是城市坡路，轻装可从站前商店街下行；返站按体力选步行、公交或短程出租车。公交具体站台和票价按当日东海巴士查询。蒲田段四主题按天气整体对调，费用按主题计、不重复计转站接驳。户越银座只在勾选时加车费；热海跨城分支互斥。</p>`;

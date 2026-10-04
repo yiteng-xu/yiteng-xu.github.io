@@ -1,28 +1,24 @@
 {
-  "trip": "横滨—热海 10 天 9 晚 Plan B",
+  "trip": "蒲田＋热海双基地，10天9晚草案",
   "retrieved": "2026-09-28",
-  "activityCount": 42,
+  "activityCount": 24,
   "uniquePhotoCount": 45,
   "activityPhotos": {
     "d1-a1": [
       "hanedaGate",
       "hanedaExterior"
     ],
-    "d1-a2": [
-      "yokohamaStation2"
+    "d5-a1": [
+      "jiyugaoka2"
     ],
-    "d1-a3": [
-      "minatomirai"
+    "d5-a2": [
+      "jiyugaoka"
     ],
-    "d2-a1": [
-      "minatomirai2"
+    "d5-a4": [
+      "daikanyamaWalk"
     ],
-    "d2-a2": [
-      "redbrickSunny",
-      "redbrickHarbor"
-    ],
-    "d2-a3": [
-      "minatomirai"
+    "d5-a3": [
+      "nakameguroRiver"
     ],
     "d3-a1": [
       "kamakuraStation",
@@ -38,62 +34,17 @@
     "d3-a4": [
       "enoden2"
     ],
-    "d4-a1": [
-      "ginza"
-    ],
-    "d4-a2": [
-      "yurakuchoStation"
-    ],
-    "d4-a3": [
-      "hibiyaAutumn"
-    ],
-    "d4-a4": [
-      "tokyostation"
-    ],
-    "d4-a5": [
-      "tokyostation2"
-    ],
-    "d5-a1": [
-      "jiyugaoka2"
-    ],
-    "d5-a2": [
-      "jiyugaoka"
-    ],
-    "d5-a3": [
-      "nakameguroRiver"
-    ],
-    "d5-a4": [
-      "daikanyamaWalk"
-    ],
-    "d5-a5": [
-      "yokohamaStation"
-    ],
     "d6-a1": [
       "harborView"
     ],
     "d6-a2": [
       "motomachiStreet"
     ],
-    "d6-a3": [
-      "yamashita",
-      "yamashita2"
-    ],
     "d6-a4": [
       "motomachiStation"
     ],
-    "d6-a5": [
-      "zushi",
-      "zushi2"
-    ],
     "d7-a1": [
       "atamiStation"
-    ],
-    "d7-a2": [
-      "atamiStation2"
-    ],
-    "d7-a3": [
-      "atamiBeach",
-      "atamiBeach2"
     ],
     "d8-a1": [
       "atamiBeach"
@@ -131,15 +82,6 @@
     "d9-a5": [
       "shimodaStation",
       "shimodaPort2"
-    ],
-    "d9-a6": [
-      "hakoneYumoto2"
-    ],
-    "d10-a1": [
-      "atamiStation"
-    ],
-    "d10-a2": [
-      "hanedaGate"
     ]
   },
   "processing": {
@@ -1548,5 +1490,6 @@
       "downloadedPreviewSha256": "8a3d59330cd628661adfe72aa4644a0852a96b0bb17417b7c1d62397f721f05d",
       "alteration": "EXIF orientation normalized, proportionally resized with Lanczos and WebP quality 82; no intentional crop or scene edit"
     }
-  ]
+  ],
+  "usageNote": "活动配图仅覆盖有已核实旧素材的地点；未新增未经核实的蒲田、吉祥寺、下北泽照片。photos字段保留历史授权素材，未使用照片不代表本次行程。"
 }
