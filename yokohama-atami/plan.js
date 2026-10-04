@@ -740,7 +740,7 @@ window.YOKOHAMA_ATAMI_PLAN = {
         },
         {
           "title": "下北泽 → 蒲田",
-          "description": "井之头线到涩谷，换JR山手线外回り品川方向至品川，换京滨东北线南行到蒲田。",
+          "description": "井之头线到涩谷，换JR山手线内回り品川方向至品川，换京滨东北线南行到蒲田。",
           "routes": [
             {
               "line": "京王井之头线",
@@ -1549,7 +1549,7 @@ window.YOKOHAMA_ATAMI_PLAN = {
               "transfer": "依班次直达或沼津换乘",
               "ticket": {
                 "priceText": "出发日期未定，按JR当日查询；预算为规划占位",
-                "buy": "热海站售票机买普通票，或使用适用TOICA区域的互通交通IC（如Suica）。",
+                "buy": "出发站售票机买普通票，或使用适用TOICA区域的互通交通IC（如Suica）。",
                 "use": "热海站进站、富士站出站可使用普通票或互通交通IC；若从东京方向不出闸连续跨区域乘车，需另查跨区限制。",
                 "source": "https://railway.jr-central.co.jp/time-schedule/search/"
               }
@@ -1610,7 +1610,7 @@ window.YOKOHAMA_ATAMI_PLAN = {
               "transfer": "依班次直达或沼津换乘",
               "ticket": {
                 "priceText": "出发日期未定，按JR当日查询；预算为规划占位",
-                "buy": "热海站售票机买普通票，或使用适用TOICA区域的互通交通IC（如Suica）。",
+                "buy": "出发站售票机买普通票，或使用适用TOICA区域的互通交通IC（如Suica）。",
                 "use": "热海站进站、富士站出站可使用普通票或互通交通IC；若从东京方向不出闸连续跨区域乘车，需另查跨区限制。",
                 "source": "https://railway.jr-central.co.jp/time-schedule/search/"
               }
